@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{76063e7f-3558-4b68-8287-54eb6512adc0}</em:id>
+    <em:version>2.0.0</em:version>
+    <em:optionsURL>chrome://gladiatustools/content/options.xul</em:optionsURL>
+
+    <em:localized>
+      <Description>
+        <em:locale>it</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Estensione per il browser game Gladiatus. Una volta installata, questa estensione aggiunge un insieme di strumenti completamente integrati con l'interfaccia del gioco.</em:description>
+        <em:contributor>Anthony Lieuallen (Compilatore Greasemonkey)</em:contributor>
+        <em:contributor>Sébastien Bailly (Traduzione francese)</em:contributor>
+        <em:contributor>Sebastiàn Goicochea (Traduzione spagnola)</em:contributor>
+        <em:contributor>TaReQ ALShehhi-UAETooN (Traduzione araba)</em:contributor>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>es</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Addon para el juego Gladiatus. Una vez instalado este addon agrega automáticamente un conjunto de herramientas completamente integradas al sitio web de Gladiatus para mejorar la experiencia del usuario.</em:description>
+        <em:contributor>Anthony Lieuallen (Compilador Greasemonkey)</em:contributor>
+        <em:contributor>Sébastien Bailly (Traducción al francés)</em:contributor>
+        <em:contributor>Sebastián Goicochea (Traducción al español)</em:contributor>
+        <em:contributor>TaReQ ALShehhi-UAETooN (Traducción al árabe)</em:contributor>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>fr</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Extension pour le jeu par navigateur Gladiatus. Cette extension ajoute automatiquement une série d’outils pleinement intégrés au jeu, ce dans le but d’accroitre le confort de chaque utilisateur.</em:description>
+        <em:contributor>Anthony Lieuallen (Outil GreaseMonkey)</em:contributor>
+        <em:contributor>Sébastien Bailly (Traduction française)</em:contributor>
+        <em:contributor>Sebastián Goicochea (Traduction espagnole)</em:contributor>
+        <em:contributor>TaReQ ALShehhi-UAETooN (Traduction arabe)</em:contributor>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>ar</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>
+          منتج للعبة جلاديتوس
+          عند تثبيت المنتج سيتم اضافته تلقائيا مع كامل المميزات التي تساعد اللاعبين في الحصول على الخبرة..
+        </em:description>
+        <em:contributor>Anthony Lieuallen (مبرمج الأداة)</em:contributor>
+        <em:contributor>Sébastien Bailly (المترجم الفرنسي)</em:contributor>
+        <em:contributor>Sebastián Goicochea (المترجم الاسباني)</em:contributor>
+        <em:contributor>TaReQ ALShehhi-UAETooN (المترجم العربي)</em:contributor>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:name>Gladiatus Tools</em:name>
+    <em:creator>Giuseppe Bertone</em:creator>
+    <em:description>Addon for Gladiatus browser game. Once installed, this addon adds automatically a set of fully integrated tools to the Gladiatus web site to improve the user experience.</em:description>
+    <em:contributor>Anthony Lieuallen (Greasemonkey Compiler)</em:contributor>
+    <em:contributor>Sébastien Bailly (French translation)</em:contributor>
+    <em:contributor>Sebastiàn Goicochea (Spanish translation)</em:contributor>
+    <em:contributor>TaReQ ALShehhi-UAETooN (Arabic translation)</em:contributor>
+    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.0</em:minVersion>
+        <em:maxVersion>3.1b2</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

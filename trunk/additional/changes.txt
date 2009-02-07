@@ -1,0 +1,10 @@
+2.0.0
+
+- Tab persistenti
+- Statistiche migliorate
+- "Scrivi un messaggio" più ampio
+- La schermata della classifica parte dalla pagina nella quale è presente anche l'utente, se entro i primi 1000
+
+- Report di combattimento sintetici
+- Extended panel e oro totale
+- Rispondi ai messaggi senza cambiare pagina
