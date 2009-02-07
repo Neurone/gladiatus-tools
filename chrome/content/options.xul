@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://gladiatustools/locale/options.dtd">
+
+<prefwindow id="gladiatustools-prefs"
+     title="&gladiatusToolsOptions.label;"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <prefpane id="gt-stock-pane" label="&generalSettings.label;">
+    <preferences>
+      <preference id="simulatorEngine" name="gladiatustools.simulatorEngine" type="string" />
+      <preference id="autoSimulateBattle" name="gladiatustools.autoSimulateBattle" type="bool" />
+      <preference id="showCustomAvatars" name="gladiatustools.showCustomAvatars" type="bool"/>
+      <preference id="showTimers" name="gladiatustools.showTimers" type="bool"/>
+      <preference id="showFullStats" name="gladiatustools.showFullStats" type="bool"/>
+      <preference id="showAdditionalTooltips" name="gladiatustools.showAdditionalTooltips" type="bool"/>
+      <preference id="hideNotAffordable" name="gladiatustools.hideNotAffordable" type="bool"/>
+      <preference id="excludeMeFromCorporateMessages" name="gladiatustools.excludeMeFromCorporateMessages" type="bool"/>
+      <preference id="showAdditionalStats" name="gladiatustools.showAdditionalStats" type="bool"/>
+      <preference id="rememberTabs" name="gladiatustools.rememberTabs" type="bool"/>
+      <preference id="goToMyPos" name="gladiatustools.goToMyPos" type="bool"/>
+    </preferences>
+
+    <groupbox>
+      <caption label="&simulationGroup.label;"/>
+      <hbox align="center">
+        <label value="&simulatorEngine.label;" control="ml_simulatorEngine"/>
+        <menulist id="ml_simulatorEngine" preference="simulatorEngine">
+          <menupopup>
+            <menuitem label="www.georged.eu" value="www.georged.eu"/>
+            <menuitem label="www.playerutils.com" value="www.playerutils.com"/>
+          </menupopup>
+        </menulist>
+      </hbox>
+      <hbox align="center">
+        <checkbox id="c_autoSimulateBattle" preference="autoSimulateBattle" label="&autoSimulateBattle.label;" accesskey="&autoSimulateBattle.accesskey;"/>
+      </hbox>
+    </groupbox>
+
+    <groupbox>
+      <caption label="&otherSettingsGroup.label;"/>
+      <hbox align="center">
+        <checkbox id="c_showCustomAvatars" preference="showCustomAvatars" label="&showCustomAvatars.label;" accesskey="&showCustomAvatars.accesskey;"/>
+      </hbox>
+      <hbox align="center">
+        <checkbox id="c_showTimers" preference="showTimers" label="&showTimers.label;" accesskey="&showTimers.accesskey;"/>
+      </hbox>
+      <hbox align="center">
+        <checkbox id="c_showFullStats" preference="showFullStats" label="&showFullStats.label;" accesskey="&showFullStats.accesskey;"/>
+      </hbox>
+      <hbox align="center">
+        <checkbox id="c_showAdditionalTooltips" preference="showAdditionalTooltips" label="&showAdditionalTooltips.label;" accesskey="&showAdditionalTooltips.accesskey;"/>
+      </hbox>
+      <hbox align="center">
+        <checkbox id="c_showAdditionalStats" preference="showAdditionalStats" label="&showAdditionalStats.label;" accesskey="&showAdditionalStats.accesskey;"/>
+      </hbox>
+      <hbox align="center">
+        <checkbox id="c_hideNotAffordable" preference="hideNotAffordable" label="&hideNotAffordable.label;" accesskey="&hideNotAffordable.accesskey;"/>
+      </hbox>
+      <hbox align="center">
+        <checkbox id="c_rememberTabs" preference="rememberTabs" label="&rememberTabs.label;" accesskey="&rememberTabs.accesskey;"/>
+      </hbox>
+      <hbox align="center">
+        <checkbox id="c_goToMyPos" preference="goToMyPos" label="&goToMyPos.label;" accesskey="&goToMyPos.accesskey;"/>
+      </hbox>
+      <hbox align="center">
+        <checkbox id="c_excludeMeFromCorporateMessages" preference="excludeMeFromCorporateMessages" label="&excludeMeFromCorporateMessages.label;" accesskey="&excludeMeFromCorporateMessages.accesskey;"/>
+      </hbox>
+    </groupbox>
+    
+  </prefpane>
+
+</prefwindow>
