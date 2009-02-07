@@ -1,0 +1,28 @@
+<!ENTITY gladiatusToolsOptions.label "Opzioni di Gladiatus Tools">
+<!ENTITY generalSettings.label "Impostazioni generali">
+
+<!ENTITY simulationGroup.label "Combat simulation">
+<!ENTITY otherSettingsGroup.label "Other settings">
+
+<!ENTITY simulatorEngine.label "Motore della simulazione">
+<!ENTITY autoSimulateBattle.label "Simula automaticamente la battaglia">
+<!ENTITY excludeMeFromCorporateMessages.label "Non inviarmi i messaggi che mando alla mia corporazione">
+<!ENTITY showCustomAvatars.label "Mostra avatar personalizzati">
+<!ENTITY showTimers.label "Mostra tempi">
+<!ENTITY showFullStats.label "Mostra statistiche utente complete">
+<!ENTITY showAdditionalTooltips.label "Confronta sempre gli oggetti">
+<!ENTITY hideNotAffordable.label "Evidenzia solamente gli oggetti acquistabili">
+<!ENTITY showAdditionalStats.label "Mostra statistiche aggiuntive">
+<!ENTITY rememberTabs.label "Ricorda l'ultima linguetta selezionata">
+<!ENTITY goToMyPos.label "Mostra la mia pagina in classifica">
+
+<!ENTITY autoSimulateBattle.accesskey "S">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "N">
+<!ENTITY showCustomAvatars.accesskey "M">
+<!ENTITY showTimers.accesskey "R">
+<!ENTITY showFullStats.accesskey "O">
+<!ENTITY showAdditionalTooltips.accesskey "T">
+<!ENTITY hideNotAffordable.accesskey "E">
+<!ENTITY showAdditionalStats.accesskey "A">
+<!ENTITY rememberTabs.accesskey "I">
+<!ENTITY goToMyPos.accesskey "L">

@@ -1,0 +1,11 @@
+pref("gladiatustools.simulatorEngine", "www.georged.eu");
+pref("gladiatustools.autoSimulateBattle", true);
+pref("gladiatustools.showCustomAvatars", true);
+pref("gladiatustools.showTimers", true);
+pref("gladiatustools.showFullStats", true);
+pref("gladiatustools.showAdditionalTooltips", true);
+pref("gladiatustools.hideNotAffordable", true);
+pref("gladiatustools.excludeMeFromCorporateMessages", false);
+pref("gladiatustools.showAdditionalStats", true);
+pref("gladiatustools.rememberTabs", true);
+pref("gladiatustools.goToMyPos", true);
