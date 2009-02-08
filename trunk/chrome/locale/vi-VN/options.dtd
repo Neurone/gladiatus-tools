@@ -1,0 +1,28 @@
+<!ENTITY gladiatusToolsOptions.label "Công cụ Gladiatus">
+<!ENTITY generalSettings.label "Tùy chỉnh chung">
+
+<!ENTITY simulationGroup.label "Mô phỏng tương đối">
+<!ENTITY otherSettingsGroup.label "Lựa chọn khác">
+
+<!ENTITY simulatorEngine.label "Dụng cụ mô phỏng">
+<!ENTITY autoSimulateBattle.label "Tự động mô phỏng trận đấu">
+<!ENTITY excludeMeFromCorporateMessages.label "Loại trừ tôi khi gửi tin nhắn tập thể">
+<!ENTITY showCustomAvatars.label "Tự chọn hình ảnh đại diện">
+<!ENTITY showTimers.label "Hiển thị thời gian">
+<!ENTITY showFullStats.label "Luôn hiển thị giá trị hồi máu và đe dọa">
+<!ENTITY showAdditionalTooltips.label "Hiển thị công cụ phụ">
+<!ENTITY hideNotAffordable.label "Chỉ làm nổi bật những món hàng có thể mua trong shop">
+<!ENTITY showAdditionalStats.label "Hiển thị thống kê phụ">
+<!ENTITY rememberTabs.label "Ghi nhớ thanh lựa chọn cuối">
+<!ENTITY goToMyPos.label "Hiển thị bảng xếp hạng">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatars.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY goToMyPos.accesskey "">

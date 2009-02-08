@@ -67,7 +67,7 @@ it.neurone.gladiatustools.locale = {
             new Array("Emirati Arabi Uniti", /s\d+\.ae\.gladiatus\.com/i, "arabo"),
             new Array("USA", ".gladiatus.us", "inglese"),
             new Array("Venezuela", ".gladiatus.com.ve", "spagnolo"),
-            new Array("Vietnam", ".gladiatus.vn", "vietnamita")
+            new Array("Vietnam", /s\d+\.gladiatus\.vn/i, "vietnamita")
         );
 
         for (var paese in paesi)
@@ -102,8 +102,8 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "الساحة:";
                     this.work = "الأسطبل:";
                     this.completed = "تم!";
-                    this.winPercentage = "نسبة الإنتصارات";
-                    this.totalEarnedGold = "مجموع الحصول على الذهب";
+                    this.winPercentage = "نسبة الإنتصارات:";
+                    this.totalEarnedGold = "مجموع الحصول على الذهب:";
                     break;
             
                 case "spagnolo":
@@ -118,13 +118,13 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Arena:";
                     this.work = "Trabajo:";
                     this.completed = "Terminado!";
-                    this.winPercentage = "Porcentaje de victorias";
-                    this.totalEarnedGold = "Total de oro ganado";
+                    this.winPercentage = "Porcentaje de victorias:";
+                    this.totalEarnedGold = "Total de oro ganado:";
                     break; 
                     
                 case "francese":
                     this.simulationFailed = "La simulation a échoué! Réessayez plus tard ou sélectionnez un autre moteur de simulation.";
-                    this.customAvatarUrl = "URL de l’avatar personalisé (http://...). L’image sera redimensionnée en 168x194.";
+                    this.customAvatarUrl = "URL de l'avatar personnalisé (http://...). L'image sera redimensionnée en 168x194.";
                     this.simulate = "Simuler";
                     this.simulating = "Simulation en cours...";
                     this.winning = "Gagnant à ";
@@ -134,12 +134,11 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Arène:";
                     this.work = "Étable:";
                     this.completed = "Terminé!";
-                    this.winPercentage = "Pourcentage de victoire";
-                    this.totalEarnedGold = "Bénéfice";
+                    this.winPercentage = "Pourcentage de victoire:";
+                    this.totalEarnedGold = "Bénéfice:";
                     break;  
-                      
                     
-                case "italiano":                
+                case "italiano":
                     this.simulationFailed = "Simulazione fallita! Prova più tardi oppure seleziona un'altro motore di simulazione dal menu delle opzioni di Gladiatus Tools.";
                     this.customAvatarUrl = "Url assoluta dell'avatar personalizzato (http://...). L'immagine verrà ridimensionata a 168x194.";
                     this.simulate = "Simula";
@@ -151,8 +150,24 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Arena:";
                     this.work = "Stalla:";
                     this.completed = "Finito!";
-                    this.winPercentage = "Percentuale vittorie";
-                    this.totalEarnedGold = "Oro guadagnato";
+                    this.winPercentage = "Percentuale vittorie:";
+                    this.totalEarnedGold = "Oro guadagnato:";
+                    break;
+                      
+                case "vietnamita":
+                    this.simulationFailed = "Quá trình mô phỏng thất bại. Thử lại sau hoặc chọn dụng cụ mô phỏng khác ở Công cụ Gladiatus";
+                    this.customAvatarUrl = "Đường dẫn đến hình ảnh đại diện (http://...). Hình ảnh sẽ được định dạng lại (168x194px)";
+                    this.simulate = "Mô phỏng";
+                    this.simulating = "Đang mô phỏng...";
+                    this.winning = "Cơ hội chiến thắng";
+                    this.go = "Giết!!!";
+                    this.stop = "Tạm hoãn!";
+                    this.quest = "Nhiệm vụ:";
+                    this.arena = "Đấu trường:";
+                    this.work = "Chùi đít ngựa:";
+                    this.completed = "Đã hoàn tất!";
+                    this.winPercentage = "Thống kê chiến thắng:";
+                    this.totalEarnedGold = "Thống kê số vàng đã cướp:";
                     break;
                       
                 default:
@@ -167,8 +182,8 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Arena:";
                     this.work = "Work:";
                     this.completed = "Complete!";
-                    this.winPercentage = "Winning percentage";
-                    this.totalEarnedGold = "Total earned gold";
+                    this.winPercentage = "Winning percentage:";
+                    this.totalEarnedGold = "Total earned gold:";
             }
         }
     }

@@ -687,7 +687,7 @@ if(isSettingsPage)
 		//Creo l'immagine
 		var imageUrlField = document.createElement("input");
 		imageUrlField.id = "GTImageUrl";
-		imageUrlField.size = "60";
+		imageUrlField.size = "73";
 		imageUrlField.value = currentGTImageUrl;
 		//Aggiungo gli elementi creati al DOM
 		currentDescriptionField.parentNode.insertBefore(title, currentDescriptionField.nextSibling);
