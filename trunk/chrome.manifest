@@ -4,6 +4,7 @@ locale gladiatustools en-US chrome/locale/en-US/
 locale gladiatustools it-IT chrome/locale/it-IT/
 locale gladiatustools fr-FR chrome/locale/fr-FR/
 locale gladiatustools es-AR chrome/locale/es-AR/
+locale gladiatustools vi-VN chrome/locale/vi-VN/
 locale gladiatustools ar chrome/locale/ar/
 
 # Firefox
