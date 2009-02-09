@@ -23,6 +23,6 @@
 <!ENTITY showFullStats.accesskey "C">
 <!ENTITY showAdditionalTooltips.accesskey "O">
 <!ENTITY hideNotAffordable.accesskey "N">
-<!ENTITY showAdditionalStats.accesskey "M">
-<!ENTITY rememberTabs.accesskey "S">
+<!ENTITY showAdditionalStats.accesskey "S">
+<!ENTITY rememberTabs.accesskey "D">
 <!ENTITY goToMyPos.accesskey "G">
