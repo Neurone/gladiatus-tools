@@ -28,6 +28,7 @@ function showAdvancedStats() {
 		}
 		
 		var battaglie = tds.snapshotItem(0).innerHTML.replace(/\./g, "");
+		if(battaglie <= 0) battaglie = 1;
 		var vittorie = tds.snapshotItem(1).innerHTML.replace(/\./g, "");
 		var vittoriaPercento = (vittorie / battaglie * 100).toFixed(2);
 		var rigaVittoriaPercento = document.createElement("tr");
