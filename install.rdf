@@ -2,7 +2,7 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>{76063e7f-3558-4b68-8287-54eb6512adc0}</em:id>
-    <em:version>2.0.0</em:version>
+    <em:version>2.1.0</em:version>
     <em:optionsURL>chrome://gladiatustools/content/options.xul</em:optionsURL>
 
     <em:localized>
