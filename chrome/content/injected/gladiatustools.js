@@ -490,8 +490,8 @@ function hideNotAffordableObjects()
 	    var allDivs = document.evaluate("div", document.getElementById("shop"), null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 	    for (var i = 0; i < allDivs.snapshotLength; i++)
 	    {
-		    oggetto = allDivs.snapshotItem(i);
-            info = unsafeWindow.document.getElementById(oggetto.id).ddObj;
+		    var oggetto = allDivs.snapshotItem(i);
+            var info = unsafeWindow.document.getElementById(oggetto.id).ddObj;
             if(info)
             {
                 //Aggiungo della trasparenza all'oggetto se il suo prezzo è troppo alto
@@ -516,7 +516,7 @@ unsafeWindow.SetToolTip = function (updateTooltip)
     if(updateTooltip)
     {
         setTimeout(hideNotAffordableObjects, 900);
-    	setTimeout(showAdditionalTooltips, 1000);	
+    	setTimeout(showAdditionalTooltips, 1000);
     }
 	return oldSetToolTip(updateTooltip);
 }
@@ -528,12 +528,11 @@ function setNewTooltip(info, id)
 {
 	//Trovo l'oggetto dell'utente
 	var oggetto = unsafeWindow.document.getElementById(id).ddObj;
-	//Creo un nuovo tooltip
-	if(!info.originalTooltip)
-	{
-		info.originalTooltip = info.tooltip;
-	}
-	info.tooltip = "<table><tr><td>"+ oggetto.tooltip +"</td></tr><tr><td>"+ info.originalTooltip +"</td></tr></table>";
+	//Creo un nuovo tooltip. Se l'oggetto non è ancora stato inizializzato o è appena stato spostato
+	//il suo tooltip non prevede l'aggiunta fatta dall'addon: in questo modo capisco se aggiornare o meno il tooltip.
+	if(info.tooltip.indexOf("<!--GT-->") < 0) {
+	    info.tooltip = "<!--GT--><table><tr><td>"+ oggetto.tooltip +"</td></tr><tr><td>"+ info.tooltip +"</td></tr></table>";
+    }
 }
 
 /*****************************
@@ -569,8 +568,8 @@ function showAdditionalTooltips()
 	    allDivs = document.evaluate("div", document.getElementById("inv"), null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);	
 	    for (var i = 0; i < allDivs.snapshotLength; i++)
 	    {
-		    oggetto = allDivs.snapshotItem(i);
-            info = unsafeWindow.document.getElementById(oggetto.id).ddObj;
+		    var oggetto = allDivs.snapshotItem(i);
+            var info = unsafeWindow.document.getElementById(oggetto.id).ddObj;
             if(info)
             {
                 //Controllo le varie tipologie di oggetti
