@@ -230,10 +230,6 @@ function getDatiUtente(callbackFunction)
 	({
 		method: 'GET',
 		url: 'http://'+ window.location.host +'/game/index.php?mod=overview&sh=' + secureHash,
-		headers: {
-		    'User-agent': 'Mozilla/4.0 (compatible) Greasemonkey',
-			'Accept': 'text/xml',
-		},
 		onload: callbackFunction
 	});
 }
