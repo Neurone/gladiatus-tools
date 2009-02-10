@@ -18,8 +18,9 @@ it.neurone.gladiatustools.locale = {
     arena : "",
     work : "",
     completed : "",
+    goldLabel : "",
     winPercentage : "",
-    totalEarnedGold : "",
+    totalEarnedGold : "",    
     /********************************
     / Recupera la lingua in base al sito
     /********************************/
@@ -102,6 +103,7 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "الساحة:";
                     this.work = "الأسطبل:";
                     this.completed = "تم!";
+                    this.goldLabel = "الذهب";
                     this.winPercentage = "نسبة الإنتصارات:";
                     this.totalEarnedGold = "مجموع الحصول على الذهب:";
                     break;
@@ -118,6 +120,7 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Arena:";
                     this.work = "Trabajo:";
                     this.completed = "Terminado!";
+                    this.goldLabel = "Oro";
                     this.winPercentage = "Porcentaje de victorias:";
                     this.totalEarnedGold = "Total de oro ganado:";
                     break; 
@@ -134,6 +137,7 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Arène:";
                     this.work = "Étable:";
                     this.completed = "Terminé!";
+                    this.goldLabel = "Or";
                     this.winPercentage = "Pourcentage de victoire:";
                     this.totalEarnedGold = "Bénéfice:";
                     break;  
@@ -150,6 +154,7 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Arena:";
                     this.work = "Stalla:";
                     this.completed = "Finito!";
+                    this.goldLabel = "Oro";
                     this.winPercentage = "Percentuale vittorie:";
                     this.totalEarnedGold = "Oro guadagnato:";
                     break;
@@ -166,6 +171,7 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Đấu trường:";
                     this.work = "Chùi đít ngựa:";
                     this.completed = "Đã hoàn tất!";
+                    this.goldLabel = "Gold";
                     this.winPercentage = "Thống kê chiến thắng:";
                     this.totalEarnedGold = "Thống kê số vàng đã cướp:";
                     break;
@@ -182,6 +188,7 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Arena:";
                     this.work = "Work:";
                     this.completed = "Complete!";
+                    this.goldLabel = "Gold";
                     this.winPercentage = "Winning percentage:";
                     this.totalEarnedGold = "Total earned gold:";
             }
