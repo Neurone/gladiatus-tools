@@ -349,7 +349,7 @@ function grabClick(event)
 	        }
 	        return;
 	    }
-	    
+    
 	    if(GM_getValue("rememberTabs", false)) {
 	        //Controllo se il click punta ad uno dei negozi
 	        if(/http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=inventory&sh=.*/.test(event.target.href) ||
@@ -358,7 +358,7 @@ function grabClick(event)
                 var negozio = event.target.href.match(/&sub=[1-5]/);
                 if(negozio != null) {
                     //Se esiste, carico l'ultima linguetta selezionata
-                    var subsub = readCookie("GT_lastChoiceShop"+ negozio.toString().substr(5,1));
+                    var subsub = GM_getValue("GT_lastChoiceShop"+ negozio.toString().substr(5,1) + "_" + window.location.host, "0");
                     if(subsub) event.target.href += "&subsub="+ subsub;
                 }
 	        }
@@ -371,7 +371,7 @@ function grabClick(event)
                     var linguetta = event.target.parentNode.href.match(/&subsub=[0-2]/);
                     if(linguetta) {
                         //Salvo la linguetta selezionata per la visualizzazione successiva
-                        createCookie("GT_lastChoiceShop"+ negozio.toString().substr(5,1), linguetta.toString().substr(8,1), 999);
+                        GM_setValue("GT_lastChoiceShop"+ negozio.toString().substr(5,1) + "_" + window.location.host, linguetta.toString().substr(8,1));
                     }
                 }
 	        }
