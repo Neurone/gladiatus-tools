@@ -26,13 +26,13 @@
 # Let's begin
 #
 ####################################################
-# This is the addon description message you can see in the FireFox addons list
+# This is the addon description message you can see in the FireFox addons list. Translate all.
 ####################################################
 
 Improve the user experience automatically adding a set of fully web site integrated tools to the Gladiatus browser game interface.
 
 ####################################################
-# These are the addon option messages (translate only those words between "...")
+# These are the addon option messages. Translate only those words between "..."
 ####################################################
 
 <!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Options">
@@ -54,7 +54,7 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY goToMyPos.label "Show my highscore page">
 
 ####################################################
-# These are the accessibility keys for addon option messages (translate only those words between "...")
+# These are the accessibility keys for addon option messages. Translate only those words between "..."
 # These translations does not apply to all languages, so check if your language support accessibility keys before translate.
 # If you don't know what accessibility keys are, leave these value blank "".
 ####################################################
@@ -71,7 +71,7 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY goToMyPos.accesskey "">
 
 ####################################################
-# These are the addon contributors. Translate text between parenthesis and insert your name at the end of the list.
+# These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
 ####################################################
 
 Anthony Lieuallen (Greasemonkey compiler)
@@ -79,10 +79,12 @@ Sébastien Bailly (French translation)
 Sebastian Goicochea (Spanish translation)
 TaReQ ALShehhi-UAETooN (Arabic translation)
 Erik Tuu (Vietnamese translation)
+Peteris Petersons (Latvian translation)
+Halluz-man (Czech translation)
 [YOUR NAME] (YOUR LANGUAGE translation)
 
 ####################################################
-# These are in-game messages (translate only those words between "...")
+# These are in-game messages. Translate only those words between "..."
 ####################################################
 
 # Text appearing when communication with simulation engine is off.
@@ -119,11 +121,11 @@ work = "Work:";
 completed = "Complete!";
 
 # Text in player statistic page
-winPercentage "Winning percentage";
-totalEarnedGold = "Total earned gold";		
+winPercentage "Winning percentage:";
+totalEarnedGold = "Total earned gold:";		
 
 ####################################################
-# This is the addon description at addons.mozilla.org. Add your language at the end of the languages list.
+# This is the addon description at addons.mozilla.org. Translate all and add your language at the end of the languages list.
 ####################################################
 
 Addon for Gladiatus browser game. Once installed, this addon adds automatically a set of fully integrated tools to the Gladiatus web site to improve the user experience.
@@ -148,13 +150,13 @@ This addon works with every version 0.4 server and following languages are curre
 If your language is not in the list, english one will be used. If you want to help me adding your language translation, without using Google translator :-), please send me an email (in english).
 
 ####################################################
-# This is the addon developer comment at addons.mozilla.org
+# This is the addon developer comment at addons.mozilla.org. Translate all.
 ####################################################
 
 Technical note: please enable all cookies ("accept third-party cookies" also) to correctly use all Gladiatus Tools features.
 
 ####################################################
-# These are the current release notes at addons.mozilla.org
+# These are the current release notes at addons.mozilla.org. Translate all.
 ####################################################
 
 - Added Vietnamese translation
@@ -162,7 +164,7 @@ Technical note: please enable all cookies ("accept third-party cookies" also) to
 - Fixed some french translations
 
 ####################################################
-# These are the next release notes at addons.mozilla.org
+# These are the next release notes at addons.mozilla.org. Translate all.
 ####################################################
 
 - Added YOUR LANGUAGE translation
