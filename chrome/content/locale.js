@@ -109,19 +109,19 @@ it.neurone.gladiatustools.locale = {
                     break;
 
                 case "ceco":
-                    simulationFailed = "Simulace selhala! Prosím, zkuste to později nebo v nastavení vyberte jiný engine pro simulování.";
-                    customAvatarUrl = "Vybrat avatar (obrázek bude změněn na velikost 168x194)";
-                    simulate = "Simulovat";
-                    simulating = "Probíhá simulování...";
-                    winning = "Výhra na ";
-                    go = "Do toho!";
-                    stop = "Zariskovat!";
-                    quest = "Výprava:";
-                    arena = "Aréna:";
-                    work = "Práce:";
-                    completed = "Hotovo!";
-                    winPercentage "Procento výher:";
-                    totalEarnedGold = "Celkem vyděláno zlata:";
+                    this.simulationFailed = "Simulace selhala! Prosím, zkuste to později nebo v nastavení vyberte jiný engine pro simulování.";
+                    this.customAvatarUrl = "Vybrat avatar (obrázek bude změněn na velikost 168x194)";
+                    this.simulate = "Simulovat";
+                    this.simulating = "Probíhá simulování...";
+                    this.winning = "Výhra na ";
+                    this.go = "Do toho!";
+                    this.stop = "Zariskovat!";
+                    this.quest = "Výprava:";
+                    this.arena = "Aréna:";
+                    this.work = "Práce:";
+                    this.completed = "Hotovo!";
+                    this.winPercentage = "Procento výher:";
+                    this.totalEarnedGold = "Celkem vyděláno zlata:";
                     break; 
             
                 case "spagnolo":
@@ -176,19 +176,19 @@ it.neurone.gladiatustools.locale = {
                     break;
                       
                 case "lettone":
-                    simulationFailed = "Simulācija neizdevusies! Lūdzu mēģiniet vēlāk, vai izvēlaties citu simulātoru Gladiatus Tools opcijās.";
-                    customAvatarUrl = "Pārveidotā avatara links (http://...). Bilde tiks samazināta līdz 168x194.";
-                    simulate = "Simulēt";
-                    simulating = "Simulē...";
-                    winning = "Uzvara ";
-                    go = "Sit!";
-                    stop = "STOP!";
-                    quest = "Ekspedīcija:";
-                    arena = "Arēna:";
-                    work = "Darbs:";
-                    completed = "Pabeigts!";
-                    winPercentage "Uzvarēto procents:";
-                    totalEarnedGold = "Arēnā iegūtais zelts:";
+                    this.simulationFailed = "Simulācija neizdevusies! Lūdzu mēģiniet vēlāk, vai izvēlaties citu simulātoru Gladiatus Tools opcijās.";
+                    this.customAvatarUrl = "Pārveidotā avatara links (http://...). Bilde tiks samazināta līdz 168x194.";
+                    this.simulate = "Simulēt";
+                    this.simulating = "Simulē...";
+                    this.winning = "Uzvara ";
+                    this.go = "Sit!";
+                    this.stop = "STOP!";
+                    this.quest = "Ekspedīcija:";
+                    this.arena = "Arēna:";
+                    this.work = "Darbs:";
+                    this.completed = "Pabeigts!";
+                    this.winPercentage = "Uzvarēto procents:";
+                    this.totalEarnedGold = "Arēnā iegūtais zelts:";
                     break;
                       
                 case "vietnamita":
