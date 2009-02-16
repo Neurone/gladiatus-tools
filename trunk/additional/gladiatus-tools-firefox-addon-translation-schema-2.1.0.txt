@@ -121,7 +121,7 @@ work = "Work:";
 completed = "Complete!";
 
 # Text in player statistic page
-winPercentage "Winning percentage:";
+winPercentage = "Winning percentage:";
 totalEarnedGold = "Total earned gold:";		
 
 ####################################################
