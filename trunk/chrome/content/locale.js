@@ -31,43 +31,43 @@ it.neurone.gladiatustools.locale = {
             new Array("Bielorussia", ".gladiatus.by", "russo"),
             new Array("Brasile", ".br.gladiatus.com", "portoghese"),
             new Array("Bulgaria", ".bg.gladiatus.com", "bulgaro"),
-            new Array("Cile", ".gladiatus.cl", "spagnolo"),
+            new Array("Cile", /s\d+\.gladiatus\.cl/i, "spagnolo"),
             new Array("Cina", ".gladiatus.cn.com", "cinese"),
-            new Array("Colombia", ".co.gladiatus.com", "spagnolo"),
-            new Array("Repubblica Ceca", ".gladiatus.cz", "ceco"),
+            new Array("Colombia", /s\d+\.co\.gladiatus\.com/i, "spagnolo"),
+            new Array("Repubblica Ceca", /s\d+\.gladiatus\.cz/i, "ceco"),
             new Array("Danimarca", ".gladiatus.dk", "danese"),
             new Array("Inghilterra", /s\d+\.gladiatus\.com/i, "inglese"),
             new Array("Estonia", ".ee.gladiatus.com", "estone"),
             new Array("Finlandia", ".fi.gladiatus.com", "finlandese"),
-            new Array("Francia", ".gladiatus.fr", "francese"),
+            new Array("Francia", /s\d+\.gladiatus\.fr/i, "francese"),
             new Array("Germania", ".gladiatus.de", "tedesco"),
             new Array("Grecia", ".gladiatus.gr", "greco"),
             new Array("Ungheria", ".gladiatus.hu", "ungherese"),
             new Array("Indonesia", ".id.gladiatus.com", "indonesiano"),
             new Array("Israele", ".gladiatus.co.il", "ebraico"),
-            new Array("Italia", ".gladiatus.it", "italiano"),
+            new Array("Italia", /s\d+\.gladiatus\.it/i, "italiano"),
             new Array("Korea", ".kr.gladiatus.com", "coreano"),
-            new Array("Lettonia", ".gladiatus.lv", "lettone"),
+            new Array("Lettonia", /s\d+\.gladiatus\.lv/i, "lettone"),
             new Array("Lituania", ".gladiatus.lt", "lituano"),
-            new Array("Messico", ".gladiatus.com.mx", "spagnolo"),
+            new Array("Messico", /s\d+\.gladiatus\.com\.mx/i, "spagnolo"),
             new Array("Paesi Bassi", ".gladiatus.nl", "olandese"),
             new Array("Norvegia", ".gladiatus.no", "norvegese"),
-            new Array("Peru", ".gladiatus.pe", "spagnolo"),
+            new Array("Peru", /s\d+\.gladiatus\.pe/i, "spagnolo"),
             new Array("Filippine", ".gladiatus.ph", "filippino"),
             new Array("Polonia", ".gladiatus.pl", "polacco"),
             new Array("Portogallo", ".gladiatus.com.pt", "portoghese"),
             new Array("Romania", ".gladiatus.ro", "rumeno"),	            
             new Array("Russia", ".gladiatus.ru", "russo"),
             new Array("Slovacchia", ".gladiatus.sk", "slovacco"),
-            new Array("Spagna", ".gladiatus.es", "spagnolo"),
+            new Array("Spagna", /s\d+\.gladiatus\.es/i, "spagnolo"),
             new Array("Svezia", ".gladiatus.se", "svedese"),
             new Array("Taiwan", ".gladiatus.tw", "cinese"),
             new Array("Tailandia", ".th.gladiatus.com", "thai"),
             new Array("Turchia", ".gladiatus.net", "turco"),
             new Array("Ucraina", ".gladiatus.com.ua", "ucraino"),
             new Array("Emirati Arabi Uniti", /s\d+\.ae\.gladiatus\.com/i, "arabo"),
-            new Array("USA", ".gladiatus.us", "inglese"),
-            new Array("Venezuela", ".gladiatus.com.ve", "spagnolo"),
+            new Array("USA", /s\d+\.gladiatus\.us/i, "inglese"),
+            new Array("Venezuela", /s\d+\.ae\.gladiatus\.com\.ve/i, "spagnolo"),
             new Array("Vietnam", /s\d+\.gladiatus\.vn/i, "vietnamita")
         );
 
@@ -107,6 +107,22 @@ it.neurone.gladiatustools.locale = {
                     this.winPercentage = "نسبة الإنتصارات:";
                     this.totalEarnedGold = "مجموع الحصول على الذهب:";
                     break;
+
+                case "ceco":
+                    simulationFailed = "Simulace selhala! Prosím, zkuste to později nebo v nastavení vyberte jiný engine pro simulování.";
+                    customAvatarUrl = "Vybrat avatar (obrázek bude změněn na velikost 168x194)";
+                    simulate = "Simulovat";
+                    simulating = "Probíhá simulování...";
+                    winning = "Výhra na ";
+                    go = "Do toho!";
+                    stop = "Zariskovat!";
+                    quest = "Výprava:";
+                    arena = "Aréna:";
+                    work = "Práce:";
+                    completed = "Hotovo!";
+                    winPercentage "Procento výher:";
+                    totalEarnedGold = "Celkem vyděláno zlata:";
+                    break; 
             
                 case "spagnolo":
                     this.simulationFailed = "La simulación falló! Por favor intenta mas tarde o selecciona otro motor de simulación en las opciones de Gladiatus Tools.";
@@ -157,6 +173,22 @@ it.neurone.gladiatustools.locale = {
                     this.goldLabel = "Oro";
                     this.winPercentage = "Percentuale vittorie:";
                     this.totalEarnedGold = "Oro guadagnato:";
+                    break;
+                      
+                case "lettone":
+                    simulationFailed = "Simulācija neizdevusies! Lūdzu mēģiniet vēlāk, vai izvēlaties citu simulātoru Gladiatus Tools opcijās.";
+                    customAvatarUrl = "Pārveidotā avatara links (http://...). Bilde tiks samazināta līdz 168x194.";
+                    simulate = "Simulēt";
+                    simulating = "Simulē...";
+                    winning = "Uzvara ";
+                    go = "Sit!";
+                    stop = "STOP!";
+                    quest = "Ekspedīcija:";
+                    arena = "Arēna:";
+                    work = "Darbs:";
+                    completed = "Pabeigts!";
+                    winPercentage "Uzvarēto procents:";
+                    totalEarnedGold = "Arēnā iegūtais zelts:";
                     break;
                       
                 case "vietnamita":

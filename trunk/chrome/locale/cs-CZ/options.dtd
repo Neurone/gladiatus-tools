@@ -1,0 +1,28 @@
+<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Možnosti">
+<!ENTITY generalSettings.label "Hlavní nastavení">
+
+<!ENTITY simulationGroup.label "Simulace boje">
+<!ENTITY otherSettingsGroup.label "Ostatní nastavení">
+
+<!ENTITY simulatorEngine.label "Engine pro simulování">
+<!ENTITY autoSimulateBattle.label "Automaticky simulovat boj">
+<!ENTITY excludeMeFromCorporateMessages.label "Nepřijímat mnou odeslané zprávy gildě">
+<!ENTITY showCustomAvatars.label "Zobrazit vybraný avatar">
+<!ENTITY showTimers.label "Zobrazit odpočítávání">
+<!ENTITY showFullStats.label "Vždy zobrazit hodnoty Léčení a Ohrožení">
+<!ENTITY showAdditionalTooltips.label "Zobrazit přídavné tooltipy">
+<!ENTITY hideNotAffordable.label "Zvýraznit koupitelné předměty">
+<!ENTITY showAdditionalStats.label "Zobrazit rozšířené statistiky">
+<!ENTITY rememberTabs.label "Pamatovat poslední vybraný panel">
+<!ENTITY goToMyPos.label "V Síni slávy přejít na moji pozici">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatars.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY goToMyPos.accesskey "">
