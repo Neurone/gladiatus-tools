@@ -3,7 +3,7 @@
 # Title: Gladiatus Tools Firefox Addon Translation Schema
 # Author: Giuseppe Bertone
 #
-# This guide applies to 2.1 release
+# This guide applies to 2.2 release
 # Last modified: Wed, 11 Feb 2009 22:57:16 GMT 
 # 
 ####################################################
@@ -74,14 +74,14 @@ Improve the user experience automatically adding a set of fully web site integra
 # These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
 ####################################################
 
-Anthony Lieuallen (Greasemonkey compiler)
-Sébastien Bailly (French translation)
-Sebastian Goicochea (Spanish translation)
-TaReQ ALShehhi-UAETooN (Arabic translation)
-Erik Tuu (Vietnamese translation)
-Peteris Petersons (Latvian translation)
-Halluz-man (Czech translation)
-[YOUR NAME] (YOUR LANGUAGE translation)
+<em:contributor>Anthony Lieuallen (Greasemonkey Compiler)</em:contributor>
+<em:contributor>Sébastien Bailly (French translation)</em:contributor>
+<em:contributor>Sebastiàn Goicochea (Spanish translation)</em:contributor>
+<em:contributor>TaReQ ALShehhi-UAETooN (Arabic translation)</em:contributor>
+<em:contributor>Erik Tuu (Vietnamese translation)</em:contributor>
+<em:contributor>Peteris Petersons (Latvian translation)</em:contributor>
+<em:contributor>Halluz-man (Czech translation)</em:contributor>
+<em:contributor>[YOUR NAME] (YOUR LANGUAGE translation)</em:contributor>
 
 ####################################################
 # These are in-game messages. Translate only those words between "..."
@@ -146,7 +146,7 @@ FEATURES:
 
 Simulation engines are www.georged.eu and www.playerutils.com. These simulation engines don't take care of player remaining life, so use them carefully. :-)
 
-This addon works with every version 0.4 server and following languages are currently included: english, italian, french, spanish, arabic, vietnamese.
+This addon works with every version 0.4 server and following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech.
 If your language is not in the list, english one will be used. If you want to help me adding your language translation, without using Google translator :-), please send me an email (in english).
 
 ####################################################
@@ -156,16 +156,7 @@ If your language is not in the list, english one will be used. If you want to he
 Technical note: please enable all cookies ("accept third-party cookies" also) to correctly use all Gladiatus Tools features.
 
 ####################################################
-# These are the current release notes at addons.mozilla.org. Translate all.
-####################################################
-
-- Added Vietnamese translation
-- Fixed a bug in comparing inventory items with your equipment items: now moving an item to another item position does not show anymore the old item description
-- Fixed some french translations
-
-####################################################
-# These are the next release notes at addons.mozilla.org. Translate all.
+# These are the next release notes at addons.mozilla.org due your translation. Translate all.
 ####################################################
 
 - Added YOUR LANGUAGE translation
-

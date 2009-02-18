@@ -1,0 +1,5 @@
+TODO
+
+- Report di combattimento sintetici
+- Extended panel e oro totale
+- Rispondi ai messaggi senza cambiare pagina
