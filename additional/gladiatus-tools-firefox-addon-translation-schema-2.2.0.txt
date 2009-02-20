@@ -74,14 +74,14 @@ Improve the user experience automatically adding a set of fully web site integra
 # These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
 ####################################################
 
-<em:contributor>Anthony Lieuallen (Greasemonkey Compiler)</em:contributor>
-<em:contributor>Sébastien Bailly (French translation)</em:contributor>
-<em:contributor>Sebastiàn Goicochea (Spanish translation)</em:contributor>
-<em:contributor>TaReQ ALShehhi-UAETooN (Arabic translation)</em:contributor>
-<em:contributor>Erik Tuu (Vietnamese translation)</em:contributor>
-<em:contributor>Peteris Petersons (Latvian translation)</em:contributor>
-<em:contributor>Halluz-man (Czech translation)</em:contributor>
-<em:contributor>[YOUR NAME] (YOUR LANGUAGE translation)</em:contributor>
+<em:translator>Anthony Lieuallen (Greasemonkey Compiler)</em:translator>
+<em:translator>Sébastien Bailly (French translation)</em:translator>
+<em:translator>Sebastiàn Goicochea (Spanish translation)</em:translator>
+<em:translator>TaReQ ALShehhi-UAETooN (Arabic translation)</em:translator>
+<em:translator>Erik Tuu (Vietnamese translation)</em:translator>
+<em:translator>Peteris Petersons (Latvian translation)</em:translator>
+<em:translator>Halluz-man (Czech translation)</em:translator>
+<em:translator>[YOUR NAME] (YOUR LANGUAGE translation)</em:translator>
 
 ####################################################
 # These are in-game messages. Translate only those words between "..."
