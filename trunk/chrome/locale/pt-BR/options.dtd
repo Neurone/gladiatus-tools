@@ -1,28 +1,28 @@
-<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Options">
-<!ENTITY generalSettings.label "General Settings">
+<!ENTITY gladiatusToolsOptions.label "Opções do Gladiatus Tools">
+<!ENTITY generalSettings.label "Configurações Gerais">
 
-<!ENTITY simulationGroup.label "Combat simulation">
-<!ENTITY otherSettingsGroup.label "Other settings">
+<!ENTITY simulationGroup.label "Simulação de Combate">
+<!ENTITY otherSettingsGroup.label "Outras Configurações">
 
-<!ENTITY simulatorEngine.label "Simulator engine">
-<!ENTITY autoSimulateBattle.label "Automatically simulate battle">
-<!ENTITY excludeMeFromCorporateMessages.label "Exclude me when sending corporate message">
-<!ENTITY showCustomAvatars.label "Show custom avatars">
-<!ENTITY showTimers.label "Show timers">
-<!ENTITY showFullStats.label "Show always Healing and Threat values">
-<!ENTITY showAdditionalTooltips.label "Show additional tooltips">
-<!ENTITY hideNotAffordable.label "Highlight affordable shop items only">
-<!ENTITY showAdditionalStats.label "Show additional statistics">
-<!ENTITY rememberTabs.label "Remember last selected tab">
-<!ENTITY goToMyPos.label "Show my highscore page">
+<!ENTITY simulatorEngine.label "Mecanismo de Simulação">
+<!ENTITY autoSimulateBattle.label "Simular batalha automaticamente">
+<!ENTITY excludeMeFromCorporateMessages.label "Excluir eu mesmo ao enviar uma mensagem para a aliança">
+<!ENTITY showCustomAvatars.label "Exibir avatares personalizados">
+<!ENTITY showTimers.label "Exibir relógios">
+<!ENTITY showFullStats.label "Sempre exibir valores de Cura e Ameaça">
+<!ENTITY showAdditionalTooltips.label "Exibir dicas adicionais">
+<!ENTITY hideNotAffordable.label "Destacar somente os itens que podem ser comprados">
+<!ENTITY showAdditionalStats.label "Exibir estatísticas adicionais">
+<!ENTITY rememberTabs.label "Lembrar última aba selecionada">
+<!ENTITY goToMyPos.label "Exibir minha página de classificação">
 
-<!ENTITY autoSimulateBattle.accesskey "A">
-<!ENTITY excludeMeFromCorporateMessages.accesskey "E">
-<!ENTITY showCustomAvatars.accesskey "S">
-<!ENTITY showTimers.accesskey "R">
-<!ENTITY showFullStats.accesskey "H">
-<!ENTITY showAdditionalTooltips.accesskey "T">
-<!ENTITY hideNotAffordable.accesskey "I">
-<!ENTITY showAdditionalStats.accesskey "O">
-<!ENTITY rememberTabs.accesskey "M">
-<!ENTITY goToMyPos.accesskey "G">
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatars.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY goToMyPos.accesskey "">

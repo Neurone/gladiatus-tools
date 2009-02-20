@@ -23,6 +23,7 @@
     <em:translator>Erik Tuu (Vietnamese translation)</em:translator>
     <em:translator>Peteris Petersons (Latvian translation)</em:translator>
     <em:translator>Halluz-man (Czech translation)</em:translator>
+    <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
     <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
 
     <em:localized>
@@ -41,6 +42,7 @@
         <em:translator>Erik Tuu (المترجم الفيتنامية)</em:translator>
         <em:translator>Peteris Petersons (المترجم اللاتيفي)</em:translator>
         <em:translator>Halluz-man (المترجم التشيكي)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -58,6 +60,7 @@
         <em:translator>Erik Tuu (Vietnamský překlad)</em:translator>
         <em:translator>Peteris Petersons (Lotyšský překlad)</em:translator>
         <em:translator>Halluz-man (Český překlad)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -73,8 +76,9 @@
         <em:translator>Sebastián Goicochea (Traducción al español)</em:translator>
         <em:translator>TaReQ ALShehhi-UAETooN (Traducción al árabe)</em:translator>
         <em:translator>Erik Tuu (Traducción vietnamita)</em:translator>
-        <em:translator>Peteris Petersons (Traducción al letón)</em:translator>
-        <em:translator>Halluz-man (Traducción al checo)</em:translator>
+        <em:translator>Peteris Petersons (Letón traducción)</em:translator>
+        <em:translator>Halluz-man (Checa traducción)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -92,6 +96,7 @@
         <em:translator>Erik Tuu (Traduction vietnamienne)</em:translator>
         <em:translator>Peteris Petersons (Traduction lettone)</em:translator>
         <em:translator>Halluz-man (Traduction tchèque)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -109,6 +114,7 @@
         <em:translator>Erik Tuu (Traduzione in vietnamita)</em:translator>
         <em:translator>Peteris Petersons (Traduzione in lettone)</em:translator>
         <em:translator>Halluz-man (Traduzione in ceco)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -126,6 +132,7 @@
         <em:translator>Erik Tuu (Vjetnamiešu tulkojums)</em:translator>
         <em:translator>Peteris Petersons (Latviešu tulkojums)</em:translator>
         <em:translator>Halluz-man (Čehu tulkojums)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -143,7 +150,26 @@
         <em:translator>Erik Tuu (Việt dịch)</em:translator>
         <em:translator>Peteris Petersons (Latvian dịch)</em:translator>
         <em:translator>Halluz-man (Séc dịch)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+    
+    <em:localized>
+      <Description>
+        <em:locale>pt-BR</em:locale>
+		    <em:name>Gladiatus Tools</em:name>
+		    <em:creator>Giuseppe Bertone</em:creator>
+		    <em:description>Complemento para o jogo Gladiatus. Uma vez instalado, este complemento adiciona automaticamente um conjunto de ferramentas integradas ao site Gladiatus para melhorar a experiência do usuário.</em:description>
+		    <em:contributor>Anthony Lieuallen (Compliador Greasemonkey)</em:contributor>
+		    <em:translator>Sébastien Bailly (Traduçao para Francês)</em:translator>
+		    <em:translator>Sebastiàn Goicochea (Traduçao para Espanhol)</em:translator>
+		    <em:translator>TaReQ ALShehhi-UAETooN (Traduçao para Árabe)</em:translator>
+		    <em:translator>Erik Tuu (Traduçao para Vietnamita)</em:translator>
+		    <em:translator>Peteris Petersons (Traduçao para Letão)</em:translator>
+		    <em:translator>Halluz-man (Traduçao para Checo)</em:translator>
+		    <em:translator>Muriel de Souza Godoi (Traduçao para Português-Brasil)</em:translator>
+		    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 
