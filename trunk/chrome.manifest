@@ -8,6 +8,7 @@ locale gladiatustools vi-VN chrome/locale/vi-VN/
 locale gladiatustools ar-AE chrome/locale/ar-AE/
 locale gladiatustools lv-LV chrome/locale/lv-LV/
 locale gladiatustools cs-CZ chrome/locale/cs-CZ/
+locale gladiatustools pt-BR chrome/locale/pt-BR/
 
 # Firefox
 overlay	chrome://browser/content/browser.xul	chrome://gladiatustools/content/script-compiler-overlay.xul

@@ -108,6 +108,23 @@ it.neurone.gladiatustools.locale = {
                     this.totalEarnedGold = "مجموع الحصول على الذهب:";
                     break;
 
+		case "portoghese":
+		    this.simulationFailed = "Simulação falhou! Por favor tente novamente mais tarde ou selecione outro mecanismo de simulação nas configurações do Gladiatus Tools.";
+                    this.customAvatarUrl = "A URL do avatar personalizado (http://...). A imagem será redimensionada para 168x194.";
+                    this.simulate = "Simular";
+                    this.simulating = "Simulando...";
+                    this.winning = "Chance de vitória: ";
+                    this.go = "Atacar!";
+                    this.stop = "PARE!";
+                    this.quest = "Expedição:";
+                    this.arena = "Arena:";
+                    this.work = "Estábulo:";
+                    this.completed = "Finalizada";
+                    this.goldLabel = "Ouro";
+                    this.winPercentage = "Porcentagem de vitórias:";
+                    this.totalEarnedGold = "Total de ouro ganho:";
+		    break;
+
                 case "ceco":
                     this.simulationFailed = "Simulace selhala! Prosím, zkuste to později nebo v nastavení vyberte jiný engine pro simulování.";
                     this.customAvatarUrl = "Vybrat avatar (obrázek bude změněn na velikost 168x194)";
