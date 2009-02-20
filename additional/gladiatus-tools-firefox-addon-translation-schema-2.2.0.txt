@@ -4,7 +4,7 @@
 # Author: Giuseppe Bertone
 #
 # This guide applies to 2.2 release
-# Last modified: Wed, 11 Feb 2009 22:57:16 GMT 
+# Last modified: Wed, 20 Feb 2009 01:28:23 GMT 
 # 
 ####################################################
 #
@@ -88,41 +88,41 @@ Improve the user experience automatically adding a set of fully web site integra
 ####################################################
 
 # Text appearing when communication with simulation engine is off.
-simulationFailed = "Simulation faild! Please try later or select another simulator engine from Gladiatus Tools options.";
+this.simulationFailed = "Simulation faild! Please try later or select another simulator engine from Gladiatus Tools options.";
 
 # Text for absolute image url field at profile page
-customAvatarUrl = "Custom avatar absolute url (http://...). Image will be resized to 168x194.";
+this.customAvatarUrl = "Custom avatar absolute url (http://...). Image will be resized to 168x194.";
 
 # Text for button when automatic simulation is off
-simulate = "Simulate";
+this.simulate = "Simulate";
 
 # Text for simulation in progress
-simulating = "Simulating...";
+this.simulating = "Simulating...";
 
 # Text before winning %
-winning = "Winning ";
+this.winning = "Winning ";
 
 # New text for button if simulation winning % is > 50%
-go = "Go!";
+this.go = "Go!";
 
 # New text for button if simulation winning % is <= 50%
-stop = "STOP!";
+this.stop = "STOP!";
 
 # Label for quest timer
-quest = "Quest:";
+this.quest = "Quest:";
 
 # Label for arena timer
-arena = "Arena:";
+this.arena = "Arena:";
 
 # Label for stable timer
-work = "Work:";
+this.work = "Work:";
 
 # Text to show when time in timers is gone
-completed = "Complete!";
+this.completed = "Complete!";
 
 # Text in player statistic page
-winPercentage = "Winning percentage:";
-totalEarnedGold = "Total earned gold:";		
+this.winPercentage = "Winning percentage:";
+this.totalEarnedGold = "Total earned gold:";		
 
 ####################################################
 # This is the addon description at addons.mozilla.org. Translate all and add your language at the end of the languages list.
@@ -146,7 +146,7 @@ FEATURES:
 
 Simulation engines are www.georged.eu and www.playerutils.com. These simulation engines don't take care of player remaining life, so use them carefully. :-)
 
-This addon works with every version 0.4 server and following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech.
+This addon works with every version 0.4 server and following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, YOUR LANGUAGE.
 If your language is not in the list, english one will be used. If you want to help me adding your language translation, without using Google translator :-), please send me an email (in english).
 
 ####################################################
