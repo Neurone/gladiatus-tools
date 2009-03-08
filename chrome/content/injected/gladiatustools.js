@@ -320,6 +320,16 @@ function grabClick(event)
             return;
 	    }
 	    
+        //Controllo se è attiva e utilizzabile la funzionalità smart combat report
+        if(event.target.id == "moreDetails1")
+	    {
+	        setReportDetailsLevel(++SCRLevel);
+	        if(SCRLevel == 2) event.target.style.display = "none";
+	        event.stopPropagation();
+	        event.preventDefault();
+	        return;
+        }
+	    
 	    //Controllo se il click è il salva impostazioni	
 	    if(isSettingsPage && event.target.type == "submit") {
 		    //Recupero il campo immagine
@@ -753,6 +763,13 @@ if(isWriteMessagePage || isGenericMessagePage) showBigWriteMessage();
 ************************************/
 
 if((isPlayerStatsPage || isOpponentStatsPage) && GM_getValue("showAdditionalStats", false)) showAdvancedStats();
+
+
+/************************************
+/ Smart combat report
+************************************/
+
+if(isCombatReportPage && (SCRLevel < 2)) showSmartCombatReport();
 
 /************************************
 / Gestione classifica

@@ -9,3 +9,4 @@ pref("gladiatustools.excludeMeFromCorporateMessages", false);
 pref("gladiatustools.showAdditionalStats", true);
 pref("gladiatustools.rememberTabs", true);
 pref("gladiatustools.goToMyPos", true);
+pref("gladiatustools.reportDetailLevel", "0");

@@ -51,6 +51,7 @@ var isSettingsPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=setting
 var isShopPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href);
 var isPlayerStatsPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href);
 var isOpponentStatsPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href);
+var isCombatReportPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href);
 
 /*****************************
 Trova il TLD del sito corrente
