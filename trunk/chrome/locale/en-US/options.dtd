@@ -1,7 +1,9 @@
 <!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Options">
 <!ENTITY generalSettings.label "General Settings">
 
+<!ENTITY playersGroup.label "Players">
 <!ENTITY simulationGroup.label "Combat simulation">
+<!ENTITY merchantsGroup.label "Merchants">
 <!ENTITY otherSettingsGroup.label "Other settings">
 
 <!ENTITY simulatorEngine.label "Simulator engine">
@@ -10,11 +12,15 @@
 <!ENTITY showCustomAvatars.label "Show custom avatars">
 <!ENTITY showTimers.label "Show timers">
 <!ENTITY showFullStats.label "Show always Healing and Threat values">
-<!ENTITY showAdditionalTooltips.label "Show additional tooltips">
-<!ENTITY hideNotAffordable.label "Highlight affordable shop items only">
+<!ENTITY showAdditionalTooltips.label "Compare inventory and equipment items">
+<!ENTITY hideNotAffordable.label "Highlight affordable items only">
 <!ENTITY showAdditionalStats.label "Show additional statistics">
 <!ENTITY rememberTabs.label "Remember last selected tab">
-<!ENTITY goToMyPos.label "Show my highscore page">
+<!ENTITY goToMyPos.label "Show my highscore page first">
+<!ENTITY reportDetailLevel.label "Use the following combat report detail level">
+<!ENTITY reportDetailLevelEssential.label "Essential">
+<!ENTITY reportDetailLevelMedium.label "Medium">
+<!ENTITY reportDetailLevelFull.label "Full">
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
