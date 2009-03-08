@@ -2,7 +2,7 @@
 #labels Phase-Implementation
 
 Here you find the credits section as it will be in the install.rdf file.
-Please update your language only.
+Please update your language only and be careful to edit only text between tag so that xml document syntax will be preserved.
 
 ----
 <em:locale>ar</em:locale>
