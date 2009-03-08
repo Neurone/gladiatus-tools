@@ -83,24 +83,6 @@ Please update your language only.
 
     <em:localized>
       <Description>
-        <em:locale>it-IT</em:locale>
-        <em:name>Gladiatus Tools</em:name>
-        <em:creator>Giuseppe Bertone</em:creator>
-        <em:description>Estensione per il browser game Gladiatus. Una volta installata, questa estensione aggiunge un insieme di strumenti completamente integrati con l'interfaccia del gioco.</em:description>
-        <em:contributor>Anthony Lieuallen (Compilatore Greasemonkey)</em:contributor>
-        <em:translator>Sébastien Bailly (Traduzione in francese)</em:translator>
-        <em:translator>Sebastiàn Goicochea (Traduzione in spagnolo)</em:translator>
-        <em:translator>TaReQ ALShehhi-UAETooN (Traduzione in arabo)</em:translator>
-        <em:translator>Erik Tuu (Traduzione in vietnamita)</em:translator>
-        <em:translator>Peteris Petersons (Traduzione in lettone)</em:translator>
-        <em:translator>Halluz-man (Traduzione in ceco)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
-      </Description>
-    </em:localized>
-
-    <em:localized>
-      <Description>
         <em:locale>lv-LV</em:locale>
         <em:name>Gladiatus Tools</em:name>
         <em:creator>Giuseppe Bertone</em:creator>
