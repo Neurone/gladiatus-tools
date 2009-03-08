@@ -6,8 +6,7 @@
 Here you find the credits section as it will be in the install.rdf file.
 Please update your language only.
 
-    <em:localized>
-      <Description>
+
         <em:locale>ar</em:locale>
         <em:name>Gladiatus Tools</em:name>
         <em:creator>Giuseppe Bertone</em:creator>
@@ -24,11 +23,8 @@ Please update your language only.
         <em:translator>Halluz-man (المترجم التشيكي)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
-      </Description>
-    </em:localized>
 
-    <em:localized>
-      <Description>
+
         <em:locale>cs-CZ</em:locale>
         <em:name>Gladiatus Tools</em:name>
         <em:creator>Giuseppe Bertone</em:creator>
@@ -42,11 +38,8 @@ Please update your language only.
         <em:translator>Halluz-man (Český překlad)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
-      </Description>
-    </em:localized>
 
-    <em:localized>
-      <Description>
+
         <em:locale>es-AR</em:locale>
         <em:name>Gladiatus Tools</em:name>
         <em:creator>Giuseppe Bertone</em:creator>
@@ -60,11 +53,8 @@ Please update your language only.
         <em:translator>Halluz-man (Checa traducción)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
-      </Description>
-    </em:localized>
 
-    <em:localized>
-      <Description>
+
         <em:locale>fr-FR</em:locale>
         <em:name>Gladiatus Tools</em:name>
         <em:creator>Giuseppe Bertone</em:creator>
@@ -78,11 +68,8 @@ Please update your language only.
         <em:translator>Halluz-man (Traduction tchèque)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
-      </Description>
-    </em:localized>
 
-    <em:localized>
-      <Description>
+
         <em:locale>lv-LV</em:locale>
         <em:name>Gladiatus Tools</em:name>
         <em:creator>Giuseppe Bertone</em:creator>
@@ -99,8 +86,7 @@ Please update your language only.
       </Description>
     </em:localized>
 
-    <em:localized>
-      <Description>
+
         <em:locale>vi-VN</em:locale>
         <em:name>Gladiatus Tools</em:name>
         <em:creator>Giuseppe Bertone</em:creator>
@@ -114,11 +100,8 @@ Please update your language only.
         <em:translator>Halluz-man (Séc dịch)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
-      </Description>
-    </em:localized>
-    
-    <em:localized>
-      <Description>
+
+
         <em:locale>pt-BR</em:locale>
 		    <em:name>Gladiatus Tools</em:name>
 		    <em:creator>Giuseppe Bertone</em:creator>
@@ -132,5 +115,3 @@ Please update your language only.
 		    <em:translator>Halluz-man (Traduçao para Checo)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
 		    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
-      </Description>
-    </em:localized>
