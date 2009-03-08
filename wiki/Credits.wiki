@@ -1,12 +1,10 @@
 #summary Credits page
 #labels Phase-Implementation
 
-= Introduction =
-
 Here you find the credits section as it will be in the install.rdf file.
 Please update your language only.
 
-
+----
 <em:locale>ar</em:locale>
 <em:name>Gladiatus Tools</em:name>
 <em:creator>Giuseppe Bertone</em:creator>
@@ -22,8 +20,7 @@ Please update your language only.
 <em:translator>Peteris Petersons (المترجم اللاتيفي)</em:translator>
 <em:translator>Halluz-man (المترجم التشيكي)</em:translator>
 <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-
-
+----
 <em:locale>cs-CZ</em:locale>
 <em:name>Gladiatus Tools</em:name>
 <em:creator>Giuseppe Bertone</em:creator>
@@ -36,8 +33,7 @@ Please update your language only.
 <em:translator>Peteris Petersons (Lotyšský překlad)</em:translator>
 <em:translator>Halluz-man (Český překlad)</em:translator>
 <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-
-
+----
 <em:locale>es-AR</em:locale>
 <em:name>Gladiatus Tools</em:name>
 <em:creator>Giuseppe Bertone</em:creator>
@@ -50,7 +46,7 @@ Please update your language only.
 <em:translator>Peteris Petersons (Letón traducción)</em:translator>
 <em:translator>Halluz-man (Checa traducción)</em:translator>
 <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-
+----
 <em:locale>fr-FR</em:locale>
 <em:name>Gladiatus Tools</em:name>
 <em:creator>Giuseppe Bertone</em:creator>
@@ -63,7 +59,7 @@ Please update your language only.
 <em:translator>Peteris Petersons (Traduction lettone)</em:translator>
 <em:translator>Halluz-man (Traduction tchèque)</em:translator>
 <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-
+----
 <em:locale>lv-LV</em:locale>
 <em:name>Gladiatus Tools</em:name>
 <em:creator>Giuseppe Bertone</em:creator>
@@ -76,7 +72,7 @@ Please update your language only.
 <em:translator>Peteris Petersons (Latviešu tulkojums)</em:translator>
 <em:translator>Halluz-man (Čehu tulkojums)</em:translator>
 <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-
+----
 <em:locale>vi-VN</em:locale>
 <em:name>Gladiatus Tools</em:name>
 <em:creator>Giuseppe Bertone</em:creator>
@@ -89,7 +85,7 @@ Please update your language only.
 <em:translator>Peteris Petersons (Latvian dịch)</em:translator>
 <em:translator>Halluz-man (Séc dịch)</em:translator>
 <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-
+----
 <em:locale>pt-BR</em:locale>
 <em:name>Gladiatus Tools</em:name>
 <em:creator>Giuseppe Bertone</em:creator>
@@ -102,3 +98,4 @@ Please update your language only.
 <em:translator>Peteris Petersons (Traduçao para Letão)</em:translator>
 <em:translator>Halluz-man (Traduçao para Checo)</em:translator>
 <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
+----
