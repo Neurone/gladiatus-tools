@@ -3,6 +3,8 @@
 
 <!ENTITY simulationGroup.label "Simulateur de combat">
 <!ENTITY otherSettingsGroup.label "Autres options">
+<!ENTITY playersGroup.label "Joueurs">
+<!ENTITY merchantsGroup.label "Marchands">
 
 <!ENTITY simulatorEngine.label "Moteur de simulation">
 <!ENTITY autoSimulateBattle.label "Simuler automatiquement les combats">
@@ -10,11 +12,15 @@
 <!ENTITY showCustomAvatars.label "Afficher les avatars personnalisés">
 <!ENTITY showTimers.label "Afficher les minuteries">
 <!ENTITY showFullStats.label "Afficher les caractéristiques complètes des joueurs">
-<!ENTITY showAdditionalTooltips.label "Afficher les outils supplémentaires">
-<!ENTITY hideNotAffordable.label "N'afficher, aux marchands, que les objets achetables">
+<!ENTITY showAdditionalTooltips.label "Comparer mon équipement avec celui de mon inventaire">
+<!ENTITY hideNotAffordable.label "Rendre translucide les offres non achetables">
 <!ENTITY showAdditionalStats.label "Afficher plus de statistiques">
 <!ENTITY rememberTabs.label "Mémoriser mes derniers onglets sélectionnés">
-<!ENTITY goToMyPos.label "Afficher ma page de classement général">
+<!ENTITY goToMyPos.label "Afficher directement ma page de classement général">
+<!ENTITY reportDetailLevel.label "Utiliser, pour les rapports de combat, le niveau de détail suivant">
+<!ENTITY reportDetailLevelEssential.label "Essentiel">
+<!ENTITY reportDetailLevelMedium.label "Intermédiaire">
+<!ENTITY reportDetailLevelFull.label "Complet">
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
@@ -26,3 +32,4 @@
 <!ENTITY showAdditionalStats.accesskey "S">
 <!ENTITY rememberTabs.accesskey "D">
 <!ENTITY goToMyPos.accesskey "G">
+<!ENTITY reportDetailLevel.accesskey "R">

@@ -1,10 +1,10 @@
 <!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Options">
 <!ENTITY generalSettings.label "General Settings">
 
-<!ENTITY playersGroup.label "Players">
 <!ENTITY simulationGroup.label "Combat simulation">
-<!ENTITY merchantsGroup.label "Merchants">
 <!ENTITY otherSettingsGroup.label "Other settings">
+<!ENTITY playersGroup.label "Players">
+<!ENTITY merchantsGroup.label "Merchants">
 
 <!ENTITY simulatorEngine.label "Simulator engine">
 <!ENTITY autoSimulateBattle.label "Automatically simulate battle">
