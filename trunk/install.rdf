@@ -23,7 +23,7 @@
     <em:translator>Erik Tuu (Vietnamese translation)</em:translator>
     <em:translator>Peteris Petersons (Latvian translation)</em:translator>
     <em:translator>Halluz-man (Czech translation)</em:translator>
-    <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+    <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
     <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
 
     <em:localized>
@@ -42,7 +42,7 @@
         <em:translator>Erik Tuu (المترجم الفيتنامية)</em:translator>
         <em:translator>Peteris Petersons (المترجم اللاتيفي)</em:translator>
         <em:translator>Halluz-man (المترجم التشيكي)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -60,7 +60,7 @@
         <em:translator>Erik Tuu (Vietnamský překlad)</em:translator>
         <em:translator>Peteris Petersons (Lotyšský překlad)</em:translator>
         <em:translator>Halluz-man (Český překlad)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Překlad do brazilské portugalštiny)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -78,7 +78,7 @@
         <em:translator>Erik Tuu (Traducción vietnamita)</em:translator>
         <em:translator>Peteris Petersons (Letón traducción)</em:translator>
         <em:translator>Halluz-man (Checa traducción)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -96,7 +96,7 @@
         <em:translator>Erik Tuu (Traduction vietnamienne)</em:translator>
         <em:translator>Peteris Petersons (Traduction lettone)</em:translator>
         <em:translator>Halluz-man (Traduction tchèque)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Traduction brésilo-portugaise)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -114,7 +114,7 @@
         <em:translator>Erik Tuu (Traduzione in vietnamita)</em:translator>
         <em:translator>Peteris Petersons (Traduzione in lettone)</em:translator>
         <em:translator>Halluz-man (Traduzione in ceco)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Traduzione in portoghese/brasiliano)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -132,7 +132,7 @@
         <em:translator>Erik Tuu (Vjetnamiešu tulkojums)</em:translator>
         <em:translator>Peteris Petersons (Latviešu tulkojums)</em:translator>
         <em:translator>Halluz-man (Čehu tulkojums)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -150,7 +150,7 @@
         <em:translator>Erik Tuu (Việt dịch)</em:translator>
         <em:translator>Peteris Petersons (Latvian dịch)</em:translator>
         <em:translator>Halluz-man (Séc dịch)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -168,7 +168,7 @@
 		    <em:translator>Erik Tuu (Traduçao para Vietnamita)</em:translator>
 		    <em:translator>Peteris Petersons (Traduçao para Letão)</em:translator>
 		    <em:translator>Halluz-man (Traduçao para Checo)</em:translator>
-		    <em:translator>Muriel de Souza Godoi (Traduçao para Português-Brasil)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Traduçao para Português Brasileiro)</em:translator>
 		    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
