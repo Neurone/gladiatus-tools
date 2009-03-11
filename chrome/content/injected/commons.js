@@ -1,8 +1,8 @@
 // @name            Gladiatus Tools
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
-// @version         2.0.0
-// @date            07 Feb 2009
+// @version         2.4.0
+// @date            11 Mar 2009
 
 var common_siteUrl, common_siteUrlAjax, common_siteMod, secureHash;
 
@@ -25,6 +25,9 @@ var paramAttaccante, paramDifensore, paramSimulatore;
 var currentGTImageUrl;
 var currentDescriptionField;
 
+var currentGTGuildImageUrl;
+var currentGuildDescriptionField;
+
 var urlSimulatore, hostSimulatore, refererUrlSimulatore;
 
 //Url di attivazione delle procedure
@@ -44,14 +47,15 @@ var activateClickListener = false;
 //Gesione delle lingue RTL
 var isArabo = (MSG.language == "arabo");
 
-var isMemoPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=memo&sh=.*/.test(location.href);
-var isWriteMessagePage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href);
-var isGenericMessagePage  = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=messages&sh=.*/.test(location.href);
-var isSettingsPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=settings&sh=.*/.test(location.href);
-var isShopPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href);
-var isPlayerStatsPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href);
-var isOpponentStatsPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href);
-var isCombatReportPage = /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href);
+var isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=memo&sh=.*/.test(location.href);
+var isWriteMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href);
+var isGenericMessagePage  = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&sh=.*/.test(location.href);
+var isSettingsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=settings&sh=.*/.test(location.href);
+var isShopPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href);
+var isPlayerStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href);
+var isOpponentStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href);
+var isCombatReportPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href);
+var isModAllyPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&submod=allydesc&sh=.*/.test(location.href);
 
 /*****************************
 Trova il TLD del sito corrente

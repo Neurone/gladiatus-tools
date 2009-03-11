@@ -1,19 +1,21 @@
 // @name            Gladiatus Tools
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
-// @version         2.0.0
-// @date            07 Feb 2009
+// @version         2.4.0
+// @date            11 Mar 2009
 
 it.neurone.gladiatustools.outer = function() {
 
 	var sb;
 
 	var swapImage, imageToSwap, isOverview;
-	var avatarWidth = "168";
-	var avatarHeight = "194";
+	var avatarImageWidth = "168";
+	var avatarImageHeight = "194";
+	var guildImageWidth = "209";
+	var guildImageHeight = "232";
 
 	/*****************************
-	Trova la url dell'immagine impostata dall'utente
+	Trova la url dell'immagine impostata per l'avatar personalizzato
 	*****************************/
 	function getGTImageUrl(stringa)
 	{
@@ -24,6 +26,22 @@ it.neurone.gladiatustools.outer = function() {
 		{
 			tmpString = tmpString.toString();
 			return tmpString.substring(6, tmpString.length - 2);
+		}
+		return "";
+	}
+	
+    /*****************************
+	Trova la url dell'immagine impostata per la corporazione
+	*****************************/
+	function getGTGuildImageUrl(stringa)
+	{
+		//Trovo la url
+		var pattern = /##GTGI=.*##/i;
+		var tmpString = pattern.exec(stringa);
+		if(tmpString != null)
+		{
+			tmpString = tmpString.toString();
+			return tmpString.substring(7, tmpString.length - 2);
 		}
 		return "";
 	}
@@ -40,15 +58,15 @@ it.neurone.gladiatustools.outer = function() {
 			var aspectRatio = imgWidth / imgHeight;
 			
 			//Reimposto l'immagine perché calzi con la dimensione 
-			if(imgWidth > avatarWidth)
+			if(imgWidth > avatarImageWidth)
 			{
-				imgWidth = avatarWidth;
+				imgWidth = avatarImageWidth;
 				imgHeight =  imgWidth / aspectRatio;
 			}
 			
-			if(imgHeight > avatarHeight)
+			if(imgHeight > avatarImageHeight)
 			{
-				imgHeight = avatarHeight;
+				imgHeight = avatarImageHeight;
 				imgWidth = aspectRatio * imgHeight;
 			}
 			
@@ -79,9 +97,43 @@ it.neurone.gladiatustools.outer = function() {
 			//Null
 		}
 	}
+	
+    /*****************************
+	Cambia effettivamente il logo della corporazione
+	*****************************/
+	function changeGuildImage()
+	{
+		try
+		{
+			var imgWidth = swapImage.width;
+			var imgHeight = swapImage.height;
+			var aspectRatio = imgWidth / imgHeight;
+			//Reimposto l'immagine perché calzi con la dimensione 
+			if(imgWidth > guildImageWidth)
+			{
+				imgWidth = guildImageWidth;
+				imgHeight =  imgWidth / aspectRatio;
+			}
+			
+			if(imgHeight > guildImageHeight)
+			{
+				imgHeight = guildImageHeight;
+				imgWidth = aspectRatio * imgHeight;
+			}
+			//Reimposto le dimensioni
+			imageToSwap.style.width = parseInt(imgWidth) +"px";
+			imageToSwap.style.height = parseInt(imgHeight) +"px";
+            //Sostituisco l'immagine
+            imageToSwap.src = swapImage.src;
+			//Ripristino l'opacità dell'immagine
+			imageToSwap.style.opacity = 1;			
+		} catch (e) {
+			//Null
+		}
+	}
 
 	/*****************************
-	Prepara l'immagine da sostituire
+	Prepara l'immagine dell'avatar da sostituire
 	*****************************/
 	function setAvatar(imageUrl)
 	{
@@ -110,6 +162,31 @@ it.neurone.gladiatustools.outer = function() {
 			//nuove merci nei negozi
 		}
 	}
+	
+    /*****************************
+	Prepara l'immagine della corporazione da sostituire
+	*****************************/
+	function setGuildImage(imageUrl)
+	{
+		//Imposto il loading dell'immagine
+		var allImgs = sb.document.getElementsByTagName("img");
+		var imageUrlPattern = /img\/logo\/0\/tmp\/.*.png/i;
+		for (var i = 0; i < allImgs.length; i++) {
+			//Controllo se è il div che cerco
+			if(imageUrlPattern.test(allImgs[i].src))
+			{
+				//Salvo il riferimento all'immagine
+				imageToSwap = allImgs[i];
+				//Metto l'immagine in trasparenza
+				imageToSwap.style.opacity = 0.2;
+				break;
+			}
+		}
+		//Recupero i dati dell'immagine
+		swapImage = new Image();
+		swapImage.onload = changeGuildImage;
+		swapImage.src = imageUrl;
+	}
 
 	return	{	
 		/*****************************
@@ -121,51 +198,49 @@ it.neurone.gladiatustools.outer = function() {
 		    sb = sandbox;
 		    href = sb.location.href;
 		    
-		    isPlayerOverviewPage = ( /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href) &&
+		    isPlayerOverviewPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href) &&
 		        (! 
-		            ( /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(href) ||
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(href) ||
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=5.*/.test(href) ||
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=6.*/.test(href) || 
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=player.*&submod=stats.*/.test(href) 
+		            ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=5.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=6.*/.test(href) || 
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&submod=stats.*/.test(href) 
 		            )
 		        )
 		    );
 		    
-		    isMyselfOverviewPage = ( /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(href) &&
+		    isMyselfOverviewPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(href) &&
 		        (!
-		            ( /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(href) ||
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(href) ||
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(href) ||
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(href) || 
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(href) || 
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(href) ||
-		                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(href)
+		            ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(href) || 
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(href) || 
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(href)
 		            )
 		        )
 		    )
 		    
+		    isAllyPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&sh=.*/.test(href) ||
+		                    /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href) );
+		    
 		    /************************************
-			  Visualizzazione delle immagini personalizzate
+			Visualizzazione dell'avatar personalizzato
 			************************************/
 		    if(sb.GM_getValue("showCustomAvatars", false) && isPlayerOverviewPage)
 		    {
 			    //Trovo la url
-			    var html = sb.document.body.innerHTML;
-			    var imageUrl = getGTImageUrl(html);
+			    var imageUrl = getGTImageUrl(sb.document.body.innerHTML);
 			    if(imageUrl != "")
 			    {	
 			        isOverview = false;
 				    setAvatar(imageUrl);
 			    }
 		    }
-			
-		    /************************************
-			Gestione dell'overview dell'utente
-			************************************/
+		    
 		    if(sb.GM_getValue("showCustomAvatars", false) && isMyselfOverviewPage)
 		    {
-		        //Escludo i mercenari
 		        var imageUrl = sb.GM_getValue("GTImageUrl_" + sb.location.host, "");
 		        //Poiché il nome della variabile GTImageUrl è stato modificato dalla versione 1.8.2 per supportare
 		        //più server per lo stesso utente, mantengo la retro compatibilità verificando che imageUrl
@@ -179,6 +254,20 @@ it.neurone.gladiatustools.outer = function() {
 			        setAvatar(imageUrl);
 		        }
 		    }
+		    
+            /************************************
+			Visualizzazione del logo della corporazione personalizzato
+			************************************/
+		    if(sb.GM_getValue("showCustomGuildImage", false) && isAllyPage)
+		    {
+                //Trovo la url
+			    var imageUrl = getGTGuildImageUrl(sb.document.body.innerHTML);
+			    if(imageUrl != "")
+			    {	
+				    setGuildImage(imageUrl);
+			    }
+		    }
+
 		}
 	}
 }();
