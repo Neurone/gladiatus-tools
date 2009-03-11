@@ -40,6 +40,8 @@ Improve the user experience automatically adding a set of fully web site integra
 
 <!ENTITY simulationGroup.label "Combat simulation">
 <!ENTITY otherSettingsGroup.label "Other settings">
+<!ENTITY playersGroup.label "Players">
+<!ENTITY merchantsGroup.label "Merchants">
 
 <!ENTITY simulatorEngine.label "Simulator engine">
 <!ENTITY autoSimulateBattle.label "Automatically simulate battle">
@@ -47,11 +49,15 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY showCustomAvatars.label "Show custom avatars">
 <!ENTITY showTimers.label "Show timers">
 <!ENTITY showFullStats.label "Show always Healing and Threat values">
-<!ENTITY showAdditionalTooltips.label "Show additional tooltips">
-<!ENTITY hideNotAffordable.label "Highlight affordable shop items only">
+<!ENTITY showAdditionalTooltips.label "Compare inventory and equipment items">
+<!ENTITY hideNotAffordable.label "Highlight affordable items only">
 <!ENTITY showAdditionalStats.label "Show additional statistics">
 <!ENTITY rememberTabs.label "Remember last selected tab">
-<!ENTITY goToMyPos.label "Show my highscore page">
+<!ENTITY goToMyPos.label "Show my highscore page first">
+<!ENTITY reportDetailLevel.label "Use the following combat report detail level">
+<!ENTITY reportDetailLevelEssential.label "Essential">
+<!ENTITY reportDetailLevelMedium.label "Medium">
+<!ENTITY reportDetailLevelFull.label "Full">
 
 ####################################################
 # These are the accessibility keys for addon option messages. Translate only those words between "..."

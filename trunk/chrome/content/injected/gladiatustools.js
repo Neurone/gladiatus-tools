@@ -330,7 +330,7 @@ function grabClick(event)
 	        return;
         }
 	    
-	    //Controllo se il click è il salva impostazioni	
+	    //Controllo se il click è il salva impostazioni	per il profilo utente
 	    if(isSettingsPage && event.target.type == "submit") {
 		    //Recupero il campo immagine
 		    var GTImageUrlField = document.getElementById("GTImageUrl");
@@ -345,8 +345,20 @@ function grabClick(event)
 		    return;
 	    }
 	    
+	    //Controllo se il click è il salva impostazioni	per la corporazione
+	    if(isModAllyPage && event.target.type == "submit" && event.target.name != "dd") {
+		    //Recupero il campo immagine
+		    var GTGuildImageUrlField = document.getElementById("GTGuildImageUrl");
+		    if(GTGuildImageUrlField.value != "")
+		    {
+			    //Inserisco la nuova impostazione
+			    currentGuildDescriptionField.value += "\n\n[fc]#C8AD7E[fs]10##GTGI="+ GTGuildImageUrlField.value +"##[/f][/f]";
+		    }
+		    return;
+	    }
+	    
 	    //Controllo se il click punta alla classifica, dal menu la voce "Classifica" oppure dalle sotto tab la voce "Giocatore"
-	    if(/http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=highscore&sh=.*/.test(event.target.href)) {
+	    if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=highscore&sh=.*/.test(event.target.href)) {
 	        if(GM_getValue("goToMyPos", false)) {
        	        //Trovo la posizione in classifica (onore) dell'utente
     	        var spans = XQuery(".//div[@class='headerHighscore']/div/span[@class='charvaluesSub']");
@@ -362,8 +374,8 @@ function grabClick(event)
     
 	    if(GM_getValue("rememberTabs", false)) {
 	        //Controllo se il click punta ad uno dei negozi
-	        if(/http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=inventory&sh=.*/.test(event.target.href) ||
-                /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=inventory&sub=[1-5]&sh=.*/.test(event.target.href)) {
+	        if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&sh=.*/.test(event.target.href) ||
+                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&sub=[1-5]&sh=.*/.test(event.target.href)) {
                 //Trovo il negozio selezionato
                 var negozio = event.target.href.match(/&sub=[1-5]/);
                 if(negozio != null) {
@@ -373,7 +385,7 @@ function grabClick(event)
                 }
 	        }
 	        //Controllo se il click punta ad una linguetta di un negozio
-            else if(/http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=inventory&subsub=[0-2]&.*/.test(event.target.parentNode.href)) {
+            else if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&subsub=[0-2]&.*/.test(event.target.parentNode.href)) {
                 //Trovo il negozio selezionato
                 var negozio = event.target.parentNode.href.match(/&sub=[1-5]/);
                 if(negozio != null) {
@@ -466,6 +478,9 @@ function GTImageVersion(stringa)
 	return versionID;
 }
 
+/*****************************
+Trova la url dell'immagine impostata per l'avatar personalizzato
+*****************************/
 function getGTImageUrl(stringa)
 {
 	//Trovo la url
@@ -475,6 +490,22 @@ function getGTImageUrl(stringa)
 	{
 		tmpString = tmpString.toString();
 		return tmpString.substring(6, tmpString.length - 2);
+	}
+	return "";
+}
+
+/*****************************
+Trova la url dell'immagine impostata per la corporazione
+*****************************/
+function getGTGuildImageUrl(stringa)
+{
+	//Trovo la url
+	var pattern = /##GTGI=.*##/i;
+	var tmpString = pattern.exec(stringa);
+	if(tmpString != null)
+	{
+		tmpString = tmpString.toString();
+		return tmpString.substring(7, tmpString.length - 2);
 	}
 	return "";
 }
@@ -702,7 +733,45 @@ if(isSettingsPage)
 	
 	//attivo un listener sull'evento onclick
 	activateClickListener = true;
-}	
+}
+
+/************************************
+Gestione pagina della descrizione della corporazione
+************************************/	
+if(isModAllyPage)
+{
+	//Creo le nuove impostazioni
+	var desc = document.getElementsByName("bes");
+	if (desc.length == 1) {
+		//Gestisco la scomparsa dell'impostazione dalla textarea, così che l'utente non possa modificarla direttamente
+		currentGuildDescriptionField = desc[0];
+		currentGTGuildImageUrl = getGTGuildImageUrl(currentGuildDescriptionField.value);
+		if(currentGTGuildImageUrl != "")
+		{
+			//Rimuovo dalla text area la stringa
+			var valore = currentGuildDescriptionField.value;
+			var offset = valore.length - ("  "+"[fc]#C8AD7E[fs]10##GTGI="+currentGTGuildImageUrl+"##[/f][/f]").length;
+			currentGuildDescriptionField.value = valore.substring(0, offset);
+		}
+		//Creo l'impostazione nella pagina dei settings, iniziando dal titolo
+		var title = document.createElement("h2");
+		title.innerHTML = MSG.customGuildImageUrl;
+		//Creo il paragrafo
+		var paragraph = document.createElement("p");
+		//Creo l'immagine
+		var imageUrlField = document.createElement("input");
+		imageUrlField.id = "GTGuildImageUrl";
+		imageUrlField.size = "73";
+		imageUrlField.value = currentGTGuildImageUrl;
+		//Aggiungo gli elementi creati al DOM
+		currentGuildDescriptionField.parentNode.insertBefore(title, currentGuildDescriptionField.nextSibling);
+		title.parentNode.insertBefore(paragraph, title.nextSibling);
+		paragraph.parentNode.insertBefore(imageUrlField, paragraph.nextSibling);
+	}
+	
+	//attivo un listener sull'evento onclick
+	activateClickListener = true;
+}
 
 /************************************
  Esclusione messaggistica corporazione
@@ -718,10 +787,10 @@ Gestione statistiche utente complete
 if((location.href.indexOf(myselfOverviewUrl) > 0 || location.href.indexOf(playerOverviewUrl) > 0) && GM_getValue("showFullStats", false))
 {
     //Escludo le tab non utilizzabili per questa funzione
-    if(!( /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=player.*&submod=stats.*/.test(location.href) || 
-            /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(location.href) || 
-            /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(location.href) ||
-            /http:\/\/s.*\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(location.href)
+    if(!( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&submod=stats.*/.test(location.href) || 
+            /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(location.href) || 
+            /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(location.href) ||
+            /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(location.href)
          ) )
     {
 	    //Guarigione
@@ -772,8 +841,11 @@ if((isPlayerStatsPage || isOpponentStatsPage) && GM_getValue("showAdditionalStat
 if(isCombatReportPage && (SCRLevel < 2)) showSmartCombatReport();
 
 /************************************
-/ Gestione classifica
+/ Gestione grab del click dell'utente
 /***********************************/
+//A causa dell'introduzione del remember last selected tab, non posso più
+//basarmi solamente sulla url corrente per capire se devo grabbare il click,
+//quindi per ora lo attivo sempre, in attesa di una revisione generale più performante
 if(true) {
     activateClickListener = true;
 }

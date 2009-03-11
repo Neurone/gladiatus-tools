@@ -1,14 +1,15 @@
 // @name            Gladiatus Tools
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
-// @version         2.0.0
-// @date            07 Feb 2009
+// @version         2.4.0
+// @date            11 Mar 2009
 
 it.neurone.gladiatustools.locale = {
     //Default in inglese
     language : "",
     simulationFailed : "",
     customAvatarUrl : "",
+    customGuildImageUrl : "",
     simulate : "",
     simulating : "",
     winning : " ",
@@ -94,6 +95,7 @@ it.neurone.gladiatustools.locale = {
                 case "arabo":
                     this.simulationFailed = "المحاكاة فشلت! حاول مرة اخرى او اختر محاكي اخر من الخيارات";
                     this.customAvatarUrl = "يجب وضع وصلة الصورة الشخصية كاملة مع http:// وستصغر الصورة تلقائيا الى 168x194";
+                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
                     this.simulate = "محاكاة";
                     this.simulating = "جاري المحاكاة...";
                     this.winning = "الفوز";
@@ -110,7 +112,8 @@ it.neurone.gladiatustools.locale = {
 
 		        case "portoghese-brasiliano":
 		            this.simulationFailed = "Simulação falhou! Por favor tente novamente mais tarde ou selecione outro mecanismo de simulação nas configurações do Gladiatus Tools.";
-                    this.customAvatarUrl = "A URL do avatar personalizado (http://...). A imagem será redimensionada para 168x194.";
+                    this.customAvatarUrl = "A URL do avatar personalizado (http://...). A imagem será redimensionada para 168x194 px.";
+                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
                     this.simulate = "Simular";
                     this.simulating = "Simulando...";
                     this.winning = "Chance de vitória: ";
@@ -127,7 +130,8 @@ it.neurone.gladiatustools.locale = {
 
                 case "ceco":
                     this.simulationFailed = "Simulace selhala! Prosím, zkuste to později nebo v nastavení vyberte jiný engine pro simulování.";
-                    this.customAvatarUrl = "Vybrat avatar (obrázek bude změněn na velikost 168x194)";
+                    this.customAvatarUrl = "Vybrat avatar (obrázek bude změněn na velikost 168x194 px)";
+                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
                     this.simulate = "Simulovat";
                     this.simulating = "Probíhá simulování...";
                     this.winning = "Výhra na ";
@@ -143,7 +147,8 @@ it.neurone.gladiatustools.locale = {
             
                 case "spagnolo":
                     this.simulationFailed = "La simulación falló! Por favor intenta mas tarde o selecciona otro motor de simulación en las opciones de Gladiatus Tools.";
-                    this.customAvatarUrl = "URL absoluta del avatar personalizado (http://...). La imagen será redimensionada a 168x194.";
+                    this.customAvatarUrl = "URL absoluta del avatar personalizado (http://...). La imagen será redimensionada a 168x194 px.";
+                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
                     this.simulate = "Simular";
                     this.simulating = "Simulando...";
                     this.winning = "Victoria ";
@@ -160,7 +165,8 @@ it.neurone.gladiatustools.locale = {
                     
                 case "francese":
                     this.simulationFailed = "La simulation a échoué! Réessayez plus tard ou sélectionnez un autre moteur de simulation.";
-                    this.customAvatarUrl = "URL de l'avatar personnalisé (http://...). L'image sera redimensionnée en 168x194.";
+                    this.customAvatarUrl = "URL de l'avatar personnalisé (http://...). L'image sera redimensionnée en 168x194 px.";
+                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
                     this.simulate = "Simuler";
                     this.simulating = "Simulation en cours...";
                     this.winning = "Gagnant à ";
@@ -177,7 +183,8 @@ it.neurone.gladiatustools.locale = {
                     
                 case "italiano":
                     this.simulationFailed = "Simulazione fallita! Prova più tardi oppure seleziona un'altro motore di simulazione dal menu delle opzioni di Gladiatus Tools.";
-                    this.customAvatarUrl = "Url assoluta dell'avatar personalizzato (http://...). L'immagine verrà ridimensionata a 168x194.";
+                    this.customAvatarUrl = "Url assoluta dell'avatar personalizzato (http://...). L'immagine verrà ridimensionata a 168x194 px.";
+                    this.customGuildImageUrl = "Url assoluta del logo personalizzato (http://...). L'immagine verrà ridimensionata a 209x232 px.";
                     this.simulate = "Simula";
                     this.simulating = "Simulazione...";
                     this.winning = "Vincente ";
@@ -194,7 +201,8 @@ it.neurone.gladiatustools.locale = {
                       
                 case "lettone":
                     this.simulationFailed = "Simulācija neizdevusies! Lūdzu mēģiniet vēlāk, vai izvēlaties citu simulātoru Gladiatus Tools opcijās.";
-                    this.customAvatarUrl = "Pārveidotā avatara links (http://...). Bilde tiks samazināta līdz 168x194.";
+                    this.customAvatarUrl = "Pārveidotā avatara links (http://...). Bilde tiks samazināta līdz 168x194 px.";
+                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
                     this.simulate = "Simulēt";
                     this.simulating = "Simulē...";
                     this.winning = "Uzvara ";
@@ -211,6 +219,7 @@ it.neurone.gladiatustools.locale = {
                 case "vietnamita":
                     this.simulationFailed = "Quá trình mô phỏng thất bại. Thử lại sau hoặc chọn dụng cụ mô phỏng khác ở Công cụ Gladiatus";
                     this.customAvatarUrl = "Đường dẫn đến hình ảnh đại diện (http://...). Hình ảnh sẽ được định dạng lại (168x194px)";
+                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
                     this.simulate = "Mô phỏng";
                     this.simulating = "Đang mô phỏng...";
                     this.winning = "Cơ hội chiến thắng";
@@ -227,7 +236,8 @@ it.neurone.gladiatustools.locale = {
                       
                 default:
                     this.simulationFailed = "Simulation faild! Please try later or select another simulator engine from Gladiatus Tools options.";
-                    this.customAvatarUrl = "Custom avatar absolute url (http://...). Image will be resized to 168x194.";
+                    this.customAvatarUrl = "Custom avatar absolute url (http://...). Image will be resized to 168x194 px.";
+                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
                     this.simulate = "Simulate";
                     this.simulating = "Simulating...";
                     this.winning = "Winning ";

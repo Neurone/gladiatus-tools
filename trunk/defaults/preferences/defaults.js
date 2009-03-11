@@ -10,3 +10,4 @@ pref("gladiatustools.showAdditionalStats", true);
 pref("gladiatustools.rememberTabs", true);
 pref("gladiatustools.goToMyPos", true);
 pref("gladiatustools.reportDetailLevel", "0");
+pref("gladiatustools.showCustomGuildImage", true);
