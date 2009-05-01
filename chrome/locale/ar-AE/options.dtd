@@ -1,0 +1,36 @@
+<!ENTITY gladiatusToolsOptions.label "اعدادات محاكي المعارك">
+<!ENTITY generalSettings.label "اعادات عامة">
+
+<!ENTITY simulationGroup.label "إعدادات المحاكاة">
+<!ENTITY otherSettingsGroup.label "إعدادات اخرى">
+<!ENTITY playersGroup.label "Players">
+<!ENTITY merchantsGroup.label "Merchants">
+
+<!ENTITY simulatorEngine.label "محاكاة المعارك">
+<!ENTITY autoSimulateBattle.label "محاكاة المعركة تلقائيا">
+<!ENTITY excludeMeFromCorporateMessages.label "استبعدني عند ارسال رسالة للنقابة">
+<!ENTITY showCustomAvatarImages.label "عرض الصورة الشخصية">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
+<!ENTITY showTimers.label "عرض الوقت">
+<!ENTITY showFullStats.label "عرض الإحصائيات الكاملة">
+<!ENTITY showAdditionalTooltips.label "تغيير عرض مقارنة الأدوات">
+<!ENTITY hideNotAffordable.label "عرض الأدوات في المتجر">
+<!ENTITY showAdditionalStats.label "عرض الاحصائيات الاضافية">
+<!ENTITY rememberTabs.label "آخر اختيار اخترته">
+<!ENTITY goToMyPos.label "عرض نتائجي العالية">
+<!ENTITY reportDetailLevel.label "Use the following combat report detail level">
+<!ENTITY reportDetailLevelEssential.label "Essential">
+<!ENTITY reportDetailLevelMedium.label "Medium">
+<!ENTITY reportDetailLevelFull.label "Full">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY goToMyPos.accesskey "">
