@@ -9,7 +9,8 @@
 <!ENTITY simulatorEngine.label "Mecanismo de Simulação">
 <!ENTITY autoSimulateBattle.label "Simular batalha automaticamente">
 <!ENTITY excludeMeFromCorporateMessages.label "Excluir eu mesmo ao enviar uma mensagem para a aliança">
-<!ENTITY showCustomAvatars.label "Exibir avatares personalizados">
+<!ENTITY showCustomAvatarImages.label "Exibir avatares personalizados">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
 <!ENTITY showTimers.label "Exibir relógios">
 <!ENTITY showFullStats.label "Sempre exibir valores de Cura e Ameaça">
 <!ENTITY showAdditionalTooltips.label "Comparar itens do inventário com itens usados">
@@ -24,7 +25,8 @@
 
 <!ENTITY autoSimulateBattle.accesskey "">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "">
-<!ENTITY showCustomAvatars.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
 <!ENTITY showTimers.accesskey "">
 <!ENTITY showFullStats.accesskey "">
 <!ENTITY showAdditionalTooltips.accesskey "">
@@ -32,4 +34,3 @@
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
 <!ENTITY goToMyPos.accesskey "">
-<!ENTITY reportDetailLevel.accesskey "">

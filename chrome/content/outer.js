@@ -1,8 +1,6 @@
 // @name            Gladiatus Tools
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
-// @version         2.4.0
-// @date            11 Mar 2009
 
 it.neurone.gladiatustools.outer = function() {
 
@@ -228,7 +226,7 @@ it.neurone.gladiatustools.outer = function() {
 		    /************************************
 			Visualizzazione dell'avatar personalizzato
 			************************************/
-		    if(sb.GM_getValue("showCustomAvatars", false) && isPlayerOverviewPage)
+		    if(sb.GM_getValue("showCustomAvatarImages", false) && isPlayerOverviewPage)
 		    {
 			    //Trovo la url
 			    var imageUrl = getGTImageUrl(sb.document.body.innerHTML);
@@ -239,7 +237,7 @@ it.neurone.gladiatustools.outer = function() {
 			    }
 		    }
 		    
-		    if(sb.GM_getValue("showCustomAvatars", false) && isMyselfOverviewPage)
+		    if(sb.GM_getValue("showCustomAvatarImages", false) && isMyselfOverviewPage)
 		    {
 		        var imageUrl = sb.GM_getValue("GTImageUrl_" + sb.location.host, "");
 		        //Poiché il nome della variabile GTImageUrl è stato modificato dalla versione 1.8.2 per supportare
@@ -258,7 +256,7 @@ it.neurone.gladiatustools.outer = function() {
             /************************************
 			Visualizzazione del logo della corporazione personalizzato
 			************************************/
-		    if(sb.GM_getValue("showCustomGuildImage", false) && isAllyPage)
+		    if(sb.GM_getValue("showCustomGuildImages", false) && isAllyPage)
 		    {
                 //Trovo la url
 			    var imageUrl = getGTGuildImageUrl(sb.document.body.innerHTML);

@@ -9,7 +9,8 @@
 <!ENTITY simulatorEngine.label "Motore della simulazione">
 <!ENTITY autoSimulateBattle.label "Simula automaticamente la battaglia">
 <!ENTITY excludeMeFromCorporateMessages.label "Non inviarmi i messaggi che mando alla mia corporazione">
-<!ENTITY showCustomAvatars.label "Mostra avatar personalizzati">
+<!ENTITY showCustomAvatarImages.label "Mostra avatar personalizzati">
+<!ENTITY showCustomGuildImages.label "Mostra immagini personalizzate delle corporazioni">
 <!ENTITY showTimers.label "Mostra tempi">
 <!ENTITY showFullStats.label "Mostra statistiche utente complete">
 <!ENTITY showAdditionalTooltips.label "Confronta gli oggetti dell'inventario e quelli equipaggiati">
@@ -24,7 +25,8 @@
 
 <!ENTITY autoSimulateBattle.accesskey "S">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "N">
-<!ENTITY showCustomAvatars.accesskey "M">
+<!ENTITY showCustomAvatarImages.accesskey "M">
+<!ENTITY showCustomGuildImages.accesskey "U">
 <!ENTITY showTimers.accesskey "R">
 <!ENTITY showFullStats.accesskey "O">
 <!ENTITY showAdditionalTooltips.accesskey "T">

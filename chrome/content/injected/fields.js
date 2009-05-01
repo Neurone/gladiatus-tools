@@ -1,8 +1,6 @@
 // @name            Gladiatus Tools
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
-// @version         2.0.0
-// @date            07 Feb 2009
 
 function showBigNotes() {
     //Sfondo ingrandito

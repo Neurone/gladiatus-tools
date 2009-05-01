@@ -9,7 +9,8 @@
 <!ENTITY simulatorEngine.label "Engine pro simulování">
 <!ENTITY autoSimulateBattle.label "Automaticky simulovat boj">
 <!ENTITY excludeMeFromCorporateMessages.label "Nepřijímat mnou odeslané zprávy gildě">
-<!ENTITY showCustomAvatars.label "Zobrazit vybraný avatar">
+<!ENTITY showCustomAvatarImages.label "Zobrazit vybraný avatar">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
 <!ENTITY showTimers.label "Zobrazit odpočítávání">
 <!ENTITY showFullStats.label "Vždy zobrazit hodnoty Léčení a Ohrožení">
 <!ENTITY showAdditionalTooltips.label "Porovnávat předměty stejného typu">
@@ -24,7 +25,8 @@
 
 <!ENTITY autoSimulateBattle.accesskey "">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "">
-<!ENTITY showCustomAvatars.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
 <!ENTITY showTimers.accesskey "">
 <!ENTITY showFullStats.accesskey "">
 <!ENTITY showAdditionalTooltips.accesskey "">

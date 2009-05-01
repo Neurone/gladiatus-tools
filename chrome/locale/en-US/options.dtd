@@ -9,7 +9,8 @@
 <!ENTITY simulatorEngine.label "Simulator engine">
 <!ENTITY autoSimulateBattle.label "Automatically simulate battle">
 <!ENTITY excludeMeFromCorporateMessages.label "Exclude me when sending corporate message">
-<!ENTITY showCustomAvatars.label "Show custom avatars">
+<!ENTITY showCustomAvatarImages.label "Show custom avatar images">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
 <!ENTITY showTimers.label "Show timers">
 <!ENTITY showFullStats.label "Show always Healing and Threat values">
 <!ENTITY showAdditionalTooltips.label "Compare inventory and equipment items">
@@ -24,7 +25,8 @@
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
-<!ENTITY showCustomAvatars.accesskey "S">
+<!ENTITY showCustomAvatarImages.accesskey "S">
+<!ENTITY showCustomGuildImages.accesskey "U">
 <!ENTITY showTimers.accesskey "R">
 <!ENTITY showFullStats.accesskey "H">
 <!ENTITY showAdditionalTooltips.accesskey "T">

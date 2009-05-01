@@ -1,8 +1,6 @@
 // @name            Gladiatus Tools
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
-// @version         2.4.0
-// @date            11 Mar 2009
 
 var common_siteUrl, common_siteUrlAjax, common_siteMod, secureHash;
 
@@ -15,6 +13,8 @@ if(common_result) {
     secureHash = common_result[3];
 }
 
+var serverVersion = getServerVersion();
+
 //Variabili globali
 var versionID = 170;
 var idSimula = "idSimula";
@@ -22,11 +22,14 @@ var idMessaggio = "idMessaggio";
 var simulaButton, vaiButton, messaggio;
 var paramAttaccante, paramDifensore, paramSimulatore;
 
-var currentGTImageUrl;
-var currentDescriptionField;
+var currentGTAvatarImageUrl;
+var currentAvatarDescriptionField;
 
 var currentGTGuildImageUrl;
 var currentGuildDescriptionField;
+
+var shadowingColor = "#E5D9BD"; //v0.5
+if(serverVersion == "v0.4.0") shadowingColor = "#C8AD7E";
 
 var urlSimulatore, hostSimulatore, refererUrlSimulatore;
 
@@ -135,4 +138,21 @@ function formatNumber(number, separator)
 		x1 = x1.replace(rgx, '$1' + separator + '$2');
 	}
 	return x1 + x2;
+}
+
+/*****************************
+Recupera la versione del server
+*****************************/
+function getServerVersion()
+{
+	var ex = ".//span[@class='footer_link']";
+	tag = document.evaluate( 
+			ex,
+			document,
+			null,
+			XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
+			null
+	);
+	if (tag.snapshotLength) return(tag.snapshotItem(0).firstChild.innerHTML);
+	else return "v0.0.0";
 }

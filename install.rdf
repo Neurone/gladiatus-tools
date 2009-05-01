@@ -2,20 +2,20 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>{76063e7f-3558-4b68-8287-54eb6512adc0}</em:id>
-    <em:version>2.3.0</em:version>
+    <em:version>2.4.0</em:version>
     <em:optionsURL>chrome://gladiatustools/content/options.xul</em:optionsURL>
 
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>3.1b2</em:maxVersion>
+        <em:maxVersion>3.5b4</em:maxVersion>
       </Description>
     </em:targetApplication>
     
     <em:name>Gladiatus Tools</em:name>
     <em:creator>Giuseppe Bertone</em:creator>
-    <em:description>Addon for Gladiatus browser game. Once installed, this addon adds automatically a set of fully integrated tools to the Gladiatus web site to improve the user experience.</em:description>
+    <em:description>Improve the user experience automatically adding a set of fully web site integrated tools to the Gladiatus browser game interface.</em:description>
     <em:contributor>Anthony Lieuallen (Greasemonkey Compiler)</em:contributor>
     <em:translator>Sébastien Bailly (French translation)</em:translator>
     <em:translator>Sebastiàn Goicochea (Spanish translation)</em:translator>
@@ -106,7 +106,7 @@
         <em:locale>it-IT</em:locale>
         <em:name>Gladiatus Tools</em:name>
         <em:creator>Giuseppe Bertone</em:creator>
-        <em:description>Estensione per il browser game Gladiatus. Una volta installata, questa estensione aggiunge un insieme di strumenti completamente integrati con l'interfaccia del gioco.</em:description>
+        <em:description>Questa estensione aggiunge un insieme di strumenti completamente integrati con l'interfaccia web del browser game Gladiatus.</em:description>
         <em:contributor>Anthony Lieuallen (Compilatore Greasemonkey)</em:contributor>
         <em:translator>Sébastien Bailly (Traduzione in francese)</em:translator>
         <em:translator>Sebastiàn Goicochea (Traduzione in spagnolo)</em:translator>
@@ -114,7 +114,7 @@
         <em:translator>Erik Tuu (Traduzione in vietnamita)</em:translator>
         <em:translator>Peteris Petersons (Traduzione in lettone)</em:translator>
         <em:translator>Halluz-man (Traduzione in ceco)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Traduzione in portoghese/brasiliano)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Traduzione in portoghese brasiliano)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>

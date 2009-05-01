@@ -1,8 +1,6 @@
 // @name            Gladiatus Tools
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
-// @version         2.3.0
-// @date            07 Mar 2009
 
 var SCRLevel = GM_getValue("reportDetailLevel", 2);
 
