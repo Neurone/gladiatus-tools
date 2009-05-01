@@ -1,8 +1,6 @@
 // @name            Gladiatus Tools
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
-// @version         2.0.0
-// @date            07 Feb 2009
 
 /*****************************
 Abilita o disabilita il pulsante Simula
@@ -152,12 +150,19 @@ Recupera il nome dell'utente
 *****************************/
 function getNomeUtente(paginaHTML)
 {
-	var pattern = /<span class="playername">.+<\/span>/i;
-	var tmpString = pattern.exec(paginaHTML).toString();
-	pattern = />.+</i;
-	tmpString = pattern.exec(tmpString).toString();
-	//Tolgo i > e <
-	return tmpString.substring(1, tmpString.length - 1);
+    var elemento = document.createElement("div");
+	elemento.innerHTML = paginaHTML;
+	var ex = ".//span[@class='playername_achivement']"; //v0.5
+	if(serverVersion == "v0.4.0") ex = ".//span[@class='playername']";
+	tag = document.evaluate( 
+			ex,
+			elemento,
+			null,
+			XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
+			null
+	);
+	if (tag.snapshotLength) return(tag.snapshotItem(0).innerHTML);
+	else return "";
 }
 
 /*****************************
@@ -196,7 +201,7 @@ Trova i parametri dell'utente
 function getParam(paginaHTML)
 {
 	param = new Array();
-	
+
 	//Trovo il nome
 	param["nome"] = getNomeUtente(paginaHTML);
 	//Trovo le caratteristiche
@@ -240,7 +245,7 @@ function getDatiUtente(callbackFunction)
 function impostaDatiSimulatore()
 {
 	var stringa = "";
-	
+    
 	switch(simulatore)
 	{	
 		case "www.playerutils.com":
@@ -340,7 +345,7 @@ function grabClick(event)
 		    if(GTImageUrlField.value != "")
 		    {
 			    //Inserisco la nuova impostazione
-			    currentDescriptionField.value += "\n\n[fc]#C8AD7E[fs]10##GTI="+ GTImageUrlField.value +"##[/f][/f]";
+			    currentAvatarDescriptionField.value += "\n\n[fc]"+shadowingColor+"[fs]10##GTI="+ GTImageUrlField.value +"##[/f][/f]";
 		    }
 		    return;
 	    }
@@ -352,7 +357,7 @@ function grabClick(event)
 		    if(GTGuildImageUrlField.value != "")
 		    {
 			    //Inserisco la nuova impostazione
-			    currentGuildDescriptionField.value += "\n\n[fc]#C8AD7E[fs]10##GTGI="+ GTGuildImageUrlField.value +"##[/f][/f]";
+			    currentGuildDescriptionField.value += "\n\n[fc]"+shadowingColor+"[fs]10##GTGI="+ GTGuildImageUrlField.value +"##[/f][/f]";
 		    }
 		    return;
 	    }
@@ -665,7 +670,9 @@ Simulazione battaglia
 if(location.href.indexOf(playerOverviewUrl) > 0)
 {
 	//Trovo il pulsante Vai!
-	var allInput = document.evaluate("//input[@onclick='startFightWidthName();']", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
+	var allInput;
+	if(serverVersion == "v0.4.0") allInput = document.evaluate("//input[@onclick='startFightWidthName();']", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
+	else allInput = document.evaluate("//input[@onclick='startFightWithName();']", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 	if(allInput.snapshotLength > 0)
 	{
 		vai = allInput.snapshotItem(0);
@@ -703,30 +710,30 @@ if(isSettingsPage)
 	var desc = document.getElementsByName("rpg");
 	if (desc.length == 1) {
 		//Gestisco la scomparsa dell'impostazione dalla textarea, così che l'utente non possa modificarla direttamente
-		currentDescriptionField = desc[0];
-		currentGTImageUrl = getGTImageUrl(currentDescriptionField.value);
-		if(currentGTImageUrl != "")
+		currentAvatarDescriptionField = desc[0];
+		currentGTAvatarImageUrl = getGTImageUrl(currentAvatarDescriptionField.value);
+		if(currentGTAvatarImageUrl != "")
 		{
 			//Rimuovo dalla text area la stringa
-			var valore = currentDescriptionField.value;
-			var offset = valore.length - ("  "+"[fc]#C8AD7E[fs]10##GTI="+currentGTImageUrl+"##[/f][/f]").length;
+			var valore = currentAvatarDescriptionField.value;
+			var offset = valore.length - ("  "+"[fc]"+shadowingColor+"[fs]10##GTI="+currentGTAvatarImageUrl+"##[/f][/f]").length;
 			//Dalla versione 1.7.0 è stata aggiunta in testa alla formattazione "[fs]10" e "[/f]", cioè 10 caratteri in più.
 			//Per supportare al meglio l'upgrade, controllo se è presente una vecchia versione e aggiorno l'offset di conseguenza
-			if(GTImageVersion(currentDescriptionField.value) < 170) offset += 10;
-			currentDescriptionField.value = valore.substring(0, offset);
+			if(GTImageVersion(currentAvatarDescriptionField.value) < 170) offset += 10;
+			currentAvatarDescriptionField.value = valore.substring(0, offset);
 		}
 		//Creo l'impostazione nella pagina dei settings, iniziando dal titolo
 		var title = document.createElement("h2");
-		title.innerHTML = MSG.customAvatarUrl;
+		title.innerHTML = MSG.customAvatarImageUrl;
 		//Creo il paragrafo
 		var paragraph = document.createElement("p");
 		//Creo l'immagine
 		var imageUrlField = document.createElement("input");
 		imageUrlField.id = "GTImageUrl";
 		imageUrlField.size = "73";
-		imageUrlField.value = currentGTImageUrl;
+		imageUrlField.value = currentGTAvatarImageUrl;
 		//Aggiungo gli elementi creati al DOM
-		currentDescriptionField.parentNode.insertBefore(title, currentDescriptionField.nextSibling);
+		currentAvatarDescriptionField.parentNode.insertBefore(title, currentAvatarDescriptionField.nextSibling);
 		title.parentNode.insertBefore(paragraph, title.nextSibling);
 		paragraph.parentNode.insertBefore(imageUrlField, paragraph.nextSibling);
 	}
@@ -750,7 +757,7 @@ if(isModAllyPage)
 		{
 			//Rimuovo dalla text area la stringa
 			var valore = currentGuildDescriptionField.value;
-			var offset = valore.length - ("  "+"[fc]#C8AD7E[fs]10##GTGI="+currentGTGuildImageUrl+"##[/f][/f]").length;
+			var offset = valore.length - ("  "+"[fc]"+shadowingColor+"[fs]10##GTGI="+currentGTGuildImageUrl+"##[/f][/f]").length;
 			currentGuildDescriptionField.value = valore.substring(0, offset);
 		}
 		//Creo l'impostazione nella pagina dei settings, iniziando dal titolo

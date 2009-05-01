@@ -9,7 +9,8 @@
 <!ENTITY simulatorEngine.label "Moteur de simulation">
 <!ENTITY autoSimulateBattle.label "Simuler automatiquement les combats">
 <!ENTITY excludeMeFromCorporateMessages.label "M'exclure lors de l'envoi de messages à la guilde">
-<!ENTITY showCustomAvatars.label "Afficher les avatars personnalisés">
+<!ENTITY showCustomAvatarImages.label "Afficher les avatars personnalisés">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
 <!ENTITY showTimers.label "Afficher les minuteries">
 <!ENTITY showFullStats.label "Afficher les caractéristiques complètes des joueurs">
 <!ENTITY showAdditionalTooltips.label "Comparer mon équipement avec celui de mon inventaire">
@@ -24,7 +25,8 @@
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
-<!ENTITY showCustomAvatars.accesskey "P">
+<!ENTITY showCustomAvatarImages.accesskey "P">
+<!ENTITY showCustomGuildImages.accesskey "">
 <!ENTITY showTimers.accesskey "M">
 <!ENTITY showFullStats.accesskey "C">
 <!ENTITY showAdditionalTooltips.accesskey "O">
@@ -32,4 +34,3 @@
 <!ENTITY showAdditionalStats.accesskey "S">
 <!ENTITY rememberTabs.accesskey "D">
 <!ENTITY goToMyPos.accesskey "G">
-<!ENTITY reportDetailLevel.accesskey "R">

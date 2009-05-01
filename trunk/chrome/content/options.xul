@@ -10,7 +10,8 @@
     <preferences>
       <preference id="simulatorEngine" name="gladiatustools.simulatorEngine" type="string" />
       <preference id="autoSimulateBattle" name="gladiatustools.autoSimulateBattle" type="bool" />
-      <preference id="showCustomAvatars" name="gladiatustools.showCustomAvatars" type="bool"/>
+      <preference id="showCustomAvatarImages" name="gladiatustools.showCustomAvatarImages" type="bool"/>
+      <preference id="showCustomGuildImages" name="gladiatustools.showCustomGuildImages" type="bool"/>
       <preference id="showTimers" name="gladiatustools.showTimers" type="bool"/>
       <preference id="showFullStats" name="gladiatustools.showFullStats" type="bool"/>
       <preference id="showAdditionalTooltips" name="gladiatustools.showAdditionalTooltips" type="bool"/>
@@ -26,7 +27,10 @@
       <groupbox>
         <caption label="&playersGroup.label;"/>
         <hbox align="center">
-          <checkbox id="c_showCustomAvatars" preference="showCustomAvatars" label="&showCustomAvatars.label;" accesskey="&showCustomAvatars.accesskey;"/>
+          <checkbox id="c_showCustomAvatarImages" preference="showCustomAvatarImages" label="&showCustomAvatarImages.label;" accesskey="&showCustomAvatarImages.accesskey;"/>
+        </hbox>
+        <hbox align="center">
+          <checkbox id="c_showCustomGuildImages" preference="showCustomGuildImages" label="&showCustomGuildImages.label;" accesskey="&showCustomGuildImages.accesskey;"/>
         </hbox>
         <hbox align="center">
           <checkbox id="c_showFullStats" preference="showFullStats" label="&showFullStats.label;" accesskey="&showFullStats.accesskey;"/>

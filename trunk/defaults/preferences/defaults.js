@@ -1,6 +1,7 @@
 pref("gladiatustools.simulatorEngine", "www.georged.eu");
 pref("gladiatustools.autoSimulateBattle", true);
-pref("gladiatustools.showCustomAvatars", true);
+pref("gladiatustools.showCustomAvatarImages", true);
+pref("gladiatustools.showCustomGuildImages", true);
 pref("gladiatustools.showTimers", true);
 pref("gladiatustools.showFullStats", true);
 pref("gladiatustools.showAdditionalTooltips", true);
@@ -10,4 +11,3 @@ pref("gladiatustools.showAdditionalStats", true);
 pref("gladiatustools.rememberTabs", true);
 pref("gladiatustools.goToMyPos", true);
 pref("gladiatustools.reportDetailLevel", "0");
-pref("gladiatustools.showCustomGuildImage", true);
