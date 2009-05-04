@@ -3,7 +3,7 @@
 
 <!ENTITY simulationGroup.label "Simulace boje">
 <!ENTITY otherSettingsGroup.label "Ostatní nastavení">
-<!ENTITY playersGroup.label "Hráči">
+<!ENTITY playersGroup.label "Players and guilds">
 <!ENTITY merchantsGroup.label "Obchodníci">
 
 <!ENTITY simulatorEngine.label "Engine pro simulování">

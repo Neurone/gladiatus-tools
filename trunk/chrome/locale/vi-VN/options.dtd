@@ -3,7 +3,7 @@
 
 <!ENTITY simulationGroup.label "Mô phỏng tương đối">
 <!ENTITY otherSettingsGroup.label "Lựa chọn khác">
-<!ENTITY playersGroup.label "Players">
+<!ENTITY playersGroup.label "Players and guilds">
 <!ENTITY merchantsGroup.label "Merchants">
 
 <!ENTITY simulatorEngine.label "Dụng cụ mô phỏng">

@@ -3,7 +3,7 @@
 
 <!ENTITY simulationGroup.label "Simulazione di combattimento">
 <!ENTITY otherSettingsGroup.label "Altre impostazioni">
-<!ENTITY playersGroup.label "Giocatori">
+<!ENTITY playersGroup.label "Giocatori e corporazioni">
 <!ENTITY merchantsGroup.label "Mercanti">
 
 <!ENTITY simulatorEngine.label "Motore della simulazione">
@@ -26,7 +26,7 @@
 <!ENTITY autoSimulateBattle.accesskey "S">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "N">
 <!ENTITY showCustomAvatarImages.accesskey "M">
-<!ENTITY showCustomGuildImages.accesskey "U">
+<!ENTITY showCustomGuildImages.accesskey "C">
 <!ENTITY showTimers.accesskey "R">
 <!ENTITY showFullStats.accesskey "O">
 <!ENTITY showAdditionalTooltips.accesskey "T">

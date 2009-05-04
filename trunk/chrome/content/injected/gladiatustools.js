@@ -723,8 +723,15 @@ if(isSettingsPage)
 			currentAvatarDescriptionField.value = valore.substring(0, offset);
 		}
 		//Creo l'impostazione nella pagina dei settings, iniziando dal titolo
-		var title = document.createElement("h2");
-		title.innerHTML = MSG.customAvatarImageUrl;
+		var title;
+		if(serverVersion == "v0.4.0") {
+		    title = document.createElement("h2");
+		    title.innerHTML = MSG.customAvatarImageUrl;		    
+		}
+		else {
+            title = document.createElement("span");
+		    title.innerHTML = "<br/><br/><strong>"+ MSG.customAvatarImageUrl +"</strong>";
+		}
 		//Creo il paragrafo
 		var paragraph = document.createElement("p");
 		//Creo l'immagine
