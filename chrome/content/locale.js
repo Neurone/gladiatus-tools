@@ -163,8 +163,8 @@ it.neurone.gladiatustools.locale = {
                     
                 case "francese":
                     this.simulationFailed = "La simulation a échoué! Réessayez plus tard ou sélectionnez un autre moteur de simulation.";
-                    this.customAvatarImageUrl = "URL de l'avatar personnalisé (http://...). L'image sera redimensionnée en 168x194 px.";
-                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
+                    this.customAvatarImageUrl = "URL de l'avatar personnalisé (http://...). L'image sera redimensionnée en 168 × 194 px.";
+                    this.customGuildImageUrl = "URL de l'étendard personnalisé (http://...). L'image sera redimensionnée en 209 × 232 px.";
                     this.simulate = "Simuler";
                     this.simulating = "Simulation en cours...";
                     this.winning = "Gagnant à ";

@@ -3,7 +3,7 @@
 
 <!ENTITY simulationGroup.label "إعدادات المحاكاة">
 <!ENTITY otherSettingsGroup.label "إعدادات اخرى">
-<!ENTITY playersGroup.label "Players">
+<!ENTITY playersGroup.label "Players and guilds">
 <!ENTITY merchantsGroup.label "Merchants">
 
 <!ENTITY simulatorEngine.label "محاكاة المعارك">

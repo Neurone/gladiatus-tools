@@ -3,7 +3,7 @@
 
 <!ENTITY simulationGroup.label "Combat simulation">
 <!ENTITY otherSettingsGroup.label "Other settings">
-<!ENTITY playersGroup.label "Players">
+<!ENTITY playersGroup.label "Players and guilds">
 <!ENTITY merchantsGroup.label "Merchants">
 
 <!ENTITY simulatorEngine.label "Simulator engine">
