@@ -48,7 +48,8 @@ it.neurone.gladiatustools.gmCompiler = {
 
 	    if (
 		    it.neurone.gladiatustools.gmCompiler.isGreasemonkeyable(href)
-		    && ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=.*/.test(href) )
+		    && ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=.*/.test(href) ||
+				 /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=.*/.test(href) )
 	    ) {
 		    var script = it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/commons.js');		
 		    script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/timers.js');
