@@ -90,6 +90,7 @@ Improve the user experience automatically adding a set of fully web site integra
 <em:translator>Peteris Petersons (Latvian translation)</em:translator>
 <em:translator>Halluz-man (Czech translation)</em:translator>
 <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+<em:translator>[Живко Янев] (Bulgarian translation)</em:translator>
 <em:translator>[YOUR NAME] (YOUR LANGUAGE translation)</em:translator>
 
 ####################################################
@@ -165,7 +166,7 @@ FEATURES:
 
 Simulation engines are www.georged.eu and www.playerutils.com. These simulation engines don't take care of player remaining life, so use them carefully. :-)
 
-This addon works with 0.4 and 0.5 server and following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, YOUR LANGUAGE.
+This addon works with 0.4 and 0.5 server and following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, bulgarian, YOUR LANGUAGE.
 If your language is not in the list, english one will be used. If you want to help me adding your language translation, without using Google translator :-), please send me an email (in english).
 
 ####################################################
