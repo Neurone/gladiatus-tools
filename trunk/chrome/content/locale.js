@@ -1,4 +1,4 @@
-// @name            Gladiatus Tools
+﻿// @name            Gladiatus Tools
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
 
@@ -28,6 +28,7 @@ it.neurone.gladiatustools.locale = {
         (
             new Array("Argentina", /s\d+\.ar\.gladiatus\.com/i, "spagnolo"),
             new Array("Bielorussia", ".gladiatus.by", "russo"),
+            new Array("Bosnia", ".ba.gladiatus.com", "bosniaco"),
             new Array("Brasile", ".br.gladiatus.com", "portoghese-brasiliano"),
             new Array("Bulgaria", ".bg.gladiatus.com", "bulgaro"),
             new Array("Cile", /s\d+\.gladiatus\.cl/i, "spagnolo"),
@@ -108,23 +109,40 @@ it.neurone.gladiatustools.locale = {
                     this.totalEarnedGold = "مجموع الحصول على الذهب:";
                     break;
 
-		        case "portoghese-brasiliano":
-		            this.simulationFailed = "Simulação falhou! Por favor tente novamente mais tarde ou selecione outro mecanismo de simulação nas configurações do Gladiatus Tools.";
-                    this.customAvatarImageUrl = "A URL do avatar personalizado (http://...). A imagem será redimensionada para 168x194 px.";
-                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
-                    this.simulate = "Simular";
-                    this.simulating = "Simulando...";
-                    this.winning = "Chance de vitória: ";
-                    this.go = "Atacar!";
-                    this.stop = "PARE!";
-                    this.quest = "Expedição:";
-                    this.arena = "Arena:";
-                    this.work = "Estábulo:";
-                    this.completed = "Finalizada";
-                    this.goldLabel = "Ouro";
-                    this.winPercentage = "Porcentagem de vitórias:";
-                    this.totalEarnedGold = "Total de ouro ganho:";
-		            break;
+				case "bulgaro":
+					this.simulationFailed = "Не е възможно да извърши симулацията. Моля проверете използвания енджин в менюто Настройки>Използван Симулатор.";
+					this.customAvatarImageUrl = "Url на собствения аватар(http://...). Картинката трябва да е с размери 168x194.";
+					this.customGuildImageUrl = "Url на собствен аватар за гилдията (http://...). Картинката трябва да е с размери 209x232 точки.";
+					this.simulate = "Симулация";
+					this.simulating = "Симулация моля изчакайте...";
+					this.winning = "Шанс за победа ";
+					this.go = "Атакувай!";
+					this.stop = "Не атакувай!!!";
+					this.quest = "Куест:";
+					this.arena = "Арена:";
+					this.work = "Работа:";
+					this.completed = "Готово!";
+					this.winPercentage = "Шанс за победа:";
+					this.totalEarnedGold = "Всичкото заграбено злато:";
+					break;
+
+				case "portoghese-brasiliano":
+					this.simulationFailed = "Simulação falhou! Por favor tente novamente mais tarde ou selecione outro mecanismo de simulação nas configurações do Gladiatus Tools.";
+					this.customAvatarImageUrl = "A URL do avatar personalizado (http://...). A imagem será redimensionada para 168x194 px.";
+					this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
+					this.simulate = "Simular";
+					this.simulating = "Simulando...";
+					this.winning = "Chance de vitória: ";
+					this.go = "Atacar!";
+					this.stop = "PARE!";
+					this.quest = "Expedição:";
+					this.arena = "Arena:";
+					this.work = "Estábulo:";
+					this.completed = "Finalizada";
+					this.goldLabel = "Ouro";
+					this.winPercentage = "Porcentagem de vitórias:";
+					this.totalEarnedGold = "Total de ouro ganho:";
+					break;
 
                 case "ceco":
                     this.simulationFailed = "Simulace selhala! Prosím, zkuste to později nebo v nastavení vyberte jiný engine pro simulování.";
@@ -212,7 +230,7 @@ it.neurone.gladiatustools.locale = {
                     this.completed = "Pabeigts!";
                     this.winPercentage = "Uzvarēto procents:";
                     this.totalEarnedGold = "Arēnā iegūtais zelts:";
-                    break;
+					break;
                       
                 case "vietnamita":
                     this.simulationFailed = "Quá trình mô phỏng thất bại. Thử lại sau hoặc chọn dụng cụ mô phỏng khác ở Công cụ Gladiatus";
@@ -230,7 +248,7 @@ it.neurone.gladiatustools.locale = {
                     this.goldLabel = "Gold";
                     this.winPercentage = "Thống kê chiến thắng:";
                     this.totalEarnedGold = "Thống kê số vàng đã cướp:";
-                    break;
+					break;
                       
                 default:
                     this.simulationFailed = "Simulation faild! Please try later or select another simulator engine from Gladiatus Tools options.";
@@ -247,7 +265,7 @@ it.neurone.gladiatustools.locale = {
                     this.completed = "Complete!";
                     this.goldLabel = "Gold";
                     this.winPercentage = "Winning percentage:";
-                    this.totalEarnedGold = "Total earned gold:";
+					this.totalEarnedGold = "Total earned gold:";
             }
         }
     }
