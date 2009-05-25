@@ -28,7 +28,7 @@ it.neurone.gladiatustools.locale = {
         (
             new Array("Argentina", /s\d+\.ar\.gladiatus\.com/i, "spagnolo"),
             new Array("Bielorussia", ".gladiatus.by", "russo"),
-            new Array("Bosnia", ".ba.gladiatus.com", "bosniaco"),
+            new Array("Bosnia", ".ba.gladiatus.org", "bosniaco"),
             new Array("Brasile", ".br.gladiatus.com", "portoghese-brasiliano"),
             new Array("Bulgaria", ".bg.gladiatus.com", "bulgaro"),
             new Array("Cile", /s\d+\.gladiatus\.cl/i, "spagnolo"),
