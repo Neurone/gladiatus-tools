@@ -1,0 +1,36 @@
+<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Možnosti">
+<!ENTITY generalSettings.label "Hlavní nastavení">
+
+<!ENTITY simulationGroup.label "Simulace boje">
+<!ENTITY otherSettingsGroup.label "Ostatní nastavení">
+<!ENTITY playersGroup.label "Players and guilds">
+<!ENTITY merchantsGroup.label "Obchodníci">
+
+<!ENTITY simulatorEngine.label "Engine pro simulování">
+<!ENTITY autoSimulateBattle.label "Automaticky simulovat boj">
+<!ENTITY excludeMeFromCorporateMessages.label "Nepřijímat mnou odeslané zprávy gildě">
+<!ENTITY showCustomAvatarImages.label "Zobrazit vybraný avatar">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
+<!ENTITY showTimers.label "Zobrazit odpočítávání">
+<!ENTITY showFullStats.label "Vždy zobrazit hodnoty Léčení a Ohrožení">
+<!ENTITY showAdditionalTooltips.label "Porovnávat předměty stejného typu">
+<!ENTITY hideNotAffordable.label "Zvýraznit koupitelné předměty">
+<!ENTITY showAdditionalStats.label "Zobrazit rozšířené statistiky">
+<!ENTITY rememberTabs.label "Pamatovat poslední vybraný panel">
+<!ENTITY goToMyPos.label "V Síni Slávy automaticky přejít na moji pozici">
+<!ENTITY reportDetailLevel.label "Použít následující stupeň podrobnosti výpisu z boje">
+<!ENTITY reportDetailLevelEssential.label "Zjednodušený">
+<!ENTITY reportDetailLevelMedium.label "Podrobnější">
+<!ENTITY reportDetailLevelFull.label "Nejpodrobnější">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY goToMyPos.accesskey "">
