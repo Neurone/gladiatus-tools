@@ -363,7 +363,8 @@ function grabClick(event)
 	    }
 	    
 	    //Controllo se il click punta alla classifica, dal menu la voce "Classifica" oppure dalle sotto tab la voce "Giocatore"
-	    if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=highscore&sh=.*/.test(event.target.href)) {
+	    if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=highscore&sh=.*/.test(event.target.href) ||
+			/http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=highscore&sh=.*/.test(event.target.href)) {
 	        if(GM_getValue("goToMyPos", false)) {
        	        //Trovo la posizione in classifica (onore) dell'utente
     	        var spans = XQuery(".//div[@class='headerHighscore']/div/span[@class='charvaluesSub']");
@@ -379,8 +380,8 @@ function grabClick(event)
     
 	    if(GM_getValue("rememberTabs", false)) {
 	        //Controllo se il click punta ad uno dei negozi
-	        if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&sh=.*/.test(event.target.href) ||
-                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&sub=[1-5]&sh=.*/.test(event.target.href)) {
+	        if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&sh=.*/.test(event.target.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=inventory&sh=.*/.test(event.target.href) ||
+                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&sub=[1-5]&sh=.*/.test(event.target.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=inventory&sub=[1-5]&sh=.*/.test(event.target.href)) {
                 //Trovo il negozio selezionato
                 var negozio = event.target.href.match(/&sub=[1-5]/);
                 if(negozio != null) {
@@ -390,7 +391,8 @@ function grabClick(event)
                 }
 	        }
 	        //Controllo se il click punta ad una linguetta di un negozio
-            else if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&subsub=[0-2]&.*/.test(event.target.parentNode.href)) {
+            else if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&subsub=[0-2]&.*/.test(event.target.parentNode.href) ||
+					/http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=inventory&subsub=[0-2]&.*/.test(event.target.parentNode.href)) {
                 //Trovo il negozio selezionato
                 var negozio = event.target.parentNode.href.match(/&sub=[1-5]/);
                 if(negozio != null) {
@@ -600,7 +602,7 @@ Reimposta i tooltip
 *****************************/
 function showAdditionalTooltips()
 {
-    if((location.href.indexOf(myselfOverviewUrl) > 0 || isShopPage) &&
+    if((isMyselfOverviewPage || isShopPage) &&
         GM_getValue("showAdditionalTooltips", false) &&
         unsafeWindow.DDObj )
     {
@@ -667,7 +669,7 @@ function showAdditionalTooltips()
 /********************
 Simulazione battaglia
 ********************/
-if(location.href.indexOf(playerOverviewUrl) > 0)
+if(isPlayerOverviewPage)
 {
 	//Trovo il pulsante Vai!
 	var allInput;
@@ -755,7 +757,8 @@ Gestione pagina della descrizione della corporazione
 if(isModAllyPage)
 {
 	//Creo le nuove impostazioni
-	var desc = document.getElementsByName("bes");
+	var desc = document.getElementsByName("description");
+	if(serverVersion == "v0.4.0") desc = document.getElementsByName("bes");
 	if (desc.length == 1) {
 		//Gestisco la scomparsa dell'impostazione dalla textarea, così che l'utente non possa modificarla direttamente
 		currentGuildDescriptionField = desc[0];
@@ -768,8 +771,15 @@ if(isModAllyPage)
 			currentGuildDescriptionField.value = valore.substring(0, offset);
 		}
 		//Creo l'impostazione nella pagina dei settings, iniziando dal titolo
-		var title = document.createElement("h2");
-		title.innerHTML = MSG.customGuildImageUrl;
+		var title;
+		if(serverVersion == "v0.4.0") {
+		    title = document.createElement("h2");
+		    title.innerHTML = MSG.customGuildImageUrl;	    
+		}
+		else {
+            title = document.createElement("span");
+		    title.innerHTML = "<br/><br/><strong>"+ MSG.customGuildImageUrl +"</strong>";
+		}
 		//Creo il paragrafo
 		var paragraph = document.createElement("p");
 		//Creo l'immagine
@@ -790,7 +800,7 @@ if(isModAllyPage)
 /************************************
  Esclusione messaggistica corporazione
 ************************************/
-if(location.href.indexOf(sendCorpMessageUrl) > 0 && GM_getValue("excludeMeFromCorporateMessages", false))
+if(isSendGuildMessagePage && GM_getValue("excludeMeFromCorporateMessages", false))
 {
     excludeMe();
 }
@@ -798,22 +808,14 @@ if(location.href.indexOf(sendCorpMessageUrl) > 0 && GM_getValue("excludeMeFromCo
 /************************************
 Gestione statistiche utente complete
 ************************************/
-if((location.href.indexOf(myselfOverviewUrl) > 0 || location.href.indexOf(playerOverviewUrl) > 0) && GM_getValue("showFullStats", false))
+if((isMyselfOverviewPage || isPlayerOverviewPage) && GM_getValue("showFullStats", false))
 {
-    //Escludo le tab non utilizzabili per questa funzione
-    if(!( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&submod=stats.*/.test(location.href) || 
-            /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(location.href) || 
-            /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(location.href) ||
-            /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(location.href)
-         ) )
-    {
-	    //Guarigione
-	    var guarigione = document.getElementById("char_healing_tt");
-	    if(guarigione != null) guarigione.style.display = "";
-	    //Minaccia
-	    var minaccia = document.getElementById("char_threat_tt");
-	    if(minaccia != null) minaccia.style.display = "";
-	}
+    //Guarigione
+    var guarigione = document.getElementById("char_healing_tt");
+    if(guarigione != null) guarigione.style.display = "";
+    //Minaccia
+    var minaccia = document.getElementById("char_threat_tt");
+    if(minaccia != null) minaccia.style.display = "";
 }
 
 /************************************
