@@ -50,7 +50,8 @@ var activateClickListener = false;
 //Gesione delle lingue RTL
 var isArabo = (MSG.language == "arabo");
 
-var isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=memo&sh=.*/.test(location.href);
+var isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href);
+if(serverVersion == "v0.4.0") isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=memo&sh=.*/.test(location.href);
 var isWriteMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href);
 var isGenericMessagePage  = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&sh=.*/.test(location.href);
 var isSettingsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=settings&sh=.*/.test(location.href);
