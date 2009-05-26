@@ -4,14 +4,28 @@
 
 it.neurone.gladiatustools.outer = function() {
 
-	var sb;
-
-	var swapImage, imageToSwap, isOverview;
+	var sb, swapImage, imageToSwap, isOverview;
 	var avatarImageWidth = "168";
 	var avatarImageHeight = "194";
 	var guildImageWidth = "209";
 	var guildImageHeight = "232";
 
+	/*****************************
+	Recupera la versione del server
+	*****************************/
+	function getServerVersion(document) {
+		var ex = ".//span[@class='footer_link']";
+		tag = document.evaluate( 
+				ex,
+				document,
+				null,
+				XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
+				null
+		);
+		if (tag.snapshotLength) return(tag.snapshotItem(0).firstChild.innerHTML);
+		else return "v0.0.0";
+	}
+	
 	/*****************************
 	Trova la url dell'immagine impostata per l'avatar personalizzato
 	*****************************/
@@ -59,7 +73,7 @@ it.neurone.gladiatustools.outer = function() {
 			if(imgWidth > avatarImageWidth)
 			{
 				imgWidth = avatarImageWidth;
-				imgHeight =  imgWidth / aspectRatio;
+				imgHeight = imgWidth / aspectRatio;
 			}
 			
 			if(imgHeight > avatarImageHeight)
@@ -194,34 +208,39 @@ it.neurone.gladiatustools.outer = function() {
 		{   
 		    //Sanbox per accedere agli strumenti impostati dal compiler Greasemonkey
 		    sb = sandbox;
-		    href = sb.location.href;
+		    var href = sb.location.href;
 		    
-		    isPlayerOverviewPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href) &&
+		    var isPlayerOverviewPage = ( (/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href)) &&
 		        (! 
-		            ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=5.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=6.*/.test(href) || 
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&submod=stats.*/.test(href) 
+		            ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=5.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=5.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=6.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=6.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&submod=stats.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&submod=stats.*/.test(href)
 		            )
 		        )
 		    );
 		    
-		    isMyselfOverviewPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(href) &&
+		    var isMyselfOverviewPage = ( (/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(href)) &&
 		        (!
-		            ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(href) || 
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(href) || 
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(href)
+		            ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(href) ||
+		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(href)
 		            )
 		        )
 		    )
 		    
-		    isAllyPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&sh=.*/.test(href) ||
-		                    /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href) );
+			var isAllyPage = false;
+								
+			//Mantengo la compatibilità con la vecchia versione del server
+			if(getServerVersion(sb.document) == "v0.4.0") {
+				isAllyPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&sh=.*/.test(href) ||
+								/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href));
+			}
 		    
 		    /************************************
 			Visualizzazione dell'avatar personalizzato

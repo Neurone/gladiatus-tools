@@ -33,14 +33,7 @@ if(serverVersion == "v0.4.0") shadowingColor = "#C8AD7E";
 
 var urlSimulatore, hostSimulatore, refererUrlSimulatore;
 
-//Url di attivazione delle procedure
-var playerOverviewUrl = "index.php?mod=player";
-var myselfOverviewUrl = "index.php?mod=overview";
-var sendCorpMessageUrl = "index.php?mod=ally&submod=allyrecht";
-var workUrl = "index.php?mod=work";
-
 var highScoreUrl = common_siteUrl + "mod=highscore";
-var shopUrl = common_siteUrl + "mod=inventory";
 
 var goldAmout, rubyAmount;
 var objectTransparency = 0.25;
@@ -50,46 +43,49 @@ var activateClickListener = false;
 //Gesione delle lingue RTL
 var isArabo = (MSG.language == "arabo");
 
-var isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href);
-if(serverVersion == "v0.4.0") isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=memo&sh=.*/.test(location.href);
-var isWriteMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href);
-var isGenericMessagePage  = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&sh=.*/.test(location.href);
-var isSettingsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=settings&sh=.*/.test(location.href);
-var isShopPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href);
-var isPlayerStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href);
-var isOpponentStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href);
-var isCombatReportPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href);
-var isModAllyPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&submod=allydesc&sh=.*/.test(location.href);
+var isMyselfOverviewPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview&sh=.*/.test(location.href);
+var isPlayerOverviewPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href);
+var isSendGuildMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href);
+var isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href);
+var isWriteMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href);
+var isGenericMessagePage  = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=messages&sh=.*/.test(location.href);
+var isSettingsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=settings&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=settings&sh=.*/.test(location.href);
+var isShopPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href);
+var isPlayerStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href);
+var isOpponentStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href);
+var isCombatReportPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href);
+var isModAllyPage = false; // /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href);
+
+//Sovrascrivo alcune url se la versione del server è vecchia
+if(serverVersion == "v0.4.0") {
+	isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=memo&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=memo&sh=.*/.test(location.href);
+	isModAllyPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&submod=allydesc&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&submod=allydesc&sh=.*/.test(location.href);
+}
 
 /*****************************
 Trova il TLD del sito corrente
 *****************************/
-function TLD(hostname)
-{
+function TLD(hostname) {
     return (m = hostname.match(new RegExp("\.([a-z,A-Z]{2,6})$") )) ? m[1] : false;
 }
 
-function XQueryFromElement(query, DOMElement)
-{
+function XQueryFromElement(query, DOMElement) {
     return document.evaluate(query, DOMElement, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 }
 
-function XQuery(query)
-{
+function XQuery(query) {
     return document.evaluate(query, document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 }
 
-function insertBefore(baseElement, elementToAdd)
-{
+function insertBefore(baseElement, elementToAdd) {
     baseElement.parentNode.insertBefore(elementToAdd, baseElement);
 }
 
-function insertAfter(baseElement, elementToAdd)
-{
+function insertAfter(baseElement, elementToAdd) {
     baseElement.parentNode.insertBefore(elementToAdd, baseElement.nextSibling);
 }
 
-function createCookie(name, value, timeInMinute){
+function createCookie(name, value, timeInMinute) {
     if (timeInMinute) {
 		var date = new Date();
 		date.setTime(date.getTime() + (timeInMinute * 60 * 1000));
@@ -128,8 +124,7 @@ function getSpanContent(htmlObj, name, method) {
 	}
 }
 
-function formatNumber(number, separator)
-{
+function formatNumber(number, separator) {
 	number += '';
 	x = number.split('.');
 	x1 = x[0];
@@ -144,8 +139,7 @@ function formatNumber(number, separator)
 /*****************************
 Recupera la versione del server
 *****************************/
-function getServerVersion()
-{
+function getServerVersion() {
 	var ex = ".//span[@class='footer_link']";
 	tag = document.evaluate( 
 			ex,
