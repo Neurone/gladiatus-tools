@@ -3,7 +3,7 @@
 // @autor           Giuseppe Bertone
 
 it.neurone.gladiatustools.PrefManager = function() {
-	var startPoint="gladiatustools.";
+	var startPoint="it.neurone.gladiatustools.";
 
 	var pref=Components.classes["@mozilla.org/preferences-service;1"].
 		getService(Components.interfaces.nsIPrefService).

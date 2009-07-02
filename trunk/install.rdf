@@ -11,7 +11,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>3.5b4</em:maxVersion>
+        <em:maxVersion>3.5.*</em:maxVersion>
       </Description>
     </em:targetApplication>
     
@@ -26,6 +26,7 @@
     <em:translator>Peteris Petersons (Latvian translation)</em:translator>
     <em:translator>Halluz-man (Czech translation)</em:translator>
     <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
+	<em:translator>[Живко Янев] (Bulgarian translation)</em:translator>
     <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
 
     <em:localized>
