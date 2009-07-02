@@ -62,7 +62,14 @@ var isMyBuddiesOverviewPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\
 			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) ||
 			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href)
 );
-var isPlayerOverviewPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href);
+var isPlayerOverviewPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href) ||
+							/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&doll=1&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&doll=1&sh=.*/.test(location.href);
+var isPlayerBuddiesOverviewPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=2.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=2.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=5.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=5.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=6.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=6.*/.test(location.href)
+);
 var isSendGuildMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href);
 var isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href);
 var isWriteMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href);
