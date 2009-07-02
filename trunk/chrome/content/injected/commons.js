@@ -43,7 +43,25 @@ var activateClickListener = false;
 //Gesione delle lingue RTL
 var isArabo = (MSG.language == "arabo");
 
-var isMyselfOverviewPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview&sh=.*/.test(location.href);
+var isMyselfOverviewPage = ( (/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(location.href)) &&
+	(!
+		( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=achievements.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=achievements.*/.test(location.href)
+		)
+	)
+)
+var isMyBuddiesOverviewPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=2.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=2.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) ||
+			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href)
+);
 var isPlayerOverviewPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href);
 var isSendGuildMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href);
 var isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href);
@@ -53,8 +71,11 @@ var isSettingsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=settin
 var isShopPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href);
 var isPlayerStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href);
 var isOpponentStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href);
-var isCombatReportPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href);
-var isModAllyPage = false; // /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href);
+//Per supportare un bug di Gladiatus nella scrittura di una url, modifico la variabile isCombatReport per supportare lo stesso errore
+var isCombatReportPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href) ||
+						   /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(location.href) )
+							&& !/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*&submod=combatReport/.test(location.href);
+var isModAllyPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href);
 
 //Sovrascrivo alcune url se la versione del server è vecchia
 if(serverVersion == "v0.4.0") {

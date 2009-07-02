@@ -221,25 +221,31 @@ it.neurone.gladiatustools.outer = function() {
 		        )
 		    );
 		    
-		    var isMyselfOverviewPage = ( (/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(href)) &&
-		        (!
-		            ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(href) ||
-		                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(href)
-		            )
-		        )
-		    )
+			var isMyselfOverviewPage = ( (/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(href)) &&
+				(!
+					( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(href) ||
+						/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(href) ||
+						/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(href) ||
+						/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(href) ||
+						/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(href) ||
+						/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(href) ||
+						/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(href) ||
+						/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=achievements.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=achievements.*/.test(href)
+					)
+				)
+			)
 		    
-			var isAllyPage = false;
-								
+			var isAllyPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&sh=.*/.test(href) ||
+								/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&i=.*&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&i=.*&sh=.*/.test(href) ||
+								/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&i=\d+$/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&i=\d+$/.test(href) ||
+								/http:\/\/gladiatus\..*\/game\/index\.php\?mod=guild_main&i=\d+$/.test(href) );
+
 			//Mantengo la compatibilità con la vecchia versione del server
 			if(getServerVersion(sb.document) == "v0.4.0") {
 				isAllyPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&sh=.*/.test(href) ||
-								/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href));
+								/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href) ||
+								/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&i=\d+$/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&i=\d+$/.test(href) ||
+								/http:\/\/gladiatus\..*\/game\/index\.php\?mod=ally&i=\d+$/.test(href) );
 			}
 		    
 		    /************************************

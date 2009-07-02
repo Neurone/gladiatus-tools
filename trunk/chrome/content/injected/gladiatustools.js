@@ -602,7 +602,7 @@ Reimposta i tooltip
 *****************************/
 function showAdditionalTooltips()
 {
-    if((isMyselfOverviewPage || isShopPage) &&
+    if((isMyselfOverviewPage || isShopPage || isMyBuddiesOverviewPage) &&
         GM_getValue("showAdditionalTooltips", false) &&
         unsafeWindow.DDObj )
     {
@@ -808,7 +808,7 @@ if(isSendGuildMessagePage && GM_getValue("excludeMeFromCorporateMessages", false
 /************************************
 Gestione statistiche utente complete
 ************************************/
-if((isMyselfOverviewPage || isPlayerOverviewPage) && GM_getValue("showFullStats", false))
+if((isMyselfOverviewPage || isPlayerOverviewPage || isMyBuddiesOverviewPage) && GM_getValue("showFullStats", false))
 {
     //Guarigione
     var guarigione = document.getElementById("char_healing_tt");
