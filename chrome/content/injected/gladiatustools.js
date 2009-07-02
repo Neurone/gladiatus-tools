@@ -152,7 +152,7 @@ function getNomeUtente(paginaHTML)
 {
     var elemento = document.createElement("div");
 	elemento.innerHTML = paginaHTML;
-	var ex = ".//span[@class='playername_achivement']"; //v0.5
+	var ex = ".//span[@class='playername_achievement']"; //v0.5
 	if(serverVersion == "v0.4.0") ex = ".//span[@class='playername']";
 	tag = document.evaluate( 
 			ex,
@@ -808,7 +808,7 @@ if(isSendGuildMessagePage && GM_getValue("excludeMeFromCorporateMessages", false
 /************************************
 Gestione statistiche utente complete
 ************************************/
-if((isMyselfOverviewPage || isPlayerOverviewPage || isMyBuddiesOverviewPage) && GM_getValue("showFullStats", false))
+if((isMyselfOverviewPage || isPlayerOverviewPage || isMyBuddiesOverviewPage || isPlayerBuddiesOverviewPage) && GM_getValue("showFullStats", false))
 {
     //Guarigione
     var guarigione = document.getElementById("char_healing_tt");

@@ -4,26 +4,58 @@
 
 it.neurone.gladiatustools.outer = function() {
 
-	var sb, swapImage, imageToSwap, isOverview;
+	var sb, sserverVersion, swapImage, imageToSwap, isOverview;
 	var avatarImageWidth = "168";
 	var avatarImageHeight = "194";
 	var guildImageWidth = "209";
 	var guildImageHeight = "232";
+	
+	/*****************************
+	Funzioni accessorie per la selezione di elementi DOM, supportate da FF3.5 in poi
+	*****************************/
+	function $ (selector, el) {
+		 if (!el) {el = sb.document;}
+		 return el.querySelector(selector);
+	}
+
+	function $$ (selector, el) {
+		 if (!el) {el = sb.document;}
+		 return el.querySelectorAll(selector);
+	}
 
 	/*****************************
 	Recupera la versione del server
 	*****************************/
-	function getServerVersion(document) {
-		var ex = ".//span[@class='footer_link']";
-		tag = document.evaluate( 
-				ex,
-				document,
-				null,
-				XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
-				null
-		);
-		if (tag.snapshotLength) return(tag.snapshotItem(0).firstChild.innerHTML);
-		else return "v0.0.0";
+	function getServerVersion() {
+		var serverVersion = $("span[class='footer_link']", sb.document);
+		return serverVersion.firstChild.innerHTML;
+	}
+	
+	/*****************************
+	Recupera il nome dell'utente
+	*****************************/
+	function getUsername(HTMLPage)
+	{
+		var elemento = sb.document.createElement("div");
+		elemento.innerHTML = HTMLPage;
+		var username = $("span[class='playername_achievement']", elemento);
+		if(username != null) return username.innerHTML.trim();
+		else return "NOT_FOUND";
+	}
+	
+	/*****************************
+	Gestisco la risposta ad una chiamata a GM_xmlhttpRequest per 
+	la ricerca dell'immagine dell'avatar di un gladiatore
+	*****************************/
+	function handleResponse(HTMLPage)
+	{
+		var imageUrl = getGTImageUrl(HTMLPage.responseText);
+		if(imageUrl != "")
+		{	
+			isOverview = false;
+			//Imposta l'avatar corretto distinguendo le immagine per nome utente
+			setAvatarByName(getUsername(HTMLPage.responseText), imageUrl);
+		}
 	}
 	
 	/*****************************
@@ -175,6 +207,34 @@ it.neurone.gladiatustools.outer = function() {
 		}
 	}
 	
+	/*****************************
+	Prepara l'immagine dell'avatar da sostituire nelle pagine di report dei combattimenti
+	*****************************/
+	function setAvatarByName(username, imageUrl)
+	{
+		try
+		{
+			var gladiators = $$("span[class='playername_achievement']");
+			if(gladiators.length == 2)
+			{
+				//Assegno il primo gladiatore e successivamente lo riassegno se necessario
+				var elemento = gladiators[0];
+				if(username == gladiators[1].innerHTML.trim()) elemento = gladiators[1];
+				//Trovo il div nel quale sostituire l'immagine
+				imageToSwap = elemento.parentNode.parentNode.childNodes[3];
+				//Metto l'immagine in trasparenza
+				imageToSwap.style.opacity = 0.2;
+				//Recupero i dati dell'immagine
+				swapImage = new Image();
+				swapImage.onload = changeImage;
+				swapImage.src = imageUrl;
+			}
+		} catch (e) {
+			//Capita un eccezione quando viene caricata la pagina e allo stesso tempo arrivano
+			//nuove merci nei negozi
+		}
+	}
+	
     /*****************************
 	Prepara l'immagine della corporazione da sostituire
 	*****************************/
@@ -208,6 +268,7 @@ it.neurone.gladiatustools.outer = function() {
 		{   
 		    //Sanbox per accedere agli strumenti impostati dal compiler Greasemonkey
 		    sb = sandbox;
+			serverVersion = getServerVersion();
 		    var href = sb.location.href;
 		    
 		    var isPlayerOverviewPage = ( (/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href)) &&
@@ -241,12 +302,16 @@ it.neurone.gladiatustools.outer = function() {
 								/http:\/\/gladiatus\..*\/game\/index\.php\?mod=guild_main&i=\d+$/.test(href) );
 
 			//Mantengo la compatibilità con la vecchia versione del server
-			if(getServerVersion(sb.document) == "v0.4.0") {
+			if(serverVersion == "v0.4.0") {
 				isAllyPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&sh=.*/.test(href) ||
 								/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&i=.*&sh=.*/.test(href) ||
 								/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&i=\d+$/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&i=\d+$/.test(href) ||
 								/http:\/\/gladiatus\..*\/game\/index\.php\?mod=ally&i=\d+$/.test(href) );
 			}
+			
+			var isCombatReportPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(href) ||
+										/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(href) )
+										&& !/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*&submod=combatReport/.test(href);
 		    
 		    /************************************
 			Visualizzazione dell'avatar personalizzato
@@ -277,7 +342,32 @@ it.neurone.gladiatustools.outer = function() {
 			        setAvatar(imageUrl);
 		        }
 		    }
-		    
+			
+			if(sb.GM_getValue("showCustomAvatarImages", false) && isCombatReportPage)
+		    {
+				//Recupero i link alle pagine di overview dei due gladiatori
+			    var reportBox = $("div[class='title2_inner']");
+				var gladiatorOverviewPages = $$("a[href*='&p=']", reportBox);
+				//Tento di recuperare le immagini associate
+				if(gladiatorOverviewPages.length == 2)
+				{
+					//Attaccante
+					sb.GM_xmlhttpRequest
+					({
+						method: 'GET',
+						url: gladiatorOverviewPages[0].href,
+						onload: handleResponse
+					});
+					//Difensore
+					sb.GM_xmlhttpRequest
+					({
+						method: 'GET',
+						url: gladiatorOverviewPages[1].href,
+						onload: handleResponse
+					});
+				}
+		    }
+			
             /************************************
 			Visualizzazione del logo della corporazione personalizzato
 			************************************/
