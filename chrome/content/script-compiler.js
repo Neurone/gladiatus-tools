@@ -97,17 +97,19 @@ it.neurone.gladiatustools.gmCompiler = {
 	    try {
 	        //Locale
 	        it.neurone.gladiatustools.locale.init(sandbox.location.host);
-	        sandbox.MSG = it.neurone.gladiatustools.locale;
 	        //Outer main
-            it.neurone.gladiatustools.outer.main(sandbox);
+			it.neurone.gladiatustools.outer.init(sandbox);
+            it.neurone.gladiatustools.outer.main();
+			//Imposto lo script che devono essere accessibili anche dall'interno della sandbox
+	        sandbox.MSG = it.neurone.gladiatustools.locale;
             //Greasemonkey script
 		    this.evalInSandbox("(function(){"+script+"})()", url, sandbox);
 	    } catch (e) {
-            //alert(e);
-		    //var e2 = new Error(typeof e=="string" ? e : e.message);
-		    //e2.fileName = script.filename;
-		    //e2.lineNumber = 0;
-		    //GM_logError(e2);
+            alert(e);
+		    var e2 = new Error(typeof e=="string" ? e : e.message);
+		    e2.fileName = script.filename;
+		    e2.lineNumber = 0;
+		    GM_logError(e2);
 	    }
     },
 
