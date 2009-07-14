@@ -3,8 +3,8 @@
 # Title: Gladiatus Tools Firefox Addon Translation Schema
 # Author: Giuseppe Bertone
 #
-# This guide applies to 2.4 release
-# Last modified: 01 May 2009 16:01:42 GMT 
+# This guide applies to 2.5.0 release
+# Last modified: 13 Jul 2009 14:51:44 GMT 
 # 
 ####################################################
 #
