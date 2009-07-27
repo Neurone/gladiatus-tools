@@ -50,7 +50,7 @@ it.neurone.gladiatustools.locale = {
             new Array("Lettonia", /s\d+\.gladiatus\.lv/i, "lettone"),
             new Array("Lituania", ".gladiatus.lt", "lituano"),
             new Array("Messico", /s\d+\.gladiatus\.com\.mx/i, "spagnolo"),
-            new Array("Paesi Bassi", ".gladiatus.nl", "olandese"),
+            new Array("Paesi Bassi", /s\d+\.gladiatus\.nl/i, "olandese"),
             new Array("Norvegia", ".gladiatus.no", "norvegese"),
             new Array("Peru", /s\d+\.gladiatus\.pe/i, "spagnolo"),
             new Array("Filippine", ".gladiatus.ph", "filippino"),
@@ -231,7 +231,24 @@ it.neurone.gladiatustools.locale = {
                     this.winPercentage = "Uzvarēto procents:";
                     this.totalEarnedGold = "Arēnā iegūtais zelts:";
 					break;
-                      
+                
+                case "olandese":
+					this.simulationFailed = "Simulatie mislukt. Probeer het later nog eens op kies een andere simulator in het optiemenu.";
+					this.customAvatarImageUrl = "Link naar eigen avatar (http://...). Afbeelding wordt verkleind naar 168x194 px.";
+					this.customGuildImageUrl = "Link naar eigen gildelogo (http://...). Afbeelding wordt verkleind naar 209x232 px.";
+					this.simulate = "Start Simulatie";
+					this.simulating = "Bezig met simulatie...";
+					this.winning = "Winkans ";
+					this.go = "GO!";
+					this.stop = "STOP!";
+					this.quest = "Quest:";
+					this.arena = "Arena:";
+					this.work = "Werk:";
+					this.completed = "Gereed";
+					this.winPercentage = "Percentage gewonnen:";
+					this.totalEarnedGold = "Netto verdiend goud:";	
+					break;
+					  
                 case "vietnamita":
                     this.simulationFailed = "Quá trình mô phỏng thất bại. Thử lại sau hoặc chọn dụng cụ mô phỏng khác ở Công cụ Gladiatus";
                     this.customAvatarImageUrl = "Đường dẫn đến hình ảnh đại diện (http://...). Hình ảnh sẽ được định dạng lại (168x194px)";

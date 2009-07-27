@@ -38,7 +38,8 @@ it.neurone.gladiatustools.outer = function() {
 	*****************************/
 	function getServerVersion() {
 		var serverVersionElement = $("span[class='footer_link']", sb.document);
-		return serverVersionElement.firstChild.innerHTML;
+		if(serverVersionElement != null) return serverVersionElement.firstChild.innerHTML;
+		return "v0.0.0";
 	}
 	
 	/*****************************
@@ -461,7 +462,6 @@ it.neurone.gladiatustools.outer = function() {
 		    {
 			    //Trovo la url
 			    var imageUrl = getGTImageUrl(sb.document.body.innerHTML);
-				imageUrl = "http://s1.gladiatus.fr/game/img/faces/gladiator_80_m.jpg";
 			    if(imageUrl != "")
 			    {	
 			        isOverview = false;

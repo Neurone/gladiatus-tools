@@ -24,7 +24,8 @@
     <em:translator>Peteris Petersons (Latvian translation)</em:translator>
     <em:translator>Halluz-man (Czech translation)</em:translator>
     <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-	<em:translator>[Живко Янев] (Bulgarian translation)</em:translator>
+	<em:translator>Живко Янев (Bulgarian translation)</em:translator>
+	<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
     <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
 
     <em:localized>
@@ -44,7 +45,8 @@
         <em:translator>Peteris Petersons (المترجم اللاتيفي)</em:translator>
         <em:translator>Halluz-man (المترجم التشيكي)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-        <em:translator>[Живко Янев] (Bulgarian translation)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -63,7 +65,8 @@
         <em:translator>Peteris Petersons (Latvian translation)</em:translator>
         <em:translator>Halluz-man (Czech translation)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-        <em:translator>[Живко Янев] (Български превод)</em:translator>
+        <em:translator>Живко Янев (Български превод)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -82,7 +85,8 @@
         <em:translator>Peteris Petersons (Lotyšský překlad)</em:translator>
         <em:translator>Halluz-man (Český překlad)</em:translator>
         <em:translator>Muriel de Souza Godoi (Překlad do brazilské portugalštiny)</em:translator>
-        <em:translator>[Живко Янев] (Bulgarian translation)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -101,7 +105,8 @@
         <em:translator>Peteris Petersons (Letón traducción)</em:translator>
         <em:translator>Halluz-man (Checa traducción)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-        <em:translator>[Живко Янев] (Bulgarian translation)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -120,7 +125,8 @@
         <em:translator>Peteris Petersons (Traduction lettone)</em:translator>
         <em:translator>Halluz-man (Traduction tchèque)</em:translator>
         <em:translator>Muriel de Souza Godoi (Traduction brésilo-portugaise)</em:translator>
-        <em:translator>[Живко Янев] (Traduction bulgare)</em:translator>
+        <em:translator>Живко Янев (Traduction bulgare)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -139,7 +145,8 @@
         <em:translator>Peteris Petersons (Traduzione in lettone)</em:translator>
         <em:translator>Halluz-man (Traduzione in ceco)</em:translator>
         <em:translator>Muriel de Souza Godoi (Traduzione in portoghese brasiliano)</em:translator>
-        <em:translator>[Живко Янев] (Traduzione in bulgaro)</em:translator>
+        <em:translator>Живко Янев (Traduzione in bulgaro)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -158,7 +165,28 @@
         <em:translator>Peteris Petersons (Latviešu tulkojums)</em:translator>
         <em:translator>Halluz-man (Čehu tulkojums)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-        <em:translator>[Живко Янев] (Bulgarian translation)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+	
+	<em:localized>
+      <Description>
+        <em:locale>nl-NL</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Een add-on voor het browserspel Gladiatus. Gladiatus Tools voegt diversie nieuwe opties toe aan het spel die het gebruiksgemak vergroten. Deze nieuwe opties zijn naar keuze in en uit te schakelen.</em:description>
+		<em:translator>Anthony Lieuallen (Greasemonkey Compiler)</em:translator>
+		<em:translator>Sébastien Bailly (Franse vertaling)</em:translator>
+		<em:translator>Sebastiàn Goicochea (Spaanse vertaling)</em:translator>
+		<em:translator>TaReQ ALShehhi-UAETooN (Arabische vertaling)</em:translator>
+		<em:translator>Erik Tuu (Vietnamese vertaling)</em:translator>
+		<em:translator>Peteris Petersons (Letse vertaling)</em:translator>
+		<em:translator>Halluz-man (Tsjechische vertaling)</em:translator>
+		<em:translator>Muriel de Souza Godoi (Portugees-Braziliaanse vertaling)</em:translator>
+		<em:translator>Живко Янев (Bulgaarse vertaling)</em:translator>
+		<em:translator>Tom van de Zilver (Nederlandse vertaling)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -177,7 +205,8 @@
         <em:translator>Peteris Petersons (Latvian dịch)</em:translator>
         <em:translator>Halluz-man (Séc dịch)</em:translator>
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
-        <em:translator>[Живко Янев] (Bulgarian translation)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -195,8 +224,9 @@
 		    <em:translator>Erik Tuu (Traduçao para Vietnamita)</em:translator>
 		    <em:translator>Peteris Petersons (Traduçao para Letão)</em:translator>
 		    <em:translator>Halluz-man (Traduçao para Checo)</em:translator>
-        <em:translator>Muriel de Souza Godoi (Traduçao para Português Brasileiro)</em:translator>
-        <em:translator>[Живко Янев] (Bulgarian translation)</em:translator>
+			<em:translator>Muriel de Souza Godoi (Traduçao para Português Brasileiro)</em:translator>
+			<em:translator>Живко Янев (Bulgarian translation)</em:translator>
+			<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
 		    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
