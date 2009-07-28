@@ -156,6 +156,28 @@ function showTimers() {
 	if(TimersCreated())
 	{
 	    //Recupero i dati
+		GM_xmlhttpRequest({
+		    method: "GET",
+		    url: 'http://'+ window.location.host +'/game/index.php?mod=location&loc=1&sh='+ secureHash,
+		    onload: function(responseDetails) {
+			    var pulled = document.createElement('div');
+			    pulled.innerHTML = responseDetails.responseText;
+			    var remainingTime = getSpanContent(pulled, 'bx0', 'id');
+				if ( remainingTime != null && remainingTime != '' ) {
+					//ok, world travelling is undergoing
+					document.getElementById('timerMissione').innerHTML = remainingTime;
+					var regexp = /s=(\d+)\-Math/;
+					var result = pulled.innerHTML.match(regexp);
+					if ( result != null && result.length > 1 ) {
+						GTtimeRemainingWorld = result[1];
+						workTimerWorld();
+					} else {
+						document.getElementById('timerMissione').innerHTML = "[Errore]";
+					}
+				}
+		    }
+	    });
+		
 	    GM_xmlhttpRequest({
 		    method: "GET",
 		    url: 'http://'+ window.location.host +'/game/index.php?mod=work&sh='+ secureHash,
@@ -176,20 +198,7 @@ function showTimers() {
 						    document.getElementById('timerStalla').innerHTML = "[Errore]";
 					    }
 				    }
-			    } else {
-				    if ( remainingTime != null && remainingTime != '' ) {
-					    //ok, world travelling is undergoing
-					    document.getElementById('timerMissione').innerHTML = remainingTime;
-					    var regexp = /s=(\d+)\-Math/;
-					    var result = pulled.innerHTML.match(regexp);
-					    if ( result != null && result.length > 1 ) {
-						    GTtimeRemainingWorld = result[1];
-						    workTimerWorld();
-					    } else {
-						    document.getElementById('timerMissione').innerHTML = "[Errore]";
-					    }
-				    }
-			    }			
+			    }
 		    }
 	    });
     	

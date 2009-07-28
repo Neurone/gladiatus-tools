@@ -26,12 +26,6 @@
 # Let's begin
 #
 ####################################################
-# This is the addon description message you can see in the FireFox addons list. Translate all.
-####################################################
-
-Improve the user experience automatically adding a set of fully web site integrated tools to the Gladiatus browser game interface.
-
-####################################################
 # These are the addon option messages. Translate only those words between "..."
 ####################################################
 
@@ -77,6 +71,12 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
 <!ENTITY goToMyPos.accesskey "">
+
+####################################################
+# This is the addon description message you can see in the FireFox addons list. Translate all.
+####################################################
+
+Improve the user experience automatically adding a set of fully web site integrated tools to the Gladiatus browser game interface.
 
 ####################################################
 # These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
@@ -155,7 +155,7 @@ Look at preview images for more info about web site changes introduced by the ad
 FEATURES:
 
 - Battle simulation (automatic or manual without "simulate" button)
-- Show your custom avatar image to other Gladiatus Tools users
+- Show your custom avatar image and custom guild image to other Gladiatus Tools users
 - Three timers always visible: work in Stable, waiting for Arena and Expedition time remaining
 - Compare inventory items with your equipment items. It works with mercenaries also
 - Persistent tab choices
@@ -167,7 +167,7 @@ FEATURES:
 
 Simulation engines are www.georged.eu and www.playerutils.com. These simulation engines don't take care of player remaining life, so use them carefully. :-)
 
-This addon works with 0.4 and 0.5 server and following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, bulgarian, YOUR LANGUAGE.
+This addon has been tested with every server version up to 0.5.2. The following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, brazilian portuguese, bulgarian, dutch, YOUR LANGUAGE.
 If your language is not in the list, english one will be used. If you want to help me adding your language translation, without using Google translator :-), please send me an email (in english).
 
 ####################################################

@@ -556,7 +556,7 @@ it.neurone.gladiatustools.outer = function() {
 			/************************************
 			Visualizzazione i loghi delle corporazioni nel report di combattimento
 			************************************/
-		    if(sb.GM_getValue("showCustomGuildImages", false) && isGuildCombatReportPage)
+		    if(sb.GM_getValue("showCustomGuildImages", false) && (isGuildCombatReportPage || isGuildCombatPage))
 		    {
 				var guildOverviewPages;
 				//Recupero i link alle pagine di overview delle due gilde
