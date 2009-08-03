@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{76063e7f-3558-4b68-8287-54eb6512adc0}</em:id>
+    <em:version>2.5.0</em:version>
+    <em:optionsURL>chrome://gladiatustools/content/options.xul</em:optionsURL>
+    <em:updateURL>http://www.neurone.it/mozilla/addons/gladiatustools/signedupdate.rdf?id=%ITEM_ID%&amp;version=%ITEM_VERSION%&amp;os=%APP_OS%&amp;locale=%APP_LOCALE%</em:updateURL>
+    <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD9X/hHgPHAH7usPH5mbL2XRssE/wTQEBlJcY3Vl7CRJ5yM+nupiBPpm22uedfE3YmeQSnUeJQDEh+q3dLVsoNLF7s6ykjxlhzA5H/7KNwaN5K8W+vbPDEPTik0lVArQeB/OiZGljyX24W3E+eI2LI+bW1Qha/nXYrNex3Fgu2R8QIDAQAB</em:updateKey>
+
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.5</em:minVersion>
+        <em:maxVersion>3.5.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    
+    <em:name>Gladiatus Tools</em:name>
+    <em:creator>Giuseppe Bertone</em:creator>
+    <em:description>Improve the user experience automatically adding a set of fully web site integrated tools to the Gladiatus browser game interface.</em:description>
+    <em:contributor>Anthony Lieuallen (Greasemonkey Compiler)</em:contributor>
+    <em:translator>Sébastien Bailly (French translation)</em:translator>
+    <em:translator>Sebastiàn Goicochea (Spanish translation)</em:translator>
+    <em:translator>TaReQ ALShehhi-UAETooN (Arabic translation)</em:translator>
+    <em:translator>Erik Tuu (Vietnamese translation)</em:translator>
+    <em:translator>Peteris Petersons (Latvian translation)</em:translator>
+    <em:translator>Halluz-man (Czech translation)</em:translator>
+    <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
+	<em:translator>Живко Янев (Bulgarian translation)</em:translator>
+	<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+
+    <em:localized>
+      <Description>
+        <em:locale>ar</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>
+          منتج للعبة جلاديتوس
+          عند تثبيت المنتج سيتم اضافته تلقائيا مع كامل المميزات التي تساعد اللاعبين في الحصول على الخبرة..
+        </em:description>
+        <em:contributor>Anthony Lieuallen (مبرمج الأداة)</em:contributor>
+        <em:translator>Sébastien Bailly (المترجم الفرنسي)</em:translator>
+        <em:translator>Sebastián Goicochea (المترجم الاسباني)</em:translator>
+        <em:translator>TaReQ ALShehhi-UAETooN (المترجم العربي)</em:translator>
+        <em:translator>Erik Tuu (المترجم الفيتنامية)</em:translator>
+        <em:translator>Peteris Petersons (المترجم اللاتيفي)</em:translator>
+        <em:translator>Halluz-man (المترجم التشيكي)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>bg-BG</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Improve the user experience automatically adding a set of fully web site integrated tools to the Gladiatus browser game interface.</em:description>
+        <em:contributor>Anthony Lieuallen (Greasemonkey Compiler)</em:contributor>
+        <em:translator>Sébastien Bailly (French translation)</em:translator>
+        <em:translator>Sebastiàn Goicochea (Spanish translation)</em:translator>
+        <em:translator>TaReQ ALShehhi-UAETooN (Arabic translation)</em:translator>
+        <em:translator>Erik Tuu (Vietnamese translation)</em:translator>
+        <em:translator>Peteris Petersons (Latvian translation)</em:translator>
+        <em:translator>Halluz-man (Czech translation)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
+        <em:translator>Живко Янев (Български превод)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>cs-CZ</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Přidává plně integrované nástroje do online hry Gladiatus pro pohodlnější hraní.</em:description>
+        <em:contributor>Anthony Lieuallen (Greasemonkey kompilátor)</em:contributor>
+        <em:translator>Sébastien Bailly (Francouzský překlad)</em:translator>
+        <em:translator>Sebastiàn Goicochea (Španělské překlad)</em:translator>
+        <em:translator>TaReQ ALShehhi-UAETooN (Arabský překlad)</em:translator>
+        <em:translator>Erik Tuu (Vietnamský překlad)</em:translator>
+        <em:translator>Peteris Petersons (Lotyšský překlad)</em:translator>
+        <em:translator>Halluz-man (Český překlad)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Překlad do brazilské portugalštiny)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>es-AR</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Addon para el juego Gladiatus. Una vez instalado este addon agrega automáticamente un conjunto de herramientas completamente integradas al sitio web de Gladiatus para mejorar la experiencia del usuario.</em:description>
+        <em:contributor>Anthony Lieuallen (Compilador Greasemonkey)</em:contributor>
+        <em:translator>Sébastien Bailly (Traducción al francés)</em:translator>
+        <em:translator>Sebastián Goicochea (Traducción al español)</em:translator>
+        <em:translator>TaReQ ALShehhi-UAETooN (Traducción al árabe)</em:translator>
+        <em:translator>Erik Tuu (Traducción vietnamita)</em:translator>
+        <em:translator>Peteris Petersons (Letón traducción)</em:translator>
+        <em:translator>Halluz-man (Checa traducción)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>fr-FR</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Extension pour le jeu par navigateur Gladiatus. Cette extension ajoute automatiquement une série d’outils pleinement intégrés au jeu, ce dans le but d’accroitre le confort de chaque utilisateur.</em:description>
+        <em:contributor>Anthony Lieuallen (Outil GreaseMonkey)</em:contributor>
+        <em:translator>Sébastien Bailly (Traduction française)</em:translator>
+        <em:translator>Sebastián Goicochea (Traduction espagnole)</em:translator>
+        <em:translator>TaReQ ALShehhi-UAETooN (Traduction arabe)</em:translator>
+        <em:translator>Erik Tuu (Traduction vietnamienne)</em:translator>
+        <em:translator>Peteris Petersons (Traduction lettone)</em:translator>
+        <em:translator>Halluz-man (Traduction tchèque)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Traduction brésilo-portugaise)</em:translator>
+        <em:translator>Живко Янев (Traduction bulgare)</em:translator>
+		<em:translator>Tom van de Zilver (Traduction néerlandaise)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>it-IT</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Questa estensione aggiunge un insieme di strumenti completamente integrati con l'interfaccia web del browser game Gladiatus.</em:description>
+        <em:contributor>Anthony Lieuallen (Compilatore Greasemonkey)</em:contributor>
+        <em:translator>Sébastien Bailly (Traduzione in francese)</em:translator>
+        <em:translator>Sebastiàn Goicochea (Traduzione in spagnolo)</em:translator>
+        <em:translator>TaReQ ALShehhi-UAETooN (Traduzione in arabo)</em:translator>
+        <em:translator>Erik Tuu (Traduzione in vietnamita)</em:translator>
+        <em:translator>Peteris Petersons (Traduzione in lettone)</em:translator>
+        <em:translator>Halluz-man (Traduzione in ceco)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Traduzione in portoghese brasiliano)</em:translator>
+        <em:translator>Живко Янев (Traduzione in bulgaro)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>lv-LV</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Uzlabo spēles kvalitāti pievienojot pilnīgi integrētus papildinājumus Gladiatus spēles mājas lapā.</em:description>
+        <em:contributor>Anthony Lieuallen (Greasemonkey kompilators)</em:contributor>
+        <em:translator>Sébastien Bailly (Franču tulkojums)</em:translator>
+        <em:translator>Sebastiàn Goicochea (Spāņu tulkojums)</em:translator>
+        <em:translator>TaReQ ALShehhi-UAETooN (Arābu tulkojums)</em:translator>
+        <em:translator>Erik Tuu (Vjetnamiešu tulkojums)</em:translator>
+        <em:translator>Peteris Petersons (Latviešu tulkojums)</em:translator>
+        <em:translator>Halluz-man (Čehu tulkojums)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+	
+	<em:localized>
+      <Description>
+        <em:locale>nl-NL</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Een add-on voor het browserspel Gladiatus. Gladiatus Tools voegt diversie nieuwe opties toe aan het spel die het gebruiksgemak vergroten. Deze nieuwe opties zijn naar keuze in en uit te schakelen.</em:description>
+		<em:translator>Anthony Lieuallen (Greasemonkey Compiler)</em:translator>
+		<em:translator>Sébastien Bailly (Franse vertaling)</em:translator>
+		<em:translator>Sebastiàn Goicochea (Spaanse vertaling)</em:translator>
+		<em:translator>TaReQ ALShehhi-UAETooN (Arabische vertaling)</em:translator>
+		<em:translator>Erik Tuu (Vietnamese vertaling)</em:translator>
+		<em:translator>Peteris Petersons (Letse vertaling)</em:translator>
+		<em:translator>Halluz-man (Tsjechische vertaling)</em:translator>
+		<em:translator>Muriel de Souza Godoi (Portugees-Braziliaanse vertaling)</em:translator>
+		<em:translator>Живко Янев (Bulgaarse vertaling)</em:translator>
+		<em:translator>Tom van de Zilver (Nederlandse vertaling)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>vi-VN</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Đây là add-on cho game Gladiatus - cài đặt gói addon này bạn sẽ được hỗ trợ đầy đủ nhất những công cụ cho website Gladiatus.)</em:description>
+        <em:contributor>Anthony Lieuallen (Greasemonkey công cụ)</em:contributor>
+        <em:translator>Sébastien Bailly (Tiếng Pháp dịch)</em:translator>
+        <em:translator>Sebastiàn Goicochea (Dịch thuật tiếng Tây Ban Nha)</em:translator>
+        <em:translator>TaReQ ALShehhi-UAETooN (ả-rập dịch)</em:translator>
+        <em:translator>Erik Tuu (Việt dịch)</em:translator>
+        <em:translator>Peteris Petersons (Latvian dịch)</em:translator>
+        <em:translator>Halluz-man (Séc dịch)</em:translator>
+        <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
+        <em:translator>Живко Янев (Bulgarian translation)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+    
+    <em:localized>
+      <Description>
+        <em:locale>pt-BR</em:locale>
+		    <em:name>Gladiatus Tools</em:name>
+		    <em:creator>Giuseppe Bertone</em:creator>
+		    <em:description>Complemento para o jogo Gladiatus. Uma vez instalado, este complemento adiciona automaticamente um conjunto de ferramentas integradas ao site Gladiatus para melhorar a experiência do usuário.</em:description>
+		    <em:contributor>Anthony Lieuallen (Compliador Greasemonkey)</em:contributor>
+		    <em:translator>Sébastien Bailly (Traduçao para Francês)</em:translator>
+		    <em:translator>Sebastiàn Goicochea (Traduçao para Espanhol)</em:translator>
+		    <em:translator>TaReQ ALShehhi-UAETooN (Traduçao para Árabe)</em:translator>
+		    <em:translator>Erik Tuu (Traduçao para Vietnamita)</em:translator>
+		    <em:translator>Peteris Petersons (Traduçao para Letão)</em:translator>
+		    <em:translator>Halluz-man (Traduçao para Checo)</em:translator>
+			<em:translator>Muriel de Souza Godoi (Traduçao para Português Brasileiro)</em:translator>
+			<em:translator>Живко Янев (Bulgarian translation)</em:translator>
+			<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+		    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+
+  </Description>
+</RDF>
