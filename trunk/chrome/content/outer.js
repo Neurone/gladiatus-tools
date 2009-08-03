@@ -208,7 +208,7 @@ it.neurone.gladiatustools.outer = function() {
 			else
 			{
 				//Inserisco la nuova immagine
-				this.imageToSwap.innerHTML = newImg + this.imageToSwap.innerHTML;
+				this.imageToSwap.innerHTML = newImg;
 			}
 		} catch (e) {
 			//Null
@@ -470,7 +470,7 @@ it.neurone.gladiatustools.outer = function() {
 					insertAfter($("div[class='player_name_bg']"), leftThrobber);
 					//Carico la nuova immagine
 				    setAvatar(imageUrl);
-			    }
+			    }				
 		    }
 		    
 		    if(sb.GM_getValue("showCustomAvatarImages", false) && isMyselfOverviewPage)
