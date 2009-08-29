@@ -51,6 +51,6 @@ function showAdvancedStats() {
 		rigaVittoriaPercento.innerHTML = "<th>"+ MSG.winPercentage +"</th><td style=\"white-space:nowrap;color:"+coloreVittoriaPercento+";\">"+vittoriaPercento+"%</td>";
     	rigaOroGuadagnato.innerHTML = "<th>"+ MSG.totalEarnedGold +"</th><td style=\"white-space:nowrap;color:"+coloreOroGuadagnato+";\">"+
     									formatNumber(oroGuadagnato,".")+
-    									" <img border=\"0\" align=\"absmiddle\" title=\"Oro\" alt=\"Oro\" src=\"img/res2.gif\"/></td>";
+    									" <img border=\"0\" align=\"absmiddle\" title=\""+ MSG.goldLabel +"\" alt=\""+ MSG.goldLabel +"\" src=\"img/res2.gif\"/></td>";
     }
 }
