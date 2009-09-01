@@ -21,6 +21,7 @@
       <preference id="rememberTabs" name="it.neurone.gladiatustools.rememberTabs" type="bool"/>
       <preference id="goToMyPos" name="it.neurone.gladiatustools.goToMyPos" type="bool"/>
       <preference id="reportDetailLevel" name="it.neurone.gladiatustools.reportDetailLevel" type="string"/>
+	  <preference id="showCharactersLeft" name="it.neurone.gladiatustools.showCharactersLeft" type="bool"/>
     </preferences>
 
     <vbox>
@@ -76,6 +77,9 @@
         <caption label="&otherSettingsGroup.label;"/>
         <hbox align="center">
           <checkbox id="c_showTimers" preference="showTimers" label="&showTimers.label;" accesskey="&showTimers.accesskey;"/>
+        </hbox>
+		<hbox align="center">
+          <checkbox id="c_showCharactersLeft" preference="showCharactersLeft" label="&showCharactersLeft.label;" accesskey="&showCharactersLeft.accesskey;"/>
         </hbox>
         <hbox align="center">
           <checkbox id="c_excludeMeFromCorporateMessages" preference="excludeMeFromCorporateMessages" label="&excludeMeFromCorporateMessages.label;" accesskey="&excludeMeFromCorporateMessages.accesskey;"/>

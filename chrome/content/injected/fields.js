@@ -44,6 +44,7 @@ function showBigWriteMessage() {
 	    var tables = XQuery(".//table[@class='message_table']");
 	    if (tables.snapshotLength > 0) {
 	        var myTable = tables.snapshotItem(0);
+			myTable.id = "writeMessageTable";
 	        //Differenzio per le versioni RTL
 	        if(isArabo) {
 	            myTable.style.right = "48px";
@@ -53,13 +54,148 @@ function showBigWriteMessage() {
 	            myTable.style.top = "44px";
 	        }
 	    }
-	    //Trovo il campio testo
+	    //Trovo il campo testo
         var textareas = XQuery(".//textarea[@name='text']");
 	    if (textareas.snapshotLength > 0)
 	    {
-	        var myTextarea = textareas.snapshotItem(0);
-	        myTextarea.cols = 50;
-	        myTextarea.rows = 8;
+	        var myTextArea = textareas.snapshotItem(0);
+	        myTextArea.cols = 50;
+	        myTextArea.rows = 8;
+			myTextArea.id = "writeMessageTextArea";
 	    }
     }
+}
+
+//Gestisce la pressione dei tasti
+function grabKeyPress(event) {
+
+	switch(event.target.id)
+	{
+		case "writeMessageTextArea":
+			updateWriteMessageTextArea(maxCharsSmall);
+			break;
+			
+		case "GTImageUrl":
+			updatePlayerDescriptionTextArea(maxCharsSmall);
+			break;
+			
+		case "GTGuildImageUrl":
+			updateAllyDescriptionTextArea(maxCharsLarge);
+			break;
+	}
+
+	switch(event.target.name)
+	{
+		case "rpg":
+			updatePlayerDescriptionTextArea(maxCharsSmall);
+			break;
+			
+		case "catch":
+			updateCatchTextArea(maxCharsSmall);
+			break;
+			
+		case "message":
+			updateAllyMessageTextArea(maxCharsMedium);
+			break;
+			
+		case "description":
+			updateAllyDescriptionTextArea(maxCharsLarge);
+			break;
+			
+		case "memo":
+			updateNotesTextArea(maxCharsExtraLarge);
+			break;
+	}
+	
+}
+
+function updateNotesTextArea(maxChars) {
+	//Trovo il campo testo
+	var textareas = XQuery(".//textarea[@name='memo']");
+	if (textareas.snapshotLength > 0)
+	{
+		var myTextArea = textareas.snapshotItem(0);
+		var testo = myTextArea.parentNode.childNodes[1].innerHTML;
+		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		myTextArea.parentNode.childNodes[1].innerHTML =
+			testo.substring(0, testo.indexOf("(")) + " ("+ charsLeft(myTextArea, maxChars) +"/"+ maxChars +")";
+	}
+}
+
+function updateWriteMessageTextArea(maxChars) {
+	//Trovo il campo testo
+	var textareas = XQuery(".//textarea[@name='text']");
+	if (textareas.snapshotLength > 0)
+	{
+		var myTextArea = textareas.snapshotItem(0);
+		var testo = myTextArea.parentNode.parentNode.parentNode.childNodes[10].childNodes[0].innerHTML;
+		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		myTextArea.parentNode.parentNode.parentNode.childNodes[10].childNodes[0].innerHTML =
+			testo.substring(0, testo.indexOf("(")) + " ("+ charsLeft(myTextArea, maxChars) +"/"+ maxChars +")";
+	}
+}
+
+function updatePlayerDescriptionTextArea(maxChars) {
+	//modifico i caratteri a disposizione per la custom image per l'avatar
+	var subtract = document.getElementById("GTImageUrl").value.length;
+	//Trovo il campo testo
+	var textareas = XQuery(".//textarea[@name='rpg']");
+	if (textareas.snapshotLength > 0)
+	{
+		var myTextArea = textareas.snapshotItem(0);
+		var testo = myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[9].firstChild.innerHTML;
+		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[9].firstChild.innerHTML =
+				testo.substring(0, testo.indexOf("(")) + 
+				" ("+ (charsLeft(myTextArea, maxChars) - subtract)+
+				"/"+ maxChars +")";
+	}	
+}
+
+function updateCatchTextArea(maxChars) {
+	//Trovo il campo testo
+	var textareas = XQuery(".//textarea[@name='catch']");
+	if (textareas.snapshotLength > 0)
+	{
+		var myTextArea = textareas.snapshotItem(0);
+		var testo = myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[3].firstChild.innerHTML;
+		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[3].firstChild.innerHTML =
+				testo.substring(0, testo.indexOf("(")) + " ("+ charsLeft(myTextArea, maxChars) +"/"+ maxChars +")";
+	}	
+}
+
+function updateAllyMessageTextArea(maxChars) {
+	//Trovo il campo testo
+	var textareas = XQuery(".//textarea[@name='message']");
+	if (textareas.snapshotLength > 0)
+	{
+		var myTextArea = textareas.snapshotItem(0);
+		var testo = myTextArea.parentNode.parentNode.firstChild.innerHTML;
+		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		myTextArea.parentNode.parentNode.firstChild.innerHTML =
+				testo.substring(0, testo.indexOf("(")) + " ("+ charsLeft(myTextArea, maxChars) +"/"+ maxChars +")";
+	}
+}
+
+function updateAllyDescriptionTextArea(maxChars) {
+	//modifico i caratteri a disposizione per la custom guild image
+	var subtract = document.getElementById("GTGuildImageUrl").value.length;
+	//Trovo il campo testo
+	var textareas = XQuery(".//textarea[@name='description']");
+	if (textareas.snapshotLength > 0)
+	{
+		var myTextArea = textareas.snapshotItem(0);
+		var testo = myTextArea.parentNode.parentNode.parentNode.firstChild.innerHTML;
+		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		myTextArea.parentNode.parentNode.parentNode.firstChild.innerHTML =
+				testo.substring(0, testo.indexOf("(")) +
+				" ("+ ( charsLeft(myTextArea, maxChars) - subtract) +
+				"/"+ maxChars +")";
+	}
+}
+
+//Conta i caratteri rimanenti
+function charsLeft(field, maxChars) {
+	return (maxChars - field.value.length);
 }

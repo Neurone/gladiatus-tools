@@ -22,6 +22,7 @@
 <!ENTITY reportDetailLevelEssential.label "Minimaal">
 <!ENTITY reportDetailLevelMedium.label "Gemiddeld">
 <!ENTITY reportDetailLevelFull.label "Volledig">
+<!ENTITY showCharactersLeft.label "Show chars counters">
 
 <!ENTITY autoSimulateBattle.accesskey "S">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "G">
@@ -34,3 +35,4 @@
 <!ENTITY showAdditionalStats.accesskey "P">
 <!ENTITY rememberTabs.accesskey "B">
 <!ENTITY goToMyPos.accesskey "R">
+<!ENTITY showCharactersLeft.accesskey "">

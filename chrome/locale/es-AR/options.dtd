@@ -22,6 +22,7 @@
 <!ENTITY reportDetailLevelEssential.label "Essential">
 <!ENTITY reportDetailLevelMedium.label "Medium">
 <!ENTITY reportDetailLevelFull.label "Full">
+<!ENTITY showCharactersLeft.label "Show chars counters">
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
@@ -34,3 +35,4 @@
 <!ENTITY showAdditionalStats.accesskey "O">
 <!ENTITY rememberTabs.accesskey "C">
 <!ENTITY goToMyPos.accesskey "L">
+<!ENTITY showCharactersLeft.accesskey "">

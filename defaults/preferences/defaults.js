@@ -11,3 +11,4 @@ pref("it.neurone.gladiatustools.showAdditionalStats", true);
 pref("it.neurone.gladiatustools.rememberTabs", true);
 pref("it.neurone.gladiatustools.goToMyPos", true);
 pref("it.neurone.gladiatustools.reportDetailLevel", "0");
+pref("it.neurone.gladiatustools.showCharactersLeft", true);
