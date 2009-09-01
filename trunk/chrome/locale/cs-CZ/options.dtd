@@ -22,6 +22,7 @@
 <!ENTITY reportDetailLevelEssential.label "Zjednodušený">
 <!ENTITY reportDetailLevelMedium.label "Podrobnější">
 <!ENTITY reportDetailLevelFull.label "Nejpodrobnější">
+<!ENTITY showCharactersLeft.label "Show chars counters">
 
 <!ENTITY autoSimulateBattle.accesskey "">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "">
@@ -34,3 +35,4 @@
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
 <!ENTITY goToMyPos.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">

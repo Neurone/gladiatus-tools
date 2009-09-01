@@ -39,6 +39,12 @@ var goldAmout, rubyAmount;
 var objectTransparency = 0.25;
 
 var activateClickListener = false;
+var activateKeyPressListener = false;
+
+var maxCharsSmall = 4000;
+var maxCharsMedium = 5000;
+var maxCharsLarge = 10000;
+var maxCharsExtraLarge = 16000;
 
 //Gesione delle lingue RTL
 var isArabo = (MSG.language == "arabo");
@@ -83,6 +89,7 @@ var isCombatReportPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=
 						   /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(location.href) )
 							&& !/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*&submod=combatReport/.test(location.href);
 var isModAllyPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href);
+var isAllySendMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href);
 
 //Sovrascrivo alcune url se la versione del server è vecchia
 if(serverVersion == "v0.4.0") {

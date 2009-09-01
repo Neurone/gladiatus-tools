@@ -837,23 +837,43 @@ showAdditionalTooltips();
 hideNotAffordableObjects();
 
 /************************************
-/ Campi più grandi
+/ Gestione della dimensione dei campi
 ************************************/
+if(isMemoPage) {
+	showBigNotes();
+}
 
-if(isMemoPage) showBigNotes();
-if(isWriteMessagePage || isGenericMessagePage) showBigWriteMessage();
+if(isWriteMessagePage || isGenericMessagePage) {
+	showBigWriteMessage();
+}
+
+/************************************
+/ Gestione dei contatori di caratteri sui campi
+************************************/
+if(GM_getValue("showCharactersLeft", false))
+{
+	if(isMemoPage) updateNotesTextArea(maxCharsExtraLarge);
+	if(isWriteMessagePage || isGenericMessagePage) updateWriteMessageTextArea(maxCharsSmall);
+	if(isAllySendMessagePage) updateAllyMessageTextArea(maxCharsMedium);
+	if(isModAllyPage) updateAllyDescriptionTextArea(maxCharsLarge);
+	if(isSettingsPage) {
+		updatePlayerDescriptionTextArea(maxCharsSmall);
+		updateCatchTextArea(maxCharsSmall);
+	}
+	if(isMemoPage || isWriteMessagePage || isGenericMessagePage ||
+		isModAllyPage || isSettingsPage || isAllySendMessagePage) {
+		activateKeyPressListener = true;
+	}
+}
 
 /************************************
 / Statistiche avanzate
 ************************************/
-
 if((isPlayerStatsPage || isOpponentStatsPage) && GM_getValue("showAdditionalStats", false)) showAdvancedStats();
-
 
 /************************************
 / Smart combat report
 ************************************/
-
 if(isCombatReportPage && (SCRLevel < 2)) showSmartCombatReport();
 
 /************************************
@@ -873,4 +893,14 @@ if(activateClickListener)
 {
 	//Imposto un listener sull'evento onclick
     window.addEventListener('click', grabClick, true);
+}
+
+/************************************
+ Se necessario, attivo la gestione della tastiera
+************************************/	
+if(activateKeyPressListener)
+{
+	//alert("grab key attivo");
+	window.addEventListener('keydown', grabKeyPress, true);
+	window.addEventListener('keyup', grabKeyPress, true);
 }
