@@ -22,7 +22,7 @@
 <!ENTITY reportDetailLevelEssential.label "Essenziale">
 <!ENTITY reportDetailLevelMedium.label "Medio">
 <!ENTITY reportDetailLevelFull.label "Completo">
-<!ENTITY showCharactersLeft.label "Mostra contatori caratteri">
+<!ENTITY showCharactersLeft.label "Mostra contatori dei caratteri">
 
 <!ENTITY autoSimulateBattle.accesskey "S">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "N">
