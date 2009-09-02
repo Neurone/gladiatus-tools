@@ -105,13 +105,13 @@ it.neurone.gladiatustools.gmCompiler = {
             //Greasemonkey script
 		    this.evalInSandbox("(function(){"+script+"})()", url, sandbox);
 	    } catch (e) {
-		
+			/*
             alert(e);
 		    var e2 = new Error(typeof e=="string" ? e : e.message);
 		    e2.fileName = script.filename;
 		    e2.lineNumber = 0;
 		    GM_logError(e2);
-			
+			*/
 	    }
     },
 
