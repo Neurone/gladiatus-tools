@@ -1,6 +1,6 @@
 pref("it.neurone.gladiatustools.simulatorEngine", "www.georged.eu");
 pref("it.neurone.gladiatustools.autoSimulateBattle", true);
-pref("it.neurone.gladiatustools.showCustomAvatarImages", true);
+pref("it.neurone.gladiatustools.showCustomAvatarImages", false);
 pref("it.neurone.gladiatustools.showCustomGuildImages", true);
 pref("it.neurone.gladiatustools.showTimers", true);
 pref("it.neurone.gladiatustools.showFullStats", true);
