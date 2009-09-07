@@ -1,0 +1,38 @@
+<!ENTITY gladiatusToolsOptions.label "Opzioni di Gladiatus Tools">
+<!ENTITY generalSettings.label "Impostazioni generali">
+
+<!ENTITY simulationGroup.label "Simulazione di combattimento">
+<!ENTITY otherSettingsGroup.label "Altre impostazioni">
+<!ENTITY playersGroup.label "Giocatori e corporazioni">
+<!ENTITY merchantsGroup.label "Mercanti">
+
+<!ENTITY simulatorEngine.label "Motore della simulazione">
+<!ENTITY autoSimulateBattle.label "Simula automaticamente la battaglia">
+<!ENTITY excludeMeFromCorporateMessages.label "Non inviarmi i messaggi che mando alla mia corporazione">
+<!ENTITY showCustomAvatarImages.label "Mostra avatar personalizzati">
+<!ENTITY showCustomGuildImages.label "Mostra immagini personalizzate delle corporazioni">
+<!ENTITY showTimers.label "Mostra tempi">
+<!ENTITY showFullStats.label "Mostra statistiche utente complete">
+<!ENTITY showAdditionalTooltips.label "Confronta gli oggetti dell'inventario e quelli equipaggiati">
+<!ENTITY hideNotAffordable.label "Evidenzia solamente gli oggetti acquistabili">
+<!ENTITY showAdditionalStats.label "Mostra statistiche aggiuntive">
+<!ENTITY rememberTabs.label "Ricorda l'ultima linguetta selezionata">
+<!ENTITY goToMyPos.label "Mostra per prima la mia pagina in classifica">
+<!ENTITY reportDetailLevel.label "Usa il seguente livello di dettaglio per i rapporti">
+<!ENTITY reportDetailLevelEssential.label "Essenziale">
+<!ENTITY reportDetailLevelMedium.label "Medio">
+<!ENTITY reportDetailLevelFull.label "Completo">
+<!ENTITY showCharactersLeft.label "Mostra contatori dei caratteri">
+
+<!ENTITY autoSimulateBattle.accesskey "S">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "N">
+<!ENTITY showCustomAvatarImages.accesskey "M">
+<!ENTITY showCustomGuildImages.accesskey "C">
+<!ENTITY showTimers.accesskey "R">
+<!ENTITY showFullStats.accesskey "O">
+<!ENTITY showAdditionalTooltips.accesskey "T">
+<!ENTITY hideNotAffordable.accesskey "E">
+<!ENTITY showAdditionalStats.accesskey "A">
+<!ENTITY rememberTabs.accesskey "I">
+<!ENTITY goToMyPos.accesskey "L">
+<!ENTITY showCharactersLeft.accesskey "Q">

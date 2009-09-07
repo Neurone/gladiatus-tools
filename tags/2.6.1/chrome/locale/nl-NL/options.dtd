@@ -1,0 +1,38 @@
+<!ENTITY gladiatusToolsOptions.label "Opties voor Gladiatus Tools">
+<!ENTITY generalSettings.label "Algemene instellingen">
+
+<!ENTITY simulationGroup.label "Gevechtssimulator">
+<!ENTITY otherSettingsGroup.label "Overige instellingen">
+<!ENTITY playersGroup.label "Spelers en gilden">
+<!ENTITY merchantsGroup.label "Handelaren">
+
+<!ENTITY simulatorEngine.label "Simulator">
+<!ENTITY autoSimulateBattle.label "Simuleer gevechten automatisch">
+<!ENTITY excludeMeFromCorporateMessages.label "Stuur eigen gildeberichten niet naar jezelf">
+<!ENTITY showCustomAvatarImages.label "Custom aangepaste avatars">
+<!ENTITY showCustomGuildImages.label "Custom aangepaste gildelogo's">
+<!ENTITY showTimers.label "Timers">
+<!ENTITY showFullStats.label "Genezing en Dreiging altijd zichtbaar">
+<!ENTITY showAdditionalTooltips.label "Vergelijk voorraad met huidige uitrusting">
+<!ENTITY hideNotAffordable.label "Onbetaalbare items transparant">
+<!ENTITY showAdditionalStats.label "Uitgebreide spelerstatistieken">
+<!ENTITY rememberTabs.label "Onthoud laatst gebruikte tabblad">
+<!ENTITY goToMyPos.label "Eigen pagina eerst in de ranglijst">
+<!ENTITY reportDetailLevel.label "Detail van gevechtsrapporten">
+<!ENTITY reportDetailLevelEssential.label "Minimaal">
+<!ENTITY reportDetailLevelMedium.label "Gemiddeld">
+<!ENTITY reportDetailLevelFull.label "Volledig">
+<!ENTITY showCharactersLeft.label "Show chars counters">
+
+<!ENTITY autoSimulateBattle.accesskey "S">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "G">
+<!ENTITY showCustomAvatarImages.accesskey "A">
+<!ENTITY showCustomGuildImages.accesskey "L">
+<!ENTITY showTimers.accesskey "T">
+<!ENTITY showFullStats.accesskey "V">
+<!ENTITY showAdditionalTooltips.accesskey "U">
+<!ENTITY hideNotAffordable.accesskey "O">
+<!ENTITY showAdditionalStats.accesskey "P">
+<!ENTITY rememberTabs.accesskey "B">
+<!ENTITY goToMyPos.accesskey "R">
+<!ENTITY showCharactersLeft.accesskey "">

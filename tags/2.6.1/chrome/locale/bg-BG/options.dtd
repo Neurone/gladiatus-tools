@@ -1,0 +1,38 @@
+<!ENTITY gladiatusToolsOptions.label "Настройки на Гладиатус симулатора">
+<!ENTITY generalSettings.label "Главни настройки">
+
+<!ENTITY simulationGroup.label "Бойна симулация">
+<!ENTITY otherSettingsGroup.label "Други настройки">
+<!ENTITY playersGroup.label "Играчи и гилдии">
+<!ENTITY merchantsGroup.label "Битпазар">
+
+<!ENTITY simulatorEngine.label "Изплозван симулатор">
+<!ENTITY autoSimulateBattle.label "Автоматично симулирай битката">
+<!ENTITY excludeMeFromCorporateMessages.label "Недпоускане на изпращане на общо съобщение">
+<!ENTITY showCustomAvatarImages.label "Показване на собствен аватар">
+<!ENTITY showCustomGuildImages.label "Показвай общите собщения от гилдията">
+<!ENTITY showTimers.label "Покажи хронометрите">
+<!ENTITY showFullStats.label "Покажи стойностите за лечении и заплаха">
+<!ENTITY showAdditionalTooltips.label "Покажи сръвняване между обеките в инвентара и екипировката">
+<!ENTITY hideNotAffordable.label "Освети възможните за купуване обекти">
+<!ENTITY showAdditionalStats.label "Показвай допълнителната статистика">
+<!ENTITY rememberTabs.label "Помни последния избран таб">
+<!ENTITY goToMyPos.label "Показвай личната странаица в класацията първо">
+<!ENTITY reportDetailLevel.label "Използвай следния формат за доклад от битката">
+<!ENTITY reportDetailLevelEssential.label "Резюме">
+<!ENTITY reportDetailLevelMedium.label "Частичен">
+<!ENTITY reportDetailLevelFull.label "Пълен">
+<!ENTITY showCharactersLeft.label "Show chars counters">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY goToMyPos.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">

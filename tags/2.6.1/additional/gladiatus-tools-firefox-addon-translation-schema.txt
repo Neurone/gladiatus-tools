@@ -1,0 +1,189 @@
+﻿####################################################
+#
+# Title: Gladiatus Tools Firefox Addon Translation Schema
+# Author: Giuseppe Bertone
+#
+# This guide applies to 2.5.0 release
+# Last modified: 13 Jul 2009 14:51:44 GMT 
+# 
+####################################################
+#
+# Welcome to the Gladiatus Tools Translation Schema: here you can find both information about translating GT Firefox Addon and
+# the real words to translate. Edit this file with your translation and return to me.
+#
+# Please note that all lines starting with a # are my comments for you and they referring the text just before them,
+# so don't translate those lines.
+#
+# Translating this document please try to be as "clear" as possible in your language, don't try to do a 
+# literal english translation. Also take care translating in-game messages because they will be shown in the web interface,
+# so in that case messages length matters! :-)
+#
+# Please use an editor supporting UTF-8 editing this file. You can use something like NotePad++ or OpenOffice or even Microsoft Word.
+# DON'T use something like classic windows notepad because I'll not be able to see your translations.
+#
+# If you have any duobts, just send me an email at bertone.giuseppe@gmail.com
+#
+# Let's begin
+#
+####################################################
+# This is the addon description message you can see in the FireFox addons list. Translate all.
+####################################################
+
+Improve the user experience automatically adding a set of fully web site integrated tools to the Gladiatus browser game interface.
+
+####################################################
+# These are the addon option messages. Translate only those words between "..."
+####################################################
+
+<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Options">
+<!ENTITY generalSettings.label "General Settings">
+
+<!ENTITY simulationGroup.label "Combat simulation">
+<!ENTITY otherSettingsGroup.label "Other settings">
+<!ENTITY playersGroup.label "Players and guilds">
+<!ENTITY merchantsGroup.label "Merchants">
+
+<!ENTITY simulatorEngine.label "Simulator engine">
+<!ENTITY autoSimulateBattle.label "Automatically simulate battle">
+<!ENTITY excludeMeFromCorporateMessages.label "Exclude me when sending corporate message">
+<!ENTITY showCustomAvatarImages.label "Show custom avatar images">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
+<!ENTITY showTimers.label "Show timers">
+<!ENTITY showFullStats.label "Show always Healing and Threat values">
+<!ENTITY showAdditionalTooltips.label "Compare inventory and equipment items">
+<!ENTITY hideNotAffordable.label "Highlight affordable items only">
+<!ENTITY showAdditionalStats.label "Show additional statistics">
+<!ENTITY rememberTabs.label "Remember last selected tab">
+<!ENTITY goToMyPos.label "Show my highscore page first">
+<!ENTITY reportDetailLevel.label "Use the following combat report detail level">
+<!ENTITY reportDetailLevelEssential.label "Essential">
+<!ENTITY reportDetailLevelMedium.label "Medium">
+<!ENTITY reportDetailLevelFull.label "Full">
+
+####################################################
+# These are the access keys for addon option messages. Translate only those words between "..." and don't use the same letter twice.
+# Access keys are keyboard shortcut to select an option without using a pointer system but using only the keyboard.
+#
+# An example. If you set "A" as access key for the ENTITY autoSimulateBattle, the first A of the
+# autoSimulateBattle label "Automatically simulate battle", in the GT option panel, will be underline. This indicates the user
+# he could press  (i.e. in Windows) the ALT + A combination to check/uncheck the option.
+#
+# Access keys does not apply to all languages, so check if your language support access keys before translate.
+# If access keys does not apply to your language, please set them all to a blank value "".
+####################################################
+
+<!ENTITY autoSimulateBattle.accesskey "A">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "E">
+<!ENTITY showCustomAvatarImages.accesskey "S">
+<!ENTITY showCustomGuildImages.accesskey "U">
+<!ENTITY showTimers.accesskey "R">
+<!ENTITY showFullStats.accesskey "H">
+<!ENTITY showAdditionalTooltips.accesskey "T">
+<!ENTITY hideNotAffordable.accesskey "I">
+<!ENTITY showAdditionalStats.accesskey "O">
+<!ENTITY rememberTabs.accesskey "M">
+<!ENTITY goToMyPos.accesskey "G">
+
+####################################################
+# These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
+####################################################
+
+<em:translator>Anthony Lieuallen (Greasemonkey Compiler)</em:translator>
+<em:translator>Sébastien Bailly (French translation)</em:translator>
+<em:translator>Sebastiàn Goicochea (Spanish translation)</em:translator>
+<em:translator>TaReQ ALShehhi-UAETooN (Arabic translation)</em:translator>
+<em:translator>Erik Tuu (Vietnamese translation)</em:translator>
+<em:translator>Peteris Petersons (Latvian translation)</em:translator>
+<em:translator>Halluz-man (Czech translation)</em:translator>
+<em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
+<em:translator>Живко Янев (Bulgarian translation)</em:translator>
+<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+<em:translator>YOUR NAME (YOUR LANGUAGE translation)</em:translator>
+
+####################################################
+# These are in-game messages. Translate only those words between "..."
+####################################################
+
+# Text appearing when communication with simulation engine is off.
+this.simulationFailed = "Simulation faild! Please try later or select another simulator engine from Gladiatus Tools options.";
+
+# Text for absolute image url field at profile page
+this.customAvatarImageUrl = "Custom avatar image url (http://...). Image will be resized to 168x194.";
+
+# Text for absolute image url field at guild profile page
+this.customGuildImageUrl = "Custom guild image url (http://...). Image will be resized to 209x232 px.";
+
+# Text for button when automatic simulation is off
+this.simulate = "Simulate";
+
+# Text for simulation in progress
+this.simulating = "Simulating...";
+
+# Text before winning %
+this.winning = "Winning ";
+
+# New text for button if simulation winning % is > 50%
+this.go = "Go!";
+
+# New text for button if simulation winning % is <= 50%
+this.stop = "STOP!";
+
+# Label for quest timer
+this.quest = "Quest:";
+
+# Label for arena timer
+this.arena = "Arena:";
+
+# Label for stable timer
+this.work = "Work:";
+
+# Text to show when time in timers is gone
+this.completed = "Complete!";
+
+# Text in player statistic page
+this.winPercentage = "Winning percentage:";
+this.totalEarnedGold = "Total earned gold:";		
+
+####################################################
+# This is the addon description at addons.mozilla.org. Translate all and add your language at the end of the languages list.
+####################################################
+
+************ BEWARE ******************
+Despite in many countries (ie French, Arab Emirates or Argentina) Gladiatus Tools is considered LEGAL or at least not mentioned, in other countries (ie. Italy) using Gladiatus Tools is considered NOT LEGAL.
+
+Please check about legality with the server community moderatos before using this addon with that server.
+**************************************
+
+Addon for Gladiatus browser game. Once installed, this addon adds automatically a set of fully integrated tools to the Gladiatus web site to improve the user experience.
+
+Look at preview images for more info about web site changes introduced by the addon.
+
+FEATURES:
+
+- Battle simulation (automatic or manual without "simulate" button)
+- Show your custom avatar image and custom guild image to other Gladiatus Tools users
+- Three timers always visible: work in Stable, waiting for Arena and Expedition time remaining
+- Compare inventory items with your equipment items. It works with mercenaries also
+- Persistent tab choices
+- Highlighting affordable shop items only
+- Smart combat report: you can choose the combat report detail level
+- Big "notes" and "write a message" fields
+- View full player and mercenaries statistics (Healing and Threat)
+- "Don't send to me message I send to my corporation" option
+
+Simulation engines are www.georged.eu and www.playerutils.com. These simulation engines don't take care of player remaining life, so use them carefully. :-)
+
+This addon has been tested with every server version up to 0.5.2. The following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, brazilian portuguese, bulgarian, dutch, YOUR LANGUAGE.
+If your language is not in the list, english one will be used. If you want to help me adding your language translation, without using Google translator :-), please send me an email (in english).
+
+####################################################
+# This is the addon developer comment at addons.mozilla.org. Translate all.
+####################################################
+
+Technical note: please enable all cookies ("accept third-party cookies" also) to correctly use all Gladiatus Tools features.
+
+####################################################
+# These are the next release notes at addons.mozilla.org due your translation. Translate all.
+####################################################
+
+- Added YOUR LANGUAGE translation
