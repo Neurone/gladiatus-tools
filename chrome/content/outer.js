@@ -381,7 +381,6 @@ it.neurone.gladiatustools.outer = function() {
 		/*****************************
 		Gestisce il codice non vincolato allo script Greasemonkey
 		*****************************/
-	
 		//Inizializzazioni
 		init : function(sandbox)
 		{
@@ -393,7 +392,7 @@ it.neurone.gladiatustools.outer = function() {
 		//Procedure
 		main : function()
 		{
-		    //Recupero alcune informazioni utili
+			//Recupero alcune informazioni utili
 			var href = sb.location.href;
 			var common_result = document.location.href.match(common_regexp);
 			if(common_result) {
@@ -402,8 +401,13 @@ it.neurone.gladiatustools.outer = function() {
 				common_siteMod = common_result[2];
 				secureHash = common_result[3];
 			}
-			//Imposto le variabili per il check della pagina corrente			
-			var isPlayerOverviewPage = ( (/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href)) &&
+			//Imposto le variabili per il check della pagina corrente
+			var isPlayerOverviewPage = (
+				(	/http:\/\/gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href) ||
+					/http:\/\/\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href) ||
+					/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href) ||
+					/http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*/.test(href)
+				) &&
 				(! 
 					( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(href) ||
 						/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(href) ||
@@ -454,7 +458,6 @@ it.neurone.gladiatustools.outer = function() {
 											  /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=location&loc=\d+&sh=.*/.test(href) ||
 											  /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=location&loc=\d+&d=\d+&sh=.*/.test(href) ||
 											  /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=location&loc=\d+&d=\d+&sh=.*/.test(href));
-			
 		    /************************************
 			Visualizzazione dell'avatar personalizzato
 			************************************/

@@ -23,6 +23,7 @@
 <!ENTITY reportDetailLevelMedium.label "Medium">
 <!ENTITY reportDetailLevelFull.label "Full">
 <!ENTITY showCharactersLeft.label "Show chars counters">
+<!ENTITY enableBidOneMore.label "When bidding set default item price as lowest + 1">
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
@@ -36,3 +37,4 @@
 <!ENTITY rememberTabs.accesskey "M">
 <!ENTITY goToMyPos.accesskey "G">
 <!ENTITY showCharactersLeft.accesskey "W">
+<!ENTITY enableBidOneMore.accesskey "N">

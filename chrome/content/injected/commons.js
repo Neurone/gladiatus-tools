@@ -90,6 +90,7 @@ var isCombatReportPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=
 							&& !/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*&submod=combatReport/.test(location.href);
 var isModAllyPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href);
 var isAllySendMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href);
+var isAuctionPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=auction&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=auction&sh=.*/.test(location.href);
 
 //Sovrascrivo alcune url se la versione del server è vecchia
 if(serverVersion == "v0.4.0") {

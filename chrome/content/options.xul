@@ -22,6 +22,7 @@
       <preference id="goToMyPos" name="it.neurone.gladiatustools.goToMyPos" type="bool"/>
       <preference id="reportDetailLevel" name="it.neurone.gladiatustools.reportDetailLevel" type="string"/>
 	  <preference id="showCharactersLeft" name="it.neurone.gladiatustools.showCharactersLeft" type="bool"/>
+	  <preference id="enableBidOneMore" name="it.neurone.gladiatustools.enableBidOneMore" type="bool"/>
     </preferences>
 
     <vbox>
@@ -75,6 +76,9 @@
 
       <groupbox>
         <caption label="&otherSettingsGroup.label;"/>
+        <hbox align="center">
+          <checkbox id="c_enableBidOneMore" preference="enableBidOneMore" label="&enableBidOneMore.label;" accesskey="&enableBidOneMore.accesskey;"/>
+        </hbox>
         <hbox align="center">
           <checkbox id="c_showTimers" preference="showTimers" label="&showTimers.label;" accesskey="&showTimers.accesskey;"/>
         </hbox>
