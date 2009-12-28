@@ -2,7 +2,7 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>{76063e7f-3558-4b68-8287-54eb6512adc0}</em:id>
-    <em:version>2.6.1</em:version>
+    <em:version>2.7.0</em:version>
     <em:optionsURL>chrome://gladiatustools/content/options.xul</em:optionsURL>
     <em:updateURL>http://www.neurone.it/mozilla/addons/gladiatustools/signedupdate.rdf?id=%ITEM_ID%&amp;version=%ITEM_VERSION%&amp;os=%APP_OS%&amp;locale=%APP_LOCALE%</em:updateURL>
     <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD9X/hHgPHAH7usPH5mbL2XRssE/wTQEBlJcY3Vl7CRJ5yM+nupiBPpm22uedfE3YmeQSnUeJQDEh+q3dLVsoNLF7s6ykjxlhzA5H/7KNwaN5K8W+vbPDEPTik0lVArQeB/OiZGljyX24W3E+eI2LI+bW1Qha/nXYrNex3Fgu2R8QIDAQAB</em:updateKey>

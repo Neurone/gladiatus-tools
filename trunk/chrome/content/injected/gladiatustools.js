@@ -877,6 +877,11 @@ if((isPlayerStatsPage || isOpponentStatsPage) && GM_getValue("showAdditionalStat
 if(isCombatReportPage && (SCRLevel < 2)) showSmartCombatReport();
 
 /************************************
+/ Valorizzazione automatica dei campi dell'asta
+************************************/
+if(GM_getValue("enableBidOneMore", false) && isAuctionPage) bidOneMore();
+
+/************************************
 / Gestione grab del click dell'utente
 /***********************************/
 //A causa dell'introduzione del remember last selected tab, non posso più

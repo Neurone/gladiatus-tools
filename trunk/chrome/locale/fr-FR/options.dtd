@@ -23,6 +23,7 @@
 <!ENTITY reportDetailLevelMedium.label "Intermédiaire">
 <!ENTITY reportDetailLevelFull.label "Complet">
 <!ENTITY showCharactersLeft.label "Afficher les compteurs de caractères">
+<!ENTITY enableBidOneMore.label "When bidding set default item price as lowest + 1">
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
@@ -36,3 +37,4 @@
 <!ENTITY rememberTabs.accesskey "D">
 <!ENTITY goToMyPos.accesskey "G">
 <!ENTITY showCharactersLeft.accesskey "F">
+<!ENTITY enableBidOneMore.accesskey "">
