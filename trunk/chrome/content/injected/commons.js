@@ -49,53 +49,53 @@ var maxCharsExtraLarge = 16000;
 //Gesione delle lingue RTL
 var isArabo = (MSG.language == "arabo");
 
-var isMyselfOverviewPage = ( (/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*/.test(location.href)) &&
+var isMyselfOverviewPage = ( urlMatch("mod=overview.*") &&
 	(!
-		( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=stats.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=memo.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=buddylist.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=achievements.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&submod=achievements.*/.test(location.href)
+		(	urlMatch("mod=overview.*&doll=3.*") ||
+			urlMatch("mod=overview.*&doll=4.*") ||
+			urlMatch("mod=overview.*&doll=5.*") ||
+			urlMatch("mod=overview.*&doll=6.*") ||
+			urlMatch("mod=overview.*&submod=stats.*") ||
+			urlMatch("mod=overview.*&submod=memo.*") ||
+			urlMatch("mod=overview.*&submod=buddylist.*") ||
+			urlMatch("mod=overview.*&submod=achievements.*")
 		)
 	)
 )
-var isMyBuddiesOverviewPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=2.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=2.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=3.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=4.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=5.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview.*&doll=6.*/.test(location.href)
+var isMyBuddiesOverviewPage = ( 
+			urlMatch("mod=overview.*&doll=2.*") ||
+			urlMatch("mod=overview.*&doll=3.*") ||
+			urlMatch("mod=overview.*&doll=4.*") ||
+			urlMatch("mod=overview.*&doll=5.*") ||
+			urlMatch("mod=overview.*&doll=6.*")
 );
-var isPlayerOverviewPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&sh=.*/.test(location.href) ||
-							/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&doll=1&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&p=\d+&doll=1&sh=.*/.test(location.href);
-var isPlayerBuddiesOverviewPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=2.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=2.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=3.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=4.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=5.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=5.*/.test(location.href) ||
-			/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=6.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player.*&doll=6.*/.test(location.href)
+var isPlayerOverviewPage = urlMatch("mod=player&p=\\d+&sh=.*") || urlMatch("mod=player&p=\\d+&doll=1&sh=.*");
+var isPlayerBuddiesOverviewPage = ( 
+			urlMatch("mod=player.*&doll=2.*") ||
+			urlMatch("mod=player.*&doll=3.*") ||
+			urlMatch("mod=player.*&doll=4.*") ||
+			urlMatch("mod=player.*&doll=5.*") ||
+			urlMatch("mod=player.*&doll=6.*")
 );
-var isSendGuildMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href);
-var isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=memo&sh=.*/.test(location.href);
-var isWriteMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=messages&submod=new&.*/.test(location.href);
-var isGenericMessagePage  = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=messages&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=messages&sh=.*/.test(location.href);
-var isSettingsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=settings&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=settings&sh=.*/.test(location.href);
-var isShopPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=inventory.*sh=.*/.test(location.href);
-var isPlayerStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=stats&sh=.*/.test(location.href);
-var isOpponentStatsPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=player&submod=stats&p=.*/.test(location.href);
+var isSendGuildMessagePage = urlMatch("mod=guild_main&submod=admin_mail&sh=.*");
+var isMemoPage = urlMatch("mod=memo&sh=.*");
+var isWriteMessagePage = urlMatch("mod=messages&submod=new&.*");
+var isGenericMessagePage  = urlMatch("mod=messages&sh=.*");
+var isSettingsPage = urlMatch("mod=settings&sh=.*");
+var isShopPage = urlMatch("mod=inventory.*sh=.*");
+var isPlayerStatsPage = urlMatch("mod=overview&submod=stats&sh=.*");
+var isOpponentStatsPage = urlMatch("mod=player&submod=stats&p=.*");
 //Per supportare un bug di Gladiatus nella scrittura di una url, modifico la variabile isCombatReport per supportare lo stesso errore
-var isCombatReportPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(location.href) ||
-						   /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(location.href) )
-							&& !/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*&submod=combatReport/.test(location.href);
-var isModAllyPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href);
-var isAllySendMessagePage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_mail&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_main&submod=admin_description&sh=.*/.test(location.href);
-var isAuctionPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=auction&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=auction&sh=.*/.test(location.href);
-
+var isCombatReportPage = (urlMatch("mod=report&beid=.*") || urlMatch("mod=report&&beid=.*")) && !urlMatch("mod=report&beid=.*&submod=combatReport");
+var isModAllyPage = urlMatch("mod=guild_main&submod=admin_description&sh=.*");
+var isAllySendMessagePage = urlMatch("mod=guild_main&submod=admin_mail&sh=.*");
+var isAuctionPage = urlMatch("mod=auction&sh=.*") || urlMatch("mod=auction&ttype=3&sh=.*");
+var isPackagesListPage = urlMatch("mod=packages&.*");
+					
 //Sovrascrivo alcune url se la versione del server è vecchia
 if(serverVersion == "v0.4.0") {
-	isMemoPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=memo&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=overview&submod=memo&sh=.*/.test(location.href);
-	isModAllyPage = /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=ally&submod=allydesc&sh=.*/.test(location.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=ally&submod=allydesc&sh=.*/.test(location.href);
+	isMemoPage = urlMatch("mod=overview&submod=memo&sh=.*");
+	isModAllyPage = urlMatch("mod=ally&submod=allydesc&sh=.*");
 }
 
 /*****************************
@@ -186,4 +186,45 @@ function getServerVersion() {
 	);
 	if (tag.snapshotLength) return(tag.snapshotItem(0).firstChild.innerHTML);
 	else return "v0.0.0";
+}
+
+/*****************************
+/ Testa se la url corrente corrisponde alla espressione regolare passata
+/****************************/
+function urlMatch(string) {
+	eval("var matched = /http:\\/\\/s\\d+\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(location.href) || /http:\\/\\/s\\d+\\.\\w\\w\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(location.href);");
+	return matched;
+}
+
+/*****************************
+/ Testa se la url passata corrisponde alla espressione regolare passata
+/****************************/
+function targetUrlMatch(string, url) {
+	eval("var matched = /http:\\/\\/s\\d+\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(\""+ url +"\") || /http:\\/\\/s\\d+\\.\\w\\w\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(location.href);");
+	return matched;
+}
+
+/*****************************
+/ Recupera il valore di un parametro dalla url
+/****************************/
+function getURLParam(name)
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+}
+
+/*****************************
+/ Permette di effettuare il parsing di una stringa senza troppe preoccupazioni
+/****************************/
+function safeParseInt(string) {
+	if(string == null) return 0;
+	if(string == "") return 0;
+	if(string == NaN) return 0;
+	return parseInt(string);
 }

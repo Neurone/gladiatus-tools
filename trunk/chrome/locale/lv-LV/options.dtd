@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "Izcelt tikai tās mantas, ko var atļauties">
 <!ENTITY showAdditionalStats.label "Rādīt papildu statistiku">
 <!ENTITY rememberTabs.label "Atcerēties pēdējo tirgotāja logu">
-<!ENTITY goToMyPos.label "Rādīt manu topa lapu">
 <!ENTITY reportDetailLevel.label "Use the following combat report detail level">
 <!ENTITY reportDetailLevelEssential.label "Essential">
 <!ENTITY reportDetailLevelMedium.label "Medium">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "">
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
-<!ENTITY goToMyPos.accesskey "">
 <!ENTITY showCharactersLeft.accesskey "">
 <!ENTITY enableBidOneMore.accesskey "">

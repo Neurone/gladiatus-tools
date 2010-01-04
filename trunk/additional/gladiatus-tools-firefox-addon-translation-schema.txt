@@ -3,8 +3,8 @@
 # Title: Gladiatus Tools Firefox Addon Translation Schema
 # Author: Giuseppe Bertone
 #
-# This guide applies to 2.5.0 release
-# Last modified: 13 Jul 2009 14:51:44 GMT 
+# This guide applies to 2.7.0 release
+# Last modified: 04 Gen 2010 12:14:30 GMT 
 # 
 ####################################################
 #
@@ -54,11 +54,12 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY hideNotAffordable.label "Highlight affordable items only">
 <!ENTITY showAdditionalStats.label "Show additional statistics">
 <!ENTITY rememberTabs.label "Remember last selected tab">
-<!ENTITY goToMyPos.label "Show my highscore page first">
 <!ENTITY reportDetailLevel.label "Use the following combat report detail level">
 <!ENTITY reportDetailLevelEssential.label "Essential">
 <!ENTITY reportDetailLevelMedium.label "Medium">
 <!ENTITY reportDetailLevelFull.label "Full">
+<!ENTITY showCharactersLeft.label "Show chars counters">
+<!ENTITY enableBidOneMore.label "When bidding set default item price as lowest + 1">
 
 ####################################################
 # These are the access keys for addon option messages. Translate only those words between "..." and don't use the same letter twice.
@@ -82,7 +83,8 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY hideNotAffordable.accesskey "I">
 <!ENTITY showAdditionalStats.accesskey "O">
 <!ENTITY rememberTabs.accesskey "M">
-<!ENTITY goToMyPos.accesskey "G">
+<!ENTITY showCharactersLeft.accesskey "W">
+<!ENTITY enableBidOneMore.accesskey "N">
 
 ####################################################
 # These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
@@ -158,7 +160,7 @@ Addon for Gladiatus browser game. Once installed, this addon adds automatically 
 
 Look at preview images for more info about web site changes introduced by the addon.
 
-FEATURES:
+MAIN FEATURES:
 
 - Battle simulation (automatic or manual without "simulate" button)
 - Show your custom avatar image and custom guild image to other Gladiatus Tools users
@@ -167,13 +169,13 @@ FEATURES:
 - Persistent tab choices
 - Highlighting affordable shop items only
 - Smart combat report: you can choose the combat report detail level
+- Smart default fields value (last bid + 1) at auction page
 - Big "notes" and "write a message" fields
 - View full player and mercenaries statistics (Healing and Threat)
-- "Don't send to me message I send to my corporation" option
 
 Simulation engines are www.georged.eu and www.playerutils.com. These simulation engines don't take care of player remaining life, so use them carefully. :-)
 
-This addon has been tested with every server version up to 0.5.2. The following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, brazilian portuguese, bulgarian, dutch, YOUR LANGUAGE.
+This addon has been tested with every server version up to 0.5.6. The following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, brazilian portuguese, bulgarian, dutch, YOUR LANGUAGE.
 If your language is not in the list, english one will be used. If you want to help me adding your language translation, without using Google translator :-), please send me an email (in english).
 
 ####################################################

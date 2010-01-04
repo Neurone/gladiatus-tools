@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "عرض الأدوات في المتجر">
 <!ENTITY showAdditionalStats.label "عرض الاحصائيات الاضافية">
 <!ENTITY rememberTabs.label "آخر اختيار اخترته">
-<!ENTITY goToMyPos.label "عرض نتائجي العالية">
 <!ENTITY reportDetailLevel.label "Use the following combat report detail level">
 <!ENTITY reportDetailLevelEssential.label "Essential">
 <!ENTITY reportDetailLevelMedium.label "Medium">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "">
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
-<!ENTITY goToMyPos.accesskey "">
 <!ENTITY showCharactersLeft.accesskey "">
 <!ENTITY enableBidOneMore.accesskey "">

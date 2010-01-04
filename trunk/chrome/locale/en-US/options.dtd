@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "Highlight affordable items only">
 <!ENTITY showAdditionalStats.label "Show additional statistics">
 <!ENTITY rememberTabs.label "Remember last selected tab">
-<!ENTITY goToMyPos.label "Show my highscore page first">
 <!ENTITY reportDetailLevel.label "Use the following combat report detail level">
 <!ENTITY reportDetailLevelEssential.label "Essential">
 <!ENTITY reportDetailLevelMedium.label "Medium">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "I">
 <!ENTITY showAdditionalStats.accesskey "O">
 <!ENTITY rememberTabs.accesskey "M">
-<!ENTITY goToMyPos.accesskey "G">
 <!ENTITY showCharactersLeft.accesskey "W">
 <!ENTITY enableBidOneMore.accesskey "N">

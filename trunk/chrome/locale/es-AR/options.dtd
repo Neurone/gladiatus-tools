@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "Resaltar items que pueda comprar únicamente">
 <!ENTITY showAdditionalStats.label "Mostrar estadísticas adicionales">
 <!ENTITY rememberTabs.label "Recordar la ultima solapa seleccionada">
-<!ENTITY goToMyPos.label "Ir a mi página en Clasificación">
 <!ENTITY reportDetailLevel.label "Utilice el siguiente nivel en los informes de combate">
 <!ENTITY reportDetailLevelEssential.label "Esencial">
 <!ENTITY reportDetailLevelMedium.label "Medio">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "I">
 <!ENTITY showAdditionalStats.accesskey "O">
 <!ENTITY rememberTabs.accesskey "C">
-<!ENTITY goToMyPos.accesskey "L">
 <!ENTITY showCharactersLeft.accesskey "D">
 <!ENTITY enableBidOneMore.accesskey "">

@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "Rendre translucides les offres non achetables">
 <!ENTITY showAdditionalStats.label "Afficher plus de statistiques">
 <!ENTITY rememberTabs.label "Mémoriser mes derniers onglets sélectionnés">
-<!ENTITY goToMyPos.label "Afficher directement ma page de classement général">
 <!ENTITY reportDetailLevel.label "Utiliser, pour les rapports de combat, le niveau de détail suivant">
 <!ENTITY reportDetailLevelEssential.label "Essentiel">
 <!ENTITY reportDetailLevelMedium.label "Intermédiaire">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "N">
 <!ENTITY showAdditionalStats.accesskey "S">
 <!ENTITY rememberTabs.accesskey "D">
-<!ENTITY goToMyPos.accesskey "G">
 <!ENTITY showCharactersLeft.accesskey "F">
 <!ENTITY enableBidOneMore.accesskey "">
