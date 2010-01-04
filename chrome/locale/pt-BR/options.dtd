@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "Destacar somente os itens que podem ser comprados">
 <!ENTITY showAdditionalStats.label "Exibir estatísticas adicionais">
 <!ENTITY rememberTabs.label "Lembrar última aba selecionada">
-<!ENTITY goToMyPos.label "Exibir minha pagina de classificação primeiro">
 <!ENTITY reportDetailLevel.label "Use o seguinte nível de detalhe no relatório de batalha">
 <!ENTITY reportDetailLevelEssential.label "Básico">
 <!ENTITY reportDetailLevelMedium.label "Médio">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "">
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
-<!ENTITY goToMyPos.accesskey "">
 <!ENTITY showCharactersLeft.accesskey "">
 <!ENTITY enableBidOneMore.accesskey "">

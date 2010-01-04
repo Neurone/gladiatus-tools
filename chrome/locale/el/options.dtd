@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "Evidenzia solamente gli oggetti acquistabili">
 <!ENTITY showAdditionalStats.label "Mostra statistiche aggiuntive">
 <!ENTITY rememberTabs.label "Ricorda l'ultima linguetta selezionata">
-<!ENTITY goToMyPos.label "Mostra per prima la mia pagina in classifica">
 <!ENTITY reportDetailLevel.label "Usa il seguente livello di dettaglio per i rapporti">
 <!ENTITY reportDetailLevelEssential.label "Essenziale">
 <!ENTITY reportDetailLevelMedium.label "Medio">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "E">
 <!ENTITY showAdditionalStats.accesskey "A">
 <!ENTITY rememberTabs.accesskey "I">
-<!ENTITY goToMyPos.accesskey "L">
 <!ENTITY showCharactersLeft.accesskey "Q">
 <!ENTITY enableBidOneMore.accesskey "">

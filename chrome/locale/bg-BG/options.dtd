@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "Освети възможните за купуване обекти">
 <!ENTITY showAdditionalStats.label "Показвай допълнителната статистика">
 <!ENTITY rememberTabs.label "Помни последния избран таб">
-<!ENTITY goToMyPos.label "Показвай личната странаица в класацията първо">
 <!ENTITY reportDetailLevel.label "Използвай следния формат за доклад от битката">
 <!ENTITY reportDetailLevelEssential.label "Резюме">
 <!ENTITY reportDetailLevelMedium.label "Частичен">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "">
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
-<!ENTITY goToMyPos.accesskey "">
 <!ENTITY showCharactersLeft.accesskey "">
 <!ENTITY enableBidOneMore.accesskey "">

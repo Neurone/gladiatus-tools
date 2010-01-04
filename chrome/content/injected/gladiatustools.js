@@ -319,6 +319,10 @@ function grabClick(event)
 {
     //Controllo il click con il tasto sinistro
     if(event.button == 0) {
+	
+		var target = event.target;
+		if (target.href == undefined) target = event.target.parentNode;
+	
 	    //Controllo se il click è stato effettuato sul pulsante Simula
 	    if(event.target.id == idSimula) {
             simulateBattle();
@@ -362,48 +366,55 @@ function grabClick(event)
 		    return;
 	    }
 	    
-	    //Controllo se il click punta alla classifica, dal menu la voce "Classifica" oppure dalle sotto tab la voce "Giocatore"
-	    if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=highscore&sh=.*/.test(event.target.href) ||
-			/http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=highscore&sh=.*/.test(event.target.href)) {
-	        if(GM_getValue("goToMyPos", false)) {
-       	        //Trovo la posizione in classifica (onore) dell'utente
-    	        var spans = XQuery(".//div[@class='headerHighscore']/div/span[@class='charvaluesSub']");
-    	        if(spans.snapshotLength == 1 && spans.snapshotItem(0).innerHTML < 1001) {
-    	            //Calcolo la posizione in gruppi di 50
-    	            var posizioneRelativa = Math.floor(spans.snapshotItem(0).innerHTML / 50) + 1;
-    	            //Ridirigo l'utente sulla pagina corretta
-    	            event.target.href = highScoreUrl + "&a="+ posizioneRelativa +"&sh=" + secureHash;
-    	        }
-	        }
-	        return;
-	    }
-    
 	    if(GM_getValue("rememberTabs", false)) {
 	        //Controllo se il click punta ad uno dei negozi
-	        if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&sh=.*/.test(event.target.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=inventory&sh=.*/.test(event.target.href) ||
-                /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&sub=[1-5]&sh=.*/.test(event.target.href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=inventory&sub=[1-5]&sh=.*/.test(event.target.href)) {
+	        if(targetUrlMatch("mod=inventory&sh=.*", target.href) || targetUrlMatch("mod=inventory&sub=[1-5]&sh=.*", target.href)) {
                 //Trovo il negozio selezionato
-                var negozio = event.target.href.match(/&sub=[1-5]/);
+                var negozio = target.href.match(/&sub=[1-5]/);
                 if(negozio != null) {
-                    //Se esiste, carico l'ultima linguetta selezionata
+                    //Se esiste, carico l'ultima linguetta selezionata del negozio
                     var subsub = GM_getValue("GT_lastChoiceShop"+ negozio.toString().substr(5,1) + "_" + window.location.host, "0");
-                    if(subsub) event.target.href += "&subsub="+ subsub;
-                }
+                    if(subsub)target.href += "&subsub="+ subsub;
+					//Se esiste, carico l'ultima linguetta selezionata dell'inventario
+					var inv = GM_getValue("GT_lastChoiceInventory_" + window.location.host, "0");
+					if(inv) target.href += "&inv="+ inv;
+                }				
 	        }
+			//Controllo se il click punta al riepilogo, alla selezione dei pacchetti o al mercato
+			else if(targetUrlMatch("mod=overview&sh=.*", target.href) ||
+					targetUrlMatch("mod=packages&sh=.*", target.href) ||
+					targetUrlMatch("mod=packages&o=.*&sh=.*", target.href) ||
+					targetUrlMatch("mod=market&sh=.*", target.href) ||
+					targetUrlMatch("mod=market&f=.*&sh=.*", target.href)) {
+				//Se esiste, carico l'ultima linguetta selezionata dell'inventario
+                var inv = GM_getValue("GT_lastChoiceInventory_" + window.location.host, "0");
+                if(inv) target.href += "&inv="+ inv;
+			}
 	        //Controllo se il click punta ad una linguetta di un negozio
-            else if(/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=inventory&subsub=[0-2]&.*/.test(event.target.parentNode.href) ||
-					/http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=inventory&subsub=[0-2]&.*/.test(event.target.parentNode.href)) {
+            else if(targetUrlMatch("mod=inventory&subsub=[0-2]&.*", target.href)) {
                 //Trovo il negozio selezionato
-                var negozio = event.target.parentNode.href.match(/&sub=[1-5]/);
+                var negozio = target.href.match(/&sub=[1-5]/);
                 if(negozio != null) {
                     //Trovo la linguetta selezionata
-                    var linguetta = event.target.parentNode.href.match(/&subsub=[0-2]/);
+                    var linguetta = target.href.match(/&subsub=[0-2]/);
                     if(linguetta) {
                         //Salvo la linguetta selezionata per la visualizzazione successiva
                         GM_setValue("GT_lastChoiceShop"+ negozio.toString().substr(5,1) + "_" + window.location.host, linguetta.toString().substr(8,1));
                     }
                 }
 	        }
+			//Controllo se il click punta ad una linguetta dell'inventario
+            else if(targetUrlMatch("mod=inventory&inv=[0-2]&.*", target.href) ||
+					targetUrlMatch("mod=overview&inv=[0-2]&.*", target.href) ||
+					targetUrlMatch("mod=packages&inv=[0-2]&.*", target.href) ||
+					targetUrlMatch("mod=market&inv=[0-2]&.*", target.href)) {
+				//Trovo la linguetta selezionata
+				var linguetta = target.href.match(/&inv=[0-2]/);
+				if(linguetta) {
+					//Salvo la linguetta selezionata per la visualizzazione successiva
+					GM_setValue("GT_lastChoiceInventory_" + window.location.host, linguetta.toString().substr(5,1));
+				}
+			}
 	        return;
         }
     }
@@ -880,6 +891,48 @@ if(isCombatReportPage && (SCRLevel < 2)) showSmartCombatReport();
 / Valorizzazione automatica dei campi dell'asta
 ************************************/
 if(GM_getValue("enableBidOneMore", false) && isAuctionPage) bidOneMore();
+
+/************************************
+/ Pulsanti di prima / ultima pagina nell'elenco dei pacchetti
+************************************/
+if(isPackagesListPage) {
+	//Trovo un valore di riferimento dal quale partire per cercare il numero di pagine
+	var divs = document.evaluate("//div[@class='title_box']", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
+	//Verifico se le pagine sono più di una (vengono visualizzate 4 linee invece che le solite 3)
+	if(divs.snapshotLength > 0 && divs.snapshotItem(0).parentNode.parentNode.parentNode.childNodes.length > 6) {
+		var first = "";
+		var last = "";
+		//Se esiste, carico l'ultima linguetta selezionata dell'inventario
+		var inv = GM_getValue("GT_lastChoiceInventory_" + window.location.host, "0");
+		//Recupero il campo da modificare
+		var td = divs.snapshotItem(0).parentNode.parentNode.parentNode.childNodes[4].childNodes[1];
+		//Verifico il numero totale di pagine
+		var pagine = safeParseInt(td.innerHTML.match(/\d+ \/ (\d+)/)[1]);
+		//Se non sono alla prima, visualizzo il simbolo di ritorno alla prima pagina
+		var pagina = safeParseInt(getURLParam("p"));
+		if(pagina > 1) {
+			first = "<a style='text-decoration:none;' href='http://"+ window.location.host +"/game/index.php?mod=packages&inv="+ inv +"&p=0&sh="+ secureHash +"'>|&lt;&lt;</a>";
+		}
+		//Se non sono all'ultima, visualizzo il simbolo per andare all'ultima pagina
+		if(pagina < pagine) {
+			last = "&nbsp;&nbsp;&nbsp;<a style='text-decoration:none;' href='http://"+ window.location.host +"/game/index.php?mod=packages&inv="+ inv +"&p=9999&sh="+ secureHash +"'>&gt;&gt;|</a>"
+		}
+		//Modifico la linea
+		var modifica = "<div style='float:right;'>"+ first + last +"</div>";
+		td.innerHTML += modifica;
+		//Modifico allo stesso modo anche la seconda linea di footer con la navigazione
+		divs = document.evaluate("//div[@class='title2_inner']", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
+		if(divs.snapshotLength > 0) {
+			//Recupero la posizione, variabile a seconda del numero di oggetti nella lista
+			td = divs.snapshotItem(0).childNodes[1].childNodes[1].childNodes[2];
+			//Se non è definito, significa che ci sono 3 o 4 oggetti nella pagina
+			if(td.innerHTML == undefined) {
+				td = divs.snapshotItem(0).childNodes[1].childNodes[1].childNodes[3];
+			}
+		}
+		td.childNodes[1].innerHTML += modifica;
+	}
+}
 
 /************************************
 / Gestione grab del click dell'utente

@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "Zvýraznit koupitelné předměty">
 <!ENTITY showAdditionalStats.label "Zobrazit rozšířené statistiky">
 <!ENTITY rememberTabs.label "Pamatovat poslední vybraný panel">
-<!ENTITY goToMyPos.label "V Síni Slávy automaticky přejít na moji pozici">
 <!ENTITY reportDetailLevel.label "Použít následující stupeň podrobnosti výpisu z boje">
 <!ENTITY reportDetailLevelEssential.label "Zjednodušený">
 <!ENTITY reportDetailLevelMedium.label "Podrobnější">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "">
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
-<!ENTITY goToMyPos.accesskey "">
 <!ENTITY showCharactersLeft.accesskey "">
 <!ENTITY enableBidOneMore.accesskey "">

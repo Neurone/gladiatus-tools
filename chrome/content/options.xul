@@ -19,88 +19,97 @@
       <preference id="excludeMeFromCorporateMessages" name="it.neurone.gladiatustools.excludeMeFromCorporateMessages" type="bool"/>
       <preference id="showAdditionalStats" name="it.neurone.gladiatustools.showAdditionalStats" type="bool"/>
       <preference id="rememberTabs" name="it.neurone.gladiatustools.rememberTabs" type="bool"/>
-      <preference id="goToMyPos" name="it.neurone.gladiatustools.goToMyPos" type="bool"/>
       <preference id="reportDetailLevel" name="it.neurone.gladiatustools.reportDetailLevel" type="string"/>
 	  <preference id="showCharactersLeft" name="it.neurone.gladiatustools.showCharactersLeft" type="bool"/>
 	  <preference id="enableBidOneMore" name="it.neurone.gladiatustools.enableBidOneMore" type="bool"/>
     </preferences>
 
-    <vbox>
-      <groupbox>
-        <caption label="&playersGroup.label;"/>
-        <hbox align="center">
-          <checkbox id="c_showCustomAvatarImages" preference="showCustomAvatarImages" label="&showCustomAvatarImages.label;" accesskey="&showCustomAvatarImages.accesskey;"/>
-        </hbox>
-        <hbox align="center">
-          <checkbox id="c_showCustomGuildImages" preference="showCustomGuildImages" label="&showCustomGuildImages.label;" accesskey="&showCustomGuildImages.accesskey;"/>
-        </hbox>
-        <hbox align="center">
-          <checkbox id="c_showFullStats" preference="showFullStats" label="&showFullStats.label;" accesskey="&showFullStats.accesskey;"/>
-        </hbox>
-        <hbox align="center">
-          <checkbox id="c_showAdditionalStats" preference="showAdditionalStats" label="&showAdditionalStats.label;" accesskey="&showAdditionalStats.accesskey;"/>
-        </hbox>
-        <hbox align="center">
-          <checkbox id="c_goToMyPos" preference="goToMyPos" label="&goToMyPos.label;" accesskey="&goToMyPos.accesskey;"/>
-        </hbox>
-      </groupbox>
+	<tabbox>
+      <tabs>
+        <tab label="Settings"/>
+        <tab label="About"/>
+      </tabs>
+      <tabpanels>
+        <tabpanel id="settingstab">
+			<vbox>
+			  <groupbox>
+				<caption label="&playersGroup.label;"/>
+				<hbox align="center">
+				  <checkbox id="c_showCustomAvatarImages" preference="showCustomAvatarImages" label="&showCustomAvatarImages.label;" accesskey="&showCustomAvatarImages.accesskey;"/>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_showCustomGuildImages" preference="showCustomGuildImages" label="&showCustomGuildImages.label;" accesskey="&showCustomGuildImages.accesskey;"/>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_showFullStats" preference="showFullStats" label="&showFullStats.label;" accesskey="&showFullStats.accesskey;"/>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_showAdditionalStats" preference="showAdditionalStats" label="&showAdditionalStats.label;" accesskey="&showAdditionalStats.accesskey;"/>
+				</hbox>
+			  </groupbox>
 
-      <groupbox>
-        <caption label="&simulationGroup.label;"/>
-        <hbox align="center">
-          <label value="&simulatorEngine.label;" control="ml_simulatorEngine"/>
-          <menulist id="ml_simulatorEngine" preference="simulatorEngine">
-            <menupopup>
-              <menuitem label="www.georged.eu" value="www.georged.eu"/>
-              <menuitem label="www.playerutils.com" value="www.playerutils.com"/>
-            </menupopup>
-          </menulist>
-        </hbox>
-        <hbox align="center">
-          <checkbox id="c_autoSimulateBattle" preference="autoSimulateBattle" label="&autoSimulateBattle.label;" accesskey="&autoSimulateBattle.accesskey;"/>
-        </hbox>
-      </groupbox>
+			  <groupbox>
+				<caption label="&simulationGroup.label;"/>
+				<hbox align="center">
+				  <label value="&simulatorEngine.label;" control="ml_simulatorEngine"/>
+				  <menulist id="ml_simulatorEngine" preference="simulatorEngine">
+					<menupopup>
+					  <menuitem label="www.georged.eu" value="www.georged.eu"/>
+					  <menuitem label="www.playerutils.com" value="www.playerutils.com"/>
+					</menupopup>
+				  </menulist>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_autoSimulateBattle" preference="autoSimulateBattle" label="&autoSimulateBattle.label;" accesskey="&autoSimulateBattle.accesskey;"/>
+				</hbox>
+			  </groupbox>
 
-      <groupbox>
-        <caption label="&merchantsGroup.label;"/>
-        <hbox align="center">
-          <checkbox id="c_showAdditionalTooltips" preference="showAdditionalTooltips" label="&showAdditionalTooltips.label;" accesskey="&showAdditionalTooltips.accesskey;"/>
-        </hbox>
-        <hbox align="center">
-          <checkbox id="c_hideNotAffordable" preference="hideNotAffordable" label="&hideNotAffordable.label;" accesskey="&hideNotAffordable.accesskey;"/>
-        </hbox>
-        <hbox align="center">
-          <checkbox id="c_rememberTabs" preference="rememberTabs" label="&rememberTabs.label;" accesskey="&rememberTabs.accesskey;"/>
-        </hbox>
-      </groupbox>
+			  <groupbox>
+				<caption label="&merchantsGroup.label;"/>
+				<hbox align="center">
+				  <checkbox id="c_showAdditionalTooltips" preference="showAdditionalTooltips" label="&showAdditionalTooltips.label;" accesskey="&showAdditionalTooltips.accesskey;"/>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_hideNotAffordable" preference="hideNotAffordable" label="&hideNotAffordable.label;" accesskey="&hideNotAffordable.accesskey;"/>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_rememberTabs" preference="rememberTabs" label="&rememberTabs.label;" accesskey="&rememberTabs.accesskey;"/>
+				</hbox>
+			  </groupbox>
 
-      <groupbox>
-        <caption label="&otherSettingsGroup.label;"/>
-        <hbox align="center">
-          <checkbox id="c_enableBidOneMore" preference="enableBidOneMore" label="&enableBidOneMore.label;" accesskey="&enableBidOneMore.accesskey;"/>
-        </hbox>
-        <hbox align="center">
-          <checkbox id="c_showTimers" preference="showTimers" label="&showTimers.label;" accesskey="&showTimers.accesskey;"/>
-        </hbox>
-		<hbox align="center">
-          <checkbox id="c_showCharactersLeft" preference="showCharactersLeft" label="&showCharactersLeft.label;" accesskey="&showCharactersLeft.accesskey;"/>
-        </hbox>
-        <hbox align="center">
-          <checkbox id="c_excludeMeFromCorporateMessages" preference="excludeMeFromCorporateMessages" label="&excludeMeFromCorporateMessages.label;" accesskey="&excludeMeFromCorporateMessages.accesskey;"/>
-        </hbox>
-        <hbox align="center">
-          <label value="&reportDetailLevel.label;" control="ml_reportDetailLevel"/>
-          <menulist id="ml_reportDetailLevel" preference="reportDetailLevel">
-            <menupopup>
-              <menuitem label="&reportDetailLevelEssential.label;" value="0"/>
-              <menuitem label="&reportDetailLevelMedium.label;" value="1"/>
-              <menuitem label="&reportDetailLevelFull.label;" value="2"/>
-            </menupopup>
-          </menulist>
-        </hbox>
-      </groupbox>
-    </vbox>
-
+			  <groupbox>
+				<caption label="&otherSettingsGroup.label;"/>
+				<hbox align="center">
+				  <checkbox id="c_enableBidOneMore" preference="enableBidOneMore" label="&enableBidOneMore.label;" accesskey="&enableBidOneMore.accesskey;"/>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_showTimers" preference="showTimers" label="&showTimers.label;" accesskey="&showTimers.accesskey;"/>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_showCharactersLeft" preference="showCharactersLeft" label="&showCharactersLeft.label;" accesskey="&showCharactersLeft.accesskey;"/>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_excludeMeFromCorporateMessages" preference="excludeMeFromCorporateMessages" label="&excludeMeFromCorporateMessages.label;" accesskey="&excludeMeFromCorporateMessages.accesskey;"/>
+				</hbox>
+				<hbox align="center">
+				  <label value="&reportDetailLevel.label;" control="ml_reportDetailLevel"/>
+				  <menulist id="ml_reportDetailLevel" preference="reportDetailLevel">
+					<menupopup>
+					  <menuitem label="&reportDetailLevelEssential.label;" value="0"/>
+					  <menuitem label="&reportDetailLevelMedium.label;" value="1"/>
+					  <menuitem label="&reportDetailLevelFull.label;" value="2"/>
+					</menupopup>
+				  </menulist>
+				</hbox>
+			  </groupbox>
+			</vbox>
+		</tabpanel>
+        <tabpanel id="about">
+          
+        </tabpanel>
+      </tabpanels>
+    </tabbox>
+	
   </prefpane>
 
 </prefwindow>

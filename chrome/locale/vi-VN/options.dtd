@@ -17,7 +17,6 @@
 <!ENTITY hideNotAffordable.label "Chỉ làm nổi bật những món hàng có thể mua trong shop">
 <!ENTITY showAdditionalStats.label "Hiển thị thống kê phụ">
 <!ENTITY rememberTabs.label "Ghi nhớ thanh lựa chọn cuối">
-<!ENTITY goToMyPos.label "Hiển thị bảng xếp hạng">
 <!ENTITY reportDetailLevel.label "Use the following combat report detail level">
 <!ENTITY reportDetailLevelEssential.label "Essential">
 <!ENTITY reportDetailLevelMedium.label "Medium">
@@ -35,6 +34,5 @@
 <!ENTITY hideNotAffordable.accesskey "">
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
-<!ENTITY goToMyPos.accesskey "">
 <!ENTITY showCharactersLeft.accesskey "">
 <!ENTITY enableBidOneMore.accesskey "">
