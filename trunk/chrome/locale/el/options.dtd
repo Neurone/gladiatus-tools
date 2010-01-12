@@ -1,38 +1,50 @@
-<!ENTITY gladiatusToolsOptions.label "Opzioni di Gladiatus Tools">
-<!ENTITY generalSettings.label "Impostazioni generali">
+﻿<!ENTITY gladiatusToolsOptions.label "Επιλογές Gladiatus Tools">
 
-<!ENTITY simulationGroup.label "Simulazione di combattimento">
-<!ENTITY otherSettingsGroup.label "Altre impostazioni">
-<!ENTITY playersGroup.label "Giocatori e corporazioni">
-<!ENTITY merchantsGroup.label "Mercanti">
+<!ENTITY settingsTab.label "Γενικές ρυθμίσεις">
 
-<!ENTITY simulatorEngine.label "Motore della simulazione">
-<!ENTITY autoSimulateBattle.label "Simula automaticamente la battaglia">
-<!ENTITY excludeMeFromCorporateMessages.label "Non inviarmi i messaggi che mando alla mia corporazione">
-<!ENTITY showCustomAvatarImages.label "Mostra avatar personalizzati">
-<!ENTITY showCustomGuildImages.label "Mostra immagini personalizzate delle corporazioni">
-<!ENTITY showTimers.label "Mostra tempi">
-<!ENTITY showFullStats.label "Mostra statistiche utente complete">
-<!ENTITY showAdditionalTooltips.label "Confronta gli oggetti dell'inventario e quelli equipaggiati">
-<!ENTITY hideNotAffordable.label "Evidenzia solamente gli oggetti acquistabili">
-<!ENTITY showAdditionalStats.label "Mostra statistiche aggiuntive">
-<!ENTITY rememberTabs.label "Ricorda l'ultima linguetta selezionata">
-<!ENTITY reportDetailLevel.label "Usa il seguente livello di dettaglio per i rapporti">
-<!ENTITY reportDetailLevelEssential.label "Essenziale">
-<!ENTITY reportDetailLevelMedium.label "Medio">
-<!ENTITY reportDetailLevelFull.label "Completo">
-<!ENTITY showCharactersLeft.label "Mostra contatori dei caratteri">
-<!ENTITY enableBidOneMore.label "When bidding set default item price as lowest + 1">
+<!ENTITY simulationGroup.label "Προσομοιωτής μάχης">
+<!ENTITY otherSettingsGroup.label "Άλλες ρυθμίσεις">
+<!ENTITY playersGroup.label "Παίχτες και Τάγματα">
+<!ENTITY merchantsGroup.label "Πωλητές">
 
-<!ENTITY autoSimulateBattle.accesskey "S">
-<!ENTITY excludeMeFromCorporateMessages.accesskey "N">
-<!ENTITY showCustomAvatarImages.accesskey "M">
-<!ENTITY showCustomGuildImages.accesskey "C">
-<!ENTITY showTimers.accesskey "R">
-<!ENTITY showFullStats.accesskey "O">
-<!ENTITY showAdditionalTooltips.accesskey "T">
-<!ENTITY hideNotAffordable.accesskey "E">
-<!ENTITY showAdditionalStats.accesskey "A">
-<!ENTITY rememberTabs.accesskey "I">
-<!ENTITY showCharactersLeft.accesskey "Q">
+<!ENTITY simulatorEngine.label "Μηχανή προσομοίωσης">
+<!ENTITY autoSimulateBattle.label "Αυτόματη προσομοίωση μάχης">
+<!ENTITY excludeMeFromCorporateMessages.label "Εξαίρεσέ με όταν στέλνεις μήνυμα τάγματος">
+<!ENTITY showCustomAvatarImages.label "Δείχνε τις αλλαγμένες εικόνες παιχτών">
+<!ENTITY showCustomGuildImages.label "Δείχνε τις αλλαγμένες εικόνες ταγμάτων">
+<!ENTITY showTimers.label "Δείχνε τα ρολόγια">
+<!ENTITY showFullStats.label "Δείχνε πάντα τις τιμές της θεραπείας και της Απειλής">
+<!ENTITY showAdditionalTooltips.label "Σύγκρινε τα αντικείμενα της τσάντας με τα εξοπλισμένα">
+<!ENTITY hideNotAffordable.label "Υπερφώτισε μόνο τα αντικείμενα που μπορείς να αγοράσεις">
+<!ENTITY showAdditionalStats.label "Δείχνε τα επιπλέον στατιστικά">
+<!ENTITY rememberTabs.label "Να θυμάσαι την τελευταία επιλεγμένη καρτέλα">
+<!ENTITY reportDetailLevel.label "Χρησιμοποίησε το ακόλουθο επίπεδο λεπτομέρειας στις αναφορές μάχης">
+<!ENTITY reportDetailLevelEssential.label "Απαραίτητα">
+<!ENTITY reportDetailLevelMedium.label "Μεσαία">
+<!ENTITY reportDetailLevelFull.label "Πλήρης">
+<!ENTITY showCharactersLeft.label "Δείχνε τους μετρητές γραμμάτων">
+<!ENTITY enableBidOneMore.label "Όταν πλειοδοτείς βάλε σαν προεπιλογή την χαμηλότερη τιμή του αντικειμένου + 1">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">
 <!ENTITY enableBidOneMore.accesskey "">
+
+<!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
+<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
+<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
+<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon (merci monsieur Séb)">
+<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
+<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
+<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">

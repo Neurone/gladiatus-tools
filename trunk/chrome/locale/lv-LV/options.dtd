@@ -1,5 +1,6 @@
-<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Iestatījumi">
-<!ENTITY generalSettings.label "Galvenie Iestatījumi">
+﻿<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Iestatījumi">
+
+<!ENTITY settingsTab.label "Galvenie Iestatījumi">
 
 <!ENTITY simulationGroup.label "Cīņu simulācija">
 <!ENTITY otherSettingsGroup.label "Citi Iestatījumi">
@@ -36,3 +37,14 @@
 <!ENTITY rememberTabs.accesskey "">
 <!ENTITY showCharactersLeft.accesskey "">
 <!ENTITY enableBidOneMore.accesskey "">
+
+<!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
+<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
+<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
+<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon (merci monsieur Séb)">
+<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
+<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
+<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">

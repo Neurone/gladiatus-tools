@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>{76063e7f-3558-4b68-8287-54eb6512adc0}</em:id>
@@ -11,7 +11,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>3.5</em:minVersion>
-        <em:maxVersion>3.5.*</em:maxVersion>
+        <em:maxVersion>3.6.*</em:maxVersion>
       </Description>
     </em:targetApplication>
     
@@ -28,7 +28,8 @@
     <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
 	<em:translator>Живко Янев (Bulgarian translation)</em:translator>
 	<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
-	<em:iconURL>chrome://gladiatustools/content/images/gt.png</em:iconURL>
+	<em:translator>Apo59m (Greek translation)</em:translator>
+	<em:iconURL>chrome://gladiatustools/content/images/icon.png</em:iconURL>
     <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
 
     <em:localized>
@@ -50,6 +51,7 @@
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:translator>Живко Янев (Bulgarian translation)</em:translator>
 		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+		<em:translator>Apo59m (Greek translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -70,6 +72,7 @@
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:translator>Живко Янев (Български превод)</em:translator>
 		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+		<em:translator>Apo59m (Greek translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -90,10 +93,32 @@
         <em:translator>Muriel de Souza Godoi (Překlad do brazilské portugalštiny)</em:translator>
         <em:translator>Живко Янев (Bulgarian translation)</em:translator>
 		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+		<em:translator>Apo59m (Greek translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 
+	<em:localized>
+      <Description>
+        <em:locale>el</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+		<em:description>Πρόσθετο για το παιχνίδι Gladiatus. Αφού εγκατασταθεί, αυτό το πρόσθετο ενσωματώνει πλήρως μια σειρά από εργαλεία στο περιβάλλον του Gladiatus για να βελτιώσει το παιχνίδι του χρήστη.</em:description>
+        <em:contributor>Anthony Lieuallen ((Δημιουργός Greasemonkey))</em:contributor>
+		<em:translator>Sébastien Bailly (Γαλλική μετάφραση)</em:translator>
+		<em:translator>Sebastiàn Goicochea (Ισπανική μετάφραση)</em:translator>
+		<em:translator>TaReQ ALShehhi-UAETooN (Αραβική μετάφραση)</em:translator>
+		<em:translator>Erik Tuu (Βιετναμέζικη μετάφραση)</em:translator>
+		<em:translator>Peteris Petersons (Λετονική μετάφραση)</em:translator>
+		<em:translator>Halluz-man (Τσέχική μετάφραση)</em:translator>
+		<em:translator>Muriel de Souza Godoi (Πορτογαλική-Βραζιλιάνικη μετάφραση)</em:translator>
+		<em:translator>Живко Янев (Βουλγαρική μετάφραση)</em:translator>
+		<em:translator>Tom van de Zilver (Ολλανδική μετάφραση)</em:translator>
+		<em:translator>Apo59m (Ελληνική μετάφραση)</em:translator>
+        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+	
     <em:localized>
       <Description>
         <em:locale>es-AR</em:locale>
@@ -110,6 +135,7 @@
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:translator>Живко Янев (Bulgarian translation)</em:translator>
 		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+		<em:translator>Apo59m (Greek translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -130,6 +156,7 @@
         <em:translator>Muriel de Souza Godoi (Traduction brésilo-portugaise)</em:translator>
         <em:translator>Живко Янев (Traduction bulgare)</em:translator>
 		<em:translator>Tom van de Zilver (Traduction néerlandaise)</em:translator>
+		<em:translator>Apo59m (Greek translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -149,7 +176,8 @@
         <em:translator>Halluz-man (Traduzione in ceco)</em:translator>
         <em:translator>Muriel de Souza Godoi (Traduzione in portoghese brasiliano)</em:translator>
         <em:translator>Живко Янев (Traduzione in bulgaro)</em:translator>
-		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+		<em:translator>Tom van de Zilver (Traduzione in olandese)</em:translator>
+		<em:translator>Apo59m (Traduzione in greco)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -170,6 +198,7 @@
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:translator>Живко Янев (Bulgarian translation)</em:translator>
 		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+		<em:translator>Apo59m (Greek translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -190,6 +219,7 @@
 		<em:translator>Muriel de Souza Godoi (Portugees-Braziliaanse vertaling)</em:translator>
 		<em:translator>Живко Янев (Bulgaarse vertaling)</em:translator>
 		<em:translator>Tom van de Zilver (Nederlandse vertaling)</em:translator>
+		<em:translator>Apo59m (Greek translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -210,6 +240,7 @@
         <em:translator>Muriel de Souza Godoi (Brazilian Portuguese translation)</em:translator>
         <em:translator>Живко Янев (Bulgarian translation)</em:translator>
 		<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+		<em:translator>Apo59m (Greek translation)</em:translator>
         <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
@@ -230,6 +261,7 @@
 			<em:translator>Muriel de Souza Godoi (Traduçao para Português Brasileiro)</em:translator>
 			<em:translator>Живко Янев (Bulgarian translation)</em:translator>
 			<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+			<em:translator>Apo59m (Greek translation)</em:translator>
 		    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
