@@ -1,5 +1,6 @@
-<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Options">
-<!ENTITY generalSettings.label "General Settings">
+﻿<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Options">
+
+<!ENTITY settingsTab.label "General settings">
 
 <!ENTITY simulationGroup.label "Combat simulation">
 <!ENTITY otherSettingsGroup.label "Other settings">
@@ -36,3 +37,14 @@
 <!ENTITY rememberTabs.accesskey "M">
 <!ENTITY showCharactersLeft.accesskey "W">
 <!ENTITY enableBidOneMore.accesskey "N">
+
+<!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
+<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
+<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
+<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon (merci monsieur Séb)">
+<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
+<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
+<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">

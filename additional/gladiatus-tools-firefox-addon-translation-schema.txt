@@ -36,7 +36,8 @@ Improve the user experience automatically adding a set of fully web site integra
 ####################################################
 
 <!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Options">
-<!ENTITY generalSettings.label "General Settings">
+
+<!ENTITY settingsTab.label "General settings">
 
 <!ENTITY simulationGroup.label "Combat simulation">
 <!ENTITY otherSettingsGroup.label "Other settings">
@@ -60,6 +61,17 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY reportDetailLevelFull.label "Full">
 <!ENTITY showCharactersLeft.label "Show chars counters">
 <!ENTITY enableBidOneMore.label "When bidding set default item price as lowest + 1">
+
+<!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
+<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
+<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
+<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon (merci monsieur Séb)">
+<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
+<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
+<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">
 
 ####################################################
 # These are the access keys for addon option messages. Translate only those words between "..." and don't use the same letter twice.
@@ -90,7 +102,8 @@ Improve the user experience automatically adding a set of fully web site integra
 # These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
 ####################################################
 
-<em:translator>Anthony Lieuallen (Greasemonkey Compiler)</em:translator>
+<em:description>Improve the user experience automatically adding a set of fully web site integrated tools to the Gladiatus browser game interface.</em:description>
+<em:contributor>Anthony Lieuallen (Greasemonkey Compiler)</em:contributor>
 <em:translator>Sébastien Bailly (French translation)</em:translator>
 <em:translator>Sebastiàn Goicochea (Spanish translation)</em:translator>
 <em:translator>TaReQ ALShehhi-UAETooN (Arabic translation)</em:translator>
@@ -100,6 +113,7 @@ Improve the user experience automatically adding a set of fully web site integra
 <em:translator>Muriel de Souza Godoi (Portuguese-Brasil translation)</em:translator>
 <em:translator>Живко Янев (Bulgarian translation)</em:translator>
 <em:translator>Tom van de Zilver (Dutch translation)</em:translator>
+<em:translator>Apo59m (Greek translation)</em:translator>
 <em:translator>YOUR NAME (YOUR LANGUAGE translation)</em:translator>
 
 ####################################################
@@ -142,9 +156,12 @@ this.work = "Work:";
 # Text to show when time in timers is gone
 this.completed = "Complete!";
 
+# Label to use as "gold" after a number, to use for tooltips overing owned gold
+this.goldLabel = "Gold"
+
 # Text in player statistic page
 this.winPercentage = "Winning percentage:";
-this.totalEarnedGold = "Total earned gold:";		
+this.totalEarnedGold = "Total earned gold:";
 
 ####################################################
 # This is the addon description at addons.mozilla.org. Translate all and add your language at the end of the languages list.
@@ -175,7 +192,7 @@ MAIN FEATURES:
 
 Simulation engines are www.georged.eu and www.playerutils.com. These simulation engines don't take care of player remaining life, so use them carefully. :-)
 
-This addon has been tested with every server version up to 0.5.6. The following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, brazilian portuguese, bulgarian, dutch, YOUR LANGUAGE.
+This addon has been tested with every server version up to 0.5.6. The following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, brazilian portuguese, bulgarian, dutch, greek, YOUR LANGUAGE.
 If your language is not in the list, english one will be used. If you want to help me adding your language translation, without using Google translator :-), please send me an email (in english).
 
 ####################################################

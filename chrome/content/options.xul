@@ -1,12 +1,10 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://gladiatustools/locale/options.dtd">
-
 <prefwindow id="gladiatustools-prefs"
      title="&gladiatusToolsOptions.label;"
      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-
-  <prefpane id="gt-stock-pane" label="&generalSettings.label;">
+	<prefpane id="gladiatusToolsPreferences">
     <preferences>
       <preference id="simulatorEngine" name="it.neurone.gladiatustools.simulatorEngine" type="string" />
       <preference id="autoSimulateBattle" name="it.neurone.gladiatustools.autoSimulateBattle" type="bool" />
@@ -23,11 +21,10 @@
 	  <preference id="showCharactersLeft" name="it.neurone.gladiatustools.showCharactersLeft" type="bool"/>
 	  <preference id="enableBidOneMore" name="it.neurone.gladiatustools.enableBidOneMore" type="bool"/>
     </preferences>
-
 	<tabbox>
       <tabs>
-        <tab label="Settings"/>
-        <tab label="About"/>
+        <tab label="&settingsTab.label;"/>
+        <tab label="&aboutTab.label;"/>
       </tabs>
       <tabpanels>
         <tabpanel id="settingstab">
@@ -105,11 +102,20 @@
 			</vbox>
 		</tabpanel>
         <tabpanel id="about">
-          
+			<vbox align="left" maxwidth="370px" style="margin-bottom:15px;">
+				<description>2.7.0</description>
+				<spacer style="margin-top:5px;"/>
+				<description>- &aboutTab.whatsnew270.1;</description>
+				<description>- &aboutTab.whatsnew270.2;</description>
+				<description>- &aboutTab.whatsnew270.3;</description>
+				<description>- &aboutTab.whatsnew270.4;</description>
+				<description>- &aboutTab.whatsnew270.5;</description>
+				<description>- &aboutTab.whatsnew270.6;</description>
+				<description>- &aboutTab.whatsnew270.7;</description>
+				<description>- &aboutTab.whatsnew270.8;</description>
+			</vbox>
         </tabpanel>
       </tabpanels>
     </tabbox>
-	
-  </prefpane>
-
+	</prefpane>
 </prefwindow>

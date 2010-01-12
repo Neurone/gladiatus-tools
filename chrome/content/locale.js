@@ -122,6 +122,7 @@ it.neurone.gladiatustools.locale = {
 					this.arena = "Арена:";
 					this.work = "Работа:";
 					this.completed = "Готово!";
+					this.goldLabel = "Gold";
 					this.winPercentage = "Шанс за победа:";
 					this.totalEarnedGold = "Всичкото заграбено злато:";
 					break;
@@ -139,28 +140,29 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Aréna:";
                     this.work = "Práce:";
                     this.completed = "Hotovo!";
+					this.goldLabel = "Gold";
                     this.winPercentage = "Procento výher:";
                     this.totalEarnedGold = "Celkem vyděláno zlata:";
                     break; 
             
-			    case "greco":
-                    this.simulationFailed = "Simulazione fallita! Prova più tardi oppure seleziona un'altro motore di simulazione dal menu delle opzioni di Gladiatus Tools.";
-                    this.customAvatarImageUrl = "Url assoluta dell'avatar personalizzato (http://...). L'immagine verrà ridimensionata a 168x194 px.";
-                    this.customGuildImageUrl = "Url assoluta del logo personalizzato (http://...). L'immagine verrà ridimensionata a 209x232 px.";
-                    this.simulate = "Simula";
-                    this.simulating = "Simulazione...";
-                    this.winning = "Vincente ";
-                    this.go = "Vai!";
-                    this.stop = "ALT!";
-                    this.quest = "Spedizione:";
-                    this.arena = "Arena:";
-                    this.work = "Lavoro:";
-                    this.completed = "Finito!";
-                    this.goldLabel = "Oro";
-                    this.winPercentage = "Percentuale vittorie:";
-                    this.totalEarnedGold = "Oro guadagnato:";
+				case "greco":
+					this.simulationFailed = "Η προσομοίωση απέτυχε! Παρακαλώ δοκιμάστε αργότερα ή επιλέξτε μια άλλη μηχανή προσομοίωσης από τις επιλογές του Gladiatus Tools.";
+					this.customAvatarImageUrl = "Διεύθυνση της επιλεγμένης εικόνας παίχτη (http://...). Η εικόνα θα μετατραπεί σε 168x194.";
+					this.customGuildImageUrl = "Διεύθυνση της επιλεγμένης εικόνας τάγματος (http://...). Η εικόνα θα μετατραπεί σε 209x232 px.";
+					this.simulate = "Προσομοίωσε";
+					this.simulating = "Ανάλυση...";
+					this.winning = "Νίκη ";
+					this.go = "Πήγαινε!";
+					this.stop = "ΣΤΟΠ!";
+					this.quest = "Αποστολή:";
+					this.arena = "Αρένα:";
+					this.work = "Δουλειά:";
+					this.completed = "Έγινε!";
+					this.goldLabel = "χρυσός";
+					this.winPercentage = "Ποσοστό νικών επί τις εκατό:";
+					this.totalEarnedGold = "Συνολικός κερδισμένος χρυσός:";
                     break;
-			
+
                 case "spagnolo":
                     this.simulationFailed = "La simulación falló! Por favor intenta mas tarde o selecciona otro motor de simulación en las opciones de Gladiatus Tools.";
                     this.customAvatarImageUrl = "URL absoluta del avatar personalizado (http://...). La imagen será redimensionada a 168x194 px.";
@@ -228,6 +230,7 @@ it.neurone.gladiatustools.locale = {
                     this.arena = "Arēna:";
                     this.work = "Darbs:";
                     this.completed = "Pabeigts!";
+					this.goldLabel = "Gold";
                     this.winPercentage = "Uzvarēto procents:";
                     this.totalEarnedGold = "Arēnā iegūtais zelts:";
 					break;
@@ -245,6 +248,7 @@ it.neurone.gladiatustools.locale = {
 					this.arena = "Arena:";
 					this.work = "Werk:";
 					this.completed = "Gereed";
+					this.goldLabel = "Gold";
 					this.winPercentage = "Percentage gewonnen:";
 					this.totalEarnedGold = "Netto verdiend goud:";	
 					break;
@@ -267,39 +271,39 @@ it.neurone.gladiatustools.locale = {
 					this.totalEarnedGold = "Total de ouro ganho:";
 					break;
 					
-                case "vietnamita":
-                    this.simulationFailed = "Quá trình mô phỏng thất bại. Thử lại sau hoặc chọn dụng cụ mô phỏng khác ở Công cụ Gladiatus";
-                    this.customAvatarImageUrl = "Đường dẫn đến hình ảnh đại diện (http://...). Hình ảnh sẽ được định dạng lại (168x194px)";
-                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
-                    this.simulate = "Mô phỏng";
-                    this.simulating = "Đang mô phỏng...";
-                    this.winning = "Cơ hội chiến thắng";
-                    this.go = "Giết!!!";
-                    this.stop = "Tạm hoãn!";
-                    this.quest = "Nhiệm vụ:";
-                    this.arena = "Đấu trường:";
-                    this.work = "Chùi đít ngựa:";
-                    this.completed = "Đã hoàn tất!";
-                    this.goldLabel = "Gold";
-                    this.winPercentage = "Thống kê chiến thắng:";
-                    this.totalEarnedGold = "Thống kê số vàng đã cướp:";
+				case "vietnamita":
+					this.simulationFailed = "Quá trình mô phỏng thất bại. Thử lại sau hoặc chọn dụng cụ mô phỏng khác ở Công cụ Gladiatus";
+					this.customAvatarImageUrl = "Đường dẫn đến hình ảnh đại diện (http://...). Hình ảnh sẽ được định dạng lại (168x194px)";
+					this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
+					this.simulate = "Mô phỏng";
+					this.simulating = "Đang mô phỏng...";
+					this.winning = "Cơ hội chiến thắng";
+					this.go = "Giết!!!";
+					this.stop = "Tạm hoãn!";
+					this.quest = "Nhiệm vụ:";
+					this.arena = "Đấu trường:";
+					this.work = "Chùi đít ngựa:";
+					this.completed = "Đã hoàn tất!";
+					this.goldLabel = "Gold";
+					this.winPercentage = "Thống kê chiến thắng:";
+					this.totalEarnedGold = "Thống kê số vàng đã cướp:";
 					break;
                       
-                default:
-                    this.simulationFailed = "Simulation faild! Please try later or select another simulator engine from Gladiatus Tools options.";
-                    this.customAvatarImageUrl = "Custom avatar absolute url (http://...). Image will be resized to 168x194 px.";
-                    this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
-                    this.simulate = "Simulate";
-                    this.simulating = "Simulating...";
-                    this.winning = "Winning ";
-                    this.go = "Go!";
-                    this.stop = "STOP!";
-                    this.quest = "Quest:";
-                    this.arena = "Arena:";
-                    this.work = "Work:";
-                    this.completed = "Complete!";
-                    this.goldLabel = "Gold";
-                    this.winPercentage = "Winning percentage:";
+				default:
+					this.simulationFailed = "Simulation faild! Please try later or select another simulator engine from Gladiatus Tools options.";
+					this.customAvatarImageUrl = "Custom avatar absolute url (http://...). Image will be resized to 168x194 px.";
+					this.customGuildImageUrl = "Custom guild image absolute url (http://...). Image will be resized to 209x232 px.";
+					this.simulate = "Simulate";
+					this.simulating = "Simulating...";
+					this.winning = "Winning ";
+					this.go = "Go!";
+					this.stop = "STOP!";
+					this.quest = "Quest:";
+					this.arena = "Arena:";
+					this.work = "Work:";
+					this.completed = "Complete!";
+					this.goldLabel = "Gold";
+					this.winPercentage = "Winning percentage:";
 					this.totalEarnedGold = "Total earned gold:";
             }
         }
