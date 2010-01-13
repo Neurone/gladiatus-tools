@@ -328,7 +328,16 @@ function grabClick(event)
             simulateBattle();
             return;
 	    }
-	    
+		//Controllo se il click è sul pulsante "acquista" nella pagina dell'asta
+		if(event.target.name == nomePulsanteAcquistaAsta || event.target.name == nomePulsanteAcquistaMercato) {
+			if(!confirm(MSG.confirmBuyout))
+			{
+				event.stopPropagation();
+				event.preventDefault();
+			}
+			return;
+		}
+		
         //Controllo se è attiva e utilizzabile la funzionalità smart combat report
         if(event.target.id == "moreDetails1")
 	    {
@@ -354,7 +363,7 @@ function grabClick(event)
 		    return;
 	    }
 	    
-	    //Controllo se il click è il salva impostazioni	per la corporazione
+	    //Controllo se il click è il salva impostazioni per la corporazione
 	    if(isModAllyPage && event.target.type == "submit" && event.target.name != "dd") {
 		    //Recupero il campo immagine
 		    var GTGuildImageUrlField = document.getElementById("GTGuildImageUrl");
@@ -890,7 +899,7 @@ if(isCombatReportPage && (SCRLevel < 2)) showSmartCombatReport();
 /************************************
 / Valorizzazione automatica dei campi dell'asta
 ************************************/
-if(GM_getValue("enableBidOneMore", false) && isAuctionPage) bidOneMore();
+if(GM_getValue("enableAutoFillAuctionFields", false) && isAuctionPage) autoFillAuctionFields();
 
 /************************************
 / Pulsanti di prima / ultima pagina nell'elenco dei pacchetti
