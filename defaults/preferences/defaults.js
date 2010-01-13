@@ -9,7 +9,6 @@ pref("it.neurone.gladiatustools.hideNotAffordable", true);
 pref("it.neurone.gladiatustools.excludeMeFromCorporateMessages", false);
 pref("it.neurone.gladiatustools.showAdditionalStats", true);
 pref("it.neurone.gladiatustools.rememberTabs", true);
-pref("it.neurone.gladiatustools.goToMyPos", true);
 pref("it.neurone.gladiatustools.reportDetailLevel", "0");
 pref("it.neurone.gladiatustools.showCharactersLeft", true);
-pref("it.neurone.gladiatustools.enableBidOneMore", true);
+pref("it.neurone.gladiatustools.enableAutoFillAuctionFields", true);

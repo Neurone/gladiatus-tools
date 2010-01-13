@@ -107,6 +107,7 @@ it.neurone.gladiatustools.locale = {
                     this.goldLabel = "الذهب";
                     this.winPercentage = "نسبة الإنتصارات:";
                     this.totalEarnedGold = "مجموع الحصول على الذهب:";
+					this.confirmBuyout = "Do you really want to buy this object?";
                     break;
 
 				case "bulgaro":
@@ -125,6 +126,7 @@ it.neurone.gladiatustools.locale = {
 					this.goldLabel = "Gold";
 					this.winPercentage = "Шанс за победа:";
 					this.totalEarnedGold = "Всичкото заграбено злато:";
+					this.confirmBuyout = "Do you really want to buy this object?";
 					break;
 
                 case "ceco":
@@ -143,6 +145,7 @@ it.neurone.gladiatustools.locale = {
 					this.goldLabel = "Gold";
                     this.winPercentage = "Procento výher:";
                     this.totalEarnedGold = "Celkem vyděláno zlata:";
+					this.confirmBuyout = "Do you really want to buy this object?";
                     break; 
             
 				case "greco":
@@ -161,6 +164,7 @@ it.neurone.gladiatustools.locale = {
 					this.goldLabel = "χρυσός";
 					this.winPercentage = "Ποσοστό νικών επί τις εκατό:";
 					this.totalEarnedGold = "Συνολικός κερδισμένος χρυσός:";
+					this.confirmBuyout = "Do you really want to buy this object?";
                     break;
 
                 case "spagnolo":
@@ -179,6 +183,7 @@ it.neurone.gladiatustools.locale = {
                     this.goldLabel = "Oro";
                     this.winPercentage = "Porcentaje de victorias:";
                     this.totalEarnedGold = "Total de oro ganado:";
+					this.confirmBuyout = "Do you really want to buy this object?";
                     break; 
                     
                 case "francese":
@@ -197,6 +202,7 @@ it.neurone.gladiatustools.locale = {
                     this.goldLabel = "Or";
                     this.winPercentage = "Pourcentage de victoire:";
                     this.totalEarnedGold = "Bénéfice:";
+					this.confirmBuyout = "Do you really want to buy this object?";
                     break;  
                     
                 case "italiano":
@@ -215,6 +221,7 @@ it.neurone.gladiatustools.locale = {
                     this.goldLabel = "Oro";
                     this.winPercentage = "Percentuale vittorie:";
                     this.totalEarnedGold = "Oro guadagnato:";
+					this.confirmBuyout = "Vuoi veramente acquistare questo oggetto?";
                     break;
                       
                 case "lettone":
@@ -233,6 +240,7 @@ it.neurone.gladiatustools.locale = {
 					this.goldLabel = "Gold";
                     this.winPercentage = "Uzvarēto procents:";
                     this.totalEarnedGold = "Arēnā iegūtais zelts:";
+					this.confirmBuyout = "Do you really want to buy this object?";
 					break;
                 
                 case "olandese":
@@ -250,7 +258,8 @@ it.neurone.gladiatustools.locale = {
 					this.completed = "Gereed";
 					this.goldLabel = "Gold";
 					this.winPercentage = "Percentage gewonnen:";
-					this.totalEarnedGold = "Netto verdiend goud:";	
+					this.totalEarnedGold = "Netto verdiend goud:";
+					this.confirmBuyout = "Do you really want to buy this object?";
 					break;
 				
 				case "portoghese-brasiliano":
@@ -269,6 +278,7 @@ it.neurone.gladiatustools.locale = {
 					this.goldLabel = "Ouro";
 					this.winPercentage = "Porcentagem de vitórias:";
 					this.totalEarnedGold = "Total de ouro ganho:";
+					this.confirmBuyout = "Do you really want to buy this object?";
 					break;
 					
 				case "vietnamita":
@@ -287,6 +297,7 @@ it.neurone.gladiatustools.locale = {
 					this.goldLabel = "Gold";
 					this.winPercentage = "Thống kê chiến thắng:";
 					this.totalEarnedGold = "Thống kê số vàng đã cướp:";
+					this.confirmBuyout = "Do you really want to buy this object?";
 					break;
                       
 				default:
@@ -305,6 +316,7 @@ it.neurone.gladiatustools.locale = {
 					this.goldLabel = "Gold";
 					this.winPercentage = "Winning percentage:";
 					this.totalEarnedGold = "Total earned gold:";
+					this.confirmBuyout = "Do you really want to buy this object?";
             }
         }
     }

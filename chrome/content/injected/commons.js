@@ -18,6 +18,8 @@ var serverVersion = getServerVersion();
 //Variabili globali
 var versionID = 170;
 var idSimula = "idSimula";
+var nomePulsanteAcquistaAsta = "buyout";
+var nomePulsanteAcquistaMercato = "buy";
 var idMessaggio = "idMessaggio";
 var simulaButton, vaiButton, messaggio;
 var paramAttaccante, paramDifensore, paramSimulatore;
@@ -89,9 +91,9 @@ var isOpponentStatsPage = urlMatch("mod=player&submod=stats&p=.*");
 var isCombatReportPage = (urlMatch("mod=report&beid=.*") || urlMatch("mod=report&&beid=.*")) && !urlMatch("mod=report&beid=.*&submod=combatReport");
 var isModAllyPage = urlMatch("mod=guild_main&submod=admin_description&sh=.*");
 var isAllySendMessagePage = urlMatch("mod=guild_main&submod=admin_mail&sh=.*");
-var isAuctionPage = urlMatch("mod=auction&sh=.*") || urlMatch("mod=auction&ttype=3&sh=.*");
+var isAuctionPage = urlMatch("mod=auction&sh=.*") || urlMatch("mod=auction&ttype=2&sh=.*") || urlMatch("mod=auction&ttype=3&sh=.*");
 var isPackagesListPage = urlMatch("mod=packages&.*");
-					
+
 //Sovrascrivo alcune url se la versione del server è vecchia
 if(serverVersion == "v0.4.0") {
 	isMemoPage = urlMatch("mod=overview&submod=memo&sh=.*");
