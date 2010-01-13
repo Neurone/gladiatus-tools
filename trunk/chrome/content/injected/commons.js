@@ -202,7 +202,7 @@ function urlMatch(string) {
 / Testa se la url passata corrisponde alla espressione regolare passata
 /****************************/
 function targetUrlMatch(string, url) {
-	eval("var matched = /http:\\/\\/s\\d+\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(\""+ url +"\") || /http:\\/\\/s\\d+\\.\\w\\w\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(location.href);");
+	eval("var matched = /http:\\/\\/s\\d+\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(\""+ url +"\") || /http:\\/\\/s\\d+\\.\\w\\w\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(\""+ url + "\");");
 	return matched;
 }
 
