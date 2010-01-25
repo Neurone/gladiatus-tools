@@ -23,7 +23,7 @@
 <!ENTITY reportDetailLevelMedium.label "Medium">
 <!ENTITY reportDetailLevelFull.label "Full">
 <!ENTITY showCharactersLeft.label "Show chars counters">
-<!ENTITY enableBidOneMore.label "When bidding set default item price as lowest + 1">
+<!ENTITY enableAutoFillAuctionFields.label "Autofill auction item price with lowest price">
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
@@ -36,15 +36,20 @@
 <!ENTITY showAdditionalStats.accesskey "O">
 <!ENTITY rememberTabs.accesskey "M">
 <!ENTITY showCharactersLeft.accesskey "W">
-<!ENTITY enableBidOneMore.accesskey "N">
+<!ENTITY enableAutoFillAuctionFields.accesskey "N">
 
 <!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew271.1 "'bid + 1' feature autofill fields as usually, but no longer add 1 to acution item price">
+<!ENTITY aboutTab.whatsnew271.2 "Inserted confirmation message when directly buying from Market and Auction pages">
+<!ENTITY aboutTab.whatsnew271.3 "Updated some translations">
+<!ENTITY aboutTab.whatsnew271.4 "Fixed minor bug">
 
 <!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
 <!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
 <!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
 <!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
-<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon (merci monsieur Séb)">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon">
 <!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
 <!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
 <!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">

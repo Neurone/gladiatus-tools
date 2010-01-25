@@ -1,0 +1,55 @@
+﻿<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Nustatymai">
+
+<!ENTITY settingsTab.label "Pagrindiniai nustatymai">
+
+<!ENTITY simulationGroup.label "Kovos simuliacija">
+<!ENTITY otherSettingsGroup.label "Kiti nustatymai">
+<!ENTITY playersGroup.label "Žaidėjai ir gildijos">
+<!ENTITY merchantsGroup.label "Samdiniai">
+
+<!ENTITY simulatorEngine.label "Simuliacijos varikliukas">
+<!ENTITY autoSimulateBattle.label "Automatiškai simuliuoti kovą">
+<!ENTITY excludeMeFromCorporateMessages.label "Neįtraukti manęs, kai rašau bendrą zinutę gildijai">
+<!ENTITY showCustomAvatarImages.label "Rodyti žaidėjų avatar'ą">
+<!ENTITY showCustomGuildImages.label "Rodyti gildijos avatar'us">
+<!ENTITY showTimers.label "Rodyti laikrodžius">
+<!ENTITY showFullStats.label "Visad rodyti Gydymo ir Grėsmes vertes">
+<!ENTITY showAdditionalTooltips.label "Lyginti inventoriaus ir užsidetus daiktus">
+<!ENTITY hideNotAffordable.label "Paryškinti tik įperkamus daiktus">
+<!ENTITY showAdditionalStats.label "Rodyti papildomą statistiką">
+<!ENTITY rememberTabs.label "Prisiminti paskutinę pažymėtą skiltį">
+<!ENTITY reportDetailLevel.label "Kovos ataskaitos detalumas">
+<!ENTITY reportDetailLevelEssential.label "Minimalus">
+<!ENTITY reportDetailLevelMedium.label "Dalinis">
+<!ENTITY reportDetailLevelFull.label "Visas">
+<!ENTITY showCharactersLeft.label "Rodomas simbolių skaitliuką">
+<!ENTITY enableAutoFillAuctionFields.label "Auto-užpildyti mažiausia kaina laukelius aukcione">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">
+<!ENTITY enableAutoFillAuctionFields.accesskey "">
+
+<!ENTITY aboutTab.label "Kas naujo">
+
+<!ENTITY aboutTab.whatsnew271.1 "'statyk + 1' galimybę auto-užpildo laukelius, tačiau nebeprideda 1 prie daikto kainos">
+<!ENTITY aboutTab.whatsnew271.2 "Idiegta patvirtinimo žinutė perkant tiesiogiai iš Turgaus ar Aukciono puslapių">
+<!ENTITY aboutTab.whatsnew271.3 "Atnaujinti kai kurie vertimai">
+<!ENTITY aboutTab.whatsnew271.4 "Ištaisytos nežymios klaidos">
+
+<!ENTITY aboutTab.whatsnew270.1 "Pridėta 'statyk + 1' galimybė aukciono puslapyje">
+<!ENTITY aboutTab.whatsnew270.2 "Pridėtas naujas navigacijos meniu paketų skiltyje">
+<!ENTITY aboutTab.whatsnew270.3 "Pridėta Graikų kalba">
+<!ENTITY aboutTab.whatsnew270.4 "Praplėsta 'prisimink paskutinę skiltį' galimybė visame žaidime">
+<!ENTITY aboutTab.whatsnew270.5 "Pakeista įskiepio piktograma">
+<!ENTITY aboutTab.whatsnew270.6 "Pakeistos nustatymų ir kas naujo skiltys">
+<!ENTITY aboutTab.whatsnew270.7 "Panaikinta 'eik į mano poziciją' galimybė (dabar serverio pusėj">
+<!ENTITY aboutTab.whatsnew270.8 "Ištaisytos nežymios klaidos">

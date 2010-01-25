@@ -19,7 +19,7 @@
       <preference id="rememberTabs" name="it.neurone.gladiatustools.rememberTabs" type="bool"/>
       <preference id="reportDetailLevel" name="it.neurone.gladiatustools.reportDetailLevel" type="string"/>
 	  <preference id="showCharactersLeft" name="it.neurone.gladiatustools.showCharactersLeft" type="bool"/>
-	  <preference id="enableBidOneMore" name="it.neurone.gladiatustools.enableBidOneMore" type="bool"/>
+	  <preference id="enableAutoFillAuctionFields" name="it.neurone.gladiatustools.enableAutoFillAuctionFields" type="bool"/>
     </preferences>
 	<tabbox>
       <tabs>
@@ -77,7 +77,7 @@
 			  <groupbox>
 				<caption label="&otherSettingsGroup.label;"/>
 				<hbox align="center">
-				  <checkbox id="c_enableBidOneMore" preference="enableBidOneMore" label="&enableBidOneMore.label;" accesskey="&enableBidOneMore.accesskey;"/>
+				  <checkbox id="c_enableBidOneMore" preference="enableAutoFillAuctionFields" label="&enableAutoFillAuctionFields.label;" accesskey="&enableAutoFillAuctionFields.accesskey;"/>
 				</hbox>
 				<hbox align="center">
 				  <checkbox id="c_showTimers" preference="showTimers" label="&showTimers.label;" accesskey="&showTimers.accesskey;"/>
@@ -103,6 +103,13 @@
 		</tabpanel>
         <tabpanel id="about">
 			<vbox align="left" maxwidth="370px" style="margin-bottom:15px;">
+				<description>2.7.1</description>
+				<spacer style="margin-top:5px;"/>
+				<description>- &aboutTab.whatsnew271.1;</description>
+				<description>- &aboutTab.whatsnew271.2;</description>
+				<description>- &aboutTab.whatsnew271.3;</description>
+				<description>- &aboutTab.whatsnew271.4;</description>
+				<spacer style="margin-top:5px;"/>
 				<description>2.7.0</description>
 				<spacer style="margin-top:5px;"/>
 				<description>- &aboutTab.whatsnew270.1;</description>

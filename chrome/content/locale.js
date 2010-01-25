@@ -19,7 +19,8 @@ it.neurone.gladiatustools.locale = {
     completed : "",
     goldLabel : "",
     winPercentage : "",
-    totalEarnedGold : "",    
+    totalEarnedGold : "",
+	confirmBuyout : "",
     /********************************
     / Recupera la lingua in base al sito
     /********************************/
@@ -48,7 +49,7 @@ it.neurone.gladiatustools.locale = {
             new Array("Italia", /s\d+\.gladiatus\.it/i, "italiano"),
             new Array("Korea", ".kr.gladiatus.com", "coreano"),
             new Array("Lettonia", /s\d+\.gladiatus\.lv/i, "lettone"),
-            new Array("Lituania", ".gladiatus.lt", "lituano"),
+            new Array("Lituania", /s\d+\.gladiatus\.lt/i, "lituano"),
             new Array("Messico", /s\d+\.gladiatus\.com\.mx/i, "spagnolo"),
             new Array("Paesi Bassi", /s\d+\.gladiatus\.nl/i, "olandese"),
             new Array("Norvegia", ".gladiatus.no", "norvegese"),
@@ -164,7 +165,7 @@ it.neurone.gladiatustools.locale = {
 					this.goldLabel = "χρυσός";
 					this.winPercentage = "Ποσοστό νικών επί τις εκατό:";
 					this.totalEarnedGold = "Συνολικός κερδισμένος χρυσός:";
-					this.confirmBuyout = "Do you really want to buy this object?";
+					this.confirmBuyout = "Πραγματικά θέλεις να αγοράσεις αυτό το αντικείμενο";
                     break;
 
                 case "spagnolo":
@@ -202,7 +203,7 @@ it.neurone.gladiatustools.locale = {
                     this.goldLabel = "Or";
                     this.winPercentage = "Pourcentage de victoire:";
                     this.totalEarnedGold = "Bénéfice:";
-					this.confirmBuyout = "Do you really want to buy this object?";
+					this.confirmBuyout = "Voulez-vous vraiment l'acheter?";
                     break;  
                     
                 case "italiano":
@@ -224,6 +225,24 @@ it.neurone.gladiatustools.locale = {
 					this.confirmBuyout = "Vuoi veramente acquistare questo oggetto?";
                     break;
                       
+				case "lituano":
+					this.simulationFailed = "Simuliacija nepavyko! Pamėginkit vėliau ar pasirinkit kitą varikliuką Gladiatus Tools nustatymuose.";
+					this.customAvatarImageUrl = "Žaidėjo avatar'o adresas (http://...). Paveiksliuko formatas bus 168x194.";
+					this.customGuildImageUrl = "Gildijos avatar'o adresas (http://...). Paveiksliuko formatas bus 209x232 px.";
+					this.simulate = "Simuliuoti";
+					this.simulating = "Simuliuojama...";
+					this.winning = "Tikimybė laimeti ";
+					this.go = "Pulk!";
+					this.stop = "STOP!";
+					this.quest = "Užduotis:";
+					this.arena = "Arena:";
+					this.work = "Darbas:";
+					this.completed = "Įvygdyta!";
+					this.goldLabel = "Auksas"
+					this.winPercentage = "Laimėjimų procentas:";
+					this.totalEarnedGold = "Išvis pelnyta aukso:";
+					this.confirmBuyout = "Ar tikrai norite nupirkti šį daiktą?";
+					  
                 case "lettone":
                     this.simulationFailed = "Simulācija neizdevusies! Lūdzu mēģiniet vēlāk, vai izvēlaties citu simulātoru Gladiatus Tools opcijās.";
                     this.customAvatarImageUrl = "Pārveidotā avatara links (http://...). Bilde tiks samazināta līdz 168x194 px.";
