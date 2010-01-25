@@ -3,8 +3,8 @@
 # Title: Gladiatus Tools Firefox Addon Translation Schema
 # Author: Giuseppe Bertone
 #
-# This guide applies to 2.7.0 release
-# Last modified: 04 Gen 2010 12:14:30 GMT 
+# This guide applies to 2.7.1 release
+# Last modified: 11 Jan 2010 11:34:44 GMT 
 # 
 ####################################################
 #
@@ -60,15 +60,20 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY reportDetailLevelMedium.label "Medium">
 <!ENTITY reportDetailLevelFull.label "Full">
 <!ENTITY showCharactersLeft.label "Show chars counters">
-<!ENTITY enableBidOneMore.label "When bidding set default item price as lowest + 1">
+<!ENTITY enableAutoFillAuctionFields.label "Autofill auction item price with lowest price">
 
 <!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew271.1 "'bid + 1' feature autofill fields as usually, but no longer add 1 to acution item price">
+<!ENTITY aboutTab.whatsnew271.2 "Inserted confirmation message when directly buying from Market and Auction pages">
+<!ENTITY aboutTab.whatsnew271.3 "Updated some translations">
+<!ENTITY aboutTab.whatsnew271.4 "Fixed minor bug">
 
 <!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
 <!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
 <!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
 <!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
-<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon (merci monsieur Séb)">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon">
 <!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
 <!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
 <!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">
@@ -85,18 +90,18 @@ Improve the user experience automatically adding a set of fully web site integra
 # If access keys does not apply to your language, please set them all to a blank value "".
 ####################################################
 
-<!ENTITY autoSimulateBattle.accesskey "A">
-<!ENTITY excludeMeFromCorporateMessages.accesskey "E">
-<!ENTITY showCustomAvatarImages.accesskey "S">
-<!ENTITY showCustomGuildImages.accesskey "U">
-<!ENTITY showTimers.accesskey "R">
-<!ENTITY showFullStats.accesskey "H">
-<!ENTITY showAdditionalTooltips.accesskey "T">
-<!ENTITY hideNotAffordable.accesskey "I">
-<!ENTITY showAdditionalStats.accesskey "O">
-<!ENTITY rememberTabs.accesskey "M">
-<!ENTITY showCharactersLeft.accesskey "W">
-<!ENTITY enableBidOneMore.accesskey "N">
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">
+<!ENTITY enableAutoFillAuctionFields.accesskey "">
 
 ####################################################
 # These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
@@ -163,9 +168,13 @@ this.goldLabel = "Gold"
 this.winPercentage = "Winning percentage:";
 this.totalEarnedGold = "Total earned gold:";
 
+#Text for alert while buying an item at amrket or auction pages
+this.confirmBuyout = "Do you really want to buy this object?";
+
 ####################################################
 # This is the addon description at addons.mozilla.org. Translate all and add your language at the end of the languages list.
 ####################################################
+Waiting for AMO to review GT and to public the new Gladiatus Tools release, you can download the latest 2.7.1 release from http://www.neurone.it/mozilla/addons/gladiatustools/gladiatus_tools-latest.xpi
 
 ************ BEWARE ******************
 Despite in many countries (ie French, Arab Emirates or Argentina) Gladiatus Tools is considered LEGAL or at least not mentioned, in other countries (ie. Italy) using Gladiatus Tools is considered NOT LEGAL.
@@ -186,9 +195,10 @@ MAIN FEATURES:
 - Persistent tab choices
 - Highlighting affordable shop items only
 - Smart combat report: you can choose the combat report detail level
-- Smart default fields value (last bid + 1) at auction page
+- Smart default fields value (lowest price) at auction page
 - Big "notes" and "write a message" fields
 - View full player and mercenaries statistics (Healing and Threat)
+- Many user interface improvements: characters counters for all text field, confirmation message box for auction and market buyout, etc.
 
 Simulation engines are www.georged.eu and www.playerutils.com. These simulation engines don't take care of player remaining life, so use them carefully. :-)
 

@@ -23,7 +23,7 @@
 <!ENTITY reportDetailLevelMedium.label "Medio">
 <!ENTITY reportDetailLevelFull.label "Completo">
 <!ENTITY showCharactersLeft.label "Mostra contatori dei caratteri">
-<!ENTITY enableBidOneMore.label "Imposta un'oro in più del prezzo attuale per ogni oggetto all'asta">
+<!ENTITY enableAutoFillAuctionFields.label "Imposta un'oro in più del prezzo attuale per ogni oggetto all'asta">
 
 <!ENTITY autoSimulateBattle.accesskey "S">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "N">
@@ -36,15 +36,20 @@
 <!ENTITY showAdditionalStats.accesskey "A">
 <!ENTITY rememberTabs.accesskey "I">
 <!ENTITY showCharactersLeft.accesskey "D">
-<!ENTITY enableBidOneMore.accesskey "B">
+<!ENTITY enableAutoFillAuctionFields.accesskey "B">
 
 <!ENTITY aboutTab.label "Novità">
+
+<!ENTITY aboutTab.whatsnew271.1 "La funzione 'rilancia di uno' ora non aggiunge più uno al prezzo dell'asta, ma offre il prezzo più basso">
+<!ENTITY aboutTab.whatsnew271.2 "Inserito una richiesta di conferma nell'acquisto di un oggetto nelle pagine del mercato e dell'asta">
+<!ENTITY aboutTab.whatsnew271.3 "Aggiornate alcune traduzioni">
+<!ENTITY aboutTab.whatsnew271.4 "Corretto un bug minore">
 
 <!ENTITY aboutTab.whatsnew270.1 "Aggiunta la nuova funzionalità 'rilancia di uno' nelle pagine dell'asta">
 <!ENTITY aboutTab.whatsnew270.2 "Aggiunti dei link di navigazione nella pagina che mostra i pacchetti non ancora raccolti">
 <!ENTITY aboutTab.whatsnew270.3 "Aggiunta la traduzione in greco">
 <!ENTITY aboutTab.whatsnew270.4 "Estesa la funzionalità 'Ricorda l'ultima linguetta selezionata' a tutto il gioco">
-<!ENTITY aboutTab.whatsnew270.5 "Modificata l'icona di Gladiatus Tools (merci monsieur Séb)">
+<!ENTITY aboutTab.whatsnew270.5 "Modificata l'icona di Gladiatus Tools">
 <!ENTITY aboutTab.whatsnew270.6 "Cambiata la finestra delle opzioni e inserita la sezione Novità">
 <!ENTITY aboutTab.whatsnew270.7 "Rimossa la funzionalità 'Mostra per prima la mia pagina in classifica' perché è stata implementata lato server">
 <!ENTITY aboutTab.whatsnew270.8 "Corretto un bug minore">

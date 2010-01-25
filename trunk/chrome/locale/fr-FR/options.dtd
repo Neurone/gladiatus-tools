@@ -14,7 +14,7 @@
 <!ENTITY showCustomGuildImages.label "Afficher les étendards personnalisés">
 <!ENTITY showTimers.label "Afficher les minuteries">
 <!ENTITY showFullStats.label "Afficher les caractéristiques complètes des joueurs">
-<!ENTITY showAdditionalTooltips.label "Comparer mon équipement avec celui de mon inventaire">
+<!ENTITY showAdditionalTooltips.label "Comparer mon inventaire avec mon équipement">
 <!ENTITY hideNotAffordable.label "Rendre translucides les offres non achetables">
 <!ENTITY showAdditionalStats.label "Afficher plus de statistiques">
 <!ENTITY rememberTabs.label "Mémoriser mes derniers onglets sélectionnés">
@@ -23,7 +23,7 @@
 <!ENTITY reportDetailLevelMedium.label "Intermédiaire">
 <!ENTITY reportDetailLevelFull.label "Complet">
 <!ENTITY showCharactersLeft.label "Afficher les compteurs de caractères">
-<!ENTITY enableBidOneMore.label "When bidding set default item price as lowest + 1">
+<!ENTITY enableAutoFillAuctionFields.label "Proposer automatiquement l'enchère minimale.">
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
@@ -36,15 +36,20 @@
 <!ENTITY showAdditionalStats.accesskey "S">
 <!ENTITY rememberTabs.accesskey "D">
 <!ENTITY showCharactersLeft.accesskey "F">
-<!ENTITY enableBidOneMore.accesskey "">
+<!ENTITY enableAutoFillAuctionFields.accesskey "Q">
 
-<!ENTITY aboutTab.label "What's new">
+<!ENTITY aboutTab.label "Nouveauté">
 
-<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
-<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
-<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
-<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
-<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon (merci monsieur Séb)">
-<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
-<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
-<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">
+<!ENTITY aboutTab.whatsnew271.1 "La fonction "Prix le plus bas +1" des enchères n'ajoute plus automatiquement +1 or au prix de départ.">
+<!ENTITY aboutTab.whatsnew271.2 "Ajouter une demande de confirmation pour les achats">
+<!ENTITY aboutTab.whatsnew271.3 "CHANGÉ : Quelques traductions.">
+<!ENTITY aboutTab.whatsnew271.4 "CORRIGÉ : Quelques bugs mineurs.">
+
+<!ENTITY aboutTab.whatsnew270.1 "AJOUTÉ : La fonction "Prix le plus bas +1" aux enchères.">
+<!ENTITY aboutTab.whatsnew270.2 "AJOUTÉ : La fonction "Aller à la dernière page" pour la gestion des paquets.">
+<!ENTITY aboutTab.whatsnew270.3 "AJOUTÉ : La traduction grecque.">
+<!ENTITY aboutTab.whatsnew270.4 "AJOUTÉ : La fonction "Se souvenir du dernier onglet" étendue à tout le jeu.">
+<!ENTITY aboutTab.whatsnew270.5 "CHANGÉ : L'icône de l'extension">
+<!ENTITY aboutTab.whatsnew270.6 "CHANGÉ : L'organisation de la fenêtre des options.">
+<!ENTITY aboutTab.whatsnew270.7 "SUPPRIMÉ : La fonction "Ma page de classement général".">
+<!ENTITY aboutTab.whatsnew270.8 "CORRIGÉ : Quelques bugs mineurs.">

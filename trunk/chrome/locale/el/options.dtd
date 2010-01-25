@@ -23,7 +23,7 @@
 <!ENTITY reportDetailLevelMedium.label "Μεσαία">
 <!ENTITY reportDetailLevelFull.label "Πλήρης">
 <!ENTITY showCharactersLeft.label "Δείχνε τους μετρητές γραμμάτων">
-<!ENTITY enableBidOneMore.label "Όταν πλειοδοτείς βάλε σαν προεπιλογή την χαμηλότερη τιμή του αντικειμένου + 1">
+<!ENTITY enableAutoFillAuctionFields.label "Αυτόματα συμπλήρωσε τις τιμές των αντικειμένων στο δημοπρατήριο με την χαμηλότερη προσφορά">
 
 <!ENTITY autoSimulateBattle.accesskey "">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "">
@@ -36,15 +36,20 @@
 <!ENTITY showAdditionalStats.accesskey "">
 <!ENTITY rememberTabs.accesskey "">
 <!ENTITY showCharactersLeft.accesskey "">
-<!ENTITY enableBidOneMore.accesskey "">
+<!ENTITY enableAutoFillAuctionFields.accesskey "">
 
-<!ENTITY aboutTab.label "What's new">
+<!ENTITY aboutTab.label "Τι καινούριο υπάρχει">
 
-<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
-<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
-<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
-<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
-<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon (merci monsieur Séb)">
-<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
-<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
-<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">
+<!ENTITY aboutTab.whatsnew271.1 "Το χαρακτηριστικό 'bid + 1' συνεχίζει να γεμίζει τις τιμές, αλλά τώρα δεν προσθέτει 1 χρυσό στην τιμή των αντικειμένων">
+<!ENTITY aboutTab.whatsnew271.2 "Προστέθηκε μήνυμα επαλήθευσης όταν αγοράζονται αντικείμενα κατευθείαν (εξαγορά) από τους πωλητές και το δημοπρατήριο">
+<!ENTITY aboutTab.whatsnew271.3 "Ανανεώθηκαν κάποιες μεταφράσεις">
+<!ENTITY aboutTab.whatsnew271.4 "Διορθώθηκαν μικρά προβλήματα">
+
+<!ENTITY aboutTab.whatsnew270.1 "Προστέθηκε νέο χαρακτηριστικό 'bid + 1' στην σελίδα του δημοπρατηρίου">
+<!ENTITY aboutTab.whatsnew270.2 "Προστέθηκαν καινούρια links στα πακέτα για αρχική και τελική σελίδα">
+<!ENTITY aboutTab.whatsnew270.3 "Προστέθηκε Ελληνική μετάφραση">
+<!ENTITY aboutTab.whatsnew270.4 "Επεκτάθηκε το χαρακτηριστικό 'Να θυμάσαι την τελευταία καρτέλα' σε όλο το παιχνίδι">
+<!ENTITY aboutTab.whatsnew270.5 "Άλλαξε το εικονίδιο του προσθέτου (merci monsieur Seb)">
+<!ENTITY aboutTab.whatsnew270.6 "Άλλαξαν οι ρυθμίσεις και η καρτέλα 'Τι καινούριο υπάρχει'">
+<!ENTITY aboutTab.whatsnew270.7 "Αφαιρέθηκε το χαρακτηριστικό 'πήγαινε στην θέση που βρίσκομαι' (τώρα γίνεται από τον server)">
+<!ENTITY aboutTab.whatsnew270.8 "Διορθώθηκαν μικρά προβλήματα">
