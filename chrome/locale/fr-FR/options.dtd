@@ -40,16 +40,16 @@
 
 <!ENTITY aboutTab.label "Nouveauté">
 
-<!ENTITY aboutTab.whatsnew271.1 "La fonction "Prix le plus bas +1" des enchères n'ajoute plus automatiquement +1 or au prix de départ.">
+<!ENTITY aboutTab.whatsnew271.1 "La fonction 'Prix le plus bas +1' des enchères n'ajoute plus automatiquement +1 or au prix de départ.">
 <!ENTITY aboutTab.whatsnew271.2 "Ajouter une demande de confirmation pour les achats">
 <!ENTITY aboutTab.whatsnew271.3 "CHANGÉ : Quelques traductions.">
 <!ENTITY aboutTab.whatsnew271.4 "CORRIGÉ : Quelques bugs mineurs.">
 
-<!ENTITY aboutTab.whatsnew270.1 "AJOUTÉ : La fonction "Prix le plus bas +1" aux enchères.">
-<!ENTITY aboutTab.whatsnew270.2 "AJOUTÉ : La fonction "Aller à la dernière page" pour la gestion des paquets.">
+<!ENTITY aboutTab.whatsnew270.1 "AJOUTÉ : La fonction 'Prix le plus bas +1' aux enchères.">
+<!ENTITY aboutTab.whatsnew270.2 "AJOUTÉ : La fonction 'Aller à la dernière page' pour la gestion des paquets.">
 <!ENTITY aboutTab.whatsnew270.3 "AJOUTÉ : La traduction grecque.">
-<!ENTITY aboutTab.whatsnew270.4 "AJOUTÉ : La fonction "Se souvenir du dernier onglet" étendue à tout le jeu.">
+<!ENTITY aboutTab.whatsnew270.4 "AJOUTÉ : La fonction 'Se souvenir du dernier onglet' étendue à tout le jeu.">
 <!ENTITY aboutTab.whatsnew270.5 "CHANGÉ : L'icône de l'extension">
 <!ENTITY aboutTab.whatsnew270.6 "CHANGÉ : L'organisation de la fenêtre des options.">
-<!ENTITY aboutTab.whatsnew270.7 "SUPPRIMÉ : La fonction "Ma page de classement général".">
+<!ENTITY aboutTab.whatsnew270.7 "SUPPRIMÉ : La fonction 'Ma page de classement général'.">
 <!ENTITY aboutTab.whatsnew270.8 "CORRIGÉ : Quelques bugs mineurs.">
