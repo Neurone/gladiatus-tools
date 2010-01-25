@@ -1,0 +1,55 @@
+﻿<!ENTITY gladiatusToolsOptions.label "Opções do Gladiatus Tools">
+
+<!ENTITY settingsTab.label "Configurações Gerais">
+
+<!ENTITY simulationGroup.label "Simulação de Combate">
+<!ENTITY otherSettingsGroup.label "Outras Configurações">
+<!ENTITY playersGroup.label "Players and guilds">
+<!ENTITY merchantsGroup.label "Mercadores">
+
+<!ENTITY simulatorEngine.label "Mecanismo de Simulação">
+<!ENTITY autoSimulateBattle.label "Simular batalha automaticamente">
+<!ENTITY excludeMeFromCorporateMessages.label "Excluir eu mesmo ao enviar uma mensagem para a aliança">
+<!ENTITY showCustomAvatarImages.label "Exibir avatares personalizados">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
+<!ENTITY showTimers.label "Exibir relógios">
+<!ENTITY showFullStats.label "Sempre exibir valores de Cura e Ameaça">
+<!ENTITY showAdditionalTooltips.label "Comparar itens do inventário com itens usados">
+<!ENTITY hideNotAffordable.label "Destacar somente os itens que podem ser comprados">
+<!ENTITY showAdditionalStats.label "Exibir estatísticas adicionais">
+<!ENTITY rememberTabs.label "Lembrar última aba selecionada">
+<!ENTITY reportDetailLevel.label "Use o seguinte nível de detalhe no relatório de batalha">
+<!ENTITY reportDetailLevelEssential.label "Básico">
+<!ENTITY reportDetailLevelMedium.label "Médio">
+<!ENTITY reportDetailLevelFull.label "Completo">
+<!ENTITY showCharactersLeft.label "Exibir contadores de caracteres">
+<!ENTITY enableAutoFillAuctionFields.label "Autofill auction item price with lowest price">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">
+<!ENTITY enableAutoFillAuctionFields.accesskey "">
+
+<!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew271.1 "'bid + 1' feature autofill fields as usually, but no longer add 1 to acution item price">
+<!ENTITY aboutTab.whatsnew271.2 "Inserted confirmation message when directly buying from Market and Auction pages">
+<!ENTITY aboutTab.whatsnew271.3 "Updated some translations">
+<!ENTITY aboutTab.whatsnew271.4 "Fixed minor bug">
+
+<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
+<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
+<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
+<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon">
+<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
+<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
+<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">

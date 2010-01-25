@@ -1,0 +1,17 @@
+content	gladiatustools	chrome/content/
+
+locale gladiatustools ar-AE chrome/locale/ar-AE/
+locale gladiatustools bg-BG chrome/locale/bg-BG/
+locale gladiatustools cs-CZ chrome/locale/cs-CZ/
+locale gladiatustools el 	chrome/locale/el/
+locale gladiatustools en-US chrome/locale/en-US/
+locale gladiatustools es-AR chrome/locale/es-AR/
+locale gladiatustools fr-FR chrome/locale/fr-FR/
+locale gladiatustools it-IT chrome/locale/it-IT/
+locale gladiatustools lv-LV chrome/locale/lv-LV/
+locale gladiatustools nl-NL chrome/locale/nl-NL/
+locale gladiatustools pt-BR chrome/locale/pt-BR/
+locale gladiatustools vi-VN chrome/locale/vi-VN/
+
+# Firefox
+overlay	chrome://browser/content/browser.xul	chrome://gladiatustools/content/script-compiler-overlay.xul

@@ -1,0 +1,55 @@
+﻿<!ENTITY gladiatusToolsOptions.label "Options de Gladiatus Tools">
+
+<!ENTITY settingsTab.label "Paramètres généraux">
+
+<!ENTITY simulationGroup.label "Simulateur de combat">
+<!ENTITY otherSettingsGroup.label "Autres options">
+<!ENTITY playersGroup.label "Joueurs et guildes">
+<!ENTITY merchantsGroup.label "Marchands">
+
+<!ENTITY simulatorEngine.label "Moteur de simulation">
+<!ENTITY autoSimulateBattle.label "Simuler automatiquement les combats">
+<!ENTITY excludeMeFromCorporateMessages.label "M'exclure lors de l'envoi de messages à la guilde">
+<!ENTITY showCustomAvatarImages.label "Afficher les avatars personnalisés">
+<!ENTITY showCustomGuildImages.label "Afficher les étendards personnalisés">
+<!ENTITY showTimers.label "Afficher les minuteries">
+<!ENTITY showFullStats.label "Afficher les caractéristiques complètes des joueurs">
+<!ENTITY showAdditionalTooltips.label "Comparer mon inventaire avec mon équipement">
+<!ENTITY hideNotAffordable.label "Rendre translucides les offres non achetables">
+<!ENTITY showAdditionalStats.label "Afficher plus de statistiques">
+<!ENTITY rememberTabs.label "Mémoriser mes derniers onglets sélectionnés">
+<!ENTITY reportDetailLevel.label "Utiliser, pour les rapports de combat, le niveau de détail suivant">
+<!ENTITY reportDetailLevelEssential.label "Essentiel">
+<!ENTITY reportDetailLevelMedium.label "Intermédiaire">
+<!ENTITY reportDetailLevelFull.label "Complet">
+<!ENTITY showCharactersLeft.label "Afficher les compteurs de caractères">
+<!ENTITY enableAutoFillAuctionFields.label "Proposer automatiquement l'enchère minimale.">
+
+<!ENTITY autoSimulateBattle.accesskey "A">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "E">
+<!ENTITY showCustomAvatarImages.accesskey "P">
+<!ENTITY showCustomGuildImages.accesskey "R">
+<!ENTITY showTimers.accesskey "M">
+<!ENTITY showFullStats.accesskey "C">
+<!ENTITY showAdditionalTooltips.accesskey "O">
+<!ENTITY hideNotAffordable.accesskey "N">
+<!ENTITY showAdditionalStats.accesskey "S">
+<!ENTITY rememberTabs.accesskey "D">
+<!ENTITY showCharactersLeft.accesskey "F">
+<!ENTITY enableAutoFillAuctionFields.accesskey "Q">
+
+<!ENTITY aboutTab.label "Nouveauté">
+
+<!ENTITY aboutTab.whatsnew271.1 "La fonction "Prix le plus bas +1" des enchères n'ajoute plus automatiquement +1 or au prix de départ.">
+<!ENTITY aboutTab.whatsnew271.2 "Ajouter une demande de confirmation pour les achats">
+<!ENTITY aboutTab.whatsnew271.3 "CHANGÉ : Quelques traductions.">
+<!ENTITY aboutTab.whatsnew271.4 "CORRIGÉ : Quelques bugs mineurs.">
+
+<!ENTITY aboutTab.whatsnew270.1 "AJOUTÉ : La fonction "Prix le plus bas +1" aux enchères.">
+<!ENTITY aboutTab.whatsnew270.2 "AJOUTÉ : La fonction "Aller à la dernière page" pour la gestion des paquets.">
+<!ENTITY aboutTab.whatsnew270.3 "AJOUTÉ : La traduction grecque.">
+<!ENTITY aboutTab.whatsnew270.4 "AJOUTÉ : La fonction "Se souvenir du dernier onglet" étendue à tout le jeu.">
+<!ENTITY aboutTab.whatsnew270.5 "CHANGÉ : L'icône de l'extension">
+<!ENTITY aboutTab.whatsnew270.6 "CHANGÉ : L'organisation de la fenêtre des options.">
+<!ENTITY aboutTab.whatsnew270.7 "SUPPRIMÉ : La fonction "Ma page de classement général".">
+<!ENTITY aboutTab.whatsnew270.8 "CORRIGÉ : Quelques bugs mineurs.">

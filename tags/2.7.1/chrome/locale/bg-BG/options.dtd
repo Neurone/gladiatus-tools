@@ -1,0 +1,55 @@
+﻿<!ENTITY gladiatusToolsOptions.label "Настройки на Гладиатус симулатора">
+
+<!ENTITY settingsTab.label "Главни настройки">
+
+<!ENTITY simulationGroup.label "Бойна симулация">
+<!ENTITY otherSettingsGroup.label "Други настройки">
+<!ENTITY playersGroup.label "Играчи и гилдии">
+<!ENTITY merchantsGroup.label "Битпазар">
+
+<!ENTITY simulatorEngine.label "Изплозван симулатор">
+<!ENTITY autoSimulateBattle.label "Автоматично симулирай битката">
+<!ENTITY excludeMeFromCorporateMessages.label "Недпоускане на изпращане на общо съобщение">
+<!ENTITY showCustomAvatarImages.label "Показване на собствен аватар">
+<!ENTITY showCustomGuildImages.label "Показвай общите собщения от гилдията">
+<!ENTITY showTimers.label "Покажи хронометрите">
+<!ENTITY showFullStats.label "Покажи стойностите за лечении и заплаха">
+<!ENTITY showAdditionalTooltips.label "Покажи сръвняване между обеките в инвентара и екипировката">
+<!ENTITY hideNotAffordable.label "Освети възможните за купуване обекти">
+<!ENTITY showAdditionalStats.label "Показвай допълнителната статистика">
+<!ENTITY rememberTabs.label "Помни последния избран таб">
+<!ENTITY reportDetailLevel.label "Използвай следния формат за доклад от битката">
+<!ENTITY reportDetailLevelEssential.label "Резюме">
+<!ENTITY reportDetailLevelMedium.label "Частичен">
+<!ENTITY reportDetailLevelFull.label "Пълен">
+<!ENTITY showCharactersLeft.label "Show chars counters">
+<!ENTITY enableAutoFillAuctionFields.label "Autofill auction item price with lowest price">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">
+<!ENTITY enableAutoFillAuctionFields.accesskey "">
+
+<!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew271.1 "'bid + 1' feature autofill fields as usually, but no longer add 1 to acution item price">
+<!ENTITY aboutTab.whatsnew271.2 "Inserted confirmation message when directly buying from Market and Auction pages">
+<!ENTITY aboutTab.whatsnew271.3 "Updated some translations">
+<!ENTITY aboutTab.whatsnew271.4 "Fixed minor bug">
+
+<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
+<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
+<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
+<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon">
+<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
+<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
+<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">

@@ -1,0 +1,55 @@
+﻿<!ENTITY gladiatusToolsOptions.label "Επιλογές Gladiatus Tools">
+
+<!ENTITY settingsTab.label "Γενικές ρυθμίσεις">
+
+<!ENTITY simulationGroup.label "Προσομοιωτής μάχης">
+<!ENTITY otherSettingsGroup.label "Άλλες ρυθμίσεις">
+<!ENTITY playersGroup.label "Παίχτες και Τάγματα">
+<!ENTITY merchantsGroup.label "Πωλητές">
+
+<!ENTITY simulatorEngine.label "Μηχανή προσομοίωσης">
+<!ENTITY autoSimulateBattle.label "Αυτόματη προσομοίωση μάχης">
+<!ENTITY excludeMeFromCorporateMessages.label "Εξαίρεσέ με όταν στέλνεις μήνυμα τάγματος">
+<!ENTITY showCustomAvatarImages.label "Δείχνε τις αλλαγμένες εικόνες παιχτών">
+<!ENTITY showCustomGuildImages.label "Δείχνε τις αλλαγμένες εικόνες ταγμάτων">
+<!ENTITY showTimers.label "Δείχνε τα ρολόγια">
+<!ENTITY showFullStats.label "Δείχνε πάντα τις τιμές της θεραπείας και της Απειλής">
+<!ENTITY showAdditionalTooltips.label "Σύγκρινε τα αντικείμενα της τσάντας με τα εξοπλισμένα">
+<!ENTITY hideNotAffordable.label "Υπερφώτισε μόνο τα αντικείμενα που μπορείς να αγοράσεις">
+<!ENTITY showAdditionalStats.label "Δείχνε τα επιπλέον στατιστικά">
+<!ENTITY rememberTabs.label "Να θυμάσαι την τελευταία επιλεγμένη καρτέλα">
+<!ENTITY reportDetailLevel.label "Χρησιμοποίησε το ακόλουθο επίπεδο λεπτομέρειας στις αναφορές μάχης">
+<!ENTITY reportDetailLevelEssential.label "Απαραίτητα">
+<!ENTITY reportDetailLevelMedium.label "Μεσαία">
+<!ENTITY reportDetailLevelFull.label "Πλήρης">
+<!ENTITY showCharactersLeft.label "Δείχνε τους μετρητές γραμμάτων">
+<!ENTITY enableAutoFillAuctionFields.label "Αυτόματα συμπλήρωσε τις τιμές των αντικειμένων στο δημοπρατήριο με την χαμηλότερη προσφορά">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">
+<!ENTITY enableAutoFillAuctionFields.accesskey "">
+
+<!ENTITY aboutTab.label "Τι καινούριο υπάρχει">
+
+<!ENTITY aboutTab.whatsnew271.1 "Το χαρακτηριστικό 'bid + 1' συνεχίζει να γεμίζει τις τιμές, αλλά τώρα δεν προσθέτει 1 χρυσό στην τιμή των αντικειμένων">
+<!ENTITY aboutTab.whatsnew271.2 "Προστέθηκε μήνυμα επαλήθευσης όταν αγοράζονται αντικείμενα κατευθείαν (εξαγορά) από τους πωλητές και το δημοπρατήριο">
+<!ENTITY aboutTab.whatsnew271.3 "Ανανεώθηκαν κάποιες μεταφράσεις">
+<!ENTITY aboutTab.whatsnew271.4 "Διορθώθηκαν μικρά προβλήματα">
+
+<!ENTITY aboutTab.whatsnew270.1 "Προστέθηκε νέο χαρακτηριστικό 'bid + 1' στην σελίδα του δημοπρατηρίου">
+<!ENTITY aboutTab.whatsnew270.2 "Προστέθηκαν καινούρια links στα πακέτα για αρχική και τελική σελίδα">
+<!ENTITY aboutTab.whatsnew270.3 "Προστέθηκε Ελληνική μετάφραση">
+<!ENTITY aboutTab.whatsnew270.4 "Επεκτάθηκε το χαρακτηριστικό 'Να θυμάσαι την τελευταία καρτέλα' σε όλο το παιχνίδι">
+<!ENTITY aboutTab.whatsnew270.5 "Άλλαξε το εικονίδιο του προσθέτου (merci monsieur Seb)">
+<!ENTITY aboutTab.whatsnew270.6 "Άλλαξαν οι ρυθμίσεις και η καρτέλα 'Τι καινούριο υπάρχει'">
+<!ENTITY aboutTab.whatsnew270.7 "Αφαιρέθηκε το χαρακτηριστικό 'πήγαινε στην θέση που βρίσκομαι' (τώρα γίνεται από τον server)">
+<!ENTITY aboutTab.whatsnew270.8 "Διορθώθηκαν μικρά προβλήματα">
