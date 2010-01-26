@@ -23,7 +23,7 @@
 <!ENTITY reportDetailLevelMedium.label "Intermédiaire">
 <!ENTITY reportDetailLevelFull.label "Complet">
 <!ENTITY showCharactersLeft.label "Afficher les compteurs de caractères">
-<!ENTITY enableAutoFillAuctionFields.label "Proposer automatiquement l'enchère minimale.">
+<!ENTITY enableAutoFillAuctionFields.label "Proposer automatiquement l'enchère minimale">
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
@@ -40,8 +40,8 @@
 
 <!ENTITY aboutTab.label "Nouveauté">
 
-<!ENTITY aboutTab.whatsnew271.1 "La fonction 'Prix le plus bas +1' des enchères n'ajoute plus automatiquement +1 or au prix de départ.">
-<!ENTITY aboutTab.whatsnew271.2 "Ajouter une demande de confirmation pour les achats">
+<!ENTITY aboutTab.whatsnew271.1 "CHANGÉ : La fonction 'Prix le plus bas +1' des enchères n'ajoute plus automatiquement +1 or au prix de départ.">
+<!ENTITY aboutTab.whatsnew271.2 "AJOUTÉ : Une demande de confirmation pour les achats">
 <!ENTITY aboutTab.whatsnew271.3 "CHANGÉ : Quelques traductions.">
 <!ENTITY aboutTab.whatsnew271.4 "CORRIGÉ : Quelques bugs mineurs.">
 
