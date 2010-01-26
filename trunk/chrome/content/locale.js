@@ -203,7 +203,7 @@ it.neurone.gladiatustools.locale = {
                     this.goldLabel = "Or";
                     this.winPercentage = "Pourcentage de victoire:";
                     this.totalEarnedGold = "Bénéfice:";
-					this.confirmBuyout = "Voulez-vous vraiment l'acheter?";
+					this.confirmBuyout = "Voulez-vous vraiment l'acheter ?";
                     break;  
                     
                 case "italiano":
