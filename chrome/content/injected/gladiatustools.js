@@ -76,8 +76,8 @@ function gestisciRispostaDaSimulatore(risposta)
 			var firstOffset = first.length + " 1000 <b>(".length - 1;
 			var last = "% of the time";
 			var contenuto = risposta.responseText;
-			var inizio = eval("contenuto.search(/" + first + "/i);");
-			var fine = eval("contenuto.search(/" + last + "/i);");
+			var inizio = contenuto.search(/simulations out of /i);
+			var fine = contenuto.search(/% of the time/i);
 			if(inizio < 0 || fine < 0) error = true;
 			else risultato = contenuto.substring(inizio + firstOffset, fine);
 			break;

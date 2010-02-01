@@ -179,7 +179,7 @@ Waiting for AMO to review GT and to public the new Gladiatus Tools release, you 
 ************ BEWARE ******************
 Despite in many countries (ie French, Arab Emirates or Argentina) Gladiatus Tools is considered LEGAL or at least not mentioned, in other countries (ie. Italy) using Gladiatus Tools is considered NOT LEGAL.
 
-Please check about legality with the server community moderatos before using this addon with that server.
+Please check about legality with the server community moderators before using this addon with that server.
 **************************************
 
 Addon for Gladiatus browser game. Once installed, this addon adds automatically a set of fully integrated tools to the Gladiatus web site to improve the user experience.
@@ -199,10 +199,11 @@ MAIN FEATURES:
 - Big "notes" and "write a message" fields
 - View full player and mercenaries statistics (Healing and Threat)
 - Many user interface improvements: characters counters for all text field, confirmation message box for auction and market buyout, etc.
+- Etc, etc...
 
 Simulation engines are www.georged.eu and www.playerutils.com. These simulation engines don't take care of player remaining life, so use them carefully. :-)
 
-This addon has been tested with every server version up to 0.5.6. The following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, brazilian portuguese, bulgarian, dutch, greek, YOUR LANGUAGE.
+This addon has been tested with every server version up to 0.5.6. The following languages are currently included: english, italian, french, spanish, arabic, vietnamese, latvian, czech, brazilian portuguese, bulgarian, dutch, greek, lithuanian, YOUR LANGUAGE.
 If your language is not in the list, english one will be used. If you want to help me adding your language translation, without using Google translator :-), please send me an email (in english).
 
 ####################################################

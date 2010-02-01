@@ -194,16 +194,18 @@ function getServerVersion() {
 / Testa se la url corrente corrisponde alla espressione regolare passata
 /****************************/
 function urlMatch(string) {
-	eval("var matched = /http:\\/\\/s\\d+\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(location.href) || /http:\\/\\/s\\d+\\.\\w\\w\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(location.href);");
-	return matched;
+	var firstRE = new RegExp("http:\\/\\/s\\d+\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string,"");
+	var secondRE = new RegExp("http:\\/\\/s\\d+\\.\\w\\w\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string,"");
+	return firstRE.test(location.href) || secondRE.test(location.href);
 }
 
 /*****************************
 / Testa se la url passata corrisponde alla espressione regolare passata
 /****************************/
 function targetUrlMatch(string, url) {
-	eval("var matched = /http:\\/\\/s\\d+\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(\""+ url +"\") || /http:\\/\\/s\\d+\\.\\w\\w\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string +"/.test(\""+ url + "\");");
-	return matched;
+	var firstRE = new RegExp("http:\\/\\/s\\d+\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string,"");
+	var secondRE = new RegExp("http:\\/\\/s\\d+\\.\\w\\w\\.gladiatus\\..*\\/game\\/index\\.php\\?"+ string,"");
+	return firstRE.test(url) || secondRE.test(url);
 }
 
 /*****************************

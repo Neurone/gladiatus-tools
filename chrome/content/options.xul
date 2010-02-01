@@ -6,20 +6,20 @@
      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<prefpane id="gladiatusToolsPreferences">
     <preferences>
-      <preference id="simulatorEngine" name="it.neurone.gladiatustools.simulatorEngine" type="string" />
-      <preference id="autoSimulateBattle" name="it.neurone.gladiatustools.autoSimulateBattle" type="bool" />
-      <preference id="showCustomAvatarImages" name="it.neurone.gladiatustools.showCustomAvatarImages" type="bool"/>
-      <preference id="showCustomGuildImages" name="it.neurone.gladiatustools.showCustomGuildImages" type="bool"/>
-      <preference id="showTimers" name="it.neurone.gladiatustools.showTimers" type="bool"/>
-      <preference id="showFullStats" name="it.neurone.gladiatustools.showFullStats" type="bool"/>
-      <preference id="showAdditionalTooltips" name="it.neurone.gladiatustools.showAdditionalTooltips" type="bool"/>
-      <preference id="hideNotAffordable" name="it.neurone.gladiatustools.hideNotAffordable" type="bool"/>
-      <preference id="excludeMeFromCorporateMessages" name="it.neurone.gladiatustools.excludeMeFromCorporateMessages" type="bool"/>
-      <preference id="showAdditionalStats" name="it.neurone.gladiatustools.showAdditionalStats" type="bool"/>
-      <preference id="rememberTabs" name="it.neurone.gladiatustools.rememberTabs" type="bool"/>
-      <preference id="reportDetailLevel" name="it.neurone.gladiatustools.reportDetailLevel" type="string"/>
-	  <preference id="showCharactersLeft" name="it.neurone.gladiatustools.showCharactersLeft" type="bool"/>
-	  <preference id="enableAutoFillAuctionFields" name="it.neurone.gladiatustools.enableAutoFillAuctionFields" type="bool"/>
+      <preference id="simulatorEngine" name="extensions.gladiatustools.simulatorEngine" type="string" />
+      <preference id="autoSimulateBattle" name="extensions.gladiatustools.autoSimulateBattle" type="bool" />
+      <preference id="showCustomAvatarImages" name="extensions.gladiatustools.showCustomAvatarImages" type="bool"/>
+      <preference id="showCustomGuildImages" name="extensions.gladiatustools.showCustomGuildImages" type="bool"/>
+      <preference id="showTimers" name="extensions.gladiatustools.showTimers" type="bool"/>
+      <preference id="showFullStats" name="extensions.gladiatustools.showFullStats" type="bool"/>
+      <preference id="showAdditionalTooltips" name="extensions.gladiatustools.showAdditionalTooltips" type="bool"/>
+      <preference id="hideNotAffordable" name="extensions.gladiatustools.hideNotAffordable" type="bool"/>
+      <preference id="excludeMeFromCorporateMessages" name="extensions.gladiatustools.excludeMeFromCorporateMessages" type="bool"/>
+      <preference id="showAdditionalStats" name="extensions.gladiatustools.showAdditionalStats" type="bool"/>
+      <preference id="rememberTabs" name="extensions.gladiatustools.rememberTabs" type="bool"/>
+      <preference id="reportDetailLevel" name="extensions.gladiatustools.reportDetailLevel" type="string"/>
+	  <preference id="showCharactersLeft" name="extensions.gladiatustools.showCharactersLeft" type="bool"/>
+	  <preference id="enableAutoFillAuctionFields" name="extensions.gladiatustools.enableAutoFillAuctionFields" type="bool"/>
     </preferences>
 	<tabbox>
       <tabs>
