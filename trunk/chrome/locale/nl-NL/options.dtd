@@ -49,8 +49,7 @@
 <!ENTITY aboutTab.whatsnew270.2 "Toegevoegd: betere navigatie voor pakketjes.">
 <!ENTITY aboutTab.whatsnew270.3 "Toegevoegd: Griekse vertaling.">
 <!ENTITY aboutTab.whatsnew270.4 "Verbeterd: laatst gebruikte tabbladen worden nu in het gehele spel onthouden.">
-<!ENTITY aboutTab.whatsnew270.5 "Veranderd: nieuw logo voor Gladiatus Tools (merci monsieur Séb).">
-<!ENTITY aboutTab.whatsnew270.6 "Veranderd: layout van het optiemenu en het "wat is nieuw" overzicht.">
+<!ENTITY aboutTab.whatsnew270.5 "Veranderd: nieuw logo voor Gladiatus Tools">
+<!ENTITY aboutTab.whatsnew270.6 "Veranderd: layout van het optiemenu en het 'wat is nieuw' overzicht.">
 <!ENTITY aboutTab.whatsnew270.7 "Verwijderd: de optie om je eigen pagina eerst in de ranglijst te zien (dit wordt nu door de server zelf gedaan).">
 <!ENTITY aboutTab.whatsnew270.8 "Fix: kleine bug.">
-
