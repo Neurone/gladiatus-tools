@@ -20,6 +20,7 @@
       <preference id="reportDetailLevel" name="extensions.gladiatustools.reportDetailLevel" type="string"/>
 	  <preference id="showCharactersLeft" name="extensions.gladiatustools.showCharactersLeft" type="bool"/>
 	  <preference id="enableAutoFillAuctionFields" name="extensions.gladiatustools.enableAutoFillAuctionFields" type="bool"/>
+	  <preference id="buyAlert" name="extensions.gladiatustools.buyAlert" type="string"/>
     </preferences>
 	<tabbox>
       <tabs>
@@ -72,6 +73,17 @@
 				<hbox align="center">
 				  <checkbox id="c_rememberTabs" preference="rememberTabs" label="&rememberTabs.label;" accesskey="&rememberTabs.accesskey;"/>
 				</hbox>
+				<hbox align="center">
+				  <label value="&buyAlert.label;" control="ml_buyAlert"/>
+				  <menulist id="ml_buyAlert" preference="buyAlert">
+					<menupopup>
+					  <menuitem label="&buyAlertNone.label;" value="0"/>
+					  <menuitem label="&buyAlertMarket.label;" value="1"/>
+					  <menuitem label="&buyAlertAuction.label;" value="2"/>
+					  <menuitem label="&buyAlertAll.label;" value="3"/>
+					</menupopup>
+				  </menulist>
+				</hbox>
 			  </groupbox>
 
 			  <groupbox>
@@ -103,6 +115,11 @@
 		</tabpanel>
         <tabpanel id="about">
 			<vbox align="left" maxwidth="370px" style="margin-bottom:15px;">
+				<description>2.7.2</description>
+				<spacer style="margin-top:5px;"/>
+				<description>- &aboutTab.whatsnew272.1;</description>
+				<description>- &aboutTab.whatsnew271.4;</description>
+				<spacer style="margin-top:5px;"/>
 				<description>2.7.1</description>
 				<spacer style="margin-top:5px;"/>
 				<description>- &aboutTab.whatsnew271.1;</description>
