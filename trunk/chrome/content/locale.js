@@ -242,6 +242,7 @@ it.neurone.gladiatustools.locale = {
 					this.winPercentage = "Laimėjimų procentas:";
 					this.totalEarnedGold = "Išvis pelnyta aukso:";
 					this.confirmBuyout = "Ar tikrai norite nupirkti šį daiktą?";
+					break;
 					  
                 case "lettone":
                     this.simulationFailed = "Simulācija neizdevusies! Lūdzu mēģiniet vēlāk, vai izvēlaties citu simulātoru Gladiatus Tools opcijās.";
