@@ -24,6 +24,11 @@
 <!ENTITY reportDetailLevelFull.label "Completo">
 <!ENTITY showCharactersLeft.label "Mostra contatori dei caratteri">
 <!ENTITY enableAutoFillAuctionFields.label "Imposta un'oro in più del prezzo attuale per ogni oggetto all'asta">
+<!ENTITY buyAlert.label "Buy alert">
+<!ENTITY buyAlertNone.label "Never">
+<!ENTITY buyAlertMarket.label "Market only">
+<!ENTITY buyAlertAuction.label "Auction only">
+<!ENTITY buyAlertAll.label "Always">
 
 <!ENTITY autoSimulateBattle.accesskey "S">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "N">
@@ -40,10 +45,12 @@
 
 <!ENTITY aboutTab.label "Novità">
 
+<!ENTITY aboutTab.whatsnew272.1 "Ora è possibile scegliere quando far apparire la richiesta di conferma di un acquisto">
+
 <!ENTITY aboutTab.whatsnew271.1 "La funzione 'rilancia di uno' ora non aggiunge più uno al prezzo dell'asta, ma offre il prezzo più basso">
 <!ENTITY aboutTab.whatsnew271.2 "Inserito una richiesta di conferma nell'acquisto di un oggetto nelle pagine del mercato e dell'asta">
 <!ENTITY aboutTab.whatsnew271.3 "Aggiornate alcune traduzioni">
-<!ENTITY aboutTab.whatsnew271.4 "Corretto un bug minore">
+<!ENTITY aboutTab.whatsnew271.4 "Corretti alcuni bug minori">
 
 <!ENTITY aboutTab.whatsnew270.1 "Aggiunta la nuova funzionalità 'rilancia di uno' nelle pagine dell'asta">
 <!ENTITY aboutTab.whatsnew270.2 "Aggiunti dei link di navigazione nella pagina che mostra i pacchetti non ancora raccolti">

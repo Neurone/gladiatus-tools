@@ -328,9 +328,30 @@ function grabClick(event)
             simulateBattle();
             return;
 	    }
-		//Controllo se il click è sul pulsante "acquista" nella pagina dell'asta
-		if(event.target.name == nomePulsanteAcquistaAsta || event.target.name == nomePulsanteAcquistaMercato) {
-			if(!confirm(MSG.confirmBuyout))
+		
+		if(event.target.name == nomePulsanteAcquistaAsta || event.target.name == nomePulsanteAcquistaMercato)
+		{
+			//Controllo le preferenze di alert sull'acquisto diretto
+			var showBuyAlert;
+			switch(GM_getValue("buyAlert", "2"))
+			{
+				case "0":
+					return;
+					
+				case "1":
+					showBuyAlert = (event.target.name == nomePulsanteAcquistaMercato);
+					break;
+
+				case "2":
+					showBuyAlert = (event.target.name == nomePulsanteAcquistaAsta);
+					break;
+
+				default:
+					showBuyAlert = true;
+					break;
+			}
+			//Controllo se il click è sul pulsante "acquista" nella pagina dell'asta
+			if(showBuyAlert && !confirm(MSG.confirmBuyout))
 			{
 				event.stopPropagation();
 				event.preventDefault();

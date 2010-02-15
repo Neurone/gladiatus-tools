@@ -12,3 +12,4 @@ pref("extensions.gladiatustools.rememberTabs", true);
 pref("extensions.gladiatustools.reportDetailLevel", "0");
 pref("extensions.gladiatustools.showCharactersLeft", true);
 pref("extensions.gladiatustools.enableAutoFillAuctionFields", true);
+pref("extensions.gladiatustools.buyAlert", "2");

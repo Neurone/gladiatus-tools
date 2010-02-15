@@ -24,6 +24,11 @@
 <!ENTITY reportDetailLevelFull.label "Completo">
 <!ENTITY showCharactersLeft.label "Exibir contadores de caracteres">
 <!ENTITY enableAutoFillAuctionFields.label "Autofill auction item price with lowest price">
+<!ENTITY buyAlert.label "Buy alert">
+<!ENTITY buyAlertNone.label "Never">
+<!ENTITY buyAlertMarket.label "Market only">
+<!ENTITY buyAlertAuction.label "Auction only">
+<!ENTITY buyAlertAll.label "Always">
 
 <!ENTITY autoSimulateBattle.accesskey "">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "">
@@ -39,6 +44,8 @@
 <!ENTITY enableAutoFillAuctionFields.accesskey "">
 
 <!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew272.1 "Now you can choose when buy alert should appear">
 
 <!ENTITY aboutTab.whatsnew271.1 "'bid + 1' feature autofill fields as usually, but no longer add 1 to acution item price">
 <!ENTITY aboutTab.whatsnew271.2 "Inserted confirmation message when directly buying from Market and Auction pages">
