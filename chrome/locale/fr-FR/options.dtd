@@ -24,11 +24,11 @@
 <!ENTITY reportDetailLevelFull.label "Complet">
 <!ENTITY showCharactersLeft.label "Afficher les compteurs de caractères">
 <!ENTITY enableAutoFillAuctionFields.label "Proposer automatiquement l'enchère minimale">
-<!ENTITY buyAlert.label "Buy alert">
-<!ENTITY buyAlertNone.label "Never">
-<!ENTITY buyAlertMarket.label "Market only">
-<!ENTITY buyAlertAuction.label "Auction only">
-<!ENTITY buyAlertAll.label "Always">
+<!ENTITY buyAlert.label "Alerte d'achat">
+<!ENTITY buyAlertNone.label "Jamais">
+<!ENTITY buyAlertMarket.label "Marché uniquement">
+<!ENTITY buyAlertAuction.label "Enchères uniquement">
+<!ENTITY buyAlertAll.label "Toujours">
 
 <!ENTITY autoSimulateBattle.accesskey "A">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
@@ -45,7 +45,7 @@
 
 <!ENTITY aboutTab.label "Nouveauté">
 
-<!ENTITY aboutTab.whatsnew272.1 "Now you can choose when buy alert should appear">
+<!ENTITY aboutTab.whatsnew272.1 "CHANGÉ : L'alerte d'achat est désormais personnalisable.">
 
 <!ENTITY aboutTab.whatsnew271.1 "CHANGÉ : La fonction 'Prix le plus bas +1' des enchères n'ajoute plus automatiquement +1 or au prix de départ.">
 <!ENTITY aboutTab.whatsnew271.2 "AJOUTÉ : Une demande de confirmation pour les achats">
