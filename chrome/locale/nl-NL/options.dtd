@@ -17,7 +17,7 @@
 <!ENTITY showAdditionalTooltips.label "Vergelijk voorraad met huidige uitrusting">
 <!ENTITY hideNotAffordable.label "Onbetaalbare items transparant">
 <!ENTITY showAdditionalStats.label "Uitgebreide spelerstatistieken">
-<!ENTITY rememberTabs.label "Onthoud laatst gebruikte tabblad">
+<!ENTITY rememberTabs.label "Onthoud laatst gebruikte tabbladen">
 <!ENTITY reportDetailLevel.label "Detail van gevechtsrapporten">
 <!ENTITY reportDetailLevelEssential.label "Minimaal">
 <!ENTITY reportDetailLevelMedium.label "Gemiddeld">

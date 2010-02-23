@@ -264,7 +264,7 @@ it.neurone.gladiatustools.locale = {
 					break;
                 
                 case "olandese":
-					this.simulationFailed = "Simulatie mislukt. Probeer het later nog eens op kies een andere simulator in het optiemenu.";
+					this.simulationFailed = "Simulatie mislukt. Probeer het later nog eens of kies een andere simulator in het optiemenu.";
 					this.customAvatarImageUrl = "Link naar eigen avatar (http://...). Afbeelding wordt verkleind naar 168x194 px.";
 					this.customGuildImageUrl = "Link naar eigen gildelogo (http://...). Afbeelding wordt verkleind naar 209x232 px.";
 					this.simulate = "Start Simulatie";
@@ -279,7 +279,7 @@ it.neurone.gladiatustools.locale = {
 					this.goldLabel = "Gold";
 					this.winPercentage = "Percentage gewonnen:";
 					this.totalEarnedGold = "Netto verdiend goud:";
-					this.confirmBuyout = "Do you really want to buy this object?";
+					this.confirmBuyout = "Weet je zeker dat je dit voorwerp wilt kopen?";
 					break;
 				
 				case "portoghese-brasiliano":
