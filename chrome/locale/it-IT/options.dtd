@@ -24,11 +24,11 @@
 <!ENTITY reportDetailLevelFull.label "Completo">
 <!ENTITY showCharactersLeft.label "Mostra contatori dei caratteri">
 <!ENTITY enableAutoFillAuctionFields.label "Imposta un'oro in più del prezzo attuale per ogni oggetto all'asta">
-<!ENTITY buyAlert.label "Buy alert">
-<!ENTITY buyAlertNone.label "Never">
-<!ENTITY buyAlertMarket.label "Market only">
-<!ENTITY buyAlertAuction.label "Auction only">
-<!ENTITY buyAlertAll.label "Always">
+<!ENTITY buyAlert.label "Avvertimento prima dell'acquisto">
+<!ENTITY buyAlertNone.label "Mai">
+<!ENTITY buyAlertMarket.label "Solo mercato">
+<!ENTITY buyAlertAuction.label "Solo asta">
+<!ENTITY buyAlertAll.label "Sempre">
 
 <!ENTITY autoSimulateBattle.accesskey "S">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "N">
