@@ -1,0 +1,62 @@
+﻿<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Možnosti">
+
+<!ENTITY settingsTab.label "Hlavní nastavení">
+
+<!ENTITY simulationGroup.label "Simulace boje">
+<!ENTITY otherSettingsGroup.label "Ostatní nastavení">
+<!ENTITY playersGroup.label "Players and guilds">
+<!ENTITY merchantsGroup.label "Obchodníci">
+
+<!ENTITY simulatorEngine.label "Engine pro simulování">
+<!ENTITY autoSimulateBattle.label "Automaticky simulovat boj">
+<!ENTITY excludeMeFromCorporateMessages.label "Nepřijímat mnou odeslané zprávy gildě">
+<!ENTITY showCustomAvatarImages.label "Zobrazit vybraný avatar">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
+<!ENTITY showTimers.label "Zobrazit odpočítávání">
+<!ENTITY showFullStats.label "Vždy zobrazit hodnoty Léčení a Ohrožení">
+<!ENTITY showAdditionalTooltips.label "Porovnávat předměty stejného typu">
+<!ENTITY hideNotAffordable.label "Zvýraznit koupitelné předměty">
+<!ENTITY showAdditionalStats.label "Zobrazit rozšířené statistiky">
+<!ENTITY rememberTabs.label "Pamatovat poslední vybraný panel">
+<!ENTITY reportDetailLevel.label "Použít následující stupeň podrobnosti výpisu z boje">
+<!ENTITY reportDetailLevelEssential.label "Zjednodušený">
+<!ENTITY reportDetailLevelMedium.label "Podrobnější">
+<!ENTITY reportDetailLevelFull.label "Nejpodrobnější">
+<!ENTITY showCharactersLeft.label "Show chars counters">
+<!ENTITY enableAutoFillAuctionFields.label "Autofill auction item price with lowest price">
+<!ENTITY buyAlert.label "Buy alert">
+<!ENTITY buyAlertNone.label "Never">
+<!ENTITY buyAlertMarket.label "Market only">
+<!ENTITY buyAlertAuction.label "Auction only">
+<!ENTITY buyAlertAll.label "Always">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">
+<!ENTITY enableAutoFillAuctionFields.accesskey "">
+
+<!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew272.1 "Now you can choose when buy alert should appear">
+
+<!ENTITY aboutTab.whatsnew271.1 "'bid + 1' feature autofill fields as usually, but no longer add 1 to acution item price">
+<!ENTITY aboutTab.whatsnew271.2 "Inserted confirmation message when directly buying from Market and Auction pages">
+<!ENTITY aboutTab.whatsnew271.3 "Updated some translations">
+<!ENTITY aboutTab.whatsnew271.4 "Fixed minor bug">
+
+<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
+<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
+<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
+<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon">
+<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
+<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
+<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">

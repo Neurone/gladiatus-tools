@@ -1,0 +1,15 @@
+pref("extensions.gladiatustools.simulatorEngine", "www.georged.eu");
+pref("extensions.gladiatustools.autoSimulateBattle", true);
+pref("extensions.gladiatustools.showCustomAvatarImages", false);
+pref("extensions.gladiatustools.showCustomGuildImages", true);
+pref("extensions.gladiatustools.showTimers", true);
+pref("extensions.gladiatustools.showFullStats", true);
+pref("extensions.gladiatustools.showAdditionalTooltips", true);
+pref("extensions.gladiatustools.hideNotAffordable", true);
+pref("extensions.gladiatustools.excludeMeFromCorporateMessages", false);
+pref("extensions.gladiatustools.showAdditionalStats", true);
+pref("extensions.gladiatustools.rememberTabs", true);
+pref("extensions.gladiatustools.reportDetailLevel", "0");
+pref("extensions.gladiatustools.showCharactersLeft", true);
+pref("extensions.gladiatustools.enableAutoFillAuctionFields", true);
+pref("extensions.gladiatustools.buyAlert", "2");

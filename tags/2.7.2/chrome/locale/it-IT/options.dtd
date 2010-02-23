@@ -1,0 +1,62 @@
+﻿<!ENTITY gladiatusToolsOptions.label "Opzioni di Gladiatus Tools">
+
+<!ENTITY settingsTab.label "Impostazioni generali">
+
+<!ENTITY simulationGroup.label "Simulazione di combattimento">
+<!ENTITY otherSettingsGroup.label "Altre impostazioni">
+<!ENTITY playersGroup.label "Giocatori e corporazioni">
+<!ENTITY merchantsGroup.label "Mercanti">
+
+<!ENTITY simulatorEngine.label "Motore della simulazione">
+<!ENTITY autoSimulateBattle.label "Simula automaticamente la battaglia">
+<!ENTITY excludeMeFromCorporateMessages.label "Non inviarmi i messaggi che mando alla mia corporazione">
+<!ENTITY showCustomAvatarImages.label "Mostra avatar personalizzati">
+<!ENTITY showCustomGuildImages.label "Mostra immagini personalizzate delle corporazioni">
+<!ENTITY showTimers.label "Mostra tempi">
+<!ENTITY showFullStats.label "Mostra statistiche utente complete">
+<!ENTITY showAdditionalTooltips.label "Confronta gli oggetti dell'inventario e quelli equipaggiati">
+<!ENTITY hideNotAffordable.label "Evidenzia solamente gli oggetti acquistabili">
+<!ENTITY showAdditionalStats.label "Mostra statistiche aggiuntive">
+<!ENTITY rememberTabs.label "Ricorda l'ultima linguetta selezionata">
+<!ENTITY reportDetailLevel.label "Usa il seguente livello di dettaglio per i rapporti">
+<!ENTITY reportDetailLevelEssential.label "Essenziale">
+<!ENTITY reportDetailLevelMedium.label "Medio">
+<!ENTITY reportDetailLevelFull.label "Completo">
+<!ENTITY showCharactersLeft.label "Mostra contatori dei caratteri">
+<!ENTITY enableAutoFillAuctionFields.label "Imposta un'oro in più del prezzo attuale per ogni oggetto all'asta">
+<!ENTITY buyAlert.label "Avvertimento prima dell'acquisto">
+<!ENTITY buyAlertNone.label "Mai">
+<!ENTITY buyAlertMarket.label "Solo mercato">
+<!ENTITY buyAlertAuction.label "Solo asta">
+<!ENTITY buyAlertAll.label "Sempre">
+
+<!ENTITY autoSimulateBattle.accesskey "S">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "N">
+<!ENTITY showCustomAvatarImages.accesskey "M">
+<!ENTITY showCustomGuildImages.accesskey "C">
+<!ENTITY showTimers.accesskey "R">
+<!ENTITY showFullStats.accesskey "O">
+<!ENTITY showAdditionalTooltips.accesskey "T">
+<!ENTITY hideNotAffordable.accesskey "E">
+<!ENTITY showAdditionalStats.accesskey "A">
+<!ENTITY rememberTabs.accesskey "I">
+<!ENTITY showCharactersLeft.accesskey "D">
+<!ENTITY enableAutoFillAuctionFields.accesskey "B">
+
+<!ENTITY aboutTab.label "Novità">
+
+<!ENTITY aboutTab.whatsnew272.1 "Ora è possibile scegliere quando far apparire la richiesta di conferma di un acquisto">
+
+<!ENTITY aboutTab.whatsnew271.1 "La funzione 'rilancia di uno' ora non aggiunge più uno al prezzo dell'asta, ma offre il prezzo più basso">
+<!ENTITY aboutTab.whatsnew271.2 "Inserito una richiesta di conferma nell'acquisto di un oggetto nelle pagine del mercato e dell'asta">
+<!ENTITY aboutTab.whatsnew271.3 "Aggiornate alcune traduzioni">
+<!ENTITY aboutTab.whatsnew271.4 "Corretti alcuni bug minori">
+
+<!ENTITY aboutTab.whatsnew270.1 "Aggiunta la nuova funzionalità 'rilancia di uno' nelle pagine dell'asta">
+<!ENTITY aboutTab.whatsnew270.2 "Aggiunti dei link di navigazione nella pagina che mostra i pacchetti non ancora raccolti">
+<!ENTITY aboutTab.whatsnew270.3 "Aggiunta la traduzione in greco">
+<!ENTITY aboutTab.whatsnew270.4 "Estesa la funzionalità 'Ricorda l'ultima linguetta selezionata' a tutto il gioco">
+<!ENTITY aboutTab.whatsnew270.5 "Modificata l'icona di Gladiatus Tools">
+<!ENTITY aboutTab.whatsnew270.6 "Cambiata la finestra delle opzioni e inserita la sezione Novità">
+<!ENTITY aboutTab.whatsnew270.7 "Rimossa la funzionalità 'Mostra per prima la mia pagina in classifica' perché è stata implementata lato server">
+<!ENTITY aboutTab.whatsnew270.8 "Corretto un bug minore">

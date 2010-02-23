@@ -1,0 +1,62 @@
+﻿<!ENTITY gladiatusToolsOptions.label "Công cụ Gladiatus">
+
+<!ENTITY settingsTab.label "Tùy chỉnh chung">
+
+<!ENTITY simulationGroup.label "Mô phỏng tương đối">
+<!ENTITY otherSettingsGroup.label "Lựa chọn khác">
+<!ENTITY playersGroup.label "Players and guilds">
+<!ENTITY merchantsGroup.label "Merchants">
+
+<!ENTITY simulatorEngine.label "Dụng cụ mô phỏng">
+<!ENTITY autoSimulateBattle.label "Tự động mô phỏng trận đấu">
+<!ENTITY excludeMeFromCorporateMessages.label "Loại trừ tôi khi gửi tin nhắn tập thể">
+<!ENTITY showCustomAvatarImages.label "Tự chọn hình ảnh đại diện">
+<!ENTITY showCustomGuildImages.label "Show custom guild images">
+<!ENTITY showTimers.label "Hiển thị thời gian">
+<!ENTITY showFullStats.label "Luôn hiển thị giá trị hồi máu và đe dọa">
+<!ENTITY showAdditionalTooltips.label "Hiển thị công cụ phụ">
+<!ENTITY hideNotAffordable.label "Chỉ làm nổi bật những món hàng có thể mua trong shop">
+<!ENTITY showAdditionalStats.label "Hiển thị thống kê phụ">
+<!ENTITY rememberTabs.label "Ghi nhớ thanh lựa chọn cuối">
+<!ENTITY reportDetailLevel.label "Use the following combat report detail level">
+<!ENTITY reportDetailLevelEssential.label "Essential">
+<!ENTITY reportDetailLevelMedium.label "Medium">
+<!ENTITY reportDetailLevelFull.label "Full">
+<!ENTITY showCharactersLeft.label "Show chars counters">
+<!ENTITY enableAutoFillAuctionFields.label "Autofill auction item price with lowest price">
+<!ENTITY buyAlert.label "Buy alert">
+<!ENTITY buyAlertNone.label "Never">
+<!ENTITY buyAlertMarket.label "Market only">
+<!ENTITY buyAlertAuction.label "Auction only">
+<!ENTITY buyAlertAll.label "Always">
+
+<!ENTITY autoSimulateBattle.accesskey "">
+<!ENTITY excludeMeFromCorporateMessages.accesskey "">
+<!ENTITY showCustomAvatarImages.accesskey "">
+<!ENTITY showCustomGuildImages.accesskey "">
+<!ENTITY showTimers.accesskey "">
+<!ENTITY showFullStats.accesskey "">
+<!ENTITY showAdditionalTooltips.accesskey "">
+<!ENTITY hideNotAffordable.accesskey "">
+<!ENTITY showAdditionalStats.accesskey "">
+<!ENTITY rememberTabs.accesskey "">
+<!ENTITY showCharactersLeft.accesskey "">
+<!ENTITY enableAutoFillAuctionFields.accesskey "">
+
+<!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew272.1 "Now you can choose when buy alert should appear">
+
+<!ENTITY aboutTab.whatsnew271.1 "'bid + 1' feature autofill fields as usually, but no longer add 1 to acution item price">
+<!ENTITY aboutTab.whatsnew271.2 "Inserted confirmation message when directly buying from Market and Auction pages">
+<!ENTITY aboutTab.whatsnew271.3 "Updated some translations">
+<!ENTITY aboutTab.whatsnew271.4 "Fixed minor bug">
+
+<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
+<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
+<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
+<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
+<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon">
+<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
+<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
+<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">
