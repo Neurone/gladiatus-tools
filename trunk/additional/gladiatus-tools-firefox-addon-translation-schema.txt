@@ -3,8 +3,8 @@
 # Title: Gladiatus Tools Firefox Addon Translation Schema
 # Author: Giuseppe Bertone
 #
-# This guide applies to 2.7.1 release
-# Last modified: 11 Jan 2010 11:34:44 GMT 
+# This guide applies to 2.7.2 release
+# Last modified: 23 Feb 2010 17:30:48 GMT 
 # 
 ####################################################
 #
@@ -61,13 +61,20 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY reportDetailLevelFull.label "Full">
 <!ENTITY showCharactersLeft.label "Show chars counters">
 <!ENTITY enableAutoFillAuctionFields.label "Autofill auction item price with lowest price">
+<!ENTITY buyAlert.label "Buy alert">
+<!ENTITY buyAlertNone.label "Never">
+<!ENTITY buyAlertMarket.label "Market only">
+<!ENTITY buyAlertAuction.label "Auction only">
+<!ENTITY buyAlertAll.label "Always">
 
 <!ENTITY aboutTab.label "What's new">
+
+<!ENTITY aboutTab.whatsnew272.1 "Now you can choose when buy alert should appear">
 
 <!ENTITY aboutTab.whatsnew271.1 "'bid + 1' feature autofill fields as usually, but no longer add 1 to acution item price">
 <!ENTITY aboutTab.whatsnew271.2 "Inserted confirmation message when directly buying from Market and Auction pages">
 <!ENTITY aboutTab.whatsnew271.3 "Updated some translations">
-<!ENTITY aboutTab.whatsnew271.4 "Fixed minor bug">
+<!ENTITY aboutTab.whatsnew271.4 "Fixed minor bugs">
 
 <!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
 <!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
@@ -119,6 +126,7 @@ Improve the user experience automatically adding a set of fully web site integra
 <em:translator>Живко Янев (Bulgarian translation)</em:translator>
 <em:translator>Tom van de Zilver (Dutch translation)</em:translator>
 <em:translator>Apo59m (Greek translation)</em:translator>
+<em:translator>timeratp (Lithuanian translation)</em:translator>
 <em:translator>YOUR NAME (YOUR LANGUAGE translation)</em:translator>
 
 ####################################################
