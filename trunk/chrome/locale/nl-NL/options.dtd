@@ -24,11 +24,11 @@
 <!ENTITY reportDetailLevelFull.label "Volledig">
 <!ENTITY showCharactersLeft.label "Letterteller bij uitgaande berichten">
 <!ENTITY enableAutoFillAuctionFields.label "Vooraf ingevuld minimumbod op de veiling">
-<!ENTITY buyAlert.label "Buy alert">
-<!ENTITY buyAlertNone.label "Never">
-<!ENTITY buyAlertMarket.label "Market only">
-<!ENTITY buyAlertAuction.label "Auction only">
-<!ENTITY buyAlertAll.label "Always">
+<!ENTITY buyAlert.label "Aankoopbevestiging">
+<!ENTITY buyAlertNone.label "Nooit">
+<!ENTITY buyAlertMarket.label "Alleen op de markt">
+<!ENTITY buyAlertAuction.label "Alleen op de veiling">
+<!ENTITY buyAlertAll.label "Altijd">
 
 <!ENTITY autoSimulateBattle.accesskey "S">
 <!ENTITY excludeMeFromCorporateMessages.accesskey "E">
@@ -45,7 +45,7 @@
 
 <!ENTITY aboutTab.label "Wat is nieuw">
 
-<!ENTITY aboutTab.whatsnew272.1 "Now you can choose when buy alert should appear">
+<!ENTITY aboutTab.whatsnew272.1 "Je kunt nu zelf kiezen wanneer je een aankoopbevestiging wilt zien">
 
 <!ENTITY aboutTab.whatsnew271.1 "Fix: vooraf ingevulde minimumbod op veiling is niet langer 1 goud te hoog.">
 <!ENTITY aboutTab.whatsnew271.2 "Toegevoegd: vertalingen voor de nieuwe opties.">
