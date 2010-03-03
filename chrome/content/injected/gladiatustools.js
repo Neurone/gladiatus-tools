@@ -847,6 +847,14 @@ if(isSendGuildMessagePage && GM_getValue("excludeMeFromCorporateMessages", false
 }
 
 /************************************
+/ Collegamento veloce alla messaggistica della gilda
+/***********************************/
+if(GM_getValue("showSendGuildMessageIcon", true))
+{
+	showSendGuildMessageIcon();
+}
+
+/************************************
 Gestione statistiche utente complete
 ************************************/
 if((isMyselfOverviewPage || isPlayerOverviewPage || isMyBuddiesOverviewPage || isPlayerBuddiesOverviewPage) && GM_getValue("showFullStats", false))

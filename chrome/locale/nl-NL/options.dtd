@@ -29,19 +29,7 @@
 <!ENTITY buyAlertMarket.label "Alleen op de markt">
 <!ENTITY buyAlertAuction.label "Alleen op de veiling">
 <!ENTITY buyAlertAll.label "Altijd">
-
-<!ENTITY autoSimulateBattle.accesskey "S">
-<!ENTITY excludeMeFromCorporateMessages.accesskey "E">
-<!ENTITY showCustomAvatarImages.accesskey "C">
-<!ENTITY showCustomGuildImages.accesskey "U">
-<!ENTITY showTimers.accesskey "T">
-<!ENTITY showFullStats.accesskey "G">
-<!ENTITY showAdditionalTooltips.accesskey "R">
-<!ENTITY hideNotAffordable.accesskey "O">
-<!ENTITY showAdditionalStats.accesskey "D">
-<!ENTITY rememberTabs.accesskey "H">
-<!ENTITY showCharactersLeft.accesskey "L">
-<!ENTITY enableAutoFillAuctionFields.accesskey "V">
+<!ENTITY showSendGuildMessageIcon.label "Show write guildmail icon">
 
 <!ENTITY aboutTab.label "Wat is nieuw">
 

@@ -2,9 +2,7 @@
 // @namespace       http://www.neurone.it/index.php/gladiatus-tools/
 // @autor           Giuseppe Bertone
 
-/**
- * Some source code parts are taken from Gladiatus Helper @copyright (C) 2008, DDTH.ORG 
- */
+//Some code lines come from Gladiatus Helper (C) 2008, DDTH.ORG 
 
 var GTtimeRemainingArena = 0;
 var GTtimeRemainingWorld = 0;

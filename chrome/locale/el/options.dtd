@@ -29,19 +29,7 @@
 <!ENTITY buyAlertMarket.label "Market only">
 <!ENTITY buyAlertAuction.label "Auction only">
 <!ENTITY buyAlertAll.label "Always">
-
-<!ENTITY autoSimulateBattle.accesskey "">
-<!ENTITY excludeMeFromCorporateMessages.accesskey "">
-<!ENTITY showCustomAvatarImages.accesskey "">
-<!ENTITY showCustomGuildImages.accesskey "">
-<!ENTITY showTimers.accesskey "">
-<!ENTITY showFullStats.accesskey "">
-<!ENTITY showAdditionalTooltips.accesskey "">
-<!ENTITY hideNotAffordable.accesskey "">
-<!ENTITY showAdditionalStats.accesskey "">
-<!ENTITY rememberTabs.accesskey "">
-<!ENTITY showCharactersLeft.accesskey "">
-<!ENTITY enableAutoFillAuctionFields.accesskey "">
+<!ENTITY showSendGuildMessageIcon.label "Show write guildmail icon">
 
 <!ENTITY aboutTab.label "Τι καινούριο υπάρχει">
 

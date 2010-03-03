@@ -109,6 +109,7 @@ it.neurone.gladiatustools.locale = {
                     this.winPercentage = "نسبة الإنتصارات:";
                     this.totalEarnedGold = "مجموع الحصول على الذهب:";
 					this.confirmBuyout = "Do you really want to buy this object?";
+					this.writeGuildmail = "Write guildmail";
                     break;
 
 				case "bulgaro":
@@ -128,6 +129,7 @@ it.neurone.gladiatustools.locale = {
 					this.winPercentage = "Шанс за победа:";
 					this.totalEarnedGold = "Всичкото заграбено злато:";
 					this.confirmBuyout = "Do you really want to buy this object?";
+					this.writeGuildmail = "Write guildmail";
 					break;
 
                 case "ceco":
@@ -147,6 +149,7 @@ it.neurone.gladiatustools.locale = {
                     this.winPercentage = "Procento výher:";
                     this.totalEarnedGold = "Celkem vyděláno zlata:";
 					this.confirmBuyout = "Do you really want to buy this object?";
+					this.writeGuildmail = "Write guildmail";
                     break; 
             
 				case "greco":
@@ -166,6 +169,7 @@ it.neurone.gladiatustools.locale = {
 					this.winPercentage = "Ποσοστό νικών επί τις εκατό:";
 					this.totalEarnedGold = "Συνολικός κερδισμένος χρυσός:";
 					this.confirmBuyout = "Πραγματικά θέλεις να αγοράσεις αυτό το αντικείμενο";
+					this.writeGuildmail = "Write guildmail";
                     break;
 
                 case "spagnolo":
@@ -185,6 +189,7 @@ it.neurone.gladiatustools.locale = {
                     this.winPercentage = "Porcentaje de victorias:";
                     this.totalEarnedGold = "Total de oro ganado:";
 					this.confirmBuyout = "Do you really want to buy this object?";
+					this.writeGuildmail = "Write guildmail";
                     break; 
                     
                 case "francese":
@@ -204,6 +209,7 @@ it.neurone.gladiatustools.locale = {
                     this.winPercentage = "Pourcentage de victoire:";
                     this.totalEarnedGold = "Bénéfice:";
 					this.confirmBuyout = "Voulez-vous vraiment l'acheter ?";
+					this.writeGuildmail = "Write guildmail";
                     break;  
                     
                 case "italiano":
@@ -223,6 +229,7 @@ it.neurone.gladiatustools.locale = {
                     this.winPercentage = "Percentuale vittorie:";
                     this.totalEarnedGold = "Oro guadagnato:";
 					this.confirmBuyout = "Vuoi veramente acquistare questo oggetto?";
+					this.writeGuildmail = "Scrivi un messaggio per la corporazione";
                     break;
                       
 				case "lituano":
@@ -242,6 +249,7 @@ it.neurone.gladiatustools.locale = {
 					this.winPercentage = "Laimėjimų procentas:";
 					this.totalEarnedGold = "Išvis pelnyta aukso:";
 					this.confirmBuyout = "Ar tikrai norite nupirkti šį daiktą?";
+					this.writeGuildmail = "Write guildmail";
 					break;
 					  
                 case "lettone":
@@ -261,6 +269,7 @@ it.neurone.gladiatustools.locale = {
                     this.winPercentage = "Uzvarēto procents:";
                     this.totalEarnedGold = "Arēnā iegūtais zelts:";
 					this.confirmBuyout = "Do you really want to buy this object?";
+					this.writeGuildmail = "Write guildmail";
 					break;
                 
                 case "olandese":
@@ -280,6 +289,7 @@ it.neurone.gladiatustools.locale = {
 					this.winPercentage = "Percentage gewonnen:";
 					this.totalEarnedGold = "Netto verdiend goud:";
 					this.confirmBuyout = "Weet je zeker dat je dit voorwerp wilt kopen?";
+					this.writeGuildmail = "Write guildmail";
 					break;
 				
 				case "portoghese-brasiliano":
@@ -299,6 +309,7 @@ it.neurone.gladiatustools.locale = {
 					this.winPercentage = "Porcentagem de vitórias:";
 					this.totalEarnedGold = "Total de ouro ganho:";
 					this.confirmBuyout = "Do you really want to buy this object?";
+					this.writeGuildmail = "Write guildmail";
 					break;
 					
 				case "vietnamita":
@@ -318,6 +329,7 @@ it.neurone.gladiatustools.locale = {
 					this.winPercentage = "Thống kê chiến thắng:";
 					this.totalEarnedGold = "Thống kê số vàng đã cướp:";
 					this.confirmBuyout = "Do you really want to buy this object?";
+					this.writeGuildmail = "Write guildmail";
 					break;
                       
 				default:
@@ -337,6 +349,7 @@ it.neurone.gladiatustools.locale = {
 					this.winPercentage = "Winning percentage:";
 					this.totalEarnedGold = "Total earned gold:";
 					this.confirmBuyout = "Do you really want to buy this object?";
+					this.writeGuildmail = "Write guildmail";
             }
         }
     }

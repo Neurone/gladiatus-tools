@@ -46,6 +46,7 @@ it.neurone.gladiatustools.gmCompiler = {
 		    script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/advancedStats.js');
 		    script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/report.js');
 			script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/auction.js');
+			script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/toolbar.js');
 		    script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/gladiatustools.js');
 		    it.neurone.gladiatustools.gmCompiler.injectScript(script, href, unsafeWin);
 	    }	

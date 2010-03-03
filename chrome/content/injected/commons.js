@@ -94,6 +94,8 @@ var isAllySendMessagePage = urlMatch("mod=guild_main&submod=admin_mail&sh=.*");
 var isAuctionPage = urlMatch("mod=auction&sh=.*") || urlMatch("mod=auction&ttype=2&sh=.*") || urlMatch("mod=auction&ttype=3&sh=.*");
 var isPackagesListPage = urlMatch("mod=packages&.*");
 
+var sendGuildMessageIconLink = "/game/index.php?mod=guild_main&submod=admin_mail&sh=" + secureHash;
+
 //Sovrascrivo alcune url se la versione del server è vecchia
 if(serverVersion == "v0.4.0") {
 	isMemoPage = urlMatch("mod=overview&submod=memo&sh=.*");

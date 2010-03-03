@@ -29,19 +29,7 @@
 <!ENTITY buyAlertMarket.label "Market only">
 <!ENTITY buyAlertAuction.label "Auction only">
 <!ENTITY buyAlertAll.label "Always">
-
-<!ENTITY autoSimulateBattle.accesskey "A">
-<!ENTITY excludeMeFromCorporateMessages.accesskey "E">
-<!ENTITY showCustomAvatarImages.accesskey "S">
-<!ENTITY showCustomGuildImages.accesskey "U">
-<!ENTITY showTimers.accesskey "R">
-<!ENTITY showFullStats.accesskey "H">
-<!ENTITY showAdditionalTooltips.accesskey "T">
-<!ENTITY hideNotAffordable.accesskey "I">
-<!ENTITY showAdditionalStats.accesskey "O">
-<!ENTITY rememberTabs.accesskey "M">
-<!ENTITY showCharactersLeft.accesskey "W">
-<!ENTITY enableAutoFillAuctionFields.accesskey "N">
+<!ENTITY showSendGuildMessageIcon.label "Show write guildmail icon">
 
 <!ENTITY aboutTab.label "What's new">
 

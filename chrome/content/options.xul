@@ -21,6 +21,7 @@
 	  <preference id="showCharactersLeft" name="extensions.gladiatustools.showCharactersLeft" type="bool"/>
 	  <preference id="enableAutoFillAuctionFields" name="extensions.gladiatustools.enableAutoFillAuctionFields" type="bool"/>
 	  <preference id="buyAlert" name="extensions.gladiatustools.buyAlert" type="string"/>
+	  <preference id="showSendGuildMessageIcon" name="extensions.gladiatustools.showSendGuildMessageIcon" type="bool"/>
     </preferences>
 	<tabbox>
       <tabs>
@@ -33,16 +34,19 @@
 			  <groupbox>
 				<caption label="&playersGroup.label;"/>
 				<hbox align="center">
-				  <checkbox id="c_showCustomAvatarImages" preference="showCustomAvatarImages" label="&showCustomAvatarImages.label;" accesskey="&showCustomAvatarImages.accesskey;"/>
+				  <checkbox id="c_showCustomAvatarImages" preference="showCustomAvatarImages" label="&showCustomAvatarImages.label;"/>
 				</hbox>
 				<hbox align="center">
-				  <checkbox id="c_showCustomGuildImages" preference="showCustomGuildImages" label="&showCustomGuildImages.label;" accesskey="&showCustomGuildImages.accesskey;"/>
+				  <checkbox id="c_showCustomGuildImages" preference="showCustomGuildImages" label="&showCustomGuildImages.label;"/>
 				</hbox>
 				<hbox align="center">
-				  <checkbox id="c_showFullStats" preference="showFullStats" label="&showFullStats.label;" accesskey="&showFullStats.accesskey;"/>
+				  <checkbox id="c_showSendGuildMessageIcon" preference="showSendGuildMessageIcon" label="&showSendGuildMessageIcon.label;"/>
 				</hbox>
 				<hbox align="center">
-				  <checkbox id="c_showAdditionalStats" preference="showAdditionalStats" label="&showAdditionalStats.label;" accesskey="&showAdditionalStats.accesskey;"/>
+				  <checkbox id="c_showFullStats" preference="showFullStats" label="&showFullStats.label;"/>
+				</hbox>
+				<hbox align="center">
+				  <checkbox id="c_showAdditionalStats" preference="showAdditionalStats" label="&showAdditionalStats.label;"/>
 				</hbox>
 			  </groupbox>
 
@@ -58,20 +62,20 @@
 				  </menulist>
 				</hbox>
 				<hbox align="center">
-				  <checkbox id="c_autoSimulateBattle" preference="autoSimulateBattle" label="&autoSimulateBattle.label;" accesskey="&autoSimulateBattle.accesskey;"/>
+				  <checkbox id="c_autoSimulateBattle" preference="autoSimulateBattle" label="&autoSimulateBattle.label;"/>
 				</hbox>
 			  </groupbox>
 
 			  <groupbox>
 				<caption label="&merchantsGroup.label;"/>
 				<hbox align="center">
-				  <checkbox id="c_showAdditionalTooltips" preference="showAdditionalTooltips" label="&showAdditionalTooltips.label;" accesskey="&showAdditionalTooltips.accesskey;"/>
+				  <checkbox id="c_showAdditionalTooltips" preference="showAdditionalTooltips" label="&showAdditionalTooltips.label;"/>
 				</hbox>
 				<hbox align="center">
-				  <checkbox id="c_hideNotAffordable" preference="hideNotAffordable" label="&hideNotAffordable.label;" accesskey="&hideNotAffordable.accesskey;"/>
+				  <checkbox id="c_hideNotAffordable" preference="hideNotAffordable" label="&hideNotAffordable.label;"/>
 				</hbox>
 				<hbox align="center">
-				  <checkbox id="c_rememberTabs" preference="rememberTabs" label="&rememberTabs.label;" accesskey="&rememberTabs.accesskey;"/>
+				  <checkbox id="c_rememberTabs" preference="rememberTabs" label="&rememberTabs.label;"/>
 				</hbox>
 				<hbox align="center">
 				  <label value="&buyAlert.label;" control="ml_buyAlert"/>
@@ -89,16 +93,16 @@
 			  <groupbox>
 				<caption label="&otherSettingsGroup.label;"/>
 				<hbox align="center">
-				  <checkbox id="c_enableBidOneMore" preference="enableAutoFillAuctionFields" label="&enableAutoFillAuctionFields.label;" accesskey="&enableAutoFillAuctionFields.accesskey;"/>
+				  <checkbox id="c_enableBidOneMore" preference="enableAutoFillAuctionFields" label="&enableAutoFillAuctionFields.label;"/>
 				</hbox>
 				<hbox align="center">
-				  <checkbox id="c_showTimers" preference="showTimers" label="&showTimers.label;" accesskey="&showTimers.accesskey;"/>
+				  <checkbox id="c_showTimers" preference="showTimers" label="&showTimers.label;"/>
 				</hbox>
 				<hbox align="center">
-				  <checkbox id="c_showCharactersLeft" preference="showCharactersLeft" label="&showCharactersLeft.label;" accesskey="&showCharactersLeft.accesskey;"/>
+				  <checkbox id="c_showCharactersLeft" preference="showCharactersLeft" label="&showCharactersLeft.label;"/>
 				</hbox>
 				<hbox align="center">
-				  <checkbox id="c_excludeMeFromCorporateMessages" preference="excludeMeFromCorporateMessages" label="&excludeMeFromCorporateMessages.label;" accesskey="&excludeMeFromCorporateMessages.accesskey;"/>
+				  <checkbox id="c_excludeMeFromCorporateMessages" preference="excludeMeFromCorporateMessages" label="&excludeMeFromCorporateMessages.label;"/>
 				</hbox>
 				<hbox align="center">
 				  <label value="&reportDetailLevel.label;" control="ml_reportDetailLevel"/>
