@@ -29,19 +29,7 @@
 <!ENTITY buyAlertMarket.label "Solo mercato">
 <!ENTITY buyAlertAuction.label "Solo asta">
 <!ENTITY buyAlertAll.label "Sempre">
-
-<!ENTITY autoSimulateBattle.accesskey "S">
-<!ENTITY excludeMeFromCorporateMessages.accesskey "N">
-<!ENTITY showCustomAvatarImages.accesskey "M">
-<!ENTITY showCustomGuildImages.accesskey "C">
-<!ENTITY showTimers.accesskey "R">
-<!ENTITY showFullStats.accesskey "O">
-<!ENTITY showAdditionalTooltips.accesskey "T">
-<!ENTITY hideNotAffordable.accesskey "E">
-<!ENTITY showAdditionalStats.accesskey "A">
-<!ENTITY rememberTabs.accesskey "I">
-<!ENTITY showCharactersLeft.accesskey "D">
-<!ENTITY enableAutoFillAuctionFields.accesskey "B">
+<!ENTITY showSendGuildMessageIcon.label "Mostra icona invio messaggio di corporazione">
 
 <!ENTITY aboutTab.label "Novità">
 

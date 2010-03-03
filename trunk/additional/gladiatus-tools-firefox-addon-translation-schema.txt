@@ -66,6 +66,7 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY buyAlertMarket.label "Market only">
 <!ENTITY buyAlertAuction.label "Auction only">
 <!ENTITY buyAlertAll.label "Always">
+<!ENTITY showSendGuildMessageIcon.label "Show write guildmail icon">
 
 <!ENTITY aboutTab.label "What's new">
 
@@ -84,31 +85,6 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
 <!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
 <!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">
-
-####################################################
-# These are the access keys for addon option messages. Translate only those words between "..." and don't use the same letter twice.
-# Access keys are keyboard shortcut to select an option without using a pointer system but using only the keyboard.
-#
-# An example. If you set "A" as access key for the ENTITY autoSimulateBattle, the first A of the
-# autoSimulateBattle label "Automatically simulate battle", in the GT option panel, will be underline. This indicates the user
-# he could press  (i.e. in Windows) the ALT + A combination to check/uncheck the option.
-#
-# Access keys does not apply to all languages, so check if your language support access keys before translate.
-# If access keys does not apply to your language, please set them all to a blank value "".
-####################################################
-
-<!ENTITY autoSimulateBattle.accesskey "">
-<!ENTITY excludeMeFromCorporateMessages.accesskey "">
-<!ENTITY showCustomAvatarImages.accesskey "">
-<!ENTITY showCustomGuildImages.accesskey "">
-<!ENTITY showTimers.accesskey "">
-<!ENTITY showFullStats.accesskey "">
-<!ENTITY showAdditionalTooltips.accesskey "">
-<!ENTITY hideNotAffordable.accesskey "">
-<!ENTITY showAdditionalStats.accesskey "">
-<!ENTITY rememberTabs.accesskey "">
-<!ENTITY showCharactersLeft.accesskey "">
-<!ENTITY enableAutoFillAuctionFields.accesskey "">
 
 ####################################################
 # These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
