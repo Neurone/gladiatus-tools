@@ -29,7 +29,7 @@
 <!ENTITY buyAlertMarket.label "Marché uniquement">
 <!ENTITY buyAlertAuction.label "Enchères uniquement">
 <!ENTITY buyAlertAll.label "Toujours">
-<!ENTITY showSendGuildMessageIcon.label "Show write guildmail icon">
+<!ENTITY showSendGuildMessageIcon.label "Afficher l'icône d'envoi de messages à la guilde">
 
 <!ENTITY aboutTab.label "Nouveauté">
 

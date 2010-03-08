@@ -24,16 +24,16 @@
 <!ENTITY reportDetailLevelFull.label "Πλήρης">
 <!ENTITY showCharactersLeft.label "Δείχνε τους μετρητές γραμμάτων">
 <!ENTITY enableAutoFillAuctionFields.label "Αυτόματα συμπλήρωσε τις τιμές των αντικειμένων στο δημοπρατήριο με την χαμηλότερη προσφορά">
-<!ENTITY buyAlert.label "Buy alert">
-<!ENTITY buyAlertNone.label "Never">
-<!ENTITY buyAlertMarket.label "Market only">
-<!ENTITY buyAlertAuction.label "Auction only">
-<!ENTITY buyAlertAll.label "Always">
+<!ENTITY buyAlert.label "Συναγερμός αγοράς">
+<!ENTITY buyAlertNone.label "Ποτέ">
+<!ENTITY buyAlertMarket.label "Στην Αγορά">
+<!ENTITY buyAlertAuction.label "Στο Δημοπρατήριο">
+<!ENTITY buyAlertAll.label "Πάντα">
 <!ENTITY showSendGuildMessageIcon.label "Show write guildmail icon">
 
 <!ENTITY aboutTab.label "Τι καινούριο υπάρχει">
 
-<!ENTITY aboutTab.whatsnew272.1 "Now you can choose when buy alert should appear">
+<!ENTITY aboutTab.whatsnew272.1 "Τώρα μπορείτε να επιλέξετε πότε να εμφανίζεται ο συναγερμός αγοράς">
 
 <!ENTITY aboutTab.whatsnew271.1 "Το χαρακτηριστικό 'bid + 1' συνεχίζει να γεμίζει τις τιμές, αλλά τώρα δεν προσθέτει 1 χρυσό στην τιμή των αντικειμένων">
 <!ENTITY aboutTab.whatsnew271.2 "Προστέθηκε μήνυμα επαλήθευσης όταν αγοράζονται αντικείμενα κατευθείαν (εξαγορά) από τους πωλητές και το δημοπρατήριο">
