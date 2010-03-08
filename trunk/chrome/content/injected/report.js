@@ -36,3 +36,24 @@ function showSmartCombatReport() {
     vss.snapshotItem(0).innerHTML = "VS<br/>";
     vss.snapshotItem(0).appendChild(moreDetails);
 }
+
+/*
+function shareCombatReport()
+{
+	var contenuto = document.getElementById('content').innerHTML;
+	contenuto = contenuto.replace(/<!-- content end -->/igm, "");
+	contenuto = contenuto.replace(/</igm,"&lt;")
+	contenuto = contenuto.replace(/>/igm,"&gt;")
+	contenuto = contenuto.replace(/input/igm, "inp1");
+	contenuto = contenuto.replace(/=/igm, "ravno");
+	contenuto = contenuto.replace(/\"/igm, "kavi4ka");
+	contenuto = contenuto.replace("class", "clas1s");
+	contenuto = contenuto.replace("id", "i1d");
+	contenuto = contenuto.replace("form", "fo1rm");
+	contenuto = contenuto.replace("name", "na1me");
+	contenuto = contenuto.replace("value", "v1alue");
+
+	return  '<div class="reportHeader reportLose"><form action="http://gladiatuslog.blackget.com/saveReport.php" method="post" target="_blank">'+
+			'<TEXTAREA name="reptext" style="display: none">'+contenuto+'</TEXTAREA><input type="submit" value="Save report"></form></div>';
+}
+*/
