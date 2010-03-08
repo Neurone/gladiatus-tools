@@ -209,7 +209,7 @@ it.neurone.gladiatustools.locale = {
                     this.winPercentage = "Pourcentage de victoire:";
                     this.totalEarnedGold = "Bénéfice:";
 					this.confirmBuyout = "Voulez-vous vraiment l'acheter ?";
-					this.writeGuildmail = "Write guildmail";
+					this.writeGuildmail = "Écrire un message à la guilde";
                     break;  
                     
                 case "italiano":
