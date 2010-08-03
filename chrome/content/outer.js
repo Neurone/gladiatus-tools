@@ -310,6 +310,8 @@ it.neurone.gladiatustools.outer = function() {
 				newLogo.onload = changeAvatarImage;					
 				newLogo.src = imageUrl;
 				newLogo.imageToSwap = elemento.parentNode.parentNode.childNodes[3];
+				//Modifico lo stile del div che contiene l'immagine per centrarla
+				newLogo.imageToSwap.style.textAlign = "center";
 			}
 		} catch (e) {
 			//Capita un eccezione quando viene caricata la pagina e allo stesso tempo arrivano
