@@ -855,11 +855,11 @@ if(isSendGuildMessagePage && GM_getValue("excludeMeFromCorporateMessages", false
 
 /************************************
 / Collegamento veloce alla messaggistica della gilda
-/***********************************
+/***********************************/
 if(GM_getValue("showSendGuildMessageIcon", true))
 {
 	showSendGuildMessageIcon();
-}*/
+}
 
 /************************************
 Gestione statistiche utente complete
