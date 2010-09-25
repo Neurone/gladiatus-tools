@@ -1,6 +1,7 @@
-// @name            Gladiatus Tools
-// @namespace       http://www.neurone.it/index.php/gladiatus-tools/
-// @autor           Giuseppe Bertone
+// @name            	Gladiatus Tools
+// @namespace       	http://www.neurone.it/index.php/gladiatus-tools/
+// @autor           	Giuseppe Bertone
+// @debuging commiter	Proximilius (H.R Scholten)
 
 /*****************************
 Abilita o disabilita il pulsante Simula
@@ -41,8 +42,8 @@ function modifyLayout(winner, risultato)
 		vai.value = MSG.stop;
 	}
 	//Formatto il dettaglio dei risultati
-	risultato = MSG.winning +" "+ risultato +"%";	
-	var testo = "<span style=\"color:"+ colore +";font-weight:bold;\">"+ risultato +"</span>";	
+	risultato = MSG.winning +" "+ risultato +"%";
+	var testo = "<span style=\"color:"+ colore +";font-weight:bold;\">"+ risultato +"</span>";
 	messaggio.innerHTML = testo + "<br />";
 	//Formatto il pulsante vai correttamente
 	vai.style.color = colore;
@@ -67,9 +68,9 @@ function gestisciRispostaDaSimulatore(risposta)
 	//Percentuale di vittoria dell'attaccante
 	var risultato = 0;
 	var error = false;
-	
+
 	switch(simulatore)
-	{	
+	{
 		case "www.playerutils.com":
 			//Effettuo il parsing della risposta per capire chi ha vinto
 			var first = "simulations out of ";
@@ -81,11 +82,11 @@ function gestisciRispostaDaSimulatore(risposta)
 			if(inizio < 0 || fine < 0) error = true;
 			else risultato = contenuto.substring(inizio + firstOffset, fine);
 			break;
-		
+
 		case "www.georged.eu":
 			var pattern = /<tr><td>Attacker win in : <\/td><td>.+<\/td><\/tr>/i;
 			var stringFound = pattern.exec(risposta.responseText);
-			if(stringFound != null) 
+			if(stringFound != null)
 			{
 				var tmpString = stringFound.toString();
 				risultato = tmpString.substring("<tr><td>Attacker win in : </td><td>".length, tmpString.length - "</td></tr>".length);
@@ -97,11 +98,11 @@ function gestisciRispostaDaSimulatore(risposta)
 				error = true;
 			}
 			break;
-			
-		default:		
+
+		default:
 			break;
 	}
-	
+
 	//Visualizzo il risultato
 	if(error) gestisciErroreSimulazione();
 	else gestisciRisultato(risultato);
@@ -113,7 +114,7 @@ Gestisce l'errore da parte del simulatore
 function gestisciErroreSimulazione()
 {
 	//Formatto il dettaglio dell'errore
-	messaggio.innerHTML = "<span style=\"color:red;font-weight:bold;\">"+ MSG.simulationFailed +"</span><br/>";	
+	messaggio.innerHTML = "<span style=\"color:red;font-weight:bold;\">"+ MSG.simulationFailed +"</span><br/>";
 	//Ripristina il pulsante
 	switchEnabled();
 }
@@ -154,7 +155,7 @@ function getNomeUtente(paginaHTML)
 	elemento.innerHTML = paginaHTML;
 	var ex = ".//span[@class='playername_achievement']"; //v0.5
 	if(serverVersion == "v0.4.0") ex = ".//span[@class='playername']";
-	tag = document.evaluate( 
+	tag = document.evaluate(
 			ex,
 			elemento,
 			null,
@@ -173,7 +174,7 @@ function getStat(statId, paginaHTML)
 	var elemento = document.createElement("div");
 	elemento.innerHTML = paginaHTML;
 	var ex = ".//span[@id='"+statId+"']";
-	tag = document.evaluate( 
+	tag = document.evaluate(
 			ex,
 			elemento,
 			null,
@@ -245,18 +246,18 @@ function getDatiUtente(callbackFunction)
 function impostaDatiSimulatore()
 {
 	var stringa = "";
-    
+
 	switch(simulatore)
-	{	
+	{
 		case "www.playerutils.com":
 			//Imposto le caratteristiche del simulatore
 			urlSimulatore = 'http://www.playerutils.com/calc04.php';
 			hostSimulatore = 'www.playerutils.com';
 			refererUrlSimulatore = 'http://www.playerutils.com/sim.php';
 			//Imposto la stringa per il post
-			
+
 			break;
-		
+
 		case "www.georged.eu":
 			//Imposto le caratteristiche del simulatore
 			urlSimulatore = 'http://www.georged.eu/gladiatus/avyhodnoceni.php?lang=eng';
@@ -291,11 +292,11 @@ function impostaDatiSimulatore()
 						"&form_obrancekritickeposkozeni=" + paramDifensore["dannoCritico_percento"]+
 						"&proklik=&submit13=Send";
 			break;
-			
-		default:		
+
+		default:
 			break;
 	}
-	
+
     return stringa;
 }
 
@@ -319,16 +320,16 @@ function grabClick(event)
 {
     //Controllo il click con il tasto sinistro
     if(event.button == 0) {
-	
+
 		var target = event.target;
 		if (target.href == undefined) target = event.target.parentNode;
-	
+
 	    //Controllo se il click è stato effettuato sul pulsante Simula
 	    if(event.target.id == idSimula) {
             simulateBattle();
             return;
 	    }
-		
+
 		if(event.target.name == nomePulsanteAcquistaAsta || event.target.name == nomePulsanteAcquistaMercato)
 		{
 			//Controllo le preferenze di alert sull'acquisto diretto
@@ -337,7 +338,7 @@ function grabClick(event)
 			{
 				case "0":
 					return;
-					
+
 				case "1":
 					showBuyAlert = (event.target.name == nomePulsanteAcquistaMercato);
 					break;
@@ -358,7 +359,7 @@ function grabClick(event)
 			}
 			return;
 		}
-		
+
         //Controllo se è attiva e utilizzabile la funzionalità smart combat report
         if(event.target.id == "moreDetails1")
 	    {
@@ -368,7 +369,7 @@ function grabClick(event)
 	        event.preventDefault();
 	        return;
         }
-	    
+
 	    //Controllo se il click è il salva impostazioni	per il profilo utente
 	    if(isSettingsPage && event.target.type == "submit") {
 		    //Recupero il campo immagine
@@ -383,7 +384,7 @@ function grabClick(event)
 		    }
 		    return;
 	    }
-	    
+
 	    //Controllo se il click è il salva impostazioni per la corporazione
 	    if(isModAllyPage && event.target.type == "submit" && event.target.name != "dd") {
 		    //Recupero il campo immagine
@@ -395,7 +396,7 @@ function grabClick(event)
 		    }
 		    return;
 	    }
-	    
+
 	    if(GM_getValue("rememberTabs", false)) {
 	        //Controllo se il click punta ad uno dei negozi
 	        if(targetUrlMatch("mod=inventory&sh=.*", target.href) || targetUrlMatch("mod=inventory&sub=[1-5]&sh=.*", target.href)) {
@@ -408,7 +409,7 @@ function grabClick(event)
 					//Se esiste, carico l'ultima linguetta selezionata dell'inventario
 					var inv = GM_getValue("GT_lastChoiceInventory_" + window.location.host, "0");
 					if(inv) target.href += "&inv="+ inv;
-                }				
+                }
 	        }
 			//Controllo se il click punta al riepilogo, alla selezione dei pacchetti o al mercato
 			else if(targetUrlMatch("mod=overview&sh=.*", target.href) ||
@@ -510,7 +511,7 @@ Decido se inviare il messaggio della corp all'utente loggato
 function excludeMe()
 {
 	//Trovo l'id dell'utente loggato
-	getDatiUtente(gestisciRispostaDatiUtente);	
+	getDatiUtente(gestisciRispostaDatiUtente);
 }
 
 /**********************************************************************************************************************/
@@ -565,6 +566,7 @@ function getGTGuildImageUrl(stringa)
 
 /*****************************
 Nasconde gli oggetti non acquistabili
+(Hide items not available for purchase)
 *****************************/
 function hideNotAffordableObjects()
 {
@@ -583,7 +585,7 @@ function hideNotAffordableObjects()
                 if(info.iid && (info.preis > unsafeWindow.res1 || info.preis2 > unsafeWindow.res2)) oggetto.style.opacity = objectTransparency;
                 else oggetto.style.opacity = 1;
             }
-	    }	
+	    }
 	}
 }
 
@@ -594,6 +596,7 @@ function hideNotAffordableObjects()
 
 /*****************************
 Per intercettare il drop dell'oggetto, sovrascrivo una funzione del sito
+(Overwrite a function of the site, to catch the drop object)
 *****************************/
 oldSetToolTip = unsafeWindow.SetToolTip;
 unsafeWindow.SetToolTip = function (updateTooltip)
@@ -608,13 +611,17 @@ unsafeWindow.SetToolTip = function (updateTooltip)
 
 /*****************************
 Imposta il tooltip per un oggetto
+(Sets the tooltip for an object)
 *****************************/
 function setNewTooltip(info, id)
 {
 	//Trovo l'oggetto dell'utente
+	//(Find the user's object)
 	var oggetto = unsafeWindow.document.getElementById(id).ddObj;
 	//Creo un nuovo tooltip. Se l'oggetto non è ancora stato inizializzato o è appena stato spostato
 	//il suo tooltip non prevede l'aggiunta fatta dall'addon: in questo modo capisco se aggiornare o meno il tooltip.
+	//(Create a new tooltip. In case the object has not been intialized or just been moved the tooltip does not
+	//include the addtition made by the adon. : now it would be clear to update the tooltip or not)
 	if(info.tooltip.indexOf("<!--GT-->") < 0) {
 	    info.tooltip = "<!--GT--><table><tr><td>"+ oggetto.tooltip +"</td></tr><tr><td>"+ info.tooltip +"</td></tr></table>";
     }
@@ -633,8 +640,8 @@ function setNewTooltip2Obj(info, id1, id2)
 	{
 		info.originalTooltip = info.tooltip;
 	}
-	info.tooltip = "<table><tr><td>"+ oggetto1.tooltip +"</td></tr><tr><td>"+	
-    				oggetto2.tooltip +"</td></tr><tr><td>"+	
+	info.tooltip = "<table><tr><td>"+ oggetto1.tooltip +"</td></tr><tr><td>"+
+    				oggetto2.tooltip +"</td></tr><tr><td>"+
     				info.originalTooltip +"</td></tr></table>";
 }
 
@@ -650,7 +657,7 @@ function showAdditionalTooltips()
         //Definisco un nuovo attributo
         unsafeWindow.DDObj.originalTooltip;
 	    //Recupero tutti gli spazi dell'inventario
-	    allDivs = document.evaluate("div", document.getElementById("inv"), null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);	
+	    allDivs = document.evaluate("div", document.getElementById("inv"), null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 	    for (var i = 0; i < allDivs.snapshotLength; i++)
 	    {
 		    var oggetto = allDivs.snapshotItem(i);
@@ -667,7 +674,7 @@ function showAdditionalTooltips()
 		            case 2:
 		    	        //Arma
 		                setNewTooltip(info, "p3_1_1");
-			            break;			    
+			            break;
 		            case 4:
 		    	        //Scudo
 		                setNewTooltip(info, "p4_1_1");
@@ -687,7 +694,7 @@ function showAdditionalTooltips()
 			        case 512:
 		    	        //Stivali
 		                setNewTooltip(info, "p10_1_1");
-			            break; 
+			            break;
                     case 1024:
             	        //Collana
                         setNewTooltip(info, "p11_1_1");
@@ -726,7 +733,7 @@ if(isPlayerOverviewPage)
 		vai.parentNode.insertBefore(messaggio, vai);
 		//Imposto il simulatore
 		simulatore = GM_getValue("simulatorEngine", "www.georged.eu");
-		//Controllo se la simulazione è automatica	    
+		//Controllo se la simulazione è automatica
 		if(GM_getValue("autoSimulateBattle", false))
 		{
 			messaggio.innerHTML = "<strong>"+ MSG.simulating +"</strong><br/>";
@@ -746,7 +753,7 @@ if(isPlayerOverviewPage)
 
 /************************************
 Gestione pagina del profilo
-************************************/	
+************************************/
 if(isSettingsPage)
 {
 	//Creo le nuove impostazioni
@@ -769,7 +776,7 @@ if(isSettingsPage)
 		var title;
 		if(serverVersion == "v0.4.0") {
 		    title = document.createElement("h2");
-		    title.innerHTML = MSG.customAvatarImageUrl;		    
+		    title.innerHTML = MSG.customAvatarImageUrl;
 		}
 		else {
             title = document.createElement("span");
@@ -787,14 +794,14 @@ if(isSettingsPage)
 		title.parentNode.insertBefore(paragraph, title.nextSibling);
 		paragraph.parentNode.insertBefore(imageUrlField, paragraph.nextSibling);
 	}
-	
+
 	//attivo un listener sull'evento onclick
 	activateClickListener = true;
 }
 
 /************************************
 Gestione pagina della descrizione della corporazione
-************************************/	
+************************************/
 if(isModAllyPage)
 {
 	//Creo le nuove impostazioni
@@ -815,7 +822,7 @@ if(isModAllyPage)
 		var title;
 		if(serverVersion == "v0.4.0") {
 		    title = document.createElement("h2");
-		    title.innerHTML = MSG.customGuildImageUrl;	    
+		    title.innerHTML = MSG.customGuildImageUrl;
 		}
 		else {
             title = document.createElement("span");
@@ -833,7 +840,7 @@ if(isModAllyPage)
 		title.parentNode.insertBefore(paragraph, title.nextSibling);
 		paragraph.parentNode.insertBefore(imageUrlField, paragraph.nextSibling);
 	}
-	
+
 	//attivo un listener sull'evento onclick
 	activateClickListener = true;
 }
@@ -848,11 +855,11 @@ if(isSendGuildMessagePage && GM_getValue("excludeMeFromCorporateMessages", false
 
 /************************************
 / Collegamento veloce alla messaggistica della gilda
-/***********************************/
+/***********************************
 if(GM_getValue("showSendGuildMessageIcon", true))
 {
 	showSendGuildMessageIcon();
-}
+}*/
 
 /************************************
 Gestione statistiche utente complete
@@ -935,14 +942,18 @@ if(GM_getValue("enableAutoFillAuctionFields", false) && isAuctionPage) autoFillA
 ************************************/
 if(isPackagesListPage) {
 	//Trovo un valore di riferimento dal quale partire per cercare il numero di pagine
+	//(I find it a benchmark from which to look up the number of pages)
 	var divs = document.evaluate("//div[@class='title_box']", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 	//Verifico se le pagine sono più di una (vengono visualizzate 4 linee invece che le solite 3)
+	//(Check whether the pages are more than one (4 lines are displayed instead of the usual 3))
 	if(divs.snapshotLength > 0 && divs.snapshotItem(0).parentNode.parentNode.parentNode.childNodes.length > 6) {
 		var first = "";
 		var last = "";
 		//Se esiste, carico l'ultima linguetta selezionata dell'inventario
+		//(If it exists, load the last selected inventory tab)
 		var inv = GM_getValue("GT_lastChoiceInventory_" + window.location.host, "0");
 		//Recupero il campo da modificare
+		//(Recover the field to edit)
 		var td = divs.snapshotItem(0).parentNode.parentNode.parentNode.childNodes[4].childNodes[1];
 		//Verifico il numero totale di pagine
 		var pagine = safeParseInt(td.innerHTML.match(/\d+ \/ (\d+)/)[1]);
@@ -956,9 +967,10 @@ if(isPackagesListPage) {
 			last = "&nbsp;&nbsp;&nbsp;<a style='text-decoration:none;' href='http://"+ window.location.host +"/game/index.php?mod=packages&inv="+ inv +"&p=9999&sh="+ secureHash +"'>&gt;&gt;|</a>"
 		}
 		//Modifico la linea
-		var modifica = "<div style='float:right;'>"+ first + last +"</div>";
+		var modifica = "<td style='float:right;'>"+ first + last +"</td>";
 		td.innerHTML += modifica;
 		//Modifico allo stesso modo anche la seconda linea di footer con la navigazione
+		//(I edit the same way the second line with the footer navigation)
 		divs = document.evaluate("//div[@class='title2_inner']", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 		if(divs.snapshotLength > 0) {
 			//Recupero la posizione, variabile a seconda del numero di oggetti nella lista
@@ -984,7 +996,7 @@ if(true) {
 
 /************************************
  Se necessario, attivo la gestione dell'evento click
-************************************/	
+************************************/
 if(activateClickListener)
 {
 	//Imposto un listener sull'evento onclick
@@ -993,7 +1005,7 @@ if(activateClickListener)
 
 /************************************
  Se necessario, attivo la gestione della tastiera
-************************************/	
+************************************/
 if(activateKeyPressListener)
 {
 	//alert("grab key attivo");
