@@ -1,0 +1,15 @@
+#summary How GT (and all others Firefox addons) automatic updates work
+
+= Introduction =
+
+Around the web there are currently two GT addon versions, one from [https://addons.mozilla.org/en-US/firefox/addon/9761/ AMO] and the other from Google Code (the same one existing at my blog). Each version has its own automatic update mechanism, and here you will understand why.
+
+
+= Details =
+
+AMO is a very prolific community, and there you can find every Firefox addons you can desire. They provide a very good set of tools for developers and they offer an automatic addons update also. When your Firefox needs to check updates for your installed addons, it usually contact the AMO site for that. On the other hand, AMO developers (and AMO volunteers) will check *every* addons update before publishing it, and sometimes the entire process takes weeks, or in the worst case months, to be completed.
+
+Luckily, Firefox supports another automatic addons update mechanism, without the need to contact AMO. In this case, the xpi file (the addon package) must contain a signed install manifest ([http://code.google.com/p/gladiatus-tools/source/browse/trunk/install.rdf install.rdf]) pointing to signed update manifest (inside [http://code.google.com/p/gladiatus-tools/source/browse/trunk/install.rdf install.rdf] line 7 points to http://www.neurone.it/mozilla/addons/gladiatustools/signedupdate.rdf). The signed update manifest contains informations about the latest addon version, the url to the latest xpi file and, for security reason, the xpi file hash also.
+This way, you are free to publish your addon updates very fast, but you must take care of correct packaging and update mechanims.
+
+With GT we chose to use both mechanims: if you want the lastest release very fast, download GT from Google Code. If you prefer to wait for AMO approval (because you think it's safer or simply you like them more then us), install Gladiatus Tools form its own [https://addons.mozilla.org/en-US/firefox/addon/9761/versions/ AMO page].
