@@ -1,4 +1,4 @@
-#summary How GT (and all others Firefox addons) automatic updates work
+#summary How GT automatic updates work
 
 = Introduction =
 
