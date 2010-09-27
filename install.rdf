@@ -18,6 +18,7 @@
     <em:name>Gladiatus Tools</em:name>
     <em:creator>Giuseppe Bertone</em:creator>
     <em:description>Improve the user experience automatically adding a set of fully web site integrated tools to the Gladiatus browser game interface.</em:description>
+	<em:contributor>Rick Scholten</em:contributor>
     <em:contributor>Anthony Lieuallen (Greasemonkey Compiler)</em:contributor>
     <em:translator>Sébastien Bailly (French translation)</em:translator>
     <em:translator>Sebastiàn Goicochea (Spanish translation)</em:translator>
