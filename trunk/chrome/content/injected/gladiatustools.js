@@ -435,12 +435,12 @@ function grabClick(event)
                 }
 	        }
 			//Controllo se il click punta ad una linguetta dell'inventario
-            else if(targetUrlMatch("mod=inventory&inv=[0-2]&.*", target.href) ||
-					targetUrlMatch("mod=overview&inv=[0-2]&.*", target.href) ||
-					targetUrlMatch("mod=packages&inv=[0-2]&.*", target.href) ||
-					targetUrlMatch("mod=market&inv=[0-2]&.*", target.href)) {
+            else if(targetUrlMatch("mod=inventory&inv=[0-3]&.*", target.href) ||
+					targetUrlMatch("mod=overview&inv=[0-3]&.*", target.href) ||
+					targetUrlMatch("mod=packages&inv=[0-3]&.*", target.href) ||
+					targetUrlMatch("mod=market&inv=[0-3]&.*", target.href)) {
 				//Trovo la linguetta selezionata
-				var linguetta = target.href.match(/&inv=[0-2]/);
+				var linguetta = target.href.match(/&inv=[0-3]/);
 				if(linguetta) {
 					//Salvo la linguetta selezionata per la visualizzazione successiva
 					GM_setValue("GT_lastChoiceInventory_" + window.location.host, linguetta.toString().substr(5,1));
