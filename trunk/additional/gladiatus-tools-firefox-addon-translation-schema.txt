@@ -3,8 +3,7 @@
 # Title: Gladiatus Tools Firefox Addon Translation Schema
 # Author: Giuseppe Bertone
 #
-# This guide applies to 2.7.2 release
-# Last modified: 23 Feb 2010 17:30:48 GMT 
+# This guide applies to 2.8.0 release
 # 
 ####################################################
 #
@@ -154,6 +153,9 @@ this.totalEarnedGold = "Total earned gold:";
 
 #Text for alert while buying an item at amrket or auction pages
 this.confirmBuyout = "Do you really want to buy this object?";
+
+#Tooltip for mail icon. Send a mail to your guild.
+this.writeGuildmail = "Write guildmail";
 
 ####################################################
 # This is the addon description at addons.mozilla.org. Translate all and add your language at the end of the languages list.

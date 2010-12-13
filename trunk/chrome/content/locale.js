@@ -152,6 +152,25 @@ it.neurone.gladiatustools.locale = {
 					this.writeGuildmail = "Write guildmail";
                     break; 
             
+				case "tedesco":
+					this.simulationFailed = "Fehler bei der Simulation! Bitte versuchen Sie es später noch einmal oder wählen Sie eine anderen Simulator Seite von den Einstellungen von Gladiatus Tools.";
+					this.customAvatarImageUrl = "Eigenes Avatar Bild URL (http://...). Das Bild wird zu 168x194px verkleinert.";
+					this.customGuildImageUrl = "Eigenes Gilden Bild URL (http://...). Das Bild wird zu 209x232px verkleinert.";
+					this.simulate = "Simuliere";
+					this.simulating = "Simulation erfolgt...";
+					this.winning = "Gewinn ";
+					this.go = "Los gehts!";
+					this.stop = "STOP!";
+					this.quest = "Expedition:";
+					this.arena = "Arena:";
+					this.work = "Arbeit:";
+					this.completed = "Fertig!";
+					this.goldLabel = "Gold"
+					this.winPercentage = "Gewinn Möglichkeit:";
+					this.totalEarnedGold = "Das ganz verdiente Gold:";
+					this.confirmBuyout = "Wollen Sie wirklich diesen Objekt kaufen?";
+					this.writeGuildmail = "Write guildmail";
+			
 				case "greco":
 					this.simulationFailed = "Η προσομοίωση απέτυχε! Παρακαλώ δοκιμάστε αργότερα ή επιλέξτε μια άλλη μηχανή προσομοίωσης από τις επιλογές του Gladiatus Tools.";
 					this.customAvatarImageUrl = "Διεύθυνση της επιλεγμένης εικόνας παίχτη (http://...). Η εικόνα θα μετατραπεί σε 168x194.";
