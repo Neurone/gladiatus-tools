@@ -31,8 +31,9 @@
 	<em:translator>Tom van de Zilver (Dutch translation)</em:translator>
 	<em:translator>Apo59m (Greek translation)</em:translator>
 	<em:translator>timeratp (Lithuanian translation)</em:translator>
+	<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
 	<em:iconURL>chrome://gladiatustools/content/images/icon.png</em:iconURL>
-    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+    <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
 
     <em:localized>
       <Description>
@@ -55,7 +56,8 @@
 		<em:translator>Tom van de Zilver (الترجمة الهولندية)</em:translator>
 		<em:translator>Apo59m (الترجمة اليونانية)</em:translator>
 		<em:translator>timeratp (الترجمة الليتوانية)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 
@@ -77,7 +79,8 @@
 		<em:translator>Tom van de Zilver (Холандски превод)</em:translator>
 		<em:translator>Apo59m (Гръцки превод)</em:translator>
 		<em:translator>timeratp (Литовски превод)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 
@@ -99,13 +102,37 @@
 		<em:translator>Tom van de Zilver (Nizozemština překlad)</em:translator>
 		<em:translator>Apo59m (Řecký překlad)</em:translator>
 		<em:translator>timeratp (Litevský překlad)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 
 	<em:localized>
       <Description>
-        <em:locale>el</em:locale>
+        <em:locale>de-DE</em:locale>
+        <em:name>Gladiatus Tools</em:name>
+        <em:creator>Giuseppe Bertone</em:creator>
+        <em:description>Gibt den Browser Spiel "Gladiatus" viele Tools automatisch.</em:description>
+		<em:contributor>Anthony Lieuallen (Greasemonkey mithelfer)</em:contributor>
+		<em:translator>Sébastien Bailly (Französische Übersetzung)</em:translator>
+		<em:translator>Sebastiàn Goicochea (Spanische Übersetzung)</em:translator>
+		<em:translator>TaReQ ALShehhi-UAETooN (Arabische Übersetzung)</em:translator>
+		<em:translator>Erik Tuu (Vietnamische Übersetzung)</em:translator>
+		<em:translator>Peteris Petersons (Latvian Übersetzung)</em:translator>
+		<em:translator>Halluz-man (Czechische Übersetzung)</em:translator>
+		<em:translator>Muriel de Souza Godoi (Portugisische-Brasilianische Übersetzung)</em:translator>
+		<em:translator>Живко Янев (Bulgarianische Übersetzung)</em:translator>
+		<em:translator>Tom van de Zilver (Dutch Übersetzung)</em:translator>
+		<em:translator>Apo59m (Grischische Übersetzung)</em:translator>
+		<em:translator>timeratp (Lithuanianische Übersetzung)</em:translator>
+		<em:translator>Ragazzo Homer / RexInfernus (Deutsche Übersetzung)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
+      </Description>
+    </em:localized>
+	
+	<em:localized>
+      <Description>
+        <em:locale>el-EL</em:locale>
         <em:name>Gladiatus Tools</em:name>
         <em:creator>Giuseppe Bertone</em:creator>
 		<em:description>Πρόσθετο για το παιχνίδι Gladiatus. Αφού εγκατασταθεί, αυτό το πρόσθετο ενσωματώνει πλήρως μια σειρά από εργαλεία στο περιβάλλον του Gladiatus για να βελτιώσει το παιχνίδι του χρήστη.</em:description>
@@ -121,7 +148,8 @@
 		<em:translator>Tom van de Zilver (Ολλανδική μετάφραση)</em:translator>
 		<em:translator>Apo59m (Ελληνική μετάφραση)</em:translator>
 		<em:translator>timeratp (Λιθουανική μετάφραση)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 	
@@ -143,7 +171,8 @@
 		<em:translator>Tom van de Zilver (Traducción al neerlandés)</em:translator>
 		<em:translator>Apo59m (Traducción griega)</em:translator>
 		<em:translator>timeratp (Traducción de Lituania)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 
@@ -165,7 +194,8 @@
 		<em:translator>Tom van de Zilver (Traduction néerlandaise)</em:translator>
 		<em:translator>Apo59m (Traduction grecque)</em:translator>
 		<em:translator>timeratp (Traduction lituanienne)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 
@@ -187,7 +217,8 @@
 		<em:translator>Tom van de Zilver (Traduzione in olandese)</em:translator>
 		<em:translator>Apo59m (Traduzione in greco)</em:translator>
 		<em:translator>timeratp (Traduzione in lituano)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (Traduzione in tedesco)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 
@@ -209,7 +240,8 @@
 		<em:translator>Tom van de Zilver (Olandų vertimas)</em:translator>
 		<em:translator>Apo59m (Graikų vertimas)</em:translator>
 		<em:translator>timeratp (Lietuvių vertimas)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 	
@@ -231,7 +263,8 @@
 		<em:translator>Tom van de Zilver Holandiešu tulkojums)</em:translator>
 		<em:translator>Apo59m (Grieķu tulkojums)</em:translator>
 		<em:translator>timeratp (Lietuviešu translation)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 	
@@ -253,7 +286,8 @@
 		<em:translator>Tom van de Zilver (Nederlandse vertaling)</em:translator>
 		<em:translator>Apo59m (Griekse vertaling)</em:translator>
 		<em:translator>timeratp (Litouws vertaling)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 
@@ -275,7 +309,8 @@
 		<em:translator>Tom van de Zilver (Hà Lan dịch)</em:translator>
 		<em:translator>Apo59m (Bản dịch tiếng Hy Lạp)</em:translator>
 		<em:translator>timeratp (Tiếng Lít-va dịch)</em:translator>
-        <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+		<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+        <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
     
@@ -297,7 +332,8 @@
 			<em:translator>Tom van de Zilver (Traduçao para Holandês)</em:translator>
 			<em:translator>Apo59m (Traduçao para Grego)</em:translator>
 			<em:translator>timeratp (Traduçao para Lituano)</em:translator>
-		    <em:homepageURL>http://www.neurone.it/index.php/gladiatus-tools</em:homepageURL>
+			<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
+		    <em:homepageURL>http://code.google.com/p/gladiatus-tools</em:homepageURL>
       </Description>
     </em:localized>
 

@@ -1,0 +1,50 @@
+﻿<!ENTITY gladiatusToolsOptions.label "Gladiatus Tools Einstellungen">
+
+<!ENTITY settingsTab.label "Allgemeine Einstellungen">
+
+<!ENTITY simulationGroup.label "Kampf Simulator">
+<!ENTITY otherSettingsGroup.label "Andere Einstellungen">
+<!ENTITY playersGroup.label "Spieler und Gilden">
+<!ENTITY merchantsGroup.label "Verkäufer">
+
+<!ENTITY simulatorEngine.label "Simulations Tool">
+<!ENTITY autoSimulateBattle.label "Automatischer Kampf-Simulator">
+<!ENTITY excludeMeFromCorporateMessages.label "Sende mir nicht Nachrichten, wenn ich Nachrichten zur Gilde schicke">
+<!ENTITY showCustomAvatarImages.label "Zeige Avatar Bilder (bei mir)">
+<!ENTITY showCustomGuildImages.label "Zeige Gilden Bilder">
+<!ENTITY showTimers.label "Zeige die Timer">
+<!ENTITY showFullStats.label "Zeige ebenso Heilung und Bedrohungsgefahr an">
+<!ENTITY showAdditionalTooltips.label "Zeige Inventar und Ausrüstungs Sachen">
+<!ENTITY hideNotAffordable.label "Highlight affordable items only">
+<!ENTITY showAdditionalStats.label "Zeige extra Anzeigen">
+<!ENTITY rememberTabs.label "Erinnere das letzte ausgewälte Fenster">
+<!ENTITY reportDetailLevel.label "Benutze die folgenden Kampf Infos Detail des Levels">
+<!ENTITY reportDetailLevelEssential.label "Empfohlen">
+<!ENTITY reportDetailLevelMedium.label "Mittel">
+<!ENTITY reportDetailLevelFull.label "Alles">
+<!ENTITY showCharactersLeft.label "Zeige das Zeichen Zähler">
+<!ENTITY enableAutoFillAuctionFields.label "Fülle automatisch das Auktions-Objekt-Preis mit dem kleinsten Preis">
+<!ENTITY buyAlert.label "Kaufe Erinnerung">
+<!ENTITY buyAlertNone.label "Niemals">
+<!ENTITY buyAlertMarket.label "Nur Markt">
+<!ENTITY buyAlertAuction.label "Nur Auktion">
+<!ENTITY buyAlertAll.label "Immer">
+<!ENTITY showSendGuildMessageIcon.label "Zeige geschriebene Gilden Nachricht Symbol">
+
+<!ENTITY aboutTab.label "Was neu ist">
+
+<!ENTITY aboutTab.whatsnew272.1 "Nun können Sie wählen wann die Kauf Erinnerung gezeigt werden soll">
+
+<!ENTITY aboutTab.whatsnew271.1 "'bid + 1' Funktion automatisch Füllen wird benutzt, aber nicht länger als 1 wird das Objekt Preis tragen">
+<!ENTITY aboutTab.whatsnew271.2 "Konfermation Nachricht getan, wenn direkt Kauf vom Markt und Auktionsseiten">
+<!ENTITY aboutTab.whatsnew271.3 "Update mancher Übersetzungen">
+<!ENTITY aboutTab.whatsnew271.4 "Kleine Bugs gefixt">
+
+<!ENTITY aboutTab.whatsnew270.1 "Neue Funktion 'bid + 1' hinzugefügt bei der Auktionsseite">
+<!ENTITY aboutTab.whatsnew270.2 "Neue Links bei Listenseiten">
+<!ENTITY aboutTab.whatsnew270.3 "Griechische Übersetzung ist NUN NEU!">
+<!ENTITY aboutTab.whatsnew270.4 "Funktion 'Errinere letzte Seite' weiter entwickelt über das ganze Spiel">
+<!ENTITY aboutTab.whatsnew270.5 "Neue Addon Icon">
+<!ENTITY aboutTab.whatsnew270.6 "Einstellungen verändert und Fenster Was neu ist ebenso">
+<!ENTITY aboutTab.whatsnew270.7 "Funktion 'Gehe zu meiner Position' gelöscht (nun ist es an der Server Seite)">
+<!ENTITY aboutTab.whatsnew270.8 "Kleine Bugs gefixt">
