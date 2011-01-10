@@ -152,9 +152,9 @@ function updatePlayerDescriptionTextArea(maxChars) {
 		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
 		//@Explicit_DOM_Reference
 		myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[7].innerHTML =
-				testo.substring(0, testo.indexOf("(")) + 
-				" ("+ (charsLeft(myTextArea, maxChars) - subtract)+
-				"/"+ maxChars +")";
+			testo.substring(0, testo.indexOf("(")) + 
+			" ("+ (charsLeft(myTextArea, maxChars) - subtract)+
+			"/"+ maxChars +")";
 	}
 }
 
