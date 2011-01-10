@@ -14,4 +14,4 @@ The signed update manifest contains information about the _latest addon version_
 
 This way, you are free to publish your addon updates very fast, but you must take care of the correct packaging and all the update mechanism.
 
-From the beginning, I chose to use both mechanisms: if you want the lastest release very fast, download GT from Google Code. If you prefer to wait for AMO approval (because you think it's safer or simply you like them more then us), install Gladiatus Tools from its own [https://addons.mozilla.org/en-US/firefox/addon/9761/versions/ AMO page].
+From the beginning, I chose to use both mechanisms: if you want the lastest release very fast, download GT from Google Code. If you prefer to wait for AMO approval (because you think it's safer or simply you like them more then us), install Gladiatus Tools from its own [https://addons.mozilla.org/en-US/firefox/addon/9761/ AMO page].
