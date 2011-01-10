@@ -115,8 +115,10 @@ function updateNotesTextArea(maxChars) {
 	if (textareas.snapshotLength > 0)
 	{
 		var myTextArea = textareas.snapshotItem(0);
+		//@Explicit_DOM_Reference
 		var testo = myTextArea.parentNode.childNodes[1].innerHTML;
 		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		//@Explicit_DOM_Reference
 		myTextArea.parentNode.childNodes[1].innerHTML =
 			testo.substring(0, testo.indexOf("(")) + " ("+ charsLeft(myTextArea, maxChars) +"/"+ maxChars +")";
 	}
@@ -128,8 +130,10 @@ function updateWriteMessageTextArea(maxChars) {
 	if (textareas.snapshotLength > 0)
 	{
 		var myTextArea = textareas.snapshotItem(0);
+		//@Explicit_DOM_Reference
 		var testo = myTextArea.parentNode.parentNode.parentNode.childNodes[10].childNodes[0].innerHTML;
 		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		//@Explicit_DOM_Reference
 		myTextArea.parentNode.parentNode.parentNode.childNodes[10].childNodes[0].innerHTML =
 			testo.substring(0, testo.indexOf("(")) + " ("+ charsLeft(myTextArea, maxChars) +"/"+ maxChars +")";
 	}
@@ -143,13 +147,15 @@ function updatePlayerDescriptionTextArea(maxChars) {
 	if (textareas.snapshotLength > 0)
 	{
 		var myTextArea = textareas.snapshotItem(0);
-		var testo = myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[9].firstChild.innerHTML;
+		//@Explicit_DOM_Reference
+		var testo = myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[7].innerHTML;
 		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
-		myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[9].firstChild.innerHTML =
+		//@Explicit_DOM_Reference
+		myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[7].innerHTML =
 				testo.substring(0, testo.indexOf("(")) + 
 				" ("+ (charsLeft(myTextArea, maxChars) - subtract)+
 				"/"+ maxChars +")";
-	}	
+	}
 }
 
 function updateCatchTextArea(maxChars) {
@@ -158,9 +164,11 @@ function updateCatchTextArea(maxChars) {
 	if (textareas.snapshotLength > 0)
 	{
 		var myTextArea = textareas.snapshotItem(0);
-		var testo = myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[3].firstChild.innerHTML;
+		//@Explicit_DOM_Reference
+		var testo = myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[1].innerHTML;
 		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
-		myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[3].firstChild.innerHTML =
+		//@Explicit_DOM_Reference
+		myTextArea.parentNode.parentNode.parentNode.parentNode.childNodes[1].innerHTML =
 				testo.substring(0, testo.indexOf("(")) + " ("+ charsLeft(myTextArea, maxChars) +"/"+ maxChars +")";
 	}	
 }
@@ -171,8 +179,10 @@ function updateAllyMessageTextArea(maxChars) {
 	if (textareas.snapshotLength > 0)
 	{
 		var myTextArea = textareas.snapshotItem(0);
+		//@Explicit_DOM_Reference
 		var testo = myTextArea.parentNode.parentNode.firstChild.innerHTML;
 		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		//@Explicit_DOM_Reference
 		myTextArea.parentNode.parentNode.firstChild.innerHTML =
 				testo.substring(0, testo.indexOf("(")) + " ("+ charsLeft(myTextArea, maxChars) +"/"+ maxChars +")";
 	}
@@ -186,8 +196,10 @@ function updateAllyDescriptionTextArea(maxChars) {
 	if (textareas.snapshotLength > 0)
 	{
 		var myTextArea = textareas.snapshotItem(0);
+		//@Explicit_DOM_Reference
 		var testo = myTextArea.parentNode.parentNode.parentNode.firstChild.innerHTML;
 		//Sovrascrivo l'intestazione per includere il calcolo dei caratteri
+		//@Explicit_DOM_Reference
 		myTextArea.parentNode.parentNode.parentNode.firstChild.innerHTML =
 				testo.substring(0, testo.indexOf("(")) +
 				" ("+ ( charsLeft(myTextArea, maxChars) - subtract) +

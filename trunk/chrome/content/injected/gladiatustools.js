@@ -380,7 +380,8 @@ function grabClick(event)
 		    if(GTImageUrlField.value != "")
 		    {
 			    //Inserisco la nuova impostazione
-			    currentAvatarDescriptionField.value += "\n\n[fc]"+shadowingColor+"[fs]10##GTI="+ GTImageUrlField.value +"##[/f][/f]";
+				//@Explicit_RichTextArea_Reference
+			    currentAvatarDescriptionField.value += "\n\n[f c="+shadowingColor+"][f s=10]##GTI="+ GTImageUrlField.value +"##[/f][/f]";
 		    }
 		    return;
 	    }
@@ -392,7 +393,8 @@ function grabClick(event)
 		    if(GTGuildImageUrlField.value != "")
 		    {
 			    //Inserisco la nuova impostazione
-			    currentGuildDescriptionField.value += "\n\n[fc]"+shadowingColor+"[fs]10##GTGI="+ GTGuildImageUrlField.value +"##[/f][/f]";
+				//@Explicit_RichTextArea_Reference
+			    currentGuildDescriptionField.value += "\n\n[f c="+shadowingColor+"][f s=10]##GTGI="+ GTGuildImageUrlField.value +"##[/f][/f]";
 		    }
 		    return;
 	    }
@@ -522,7 +524,8 @@ function excludeMe()
 function GTImageVersion(stringa)
 {
     //Trovo la url
-	var pattern = /\[fs\]10##GTI=.*##/i;
+	//@Explicit_RichTextArea_Reference
+	var pattern = /\[f s=10\]##GTI=.*##/i;
 	if(pattern.exec(stringa) == null) return 161;
 	return versionID;
 }
@@ -766,7 +769,8 @@ if(isSettingsPage)
 		{
 			//Rimuovo dalla text area la stringa
 			var valore = currentAvatarDescriptionField.value;
-			var offset = valore.length - ("  "+"[fc]"+shadowingColor+"[fs]10##GTI="+currentGTAvatarImageUrl+"##[/f][/f]").length;
+			//@Explicit_RichTextArea_Reference
+			var offset = valore.length - ("  [f c="+shadowingColor+"][f s=10]##GTI="+currentGTAvatarImageUrl+"##[/f][/f]").length;
 			//Dalla versione 1.7.0 è stata aggiunta in testa alla formattazione "[fs]10" e "[/f]", cioè 10 caratteri in più.
 			//Per supportare al meglio l'upgrade, controllo se è presente una vecchia versione e aggiorno l'offset di conseguenza
 			if(GTImageVersion(currentAvatarDescriptionField.value) < 170) offset += 10;
@@ -815,7 +819,8 @@ if(isModAllyPage)
 		{
 			//Rimuovo dalla text area la stringa
 			var valore = currentGuildDescriptionField.value;
-			var offset = valore.length - ("  "+"[fc]"+shadowingColor+"[fs]10##GTGI="+currentGTGuildImageUrl+"##[/f][/f]").length;
+			//@Explicit_RichTextArea_Reference
+			var offset = valore.length - ("  [f c="+shadowingColor+"][f s=10]##GTGI="+currentGTGuildImageUrl+"##[/f][/f]").length;
 			currentGuildDescriptionField.value = valore.substring(0, offset);
 		}
 		//Creo l'impostazione nella pagina dei settings, iniziando dal titolo
@@ -1008,7 +1013,6 @@ if(activateClickListener)
 ************************************/
 if(activateKeyPressListener)
 {
-	//alert("grab key attivo");
 	window.addEventListener('keydown', grabKeyPress, true);
 	window.addEventListener('keyup', grabKeyPress, true);
 }
