@@ -2,7 +2,7 @@
 
 = Details =
 
-* Download desired version from the [http://code.google.com/p/gladiatus-tools/downloads/list download page]
-* Drag the xpi file inside a Firefox page
-* Wait 4 seconds and then click *Install now*
-* Restart Firefox.
+  * Download desired version from the [http://code.google.com/p/gladiatus-tools/downloads/list download page]
+  * Drag the xpi file inside a Firefox page
+  * Wait 4 seconds and then click *Install now*
+  * Restart Firefox.
