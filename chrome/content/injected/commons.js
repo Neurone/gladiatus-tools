@@ -16,7 +16,7 @@ if(common_result) {
 var serverVersion = getServerVersion();
 
 //Variabili globali
-var versionID = 170;
+var versionID = 290;
 var idSimula = "idSimula";
 var nomePulsanteAcquistaAsta = "buyout";
 var nomePulsanteAcquistaMercato = "buy";
@@ -83,7 +83,7 @@ var isSendGuildMessagePage = urlMatch("mod=guild_main&submod=admin_mail&sh=.*");
 var isMemoPage = urlMatch("mod=memo&sh=.*");
 var isWriteMessagePage = urlMatch("mod=messages&submod=new&.*");
 var isGenericMessagePage  = urlMatch("mod=messages&sh=.*");
-var isSettingsPage = urlMatch("mod=settings&sh=.*");
+var isSettingsPage = urlMatch("mod=settings&sh=.*") || urlMatch("mod=settings&submod=edit&sh=.*");
 var isShopPage = urlMatch("mod=inventory.*sh=.*");
 var isPlayerStatsPage = urlMatch("mod=overview&submod=stats&sh=.*");
 var isOpponentStatsPage = urlMatch("mod=player&submod=stats&p=.*");
