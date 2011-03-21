@@ -67,24 +67,6 @@ Improve the user experience automatically adding a set of fully web site integra
 <!ENTITY buyAlertAll.label "Always">
 <!ENTITY showSendGuildMessageIcon.label "Show write guildmail icon">
 
-<!ENTITY aboutTab.label "What's new">
-
-<!ENTITY aboutTab.whatsnew272.1 "Now you can choose when buy alert should appear">
-
-<!ENTITY aboutTab.whatsnew271.1 "'bid + 1' feature autofill fields as usually, but no longer add 1 to acution item price">
-<!ENTITY aboutTab.whatsnew271.2 "Inserted confirmation message when directly buying from Market and Auction pages">
-<!ENTITY aboutTab.whatsnew271.3 "Updated some translations">
-<!ENTITY aboutTab.whatsnew271.4 "Fixed minor bugs">
-
-<!ENTITY aboutTab.whatsnew270.1 "Added new 'bid + 1' feature at auction page">
-<!ENTITY aboutTab.whatsnew270.2 "Added new navigation links at packages list page">
-<!ENTITY aboutTab.whatsnew270.3 "Added Greek translation">
-<!ENTITY aboutTab.whatsnew270.4 "Extended 'remember last tab' feature all over the game">
-<!ENTITY aboutTab.whatsnew270.5 "Changed addon icon">
-<!ENTITY aboutTab.whatsnew270.6 "Changed settings and what's new panel">
-<!ENTITY aboutTab.whatsnew270.7 "Removed 'go to my position' feature (now it's server side)">
-<!ENTITY aboutTab.whatsnew270.8 "Fixed minor bug">
-
 ####################################################
 # These are the addon contributors. Translate text between parenthesis for all guys and insert your name at the end of the list.
 ####################################################
@@ -102,6 +84,7 @@ Improve the user experience automatically adding a set of fully web site integra
 <em:translator>Tom van de Zilver (Dutch translation)</em:translator>
 <em:translator>Apo59m (Greek translation)</em:translator>
 <em:translator>timeratp (Lithuanian translation)</em:translator>
+<em:translator>Ragazzo Homer / RexInfernus (German translation)</em:translator>
 <em:translator>YOUR NAME (YOUR LANGUAGE translation)</em:translator>
 
 ####################################################

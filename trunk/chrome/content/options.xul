@@ -10,15 +10,12 @@
       <preference id="autoSimulateBattle" name="extensions.gladiatustools.autoSimulateBattle" type="bool" />
       <preference id="showCustomAvatarImages" name="extensions.gladiatustools.showCustomAvatarImages" type="bool"/>
       <preference id="showCustomGuildImages" name="extensions.gladiatustools.showCustomGuildImages" type="bool"/>
-      <preference id="showTimers" name="extensions.gladiatustools.showTimers" type="bool"/>
       <preference id="showFullStats" name="extensions.gladiatustools.showFullStats" type="bool"/>
-      <preference id="showAdditionalTooltips" name="extensions.gladiatustools.showAdditionalTooltips" type="bool"/>
       <preference id="hideNotAffordable" name="extensions.gladiatustools.hideNotAffordable" type="bool"/>
       <preference id="excludeMeFromCorporateMessages" name="extensions.gladiatustools.excludeMeFromCorporateMessages" type="bool"/>
       <preference id="showAdditionalStats" name="extensions.gladiatustools.showAdditionalStats" type="bool"/>
       <preference id="rememberTabs" name="extensions.gladiatustools.rememberTabs" type="bool"/>
       <preference id="reportDetailLevel" name="extensions.gladiatustools.reportDetailLevel" type="string"/>
-	  <preference id="showCharactersLeft" name="extensions.gladiatustools.showCharactersLeft" type="bool"/>
 	  <preference id="enableAutoFillAuctionFields" name="extensions.gladiatustools.enableAutoFillAuctionFields" type="bool"/>
 	  <preference id="buyAlert" name="extensions.gladiatustools.buyAlert" type="string"/>
 	  <preference id="showSendGuildMessageIcon" name="extensions.gladiatustools.showSendGuildMessageIcon" type="bool"/>
@@ -26,12 +23,11 @@
 	<tabbox>
       <tabs>
         <tab label="&settingsTab.label;"/>
-        <tab label="&aboutTab.label;"/>
       </tabs>
       <tabpanels>
         <tabpanel id="settingstab">
 			<vbox>
-			  <groupbox>
+			<groupbox>
 				<caption label="&playersGroup.label;"/>
 				<hbox align="center">
 				  <checkbox id="c_showCustomAvatarImages" preference="showCustomAvatarImages" label="&showCustomAvatarImages.label;"/>
@@ -49,7 +45,6 @@
 				  <checkbox id="c_showAdditionalStats" preference="showAdditionalStats" label="&showAdditionalStats.label;"/>
 				</hbox>
 			  </groupbox>
-
 			  <groupbox>
 				<caption label="&simulationGroup.label;"/>
 				<hbox align="center">
@@ -57,7 +52,6 @@
 				  <menulist id="ml_simulatorEngine" preference="simulatorEngine">
 					<menupopup>
 					  <menuitem label="www.georged.eu" value="www.georged.eu"/>
-					  <menuitem label="www.playerutils.com" value="www.playerutils.com"/>
 					</menupopup>
 				  </menulist>
 				</hbox>
@@ -65,12 +59,8 @@
 				  <checkbox id="c_autoSimulateBattle" preference="autoSimulateBattle" label="&autoSimulateBattle.label;"/>
 				</hbox>
 			  </groupbox>
-
 			  <groupbox>
 				<caption label="&merchantsGroup.label;"/>
-				<hbox align="center">
-				  <checkbox id="c_showAdditionalTooltips" preference="showAdditionalTooltips" label="&showAdditionalTooltips.label;"/>
-				</hbox>
 				<hbox align="center">
 				  <checkbox id="c_hideNotAffordable" preference="hideNotAffordable" label="&hideNotAffordable.label;"/>
 				</hbox>
@@ -89,17 +79,10 @@
 				  </menulist>
 				</hbox>
 			  </groupbox>
-
 			  <groupbox>
 				<caption label="&otherSettingsGroup.label;"/>
 				<hbox align="center">
 				  <checkbox id="c_enableBidOneMore" preference="enableAutoFillAuctionFields" label="&enableAutoFillAuctionFields.label;"/>
-				</hbox>
-				<hbox align="center">
-				  <checkbox id="c_showTimers" preference="showTimers" label="&showTimers.label;"/>
-				</hbox>
-				<hbox align="center">
-				  <checkbox id="c_showCharactersLeft" preference="showCharactersLeft" label="&showCharactersLeft.label;"/>
 				</hbox>
 				<hbox align="center">
 				  <checkbox id="c_excludeMeFromCorporateMessages" preference="excludeMeFromCorporateMessages" label="&excludeMeFromCorporateMessages.label;"/>
@@ -117,32 +100,6 @@
 			  </groupbox>
 			</vbox>
 		</tabpanel>
-        <tabpanel id="about">
-			<vbox align="left" maxwidth="370px" style="margin-bottom:15px;">
-				<description>2.7.2</description>
-				<spacer style="margin-top:5px;"/>
-				<description>- &aboutTab.whatsnew272.1;</description>
-				<description>- &aboutTab.whatsnew271.4;</description>
-				<spacer style="margin-top:5px;"/>
-				<description>2.7.1</description>
-				<spacer style="margin-top:5px;"/>
-				<description>- &aboutTab.whatsnew271.1;</description>
-				<description>- &aboutTab.whatsnew271.2;</description>
-				<description>- &aboutTab.whatsnew271.3;</description>
-				<description>- &aboutTab.whatsnew271.4;</description>
-				<spacer style="margin-top:5px;"/>
-				<description>2.7.0</description>
-				<spacer style="margin-top:5px;"/>
-				<description>- &aboutTab.whatsnew270.1;</description>
-				<description>- &aboutTab.whatsnew270.2;</description>
-				<description>- &aboutTab.whatsnew270.3;</description>
-				<description>- &aboutTab.whatsnew270.4;</description>
-				<description>- &aboutTab.whatsnew270.5;</description>
-				<description>- &aboutTab.whatsnew270.6;</description>
-				<description>- &aboutTab.whatsnew270.7;</description>
-				<description>- &aboutTab.whatsnew270.8;</description>
-			</vbox>
-        </tabpanel>
       </tabpanels>
     </tabbox>
 	</prefpane>

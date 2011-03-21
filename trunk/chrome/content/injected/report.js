@@ -31,7 +31,7 @@ function showSmartCombatReport() {
     moreDetails.style.top = "10px";
     moreDetails.style.cursor = "pointer";
 
-    vsQuery = ".//div[@id='battlerep']//table//tr//td//center";
+    vsQuery = ".//div[@id='container']//table//tr//td//center";
     vss = XQueryFromElement(vsQuery, document);
     vss.snapshotItem(0).innerHTML = "VS<br/>";
     vss.snapshotItem(0).appendChild(moreDetails);

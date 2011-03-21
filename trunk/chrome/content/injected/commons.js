@@ -81,14 +81,14 @@ var isPlayerBuddiesOverviewPage = (
 );
 var isSendGuildMessagePage = urlMatch("mod=guild_main&submod=admin_mail&sh=.*");
 var isMemoPage = urlMatch("mod=memo&sh=.*");
-var isWriteMessagePage = urlMatch("mod=messages&submod=new&.*");
+var isWriteMessagePage = urlMatch("mod=messages&submod=messageNew&.*");
 var isGenericMessagePage  = urlMatch("mod=messages&sh=.*");
 var isSettingsPage = urlMatch("mod=settings&sh=.*") || urlMatch("mod=settings&submod=edit&sh=.*");
-var isShopPage = urlMatch("mod=inventory.*sh=.*");
+var isShopPage = urlMatch("mod=inventory&.*sh=.*");
 var isPlayerStatsPage = urlMatch("mod=overview&submod=stats&sh=.*");
 var isOpponentStatsPage = urlMatch("mod=player&submod=stats&p=.*");
 //Per supportare un bug di Gladiatus nella scrittura di una url, modifico la variabile isCombatReport per supportare lo stesso errore
-var isCombatReportPage = (urlMatch("mod=report&beid=.*") || urlMatch("mod=report&&beid=.*")) && !urlMatch("mod=report&beid=.*&submod=combatReport");
+var isCombatReportPage = (urlMatch("mod=reports&submod=showCombatReport&.*&sh=.*") || urlMatch("mod=reports&submod=showArenaReport&.*&sh=.*") || urlMatch("mod=reports&submod=showCircusTurma&.*&sh=.*"));
 var isModAllyPage = urlMatch("mod=guild_main&submod=admin_description&sh=.*");
 var isAllySendMessagePage = urlMatch("mod=guild_main&submod=admin_mail&sh=.*");
 var isAuctionPage = urlMatch("mod=auction&sh=.*") || urlMatch("mod=auction&ttype=2&sh=.*") || urlMatch("mod=auction&ttype=3&sh=.*");
@@ -233,4 +233,17 @@ function safeParseInt(string) {
 	if(string == "") return 0;
 	if(string == NaN) return 0;
 	return parseInt(string);
+}
+
+/*****************************
+Recupera il nome dell'utente
+*****************************/
+function getIDUtente(paginaHTML)
+{
+	var pattern = /uid=.+<\/b/i;
+	var tmpString = pattern.exec(paginaHTML).toString();
+	//Recupero solo l'id numerico
+	pattern = /[0-9]+/i;
+	tmpString = pattern.exec(tmpString).toString();
+	return tmpString;
 }
