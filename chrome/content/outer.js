@@ -451,15 +451,16 @@ it.neurone.gladiatustools.outer = function() {
 			
 			var isGuildCombatReportPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_warcamp&gcid=\d+&submod=guild_combatreports&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_warcamp&gcid=\d+&submod=guild_combatreports&sh=.*/.test(href) ||
 										/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=guild_warcamp&submod=guild_combatreports&gcid=\d+&sh=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=guild_warcamp&submod=guild_combatreports&gcid=\d+&sn=.*/.test(href) );
-
-			var isCombatReportPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*/.test(href) ||
-										/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(href) || /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=report&&beid=.*/.test(href) )
-										&& !/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=report&beid=.*&submod=combatReport/.test(href);
+									
+			var isCombatReportPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=reports&submod=showCombatReport.*/.test(href) ||
+										/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=reports&submod=showArenaReport.*/.test(href) ||
+										/http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=reports&submod=showCircusTurma.*/.test(href) );
 										
 			var isExpeditionInProgressPage = ( /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=location&loc=\d+&sh=.*/.test(href) ||
 											  /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=location&loc=\d+&sh=.*/.test(href) ||
 											  /http:\/\/s\d+\.gladiatus\..*\/game\/index\.php\?mod=location&loc=\d+&d=\d+&sh=.*/.test(href) ||
 											  /http:\/\/s\d+\.\w\w\.gladiatus\..*\/game\/index\.php\?mod=location&loc=\d+&d=\d+&sh=.*/.test(href));
+											  
 		    /************************************
 			Visualizzazione dell'avatar personalizzato
 			************************************/
@@ -472,7 +473,7 @@ it.neurone.gladiatustools.outer = function() {
 			        isOverview = false;
 					//Creo un throbber per il caricamento dell'immagine
 					leftThrobber = createThrobber(25, 170);
-					insertAfter($("div[class='player_name_bg']"), leftThrobber);
+					insertAfter($("div[class='player_name_bg pngfix']"), leftThrobber);
 					//Carico la nuova immagine
 				    setAvatar(imageUrl);
 			    }				

@@ -41,12 +41,12 @@ it.neurone.gladiatustools.gmCompiler = {
 			/http:\/\/gladiatus\..*\/game\/index\.php\?mod=.*/.test(href))
 		{
 		    var script = it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/commons.js');		
-		    script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/timers.js');
 		    script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/fields.js');
 		    script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/advancedStats.js');
 		    script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/report.js');
 			script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/auction.js');
 			script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/toolbar.js');
+			script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/battleSimulation.js');
 		    script += it.neurone.gladiatustools.gmCompiler.getUrlContents('chrome://gladiatustools/content/injected/gladiatustools.js');
 		    it.neurone.gladiatustools.gmCompiler.injectScript(script, href, unsafeWin);
 	    }	
